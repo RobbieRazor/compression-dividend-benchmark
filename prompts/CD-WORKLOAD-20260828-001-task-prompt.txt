@@ -1,0 +1,36 @@
+Study: CD-WORKLOAD-20260828-001
+
+Task:
+
+Using only the source facts provided with this request, construct one JSON object representing the requested canonical record.
+
+Return exactly these four fields:
+
+@context
+@type
+name
+description
+
+Requirements:
+
+@context must equal:
+https://schema.org
+
+@type must equal:
+CreativeWork
+
+name must exactly reproduce the canonical record name from the supplied source facts.
+
+description must exactly reproduce the canonical record description from the supplied source facts.
+
+Do not add any additional fields.
+
+Do not include commentary, explanation, markdown, headings, or surrounding text.
+
+Return only valid JSON.
+
+Quality contract:
+
+CD001-QC-1.1
+
+The output passes only if all four required values exactly match the frozen Study 001 reference.

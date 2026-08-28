@@ -1,0 +1,19 @@
+Study: CD-WORKLOAD-20260828-001
+
+Authoritative source facts for fresh logical reconstruction.
+
+Schema context:
+https://schema.org
+
+Record type:
+CreativeWork
+
+Record name:
+Robbie George Biography Plate™
+
+Record description:
+A visual identity interface connecting Robbie George’s photography, field observation, organic farming, conservation, storytelling, Naturepedia, Robbie’s Razor, and knowledge architecture.
+
+These facts were independently derived from the frozen canonical Biography Plate reference.
+
+This file is source material, not the required structured answer.
