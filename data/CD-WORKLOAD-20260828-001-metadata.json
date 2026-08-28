@@ -1,0 +1,66 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "study_title": "Single Canonical Structured-State Retrieval",
+  "status": "PRE_MEASUREMENT_SETUP",
+  "economic_perspective": "requesting_ai_agent",
+  "created_date": "2026-08-28",
+  "benchmark": {
+    "name": "Compression Dividend Benchmark",
+    "mathematical_reference_version": "v1.0.0",
+    "mathematical_reference_commit": "a8975fc32303ab6cfd8c4b88cf191dd627b0b87f",
+    "calibration_version": "v1.1",
+    "calibration_branch": "v1.1-empirical-calibration",
+    "calibration_protocol_commit": "25801c9",
+    "workload_spec_commit": "fd79f71"
+  },
+  "measurement_environment": {
+    "node_version": "v22.22.3",
+    "npm_version": "10.9.8",
+    "typescript_version": "7.0.2",
+    "vitest_version": "4.1.11",
+    "operating_environment": "local macOS measurement workstation",
+    "timezone": "America/New_York"
+  },
+  "target": {
+    "selected": false,
+    "slug": "",
+    "canonical_url": "",
+    "governed_endpoint": "",
+    "reference_sha256": ""
+  },
+  "pilot_plan": {
+    "fresh_recomputation_observations": 5,
+    "provider_prompt_cache_observations": 5,
+    "governed_state_attempts": 10,
+    "paired_substitution_observations": 5
+  },
+  "full_study_targets": {
+    "fresh_recomputation_successes": 30,
+    "provider_prompt_cache_successes": 30,
+    "governed_state_attempts": 50,
+    "paired_substitution_observations_minimum": 20,
+    "paired_substitution_observations_preferred": 50
+  },
+  "measurement_state": {
+    "quality_contract_frozen": false,
+    "target_reference_frozen": false,
+    "pricing_frozen": false,
+    "raw_schema_frozen": false,
+    "pilot_started": false,
+    "pilot_completed": false,
+    "full_collection_started": false,
+    "full_collection_completed": false,
+    "empirical_result_calculated": false
+  },
+  "claims": {
+    "positive_empirical_compression_dividend_claimed": false,
+    "engine_verified": true,
+    "empirical_dataset_verified": false
+  },
+  "limitations": [
+    "Continuous background storage, refresh, synchronization, monitoring, and maintenance costs remain outside the frozen core.",
+    "No empirical Compression Dividend has yet been measured.",
+    "Target record and production retrieval endpoint have not yet been frozen."
+  ],
+  "notes": "Study 001 remains in pre-measurement setup. No production observations should be recorded until the target record, reference state, quality contract, and applicable pricing have been frozen."
+}

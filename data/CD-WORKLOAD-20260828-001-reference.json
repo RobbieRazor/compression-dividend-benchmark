@@ -1,0 +1,40 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "workload_id": "CD-WORKLOAD-20260828-001",
+  "status": "TARGET_NOT_YET_SELECTED",
+  "reference_capture_timestamp_utc": null,
+  "target": {
+    "canonical_id": "",
+    "slug": "",
+    "title": "",
+    "canonical_url": "",
+    "record_type": "",
+    "human_source_url": "",
+    "governed_retrieval_endpoint": "",
+    "x402_tier": "",
+    "x402_price_usd": null,
+    "x402_asset": "",
+    "x402_chain": ""
+  },
+  "reference_source": {
+    "source_type": "production_canonical_system",
+    "source_endpoint": "",
+    "source_version": "",
+    "schema_version": "",
+    "content_sha256": "",
+    "benchmark_reference_commit": "a8975fc32303ab6cfd8c4b88cf191dd627b0b87f",
+    "calibration_commit": "",
+    "workload_spec_commit": "fd79f71"
+  },
+  "quality_contract": {
+    "canonical_id_required": true,
+    "canonical_slug_required": true,
+    "canonical_url_required": true,
+    "schema_valid_required": true,
+    "provenance_valid_required": false,
+    "rights_policy_valid_required": false,
+    "required_fields": []
+  },
+  "authoritative_payload": null,
+  "notes": "Target record has not yet been selected. Do not begin empirical measurements until this reference file is populated from the production canonical source and fingerprinted."
+}
