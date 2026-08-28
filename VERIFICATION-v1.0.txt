@@ -1,0 +1,89 @@
+Compression Dividend Benchmark v1.0
+Verification Record
+
+Status: COMPUTATIONAL CORE VERIFIED
+
+Verification date: August 28, 2026
+
+Environment:
+Node: v22.22.3
+npm: 10.9.8
+TypeScript: 7.0.2
+Vitest: 4.1.11
+
+Executed command:
+npm test
+
+Actual test result:
+Test Files: 1 passed
+Tests: 18 passed
+Tests failed: 0
+
+Deterministic parameter-grid coverage:
+11,550 valid engine configurations evaluated within the property-grid test.
+
+Validated areas:
+
+Canonical P1 deficit fixture
+Canonical P2 intermediate-advantage fixture
+Canonical P3 best-baseline-advantage fixture
+Live operational boundary fixture
+Hit-rate boundaries
+Economic substitution boundaries
+Zero setup investment
+Single-query lifecycle
+Exact zero-marginal-savings boundary
+Decoupled hmin and smin feasibility
+NaN and Infinity rejection
+Out-of-range input rejection
+Algebraic runtime invariants
+Best-baseline dividend identity
+
+Frozen v1.0 baseline:
+Cre = $0.1350 per query
+C2 = $0.0900 per query
+Cb = min(Cre, C2)
+Cr = $0.0010
+Cv = $0.0010
+Cp = $0.0015
+Cm = $0.0005
+Cmiss_overhead = $0.0010
+
+Primary invariant:
+Dincremental = min(Dpure, Dcache)
+
+Frozen v1.0 special-case invariant:
+Because C2 < Cre,
+Dincremental = Dcache
+
+Structural spacing invariant:
+Dpure - Dcache = 0.045 × N
+
+SHA-256 fingerprints:
+
+engine.ts
+d17e19f2de21c576910d49d962b6185d18c33a45345dff7ab1413522342659bb
+
+engine.test.ts
+1f16fb6abf4db93e79d9f0742180b03bdd24be8af697dac8bd1f574a9182a48d
+
+package.json
+284940dbfcb65d42a05bbe3ac9611bc9a298253759e8c0c1de1dd34a76d660a2
+
+package-lock.json
+c6c22fc7e052cd413ab511c0b1b5e2137e361fb0b1be1bd5225261316aea20d5
+
+Integrity verification:
+engine.ts: OK
+engine.test.ts: OK
+package.json: OK
+package-lock.json: OK
+
+Scope limitation:
+Continuous background storage, refresh, synchronization, monitoring, and maintenance costs are excluded from Benchmark v1.0 and documented as a limitation. They must not be silently reclassified as upfront setup investment.
+
+Interpretation:
+Benchmark v1.0 validates the internal mathematical and computational consistency of the frozen synthetic economic model. It does not yet establish an empirical Compression Dividend for a real production workload.
+
+Next phase:
+Empirical calibration and measurement protocol.
