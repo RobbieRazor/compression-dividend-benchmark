@@ -1,7 +1,7 @@
 {
   "study_id": "CD-WORKLOAD-20260828-001",
   "study_title": "Single Canonical Structured-State Retrieval",
-  "status": "PRE_MEASUREMENT_SETUP",
+  "status": "TARGET_SELECTED_REFERENCE_PENDING",
   "economic_perspective": "requesting_ai_agent",
   "created_date": "2026-08-28",
   "benchmark": {
@@ -22,10 +22,10 @@
     "timezone": "America/New_York"
   },
   "target": {
-    "selected": false,
-    "slug": "",
-    "canonical_url": "",
-    "governed_endpoint": "",
+    "selected": true,
+    "slug": "robbie-george-biography-plate",
+    "canonical_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "governed_endpoint": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
     "reference_sha256": ""
   },
   "pilot_plan": {
