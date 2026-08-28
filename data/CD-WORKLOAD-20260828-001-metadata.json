@@ -1,7 +1,7 @@
 {
   "study_id": "CD-WORKLOAD-20260828-001",
   "study_title": "Single Canonical Structured-State Retrieval",
-  "status": "TARGET_SELECTED_REFERENCE_PENDING",
+  "status": "REFERENCE_AND_QUALITY_CONTRACT_FROZEN_PRICING_PENDING",
   "economic_perspective": "requesting_ai_agent",
   "created_date": "2026-08-28",
   "benchmark": {
@@ -26,7 +26,7 @@
     "slug": "robbie-george-biography-plate",
     "canonical_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
     "governed_endpoint": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
-    "reference_sha256": ""
+    "reference_sha256": "273d7c5e40c70cd0f8ba0f5db0e07882de8e56faa97decc77c12c8c755787c5f"
   },
   "pilot_plan": {
     "fresh_recomputation_observations": 5,
@@ -42,8 +42,8 @@
     "paired_substitution_observations_preferred": 50
   },
   "measurement_state": {
-    "quality_contract_frozen": false,
-    "target_reference_frozen": false,
+    "quality_contract_frozen": true,
+    "target_reference_frozen": true,
     "pricing_frozen": false,
     "raw_schema_frozen": false,
     "pilot_started": false,

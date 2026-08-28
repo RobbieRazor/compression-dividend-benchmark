@@ -1,8 +1,8 @@
 {
   "study_id": "CD-WORKLOAD-20260828-001",
   "workload_id": "CD-WORKLOAD-20260828-001",
-  "status": "TARGET_SELECTED_REFERENCE_NOT_YET_CAPTURED",
-  "reference_capture_timestamp_utc": null,
+  "status": "REFERENCE_FROZEN",
+  "reference_capture_timestamp_utc": "2026-08-28T23:24:28+00:00",
   "target": {
     "canonical_id": "robbie-george#robbie-george-biography-plate",
     "slug": "robbie-george-biography-plate",
@@ -17,24 +17,83 @@
     "x402_chain": "eip155:8453"
   },
   "reference_source": {
-    "source_type": "production_canonical_system",
-    "source_endpoint": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
-    "source_version": "",
-    "schema_version": "",
-    "content_sha256": "",
+    "source_type": "canonical_page_jsonld_creativework",
+    "source_endpoint": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "source_version": "captured-production-page",
+    "schema_version": "schema.org CreativeWork JSON-LD",
+    "content_sha256": "273d7c5e40c70cd0f8ba0f5db0e07882de8e56faa97decc77c12c8c755787c5f",
     "benchmark_reference_commit": "a8975fc32303ab6cfd8c4b88cf191dd627b0b87f",
-    "calibration_commit": "",
+    "calibration_commit": "03a67e9b6db7581ba0175b622f0b397a1a0e78a4",
     "workload_spec_commit": "fd79f71"
   },
   "quality_contract": {
+    "contract_version": "CD001-QC-1.0",
+    "comparison_mode": "exact_scalar_reference_match",
     "canonical_id_required": true,
-    "canonical_slug_required": true,
-    "canonical_url_required": true,
+    "canonical_identifier_required": true,
     "schema_valid_required": true,
     "provenance_valid_required": false,
     "rights_policy_valid_required": false,
-    "required_fields": []
+    "allow_extra_fields": false,
+    "required_fields": [
+      "@type",
+      "@id",
+      "identifier",
+      "name",
+      "url",
+      "description",
+      "learningResourceType",
+      "inLanguage"
+    ],
+    "exact_match_fields": [
+      "@type",
+      "@id",
+      "identifier",
+      "name",
+      "url",
+      "description",
+      "learningResourceType",
+      "inLanguage"
+    ],
+    "optional_reference_fields": [
+      "image",
+      "creator",
+      "author",
+      "copyrightHolder",
+      "about",
+      "isPartOf"
+    ],
+    "object_key_order_significant": false,
+    "string_comparison": "exact_unicode_value",
+    "notes": "Study 001 pass/fail is based on exact equality to the frozen reference for eight scalar CreativeWork fields. Relational reference fields are preserved but excluded from the initial quality gate."
   },
-  "authoritative_payload": null,
-  "notes": "Target record has not yet been selected. Do not begin empirical measurements until this reference file is populated from the production canonical source and fingerprinted."
+  "authoritative_payload": {
+    "@type": "CreativeWork",
+    "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+    "identifier": "robbie-george-biography-plate",
+    "name": "Robbie George Biography Plate™",
+    "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+    "description": "A visual identity interface connecting Robbie George’s photography, field observation, organic farming, conservation, storytelling, Naturepedia, Robbie’s Razor, and knowledge architecture.",
+    "image": {
+      "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#biography-plate-image"
+    },
+    "creator": {
+      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+    },
+    "author": {
+      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+    },
+    "copyrightHolder": {
+      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+    },
+    "about": {
+      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+    },
+    "isPartOf": {
+      "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+    },
+    "learningResourceType": "Biography identity interface",
+    "inLanguage": "en-US"
+  },
+  "notes": "Authoritative Biography Plate CreativeWork node independently extracted from the canonical human page. Paid Atomic Query route was not used to construct the reference answer."
 }
