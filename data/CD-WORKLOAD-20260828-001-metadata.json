@@ -1,7 +1,7 @@
 {
   "study_id": "CD-WORKLOAD-20260828-001",
   "study_title": "Single Canonical Structured-State Retrieval",
-  "status": "REFERENCE_AND_QUALITY_CONTRACT_FROZEN_PRICING_PENDING",
+  "status": "REFERENCE_QUALITY_AND_PRICING_FROZEN_PILOT_PENDING",
   "economic_perspective": "requesting_ai_agent",
   "created_date": "2026-08-28",
   "benchmark": {
@@ -44,7 +44,7 @@
   "measurement_state": {
     "quality_contract_frozen": true,
     "target_reference_frozen": true,
-    "pricing_frozen": false,
+    "pricing_frozen": true,
     "raw_schema_frozen": false,
     "pilot_started": false,
     "pilot_completed": false,

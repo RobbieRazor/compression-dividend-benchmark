@@ -1,0 +1,34 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "status": "PRICING_FROZEN",
+  "capture_timestamp_utc": "2026-08-28T23:34:56+00:00",
+  "source_manifest": ".well-known/x402-pricing.json",
+  "source_manifest_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+  "manifest_version": "3.0.0",
+  "effective_date": "2026-08-17",
+  "manifest_status": "active",
+  "payment_protocol": "x402",
+  "network": "eip155:8453",
+  "asset": "USDC",
+  "asset_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "decimals": 6,
+  "fixed_price_responses": true,
+  "price_ranges_allowed": false,
+  "selected_route": "/v1/query/atomic/robbie-george-biography-plate",
+  "selected_tier": {
+    "accessClass": "atomic",
+    "name": "Atomic canonical query",
+    "priceUSDC": "0.005",
+    "atomicUnits": "5000",
+    "routeStatus": "active",
+    "routeTemplate": "/v1/query/atomic/{resource}",
+    "activeRoutes": [
+      "/v1/query/atomic/robbie-george-biography-plate"
+    ],
+    "availabilityPolicy": "Payment challenges are issued only for explicitly registered Atomic Query resources with complete deterministic payloads. Known but incomplete resources return 409 without payment; unknown resources return 404 without payment.",
+    "purpose": "One narrowly bounded canonical fact, identifier resolution, routing result, or compact canonical answer."
+  },
+  "calibration_commit": "9f249a9f1025c1d805a7a25863e52e9dc682e793",
+  "measurement_class": "MEASURED",
+  "notes": "Pricing captured directly from the live production x402 pricing manifest before Study 001 pilot measurements."
+}
