@@ -1,7 +1,7 @@
 {
   "study_id": "CD-WORKLOAD-20260828-001",
   "study_title": "Single Canonical Structured-State Retrieval",
-  "status": "REFERENCE_QUALITY_AND_PRICING_FROZEN_PILOT_PENDING",
+  "status": "PILOT_IN_PROGRESS_CONTRACT_REVISED_BEFORE_OBSERVATION",
   "economic_perspective": "requesting_ai_agent",
   "created_date": "2026-08-28",
   "benchmark": {
@@ -46,7 +46,7 @@
     "target_reference_frozen": true,
     "pricing_frozen": true,
     "raw_schema_frozen": false,
-    "pilot_started": false,
+    "pilot_started": true,
     "pilot_completed": false,
     "full_collection_started": false,
     "full_collection_completed": false,
@@ -62,5 +62,9 @@
     "No empirical Compression Dividend has yet been measured.",
     "Target record and production retrieval endpoint have not yet been frozen."
   ],
-  "notes": "Study 001 remains in pre-measurement setup. No production observations should be recorded until the target record, reference state, quality contract, and applicable pricing have been frozen."
+  "notes": "Study 001 remains in pre-measurement setup. No production observations should be recorded until the target record, reference state, quality contract, and applicable pricing have been frozen.",
+  "pilot_start_timestamp_utc": "2026-08-28T23:38:36+00:00",
+  "pilot_start_commit": "b707bfdd0afbeeff835a4887cb2cb8c03cbcc9a5",
+  "quality_contract_revision": "CD001-QC-1.1",
+  "quality_contract_revision_reason": "Narrowed to Atomic required output contract before first recorded pilot observation; no empirical observations existed under CD001-QC-1.0."
 }

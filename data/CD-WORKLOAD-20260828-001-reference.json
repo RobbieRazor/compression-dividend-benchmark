@@ -27,45 +27,24 @@
     "workload_spec_commit": "fd79f71"
   },
   "quality_contract": {
-    "contract_version": "CD001-QC-1.0",
-    "comparison_mode": "exact_scalar_reference_match",
-    "canonical_id_required": true,
-    "canonical_identifier_required": true,
-    "schema_valid_required": true,
-    "provenance_valid_required": false,
-    "rights_policy_valid_required": false,
-    "allow_extra_fields": false,
+    "contract_version": "CD001-QC-1.1",
+    "comparison_mode": "atomic_required_fields",
     "required_fields": [
+      "@context",
       "@type",
-      "@id",
-      "identifier",
       "name",
-      "url",
-      "description",
-      "learningResourceType",
-      "inLanguage"
+      "description"
     ],
     "exact_match_fields": [
       "@type",
-      "@id",
-      "identifier",
       "name",
-      "url",
-      "description",
-      "learningResourceType",
-      "inLanguage"
+      "description"
     ],
-    "optional_reference_fields": [
-      "image",
-      "creator",
-      "author",
-      "copyrightHolder",
-      "about",
-      "isPartOf"
-    ],
+    "context_expected": "https://schema.org",
+    "allow_extra_fields": true,
     "object_key_order_significant": false,
     "string_comparison": "exact_unicode_value",
-    "notes": "Study 001 pass/fail is based on exact equality to the frozen reference for eight scalar CreativeWork fields. Relational reference fields are preserved but excluded from the initial quality gate."
+    "notes": "All three Study 001 paths must produce the same four required Atomic-contract fields. Extra fields are permitted but ignored for pass/fail. Reference values are derived independently from the frozen canonical Biography CreativeWork source."
   },
   "authoritative_payload": {
     "@type": "CreativeWork",
@@ -95,5 +74,53 @@
     "learningResourceType": "Biography identity interface",
     "inLanguage": "en-US"
   },
-  "notes": "Authoritative Biography Plate CreativeWork node independently extracted from the canonical human page. Paid Atomic Query route was not used to construct the reference answer."
+  "notes": "Authoritative Biography Plate CreativeWork node independently extracted from the canonical human page. Paid Atomic Query route was not used to construct the reference answer.",
+  "quality_contract_history": [
+    {
+      "contract_version": "CD001-QC-1.0",
+      "status": "SUPERSEDED_BEFORE_MEASUREMENT",
+      "reason": "Atomic and Structured Plate x402 challenge schemas both declare the same six-property payload envelope and require only @context, @type, name, and description. The prior eight-field CreativeWork gate would create unequal tasks.",
+      "contract": {
+        "contract_version": "CD001-QC-1.0",
+        "comparison_mode": "exact_scalar_reference_match",
+        "canonical_id_required": true,
+        "canonical_identifier_required": true,
+        "schema_valid_required": true,
+        "provenance_valid_required": false,
+        "rights_policy_valid_required": false,
+        "allow_extra_fields": false,
+        "required_fields": [
+          "@type",
+          "@id",
+          "identifier",
+          "name",
+          "url",
+          "description",
+          "learningResourceType",
+          "inLanguage"
+        ],
+        "exact_match_fields": [
+          "@type",
+          "@id",
+          "identifier",
+          "name",
+          "url",
+          "description",
+          "learningResourceType",
+          "inLanguage"
+        ],
+        "optional_reference_fields": [
+          "image",
+          "creator",
+          "author",
+          "copyrightHolder",
+          "about",
+          "isPartOf"
+        ],
+        "object_key_order_significant": false,
+        "string_comparison": "exact_unicode_value",
+        "notes": "Study 001 pass/fail is based on exact equality to the frozen reference for eight scalar CreativeWork fields. Relational reference fields are preserved but excluded from the initial quality gate."
+      }
+    }
+  ]
 }
