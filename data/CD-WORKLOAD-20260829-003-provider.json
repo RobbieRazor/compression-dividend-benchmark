@@ -1,0 +1,43 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "status": "PROVIDER_CONFIGURATION_FROZEN_PRE_MEASUREMENT",
+  "capture_timestamp_utc": "2026-08-29T21:56:54Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "v1/responses",
+  "reasoning_effort": "none",
+  "text_verbosity": "low",
+  "store": false,
+  "path_1_cache_configuration": {
+    "prompt_cache_mode": "explicit",
+    "explicit_breakpoints": 0,
+    "purpose": "Preserve Pure Recomputation semantics and cross-study comparability."
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.2,
+    "cached_input": 0.02,
+    "cache_write": 0.25,
+    "output": 1.2
+  },
+  "pricing_provenance": {
+    "measurement_class": "INHERITED_FROZEN_PROVIDER_PRICE",
+    "source": "Study 002 frozen provider configuration",
+    "source_file": "data/CD-WORKLOAD-20260829-002-provider.json",
+    "source_sha256": "b4a3adf6a9170a5bb0c2cfd0ba68699094e1c52f1ac4e94c58b2d6fa5ce605d2",
+    "cross_study_comparability": true
+  },
+  "explicit_surface_selection": {
+    "selected_jsonld_path": "sources[role=canonical-biography].jsonld[0]",
+    "selected_public_id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate"
+  },
+  "model_visible_input_policy": {
+    "task_prompt": "prompts/CD-WORKLOAD-20260829-003-p1-task.txt",
+    "public_authority_evidence": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+    "answer_key_visible": false,
+    "quality_contract_visible": false,
+    "registered_p3_source_visible": false
+  },
+  "measurement_started": false,
+  "x402_payment_performed": false,
+  "notes": "Study 003 preserves the same model and frozen provider pricing assumptions used in prior calibration while changing only the task specification to explicitly select one public state surface."
+}
