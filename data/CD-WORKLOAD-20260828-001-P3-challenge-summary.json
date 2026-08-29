@@ -1,0 +1,21 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "path": "P3",
+  "capture_timestamp_utc": "2026-08-29T19:37:43.562Z",
+  "http_status": 402,
+  "x402_version": 2,
+  "resource_url": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
+  "scheme": "exact",
+  "network": "eip155:8453",
+  "amount_atomic": "5000",
+  "amount_usdc": 0.005,
+  "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "pay_to": "0xb0d0207bCd46c6a7009cA5c8294177D79aDc0807",
+  "max_timeout_seconds": 300,
+  "raw_challenge_file": "data/raw/CD-WORKLOAD-20260828-001-P3-prepayment-402.json",
+  "payment_required_file": "data/raw/CD-WORKLOAD-20260828-001-P3-payment-required.json",
+  "raw_challenge_sha256": "914df51a6166c16092591fe63373a6a1a49cc800f3b78d9c84775f5989bc515c",
+  "payment_required_sha256": "914df51a6166c16092591fe63373a6a1a49cc800f3b78d9c84775f5989bc515c",
+  "challenge_body_matches_decoded_payment_required": true,
+  "challenge_body_match_method": "byte-for-byte cmp verification"
+}
