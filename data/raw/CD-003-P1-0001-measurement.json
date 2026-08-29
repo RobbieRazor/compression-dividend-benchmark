@@ -1,0 +1,54 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "observation_id": "CD-003-P1-0001",
+  "path": "P1",
+  "status": "P1_MEASUREMENT_CAPTURED_QUALITY_NOT_YET_EVALUATED",
+  "timestamp_utc": "2026-08-29T22:08:57.205Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "selected_public_surface": {
+    "selected_jsonld_path": "sources[role=canonical-biography].jsonld[0]",
+    "selected_public_id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate"
+  },
+  "request": {
+    "task_sha256": "50d24afbef6ba35c96f28fa30ae859dceb4a250df32f2e8d3816ad06ce416af8",
+    "public_authority_source_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "model_input_sha256": "f6024dcdab5700ece30deb2bfa163b8fc14fca244fa6e0693a117e4df7b878c7",
+    "model_input_bytes": 141179,
+    "answer_key_visible": false,
+    "quality_contract_visible": false,
+    "registered_p3_source_visible": false
+  },
+  "response": {
+    "http_status": 200,
+    "output_json_valid": true,
+    "raw_response_file": "data/raw/CD-003-P1-0001-response.json",
+    "output_file": "data/raw/CD-003-P1-0001-output.json"
+  },
+  "usage": {
+    "input_tokens": 30139,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "uncached_input_tokens": 30139,
+    "output_tokens": 427,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": {
+    "input": "0.006027800000",
+    "cached_input": "0.000000000000",
+    "cache_write": "0.000000000000",
+    "output": "0.000512400000",
+    "total_requester_model_cost": "0.006540200000"
+  },
+  "cache_state": "P1_EXPLICIT_NO_CACHE",
+  "measurement_valid_for_p1": true,
+  "latency_total_ms": 4190.974,
+  "quality": {
+    "contract_id": "CD003-QC-1.0",
+    "status": "NOT_YET_EVALUATED",
+    "pass": null
+  },
+  "api_call_performed": true,
+  "x402_payment_performed": false
+}
