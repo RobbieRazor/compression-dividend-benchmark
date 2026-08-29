@@ -1,0 +1,53 @@
+Study ID: CD-WORKLOAD-20260829-002
+Path: P1 — Fresh Reconstruction
+
+Task:
+
+Using only the supplied public-authority evidence, reconstruct a canonical machine-readable biography state for Robbie George.
+
+Return exactly one valid JSON object and no surrounding commentary or markdown.
+
+Use only facts supported by the supplied evidence. Do not use external knowledge. Do not invent hidden governed-state values, version-specific metadata, or unsupported facts.
+
+Requested fields:
+
+@context
+@type
+@id
+name
+alternateName
+headline
+url
+inLanguage
+creator
+author
+publisher
+license
+copyrightHolder
+copyrightNotice
+description
+mainEntity
+isPartOf
+about
+subjectOf
+citation
+usageInfo
+creditText
+
+Rules:
+
+1. When the public evidence provides an explicit canonical value for a requested field, preserve that value exactly.
+
+2. When a requested field requires synthesis from multiple public facts, construct the smallest source-grounded representation that satisfies the task.
+
+3. Preserve public identifiers, URLs, names, attribution relationships, and licensing relationships when they are explicitly available.
+
+4. For mainEntity, represent Robbie George as the person described by the supplied public evidence and preserve supported identity, role, URL, authorship, and knowledge relationships.
+
+5. For description, about, usageInfo, and creditText, use only meanings supported by the supplied public evidence.
+
+6. Do not include identifier, dateModified, or keywords.
+
+7. Do not include fields unrelated to this requested biography-state projection.
+
+8. Output must be parseable JSON.

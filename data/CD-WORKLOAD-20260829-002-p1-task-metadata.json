@@ -1,0 +1,42 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "path": "P1",
+  "status": "P1_TASK_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-29T21:11:49Z",
+  "git_head_before_task_freeze": "f8a38b243fddfb7734d7a16ce5dd752787a3a9e0",
+  "model_visible_inputs": [
+    {
+      "role": "task_prompt",
+      "path": "prompts/CD-WORKLOAD-20260829-002-p1-task.txt",
+      "sha256": "8cae726e0b508c9d098b985dacc4d40fe68da217af702ca69fe5e085a44a6e31"
+    },
+    {
+      "role": "public_authority_evidence",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"
+    }
+  ],
+  "evaluator_only_not_model_visible": [
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260829-002-quality-contract.json",
+      "sha256": "bd57400c1d388c3c4c340473a4b8ecf423d3789899fba2ab2a0a8d2142a96130"
+    },
+    {
+      "role": "independent_reference_projection",
+      "path": "data/CD-WORKLOAD-20260829-002-reference-projection.json",
+      "sha256": "2ead1a9f0367193058bbe9f6870ac619772a4ffe78c2f3c6f01ff2702bc63e32"
+    },
+    {
+      "role": "registered_p3_structured_source",
+      "path": "data/CD-WORKLOAD-20260829-002-structured-source.json",
+      "sha256": "9af055ea4a71cf2fa21b228eeb69cd2590d37ca0455f4756144b615ee2892d73"
+    }
+  ],
+  "registered_p3_source_visible_to_p1": false,
+  "quality_contract_visible_to_p1": false,
+  "reference_projection_visible_to_p1": false,
+  "external_knowledge_allowed": false,
+  "measurement_started": false,
+  "x402_payment_performed_for_study_002": false
+}
