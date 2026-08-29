@@ -1,0 +1,3769 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "status": "FIELD_SUPPORT_MATRIX_FIRST_PASS",
+  "structured_source_sha256": "9af055ea4a71cf2fa21b228eeb69cd2590d37ca0455f4756144b615ee2892d73",
+  "public_authority_source_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+  "top_level_field_count": 25,
+  "classification_method": "Exact scalar-value comparison against independently frozen public authority metadata and JSON-LD. Partial or absent exact support is not automatically classified as governed-only; those fields require explicit review for derivability.",
+  "class_counts": {
+    "INDEPENDENT_EXACT_SUPPORT": 14,
+    "NO_EXACT_PUBLIC_SUPPORT_REVIEW_REQUIRED": 5,
+    "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED": 6
+  },
+  "fields": [
+    {
+      "field": "@context",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "@context",
+          "value": "https://schema.org",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].@context"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@context"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@context"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].@context"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@context"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@context"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].@context"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].@context"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "@type",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "@type",
+          "value": "ProfilePage",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].@type"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "@id",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "@id",
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].hasPart[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "identifier",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 0,
+      "support_fraction": 0.0,
+      "support_class": "NO_EXACT_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "identifier",
+          "value": "robbie-george#robbie-george-biography-plate",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "name",
+          "value": "Robbie George Biography Plate™",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "alternateName",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "alternateName",
+          "value": "Naturepedia Biography Plate™",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].alternateName"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "headline",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "headline",
+          "value": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].headline"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "description",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 0,
+      "support_fraction": 0.0,
+      "support_class": "NO_EXACT_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "description",
+          "value": "Canonical machine-readable biography Plate for Robbie George, a National Geographic-published wildlife and nature photographer, creator of Naturepedia™, architect of Robbie’s Razor™, and author of the Grand Compression knowledge system.",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "url",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "url",
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[5].itemListElement[1].item"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].relatedLink[2]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].author.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].author.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].relatedLink[3]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "inLanguage",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "inLanguage",
+          "value": "en-US",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].inLanguage"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].inLanguage"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].inLanguage"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].inLanguage"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].inLanguage"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].inLanguage"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].inLanguage"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].inLanguage"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].inLanguage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "dateModified",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 0,
+      "support_fraction": 0.0,
+      "support_class": "NO_EXACT_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "dateModified",
+          "value": "2026-08-19",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "mainEntity",
+      "value_type": "dict",
+      "scalar_leaf_count": 20,
+      "matched_scalar_leaf_count": 13,
+      "support_fraction": 0.65,
+      "support_class": "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "mainEntity.@type",
+          "value": "Person",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].copyrightHolder.@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].author.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].copyrightHolder.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].author.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].copyrightHolder.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].author.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].copyrightHolder.@type"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.@id",
+          "value": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].founder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mainEntity.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].founder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].author.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].copyrightHolder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].founder.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].author.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].creator.@id"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.name",
+          "value": "Robbie George",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].copyrightHolder.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].image.caption"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].image.caption"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].author.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].copyrightHolder.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].image.caption"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].author.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[17]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].copyrightHolder.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].author.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[17]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].copyrightHolder.name"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.url",
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[5].itemListElement[1].item"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].relatedLink[2]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].author.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].author.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].relatedLink[3]"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.jobTitle[0]",
+          "value": "Wildlife and Nature Photographer",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "mainEntity.jobTitle[1]",
+          "value": "Naturepedia Creator",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.jobTitle[1]"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.jobTitle[2]",
+          "value": "Knowledge-System Architect",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "mainEntity.jobTitle[3]",
+          "value": "Architect of Record",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.jobTitle[2]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.jobTitle"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.jobTitle"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.jobTitle"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.description",
+          "value": "Robbie George is a National Geographic-published wildlife and nature photographer, creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, Recursive Knowledge Compression Architecture, and the Grand Compression knowledge system.",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "mainEntity.sameAs[0]",
+          "value": "https://www.linkedin.com/in/robbiegeorge",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.sameAs[0]"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[0]",
+          "value": "Wildlife photography",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[0]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[0]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[0]"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[1]",
+          "value": "Nature photography",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[1]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[1]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[1]"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[2]",
+          "value": "Ecology",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "mainEntity.knowsAbout[3]",
+          "value": "Naturepedia",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[3]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[1]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].name"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[4]",
+          "value": "Plate Architecture",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].name"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[5]",
+          "value": "Robbie's Razor",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[7]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[11]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].name"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[6]",
+          "value": "Recursive Knowledge Compression Architecture",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "mainEntity.knowsAbout[7]",
+          "value": "Recursive Registry Inheritance Principle",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "mainEntity.knowsAbout[8]",
+          "value": "Machine-readable knowledge systems",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[13]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[13]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[13]"
+            }
+          ]
+        },
+        {
+          "path": "mainEntity.knowsAbout[9]",
+          "value": "Provenance and attribution governance",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "creator",
+      "value_type": "dict",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "creator.@id",
+          "value": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].founder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mainEntity.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].founder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].author.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].copyrightHolder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].founder.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].author.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].creator.@id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "author",
+      "value_type": "dict",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "author.@id",
+          "value": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].founder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mainEntity.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].founder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].author.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].copyrightHolder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].founder.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].author.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].creator.@id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "publisher",
+      "value_type": "dict",
+      "scalar_leaf_count": 4,
+      "matched_scalar_leaf_count": 4,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "publisher.@type",
+          "value": "Organization",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].publisher.@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[0].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[1].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[2].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[3].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[4].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[5].@type"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].publisher.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].publisher.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].publisher.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].publisher.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.provider.@type"
+            }
+          ]
+        },
+        {
+          "path": "publisher.@id",
+          "value": "https://www.robbiegeorgephotography.com/#organization",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].publisher.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].worksFor.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].publisher.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].publisher.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].worksFor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].publisher.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].publisher.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].worksFor.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].publisher.@id"
+            }
+          ]
+        },
+        {
+          "path": "publisher.name",
+          "value": "Robbie George Photography",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].publisher.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].publisher.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].publisher.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].publisher.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].publisher.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.provider.name"
+            }
+          ]
+        },
+        {
+          "path": "publisher.url",
+          "value": "https://www.robbiegeorgephotography.com",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].publisher.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].publisher.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].publisher.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].publisher.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].publisher.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.provider.url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "isPartOf",
+      "value_type": "dict",
+      "scalar_leaf_count": 4,
+      "matched_scalar_leaf_count": 2,
+      "support_fraction": 0.5,
+      "support_class": "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "isPartOf.@type",
+          "value": "WebPage",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[4].@type"
+            }
+          ]
+        },
+        {
+          "path": "isPartOf.@id",
+          "value": "https://www.robbiegeorgephotography.com/naturepedia#webpage",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "isPartOf.name",
+          "value": "Naturepedia™",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "isPartOf.url",
+          "value": "https://www.robbiegeorgephotography.com/naturepedia",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].isPartOf.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].relatedLink[2]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].relatedLink[1]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].isPartOf.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].isPartOf.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[1].item"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].isPartOf.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].relatedLink[0]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].isPartOf.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].relatedLink[2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "keywords",
+      "value_type": "list",
+      "scalar_leaf_count": 12,
+      "matched_scalar_leaf_count": 8,
+      "support_fraction": 0.6666666666666666,
+      "support_class": "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "keywords[0]",
+          "value": "Robbie George",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].copyrightHolder.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].image.caption"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].image.caption"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].author.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].copyrightHolder.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].image.caption"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].author.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[17]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].copyrightHolder.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].author.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[17]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].copyrightHolder.name"
+            }
+          ]
+        },
+        {
+          "path": "keywords[1]",
+          "value": "Naturepedia",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[3]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[1]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].name"
+            }
+          ]
+        },
+        {
+          "path": "keywords[2]",
+          "value": "Biography Plate",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "keywords[3]",
+          "value": "Robbie's Razor",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[7]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[11]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].name"
+            }
+          ]
+        },
+        {
+          "path": "keywords[4]",
+          "value": "Grand Compression",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[8]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[12]"
+            }
+          ]
+        },
+        {
+          "path": "keywords[5]",
+          "value": "Plate Systems",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].name"
+            }
+          ]
+        },
+        {
+          "path": "keywords[6]",
+          "value": "Recursive Compression Interface",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[16]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[2].value"
+            }
+          ]
+        },
+        {
+          "path": "keywords[7]",
+          "value": "RKCA",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "keywords[8]",
+          "value": "RRIP",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "keywords[9]",
+          "value": "Architect of Record",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.jobTitle[2]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.jobTitle"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.jobTitle"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.jobTitle"
+            }
+          ]
+        },
+        {
+          "path": "keywords[10]",
+          "value": "Wildlife Photographer",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.jobTitle[0]"
+            }
+          ]
+        },
+        {
+          "path": "keywords[11]",
+          "value": "Nature Photographer",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "about",
+      "value_type": "list",
+      "scalar_leaf_count": 16,
+      "matched_scalar_leaf_count": 12,
+      "support_fraction": 0.75,
+      "support_class": "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "about[0].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[0].name",
+          "value": "Naturepedia",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[14]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[3]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[1]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].name"
+            }
+          ]
+        },
+        {
+          "path": "about[1].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[1].name",
+          "value": "Robbie's Razor",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].knowsAbout[15]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[7]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[11]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].name"
+            }
+          ]
+        },
+        {
+          "path": "about[2].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[2].name",
+          "value": "Grand Compression",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].keywords[8]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].keywords[12]"
+            }
+          ]
+        },
+        {
+          "path": "about[3].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[3].name",
+          "value": "Recursive Knowledge Compression Architecture",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "about[3].alternateName",
+          "value": "RKCA",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "about[4].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[4].name",
+          "value": "Recursive Registry Inheritance Principle",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "about[4].alternateName",
+          "value": "RRIP",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "about[5].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[5].name",
+          "value": "Plate Architecture",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].name"
+            }
+          ]
+        },
+        {
+          "path": "about[6].@type",
+          "value": "Thing",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].@type"
+            }
+          ]
+        },
+        {
+          "path": "about[6].name",
+          "value": "Machine-Readable Governance",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].name"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "subjectOf",
+      "value_type": "list",
+      "scalar_leaf_count": 3,
+      "matched_scalar_leaf_count": 2,
+      "support_fraction": 0.6666666666666666,
+      "support_class": "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "subjectOf[0].@type",
+          "value": "WebPage",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[4].@type"
+            }
+          ]
+        },
+        {
+          "path": "subjectOf[0].name",
+          "value": "Robbie George Professional Archive",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "subjectOf[0].url",
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].relatedLink[1]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[2].itemListElement[2].item"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].isPartOf.url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "citation",
+      "value_type": "list",
+      "scalar_leaf_count": 9,
+      "matched_scalar_leaf_count": 6,
+      "support_fraction": 0.6666666666666666,
+      "support_class": "PARTIAL_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "citation[0].@type",
+          "value": "WebPage",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[4].@type"
+            }
+          ]
+        },
+        {
+          "path": "citation[0].name",
+          "value": "Who Is Robbie George",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "citation[0].url",
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].url"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[5].itemListElement[1].item"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].relatedLink[2]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].author.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].author.url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].relatedLink[3]"
+            }
+          ]
+        },
+        {
+          "path": "citation[1].@type",
+          "value": "WebPage",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[4].@type"
+            }
+          ]
+        },
+        {
+          "path": "citation[1].name",
+          "value": "Robbie George Professional Archive",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "citation[1].url",
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].relatedLink[1]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].url"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[2].itemListElement[2].item"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].isPartOf.url"
+            }
+          ]
+        },
+        {
+          "path": "citation[2].@type",
+          "value": "CreativeWork",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].isPartOf.@type"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[10].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[7].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[8].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[9].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[4].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[5].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[0].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[1].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[2].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[3].@type"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[4].@type"
+            }
+          ]
+        },
+        {
+          "path": "citation[2].name",
+          "value": "Robbie's Razor Benchmarks Repository",
+          "exact_public_match": false,
+          "matches": []
+        },
+        {
+          "path": "citation[2].url",
+          "value": "https://github.com/RobbieRazor/robbies-razor-benchmarks",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].relatedLink[6]"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].relatedLink[13]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[7].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].relatedLink[6]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[5].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].relatedLink[11]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "license",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "license",
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].relatedLink[7]"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].license"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[1].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].license"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[0].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[2].item"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].license"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].license"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[3].url"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].relatedLink[0]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "usageInfo",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 0,
+      "support_fraction": 0.0,
+      "support_class": "NO_EXACT_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "usageInfo",
+          "value": "Public discovery and citation do not grant training, embedding, bulk-ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, or framework-implementation rights. Any x402 payment grants one endpoint-level retrieval only.",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "creditText",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 0,
+      "support_fraction": 0.0,
+      "support_class": "NO_EXACT_PUBLIC_SUPPORT_REVIEW_REQUIRED",
+      "leaf_evidence": [
+        {
+          "path": "creditText",
+          "value": "Created by Robbie George, Naturepedia creator and Architect of Record.",
+          "exact_public_match": false,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "field": "copyrightHolder",
+      "value_type": "dict",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "copyrightHolder.@id",
+          "value": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].founder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mainEntity.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].author.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].about.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].founder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].author.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].about.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].creator.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].copyrightHolder.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].creator.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].founder.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].author.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].creator.@id"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "field": "copyrightNotice",
+      "value_type": "str",
+      "scalar_leaf_count": 1,
+      "matched_scalar_leaf_count": 1,
+      "support_fraction": 1.0,
+      "support_class": "INDEPENDENT_EXACT_SUPPORT",
+      "leaf_evidence": [
+        {
+          "path": "copyrightNotice",
+          "value": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George.",
+          "exact_public_match": true,
+          "matches": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].copyrightNotice"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
