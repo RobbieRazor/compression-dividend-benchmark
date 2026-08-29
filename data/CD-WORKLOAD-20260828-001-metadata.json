@@ -66,5 +66,7 @@
   "pilot_start_timestamp_utc": "2026-08-28T23:38:36+00:00",
   "pilot_start_commit": "b707bfdd0afbeeff835a4887cb2cb8c03cbcc9a5",
   "quality_contract_revision": "CD001-QC-1.1",
-  "quality_contract_revision_reason": "Narrowed to Atomic required output contract before first recorded pilot observation; no empirical observations existed under CD001-QC-1.0."
+  "quality_contract_revision_reason": "Narrowed to Atomic required output contract before first recorded pilot observation; no empirical observations existed under CD001-QC-1.0.",
+  "provider_configuration_frozen": true,
+  "provider_configuration_file": "data/CD-WORKLOAD-20260828-001-provider.json"
 }

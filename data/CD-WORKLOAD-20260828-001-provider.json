@@ -1,0 +1,39 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "status": "PROVIDER_CONFIGURATION_FROZEN",
+  "capture_timestamp_utc": "2026-08-29T00:07:19+00:00",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "v1/responses",
+  "reasoning_effort": "none",
+  "text_verbosity": "low",
+  "store": false,
+  "path_1_cache_configuration": {
+    "prompt_cache_mode": "explicit",
+    "explicit_breakpoints": 0,
+    "purpose": "Disable implicit prompt caching for Pure Recomputation measurements."
+  },
+  "pricing_usd_per_million_tokens": {
+    "input": 0.2,
+    "cached_input": 0.02,
+    "cache_write": 0.25,
+    "output": 1.2
+  },
+  "pricing_provenance": {
+    "measurement_class": "OBSERVED_DOCUMENTED_PROVIDER_PRICE",
+    "source": "OpenAI GPT-5.6 Luna model documentation",
+    "captured_date": "2026-08-28"
+  },
+  "warmup_validation": {
+    "recorded_as_observation": false,
+    "http_status": 200,
+    "model": "gpt-5.6-luna",
+    "input_tokens": 11,
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 5,
+    "output": "OK"
+  },
+  "calibration_commit": "b9b9ed57210beb8de08c39d72bd1a903ca2deb9a",
+  "notes": "Provider configuration frozen before the first recorded P1 observation. Warm-up request is excluded from Study 001 empirical observations."
+}
