@@ -1,0 +1,132 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-29T21:43:02Z",
+  "benchmark_outcome": "QUALITY_GATE_FAILURE_WITH_PUBLIC_STATE_UNDERDETERMINATION",
+  "primary_conclusion": "Study 002 did not establish a valid economic substitution comparison because the measured P1 observation failed the frozen CD002-QC-1.0 Quality Gate.",
+  "methodological_conclusion": "The post-hoc diagnostic, itself frozen before use, found that 12 of the 14 rejected fields were nevertheless grounded in the independently frozen public-authority package, and 6 rejected fields exhibited direct public multi-representation conflicts. The P1 task did not explicitly select a JSON-LD block or the Biography Plate fragment. Therefore the frozen Quality Gate failure remains valid, but it must not be interpreted solely as inability of fresh recomputation to reconstruct a uniquely specified state.",
+  "economic_conclusion": "No Compression Dividend, substitution fraction, or P1-versus-P3 economic comparison is permitted for Study 002 because semantic task equivalence was not established.",
+  "p1_observation": {
+    "observation_id": "CD-002-P1-0001",
+    "model": "gpt-5.6-luna",
+    "http_status": 200,
+    "input_tokens": 30119,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 966,
+    "requester_model_cost_usd": "0.007183000000",
+    "cache_state": "P1_EXPLICIT_NO_CACHE",
+    "measurement_valid_for_p1": true
+  },
+  "quality_result": {
+    "contract_id": "CD002-QC-1.0",
+    "reference_id": "CD002-REFERENCE-1.0",
+    "evaluator_id": "CD002-EVAL-1.0",
+    "exact_core_pass_count": 7,
+    "exact_core_field_count": 13,
+    "transport_pass": false,
+    "semantic_pass_count": 1,
+    "semantic_field_count": 8,
+    "primary_quality_gate_pass": false,
+    "economic_comparison_permitted": false
+  },
+  "ambiguity_diagnostic": {
+    "diagnostic_id": "CD002-AMBIGUITY-DIAG-1.0",
+    "failed_field_count": 14,
+    "publicly_grounded_failed_field_count": 12,
+    "publicly_grounded_failed_fraction": 0.8571428571428571,
+    "public_multi_representation_conflict_count": 6,
+    "task_explicit_jsonld_path_selection": false,
+    "task_explicit_biography_plate_fragment_selection": false,
+    "frozen_quality_result_modified": false
+  },
+  "p3_measurement": {
+    "performed": false,
+    "x402_payment_performed": false,
+    "reason_not_run": "Study 002 failed to establish an unambiguous quality-equivalent P1 task surface, so additional paid P3 measurement would not support a valid economic substitution comparison."
+  },
+  "study_boundaries": {
+    "registered_p3_source_visible_to_p1": false,
+    "quality_contract_visible_to_p1": false,
+    "reference_projection_visible_to_p1": false,
+    "reference_constructed_without_p3_source": true,
+    "provider_model": "gpt-5.6-luna",
+    "quality_contract_id": "CD002-QC-1.0"
+  },
+  "scientific_interpretation": {
+    "study_001": "Demonstrated that successful x402 payment and HTTP delivery are insufficient when the governed response fails semantic equivalence.",
+    "study_002": "Demonstrated that even an independently constructed reference and pre-frozen Quality Gate can produce an invalid comparison when the public source corpus exposes multiple plausible state representations and the task does not select one unambiguously.",
+    "combined_learning": "A valid governed-state benchmark requires both semantic equivalence and representation-selection equivalence before economics may be compared."
+  },
+  "recommended_next_study": {
+    "study": "CD-WORKLOAD-20260829-003",
+    "design_goal": "Explicit Public State Surface Reconstruction",
+    "required_correction": "Freeze one independently public state surface before measurement and explicitly identify that surface in the task, such as the canonical Biography Plate JSON-LD node and its public identifier, while still withholding the governed P3 payload.",
+    "economic_rule": "Run P1 and P3 economics only after both satisfy the same pre-frozen quality contract against that explicitly selected public state surface.",
+    "do_not_do": [
+      "Do not retroactively modify Study 002 PASS/FAIL.",
+      "Do not reinterpret alternate public representations as Study 002 passes.",
+      "Do not run additional paid Study 002 P1 or P3 observations.",
+      "Do not tune Study 003 to force governed reuse to win economically."
+    ]
+  },
+  "artifact_provenance": {
+    "design": {
+      "path": "WORKLOAD-CD-20260829-002.md",
+      "sha256": "f218dd7d09491a07fe7c46c9a304ddd4061801c5fada80f4d035b02615489e8e",
+      "latest_commit": "a99b88c7e1aa95f81df85c4004e3aaf5bfd87691"
+    },
+    "public_authority": {
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+      "latest_commit": "ce9adaaf56e14e45c62d39f02e457d663dddff64"
+    },
+    "structured_source": {
+      "path": "data/CD-WORKLOAD-20260829-002-structured-source.json",
+      "sha256": "9af055ea4a71cf2fa21b228eeb69cd2590d37ca0455f4756144b615ee2892d73",
+      "latest_commit": "91696663cdfb8d5513f2328d8dd91aab7baed26d"
+    },
+    "field_adjudication": {
+      "path": "data/CD-WORKLOAD-20260829-002-field-adjudication.json",
+      "sha256": "d14d57da30dd4d8ccf4c68d83492837c21e30197a18190929663a90076b19fdc",
+      "latest_commit": "f8b6f1cb11c8feb67ff4fc934b2788d1cc14194b"
+    },
+    "quality_contract": {
+      "path": "data/CD-WORKLOAD-20260829-002-quality-contract.json",
+      "sha256": "bd57400c1d388c3c4c340473a4b8ecf423d3789899fba2ab2a0a8d2142a96130",
+      "latest_commit": "f8b6f1cb11c8feb67ff4fc934b2788d1cc14194b"
+    },
+    "reference_projection": {
+      "path": "data/CD-WORKLOAD-20260829-002-reference-projection.json",
+      "sha256": "2ead1a9f0367193058bbe9f6870ac619772a4ffe78c2f3c6f01ff2702bc63e32",
+      "latest_commit": "f8a38b243fddfb7734d7a16ce5dd752787a3a9e0"
+    },
+    "p1_task_metadata": {
+      "path": "data/CD-WORKLOAD-20260829-002-p1-task-metadata.json",
+      "sha256": "d7cee93d72cf44a19807dc5c1ee90af463b54c649a8b0debb237f09c9da834de",
+      "latest_commit": "6bfe1cb4756a19fbf6bb97db605e85eb0d704781"
+    },
+    "provider": {
+      "path": "data/CD-WORKLOAD-20260829-002-provider.json",
+      "sha256": "b4a3adf6a9170a5bb0c2cfd0ba68699094e1c52f1ac4e94c58b2d6fa5ce605d2",
+      "latest_commit": "d6b0dbfcaf4c511dd1f0a0d3b6a5a494549424c8"
+    },
+    "measurement": {
+      "path": "data/raw/CD-002-P1-0001-measurement.json",
+      "sha256": "09f5a9a03b3d9b40331d76f1afe95d48cf7b2b98ae8c02cacd7973198a8a451a",
+      "latest_commit": "a0574574b2b22495c330faca900026efe7f8164b"
+    },
+    "quality_evaluation": {
+      "path": "data/raw/CD-002-P1-0001-quality-evaluation.json",
+      "sha256": "13c222ac0fbcddb415810789856caa3c3a8e864084ec7896119523db4236a168",
+      "latest_commit": "b6fa7c5f81944ad985651fa69d28e091ca732dff"
+    },
+    "ambiguity_diagnostic": {
+      "path": "data/raw/CD-002-P1-0001-ambiguity-diagnostic.json",
+      "sha256": "57d2d8f110411b8e5f877cd79fa613d959ed77c742a272026fadc9da16bd9b7e",
+      "latest_commit": "96e41758705abfc8b2d33bc05687f8faf131786f"
+    }
+  },
+  "api_call_performed_by_closure": false,
+  "x402_payment_performed_by_closure": false
+}
