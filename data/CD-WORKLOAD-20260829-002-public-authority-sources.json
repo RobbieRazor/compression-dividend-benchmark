@@ -1,0 +1,2541 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "status": "INDEPENDENT_PUBLIC_AUTHORITY_SOURCES_FROZEN",
+  "source_selection_rule": "Sources selected by pre-existing public authority role, not by matching the registered P3 Structured Plate payload.",
+  "p3_structured_source_supplied_to_p1": false,
+  "source_count": 3,
+  "sources": [
+    {
+      "role": "canonical-biography",
+      "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-29T20:49:59.196Z",
+      "html_bytes": 500877,
+      "raw_html_sha256": "cef0c1a6e98807bae381291d24783804ef34e3944dc165dedc35bfac334c655a",
+      "title": "Who is Robbie George? | Wildlife Photographer, Naturepedia Creator &amp; Ecological Systems Thinker",
+      "meta_description": "Robbie George is a National Geographic–published wildlife photographer and creator of Naturepedia, an interconnected knowledge system mapping species, ecosystems, behavior, and geography across North America.",
+      "jsonld_block_count": 4,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfilePage",
+          "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+          "name": "Robbie George Biography Plate™",
+          "alternateName": "Naturepedia Biography Plate™",
+          "headline": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "mainEntity": {
+            "@type": "Person",
+            "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "jobTitle": [
+              "Wildlife Photographer",
+              "Naturepedia Creator",
+              "Architect of Record"
+            ],
+            "description": "Robbie George is the creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, and the Grand Compression knowledge architecture.",
+            "sameAs": [
+              "https://www.linkedin.com/in/robbiegeorge"
+            ]
+          },
+          "creator": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Robbie George Photography",
+            "url": "https://www.robbiegeorgephotography.com"
+          },
+          "isPartOf": {
+            "@type": "CreativeWork",
+            "name": "Naturepedia Wildlife Knowledge System",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "Naturepedia"
+            },
+            {
+              "@type": "Thing",
+              "name": "Robbie's Razor"
+            },
+            {
+              "@type": "Thing",
+              "name": "Grand Compression Cosmology"
+            },
+            {
+              "@type": "Thing",
+              "name": "Plate Systems"
+            },
+            {
+              "@type": "Thing",
+              "name": "Recursive Compression Interface"
+            }
+          ],
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "Robbie George"
+          },
+          "copyrightNotice": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George."
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://www.robbiegeorgephotography.com/#website",
+              "url": "https://www.robbiegeorgephotography.com/",
+              "name": "Robbie George Photography",
+              "description": "The official website of Robbie George, connecting wildlife and nature photography, fine-art prints, professional records, Naturepedia, field tools, and authored knowledge systems.",
+              "inLanguage": "en-US",
+              "publisher": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://www.robbiegeorgephotography.com/#organization",
+              "name": "Robbie George Photography",
+              "url": "https://www.robbiegeorgephotography.com/",
+              "description": "An independent photography and knowledge-publishing organization presenting wildlife and nature photography, fine-art prints, professional archives, Naturepedia, and related authored work by Robbie George.",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/#logo",
+                "url": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/vhefvjypdlmpvig7i2qu/1570622364.png",
+                "contentUrl": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/vhefvjypdlmpvig7i2qu/1570622364.png",
+                "width": 1000,
+                "height": 230,
+                "caption": "Robbie George Photography logo"
+              },
+              "founder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "sameAs": [
+                "https://www.facebook.com/robbiegeorgephotography/"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "robbiengs@gmail.com",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+              "name": "Robbie George",
+              "givenName": "Robbie",
+              "familyName": "George",
+              "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+              "description": "Robbie George is an independent National Geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and Architect of Record of Naturepedia, and originator of Robbie's Razor and the Grand Compression Cosmology.",
+              "mainEntityOfPage": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+              },
+              "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/#person-image",
+                "url": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/by1wf6kh6zavlimhk9mf/1589917619.jpg",
+                "contentUrl": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/by1wf6kh6zavlimhk9mf/1589917619.jpg",
+                "caption": "Robbie George"
+              },
+              "jobTitle": [
+                "Independent Wildlife and Nature Photographer",
+                "Field Observer and Writer",
+                "Naturepedia Creator and Architect of Record",
+                "Knowledge Architect"
+              ],
+              "worksFor": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "award": "Highly Honored — Nature's Best Photography",
+              "sameAs": [
+                "https://nationalgeographic.de/fotograf/robbie-george/",
+                "https://windowsight.com/artists/robbie-george/",
+                "https://www.instagram.com/robbiengs/",
+                "https://x.com/robbiengs",
+                "https://www.linkedin.com/in/robbie-george-265367133/",
+                "https://github.com/RobbieRazor",
+                "https://www.pinterest.com/robbiengs/"
+              ],
+              "knowsAbout": [
+                "Wildlife photography",
+                "Nature photography",
+                "Field observation",
+                "Animal behavior",
+                "Natural history",
+                "Wildlife conservation",
+                "Landscape photography",
+                "Seascape photography",
+                "Organic agriculture",
+                "Ecological systems",
+                "Information architecture",
+                "Knowledge architecture",
+                "Structured data",
+                "Machine-readable knowledge systems",
+                "Naturepedia",
+                "Robbie's Razor",
+                "Grand Compression Cosmology"
+              ],
+              "subjectOf": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/nature-photographer#webpage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "ProfilePage",
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage",
+              "identifier": "RGP-WIRG-v2.0",
+              "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+              "name": "Who Is Robbie George?",
+              "headline": "Who Is Robbie George? — Photographer, Field Observer, Writer, and Naturepedia Creator",
+              "description": "The canonical identity, authorship, contribution, and public-reference profile for Robbie George, connected to his personal field biography and curated professional archive.",
+              "version": "2.0",
+              "dateCreated": "2026-07-22T00:00:00-04:00",
+              "datePublished": "2026-07-22T00:00:00-04:00",
+              "dateModified": "2026-08-16",
+              "inLanguage": "en-US",
+              "isAccessibleForFree": true,
+              "isPartOf": {
+                "@id": "https://www.robbiegeorgephotography.com/#website"
+              },
+              "author": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "publisher": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "mainEntity": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "about": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#primaryimage"
+              },
+              "image": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#profile-image"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#primaryimage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#biography-plate-image"
+                }
+              ],
+              "breadcrumb": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#breadcrumbs"
+              },
+              "hasPart": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#faqpage"
+                }
+              ],
+              "mentions": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/naturepedia#series"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/robbies-razor#creativework"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/the-grand-compression#creativework"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document#techarticle"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/grand-compression-canonical-claims#creativework"
+                },
+                {
+                  "@id": "https://github.com/RobbieRazor/robbies-razor-benchmarks#software"
+                }
+              ],
+              "relatedLink": [
+                "https://www.robbiegeorgephotography.com/nature-photographer",
+                "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+                "https://www.robbiegeorgephotography.com/naturepedia",
+                "https://www.robbiegeorgephotography.com/robbies-razor",
+                "https://www.robbiegeorgephotography.com/the-grand-compression",
+                "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+                "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#profile-image",
+              "url": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR6yOMFIOjy24aDow_LJj7F22f2vd2S3k0FN_38EZqodfTc2xEuhDJufAHDziomoKXOdJ3Hs_jG_Da6jI5Eudq_OlWAGPJ5eMn53IWqVf8CmGVyEaUBI68SPBSoxZeEmq9hTXPOmQ-8d3Nk5zrtTDEoj-7i6QbqwlTJPg_KxcPPpZRVY8Rvib_cpqcRuUSfSibFyf4clEQhh152XR8FQAWGK_XIRhp_zE0whZ6I6oQc4BO4GslAcI9Lt7cBb60NxDf41UEnu4Hdc4NbAogKAo99g0Xm5FTo.jpg",
+              "contentUrl": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR6yOMFIOjy24aDow_LJj7F22f2vd2S3k0FN_38EZqodfTc2xEuhDJufAHDziomoKXOdJ3Hs_jG_Da6jI5Eudq_OlWAGPJ5eMn53IWqVf8CmGVyEaUBI68SPBSoxZeEmq9hTXPOmQ-8d3Nk5zrtTDEoj-7i6QbqwlTJPg_KxcPPpZRVY8Rvib_cpqcRuUSfSibFyf4clEQhh152XR8FQAWGK_XIRhp_zE0whZ6I6oQc4BO4GslAcI9Lt7cBb60NxDf41UEnu4Hdc4NbAogKAo99g0Xm5FTo.jpg",
+              "encodingFormat": "image/jpeg",
+              "width": 800,
+              "height": 800,
+              "caption": "Robbie George stand-up paddleboarding on a lake in autumn"
+            },
+            {
+              "@type": "ImageObject",
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#primaryimage",
+              "url": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR6yOMFIOjy24aDow_LJj7F22f2vd2S3k0FN_38EZqodfTc2xEuhDJufAHDziomoKXOdJ3Hs_jG_Da6jI5Eudq_OlWAGPJ5eMn5oYHzDftX9BkmSNh9e-M7LFSYxcOEmq9xTVP-tQuoS3Nk5zrtTDEoj-7i6QbqwlTJPg_KxcPPpZRVY8Rvib_cpqcRuUSfSibFyf4clEQhh152XR8FQAWGK_XIRhp_zE0whZ6I6oQc4BO4GslAcI9Lt7cBb60NxDf41UEnu4Dwt1NH-IMSzPrHz0xyoM2o.jpg",
+              "contentUrl": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR6yOMFIOjy24aDow_LJj7F22f2vd2S3k0FN_38EZqodfTc2xEuhDJufAHDziomoKXOdJ3Hs_jG_Da6jI5Eudq_OlWAGPJ5eMn5oYHzDftX9BkmSNh9e-M7LFSYxcOEmq9xTVP-tQuoS3Nk5zrtTDEoj-7i6QbqwlTJPg_KxcPPpZRVY8Rvib_cpqcRuUSfSibFyf4clEQhh152XR8FQAWGK_XIRhp_zE0whZ6I6oQc4BO4GslAcI9Lt7cBb60NxDf41UEnu4Dwt1NH-IMSzPrHz0xyoM2o.jpg",
+              "encodingFormat": "image/jpeg",
+              "width": 1000,
+              "height": 1333,
+              "caption": "Robbie George reviewing a map at the rear of his field camper",
+              "representativeOfPage": true
+            },
+            {
+              "@type": "ImageObject",
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#biography-plate-image",
+              "url": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWKPP0cEssCME3QyOf8gqdNXXfWtRegEgt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nO4mXlqvTXPaZlHPRxhTZLwg.png",
+              "contentUrl": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWKPP0cEssCME3QyOf8gqdNXXfWtRegEgt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nO4mXlqvTXPaZlHPRxhTZLwg.png",
+              "encodingFormat": "image/png",
+              "width": 1000,
+              "height": 667,
+              "caption": "Naturepedia™ Biography Plate™ for Robbie George",
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              }
+            },
+            {
+              "@type": "CreativeWork",
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+              "identifier": "robbie-george-biography-plate",
+              "name": "Robbie George Biography Plate™",
+              "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+              "description": "A visual identity interface connecting Robbie George’s photography, field observation, organic farming, conservation, storytelling, Naturepedia, Robbie’s Razor, and knowledge architecture.",
+              "image": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#biography-plate-image"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "author": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "about": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "isPartOf": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+              },
+              "learningResourceType": "Biography identity interface",
+              "inLanguage": "en-US"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#breadcrumbs",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.robbiegeorgephotography.com/home"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Who Is Robbie George?",
+                  "item": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#faqpage",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george#faq",
+          "name": "Frequently Asked Questions About Robbie George",
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+          },
+          "about": {
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Robbie George?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie George is an independent National Geographic–published nature photographer, field observer, former organic farmer, writer, creator of Naturepedia, originator of Robbie’s Razor, author of the Grand Compression Master Reference Document, and designer of the Razor Auditor evaluation framework. His work connects field observation, photography, ecology, structured knowledge, recursive architecture, canonical publishing, and machine-readable retrieval."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can readers find Robbie George’s publications, exhibitions, and professional recognition?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Publications, Exhibitions & Recognition page is Robbie George’s dedicated professional archive. It documents representative National Geographic books and editorial work, international editions, museum and gallery exhibitions, conservation collaborations, licensing uses, career milestones, and selected external verification sources. The About page preserves the first-person life story, while the Who Is Robbie George? page preserves the canonical identity, authorship, and system record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Naturepedia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Naturepedia is Robbie George’s human- and machine-readable knowledge architecture for wildlife, ecology, living systems, Earth systems, natural patterns, and field observation. Its published layers include pages, Plates, registries, system maps, Knowledge Meshes, indexes, structured data, discovery resources, and selected retrieval endpoints."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the exact canonical formulation of Robbie’s Razor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The exact canonical formulation is: “When competing explanations exist, prefer the model that follows compression → expression → memory → recursion.” The governing public reference is the canonical Robbie’s Razor page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is GC-MRD-v2.0?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GC-MRD-v2.0 is the governing Master Reference Document for the Grand Compression framework. It controls the framework’s definitions, terminology, equations, relationships, scope boundaries, governance requirements, authorship structure, and distinctions between interpretation, implementation, testing, and validation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the Grand Compression Canonical Claims Register?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Canonical Claims Register records formal propositions and their evidence states separately from explanatory pages, implementations, individual findings, professional recognition, licensing, and publication history. Its permitted states are Proposed, Testing, Provisionally Supported, Supported, Challenged, Inconclusive, and Retired."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does publishing or implementing one of Robbie George’s systems validate its effectiveness?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Creating a framework, page, Plate, registry, schema, repository, tool, retrieval endpoint, licensed implementation, or commercial pathway demonstrates authorship, publication, implementation, access, or adoption. It does not automatically establish independent validation or a Supported evidence state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are claims about Robbie’s Razor evaluated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Technical propositions should be preregistered and evaluated under defined system, version, configuration, workload, baseline, quality, metric, unit, cost, observation-period, and failure boundaries. The Razor Auditor supports diagnosis, the Razor Evaluation Protocol defines testing, and the Claims Register records the resulting formal evidence state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Robbie George Biography Plate automatically a canonical Plate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Displaying a Biography Plate, title, image, or visible identifier on a webpage does not by itself establish canonical registry membership. Canonical Plate status exists only when a matching resource is recorded in the applicable Canonical Plate Registry and Canonical Publication Manifest with the appropriate identity, resource class, version, authorship, and publication state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of the E8 lattice in Robbie George’s work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E8 lattice is treated as a bounded mathematical case study involving symmetry, constraint, projection, dense organization, and representation. It is one example within Comparative Compression Geometry—not the foundation of the entire Grand Compression framework."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Robbie George claim that E8 is the literal geometry of nature?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. A visual or structural correspondence does not establish shared material identity, identical causation, or a common physical mechanism. E8 is used as a bounded comparative model, and any application to a natural system remains subject to domain-specific observation, evidence, testing, and scientific constraints."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Naturepedia designed for intelligent agents?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Naturepedia publishes structured data, canonical identifiers, registries, system maps, Knowledge Meshes, indexes, version information, provenance, AI discovery resources, agent guidance, and selected machine-readable endpoints. These layers help compatible agents discover and retrieve resources without relying solely on unstructured page text. They do not guarantee that every agent will interpret or use a resource correctly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does x402 fit into the system?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Where implemented, x402 provides a machine-payment and delivery layer for selected structured resources. Boundary checks may confirm route, identity, resource class, version, publication, payment, serialization, and provenance state. They do not establish scientific accuracy, framework effectiveness, certified compliance, or permission for every downstream use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of the Robbie’s Razor GitHub repository?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The public Robbie’s Razor Benchmark Repository is the reproducibility and versioned reference layer for specifications, benchmark assets, schemas, examples, and result-record resources. It is not the governing canonical authority; that role remains with GC-MRD-v2.0 and the Canonical Claims Register on the website."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "professional-evidence",
+      "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-29T20:50:01.652Z",
+      "html_bytes": 574859,
+      "raw_html_sha256": "1b0cb16439a1f688b883d5d529fe148918c04a00f56129cf5d4a68a8851f542f",
+      "title": "Robbie George | National Geographic Publications &amp; Exhibitions",
+      "meta_description": "Explore Robbie George’s National Geographic publications, books, museum exhibitions, conservation work, film, fine art, and professional photography archive.",
+      "jsonld_block_count": 3,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://www.robbiegeorgephotography.com/#website",
+              "url": "https://www.robbiegeorgephotography.com/",
+              "name": "Robbie George Photography",
+              "description": "The official website of Robbie George, connecting wildlife and nature photography, fine-art prints, professional records, Naturepedia, field tools, and authored knowledge systems.",
+              "inLanguage": "en-US",
+              "publisher": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://www.robbiegeorgephotography.com/#organization",
+              "name": "Robbie George Photography",
+              "url": "https://www.robbiegeorgephotography.com/",
+              "description": "An independent photography and knowledge-publishing organization presenting wildlife and nature photography, fine-art prints, professional archives, Naturepedia, and related authored work by Robbie George.",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/#logo",
+                "url": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/vhefvjypdlmpvig7i2qu/1570622364.png",
+                "contentUrl": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/vhefvjypdlmpvig7i2qu/1570622364.png",
+                "width": 1000,
+                "height": 230,
+                "caption": "Robbie George Photography logo"
+              },
+              "founder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "sameAs": [
+                "https://www.facebook.com/robbiegeorgephotography/"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "robbiengs@gmail.com",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+              "name": "Robbie George",
+              "givenName": "Robbie",
+              "familyName": "George",
+              "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+              "description": "Robbie George is an independent National Geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and Architect of Record of Naturepedia, and originator of Robbie's Razor and the Grand Compression Cosmology.",
+              "mainEntityOfPage": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+              },
+              "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/#person-image",
+                "url": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/by1wf6kh6zavlimhk9mf/1589917619.jpg",
+                "contentUrl": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/by1wf6kh6zavlimhk9mf/1589917619.jpg",
+                "caption": "Robbie George"
+              },
+              "jobTitle": [
+                "Independent Wildlife and Nature Photographer",
+                "Field Observer and Writer",
+                "Naturepedia Creator and Architect of Record",
+                "Knowledge Architect"
+              ],
+              "worksFor": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "award": "Highly Honored — Nature's Best Photography",
+              "sameAs": [
+                "https://nationalgeographic.de/fotograf/robbie-george/",
+                "https://windowsight.com/artists/robbie-george/",
+                "https://www.instagram.com/robbiengs/",
+                "https://x.com/robbiengs",
+                "https://www.linkedin.com/in/robbie-george-265367133/",
+                "https://github.com/RobbieRazor",
+                "https://www.pinterest.com/robbiengs/"
+              ],
+              "knowsAbout": [
+                "Wildlife photography",
+                "Nature photography",
+                "Field observation",
+                "Animal behavior",
+                "Natural history",
+                "Wildlife conservation",
+                "Landscape photography",
+                "Seascape photography",
+                "Organic agriculture",
+                "Ecological systems",
+                "Information architecture",
+                "Knowledge architecture",
+                "Structured data",
+                "Machine-readable knowledge systems",
+                "Naturepedia",
+                "Robbie's Razor",
+                "Grand Compression Cosmology"
+              ],
+              "subjectOf": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/nature-photographer#webpage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage",
+              "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+              "name": "Publications, Exhibitions & Professional Recognition",
+              "headline": "Publications, Exhibitions & Professional Recognition",
+              "alternativeHeadline": "A Field Career Documented in Print, Exhibition & Public Memory",
+              "description": "A curated, evidence-based archive documenting Robbie George's National Geographic publications, books, museum exhibitions, conservation photography, fine-art work, documentary participation, Naturepedia, Robbie's Razor, and public technical records for governed machine access.",
+              "abstract": "Representative records from more than two decades of wildlife photography, publishing, exhibition, licensing, conservation storytelling, environmental education, and the development of structured nature-knowledge systems.",
+              "inLanguage": "en-US",
+              "dateModified": "2026-08-15",
+              "isPartOf": {
+                "@id": "https://www.robbiegeorgephotography.com/#website"
+              },
+              "author": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "publisher": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "about": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "primaryImageOfPage": {
+                "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#primaryimage"
+              },
+              "breadcrumb": {
+                "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#breadcrumbs"
+              },
+              "mainEntity": {
+                "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#archive-sections"
+              },
+              "hasPart": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#selected-books"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#faq"
+                }
+              ],
+              "publishingPrinciples": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#archive-statement",
+              "relatedLink": [
+                "https://www.robbiegeorgephotography.com/start-here-naturepedia",
+                "https://www.robbiegeorgephotography.com/naturepedia",
+                "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+                "https://www.robbiegeorgephotography.com/nature-photographer",
+                "https://www.robbiegeorgephotography.com/robbies-razor",
+                "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+                "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+                "https://www.robbiegeorgephotography.com/commercial-data-license",
+                "https://www.robbiegeorgephotography.com/.well-known/ai-root.json",
+                "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+                "https://www.robbiegeorgephotography.com/.well-known/skills/default/skill.md",
+                "https://www.robbiegeorgephotography.com/v1/plates/canonical",
+                "https://www.robbiegeorgephotography.com/x402/canonical-plate-registry.json",
+                "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+              ],
+              "citation": [
+                "https://nationalgeographic.de/fotograf/robbie-george/",
+                "https://windowsight.com/artists/robbie-george/",
+                "https://www.wral.com/archive/18932622/",
+                "https://www.paenvironmentdigest.com/newsletter/default.asp?NewsletterArticleID=29610&SubjectID=5",
+                "https://www.craryartgallery.org/focusedonnature.html",
+                "https://defenders.org/magazine/summer-2015/restoring-grizzlies-cascades",
+                "https://citylifestyle.com/portlandme/issues/2026-02"
+              ],
+              "mentions": [
+                {
+                  "@type": "Organization",
+                  "name": "National Geographic",
+                  "url": "https://www.nationalgeographic.com/"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Smithsonian National Museum of Natural History",
+                  "url": "https://naturalhistory.si.edu/"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Nature's Best Photography",
+                  "url": "https://www.naturesbestphotography.com/"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Apple",
+                  "url": "https://www.apple.com/"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Defenders of Wildlife",
+                  "url": "https://defenders.org/"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Crary Art Gallery",
+                  "url": "https://www.craryartgallery.org/"
+                },
+                {
+                  "@type": "Organization",
+                  "name": "Four Season Farm",
+                  "url": "https://www.fourseasonfarm.com/"
+                }
+              ]
+            },
+            {
+              "@type": "ImageObject",
+              "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#primaryimage",
+              "url": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR6yOMFIOjy24aDow_LJj7F22f2vd2S3k0FN_38EZqodfTc2xEuhDJufAHDziomoKXOdJ3Hs_jG_Da6jI5Eudq_OlWAGPJ5eMn5rf3_AYcflBFWMYk8E6c3bETd0eeEmqdtWV_eoTese3Nk5zrtTDEoj-7i6QbqwlTJPg_KxcPPpZRVY8Rvib_cpqcRuUSfSibFyf4clEQhh152XR8FQAWGK_XIRhp_zE0whZ6I6oQc4BO4GslAcI9Lt7cBb60NxDf41UEnu4KS_bSYthf-ksziLYV3OGps.jpg",
+              "contentUrl": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR6yOMFIOjy24aDow_LJj7F22f2vd2S3k0FN_38EZqodfTc2xEuhDJufAHDziomoKXOdJ3Hs_jG_Da6jI5Eudq_OlWAGPJ5eMn5rf3_AYcflBFWMYk8E6c3bETd0eeEmqdtWV_eoTese3Nk5zrtTDEoj-7i6QbqwlTJPg_KxcPPpZRVY8Rvib_cpqcRuUSfSibFyf4clEQhh152XR8FQAWGK_XIRhp_zE0whZ6I6oQc4BO4GslAcI9Lt7cBb60NxDf41UEnu4KS_bSYthf-ksziLYV3OGps.jpg",
+              "encodingFormat": "image/jpeg",
+              "name": "Howlin' Wolf",
+              "caption": "Howlin' Wolf — gray wolf photographed by Robbie George",
+              "description": "Gray wolf wildlife photograph by Robbie George, featured as the primary image for his professional publications and exhibitions archive.",
+              "representativeOfPage": true,
+              "inLanguage": "en-US",
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "creditText": "Photograph by Robbie George",
+              "copyrightNotice": "© Robbie George Photography. All rights reserved.",
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "isPartOf": {
+                "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#breadcrumbs",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.robbiegeorgephotography.com/home"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://www.robbiegeorgephotography.com/nature-photographer"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Publications, Exhibitions & Professional Recognition",
+                  "item": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition"
+                }
+              ]
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#archive-sections",
+              "name": "Robbie George Professional Archive Sections",
+              "description": "The principal sections of Robbie George's professional publications, exhibitions, licensing, recognition, and technical-record archive.",
+              "numberOfItems": 20,
+              "itemListOrder": "https://schema.org/ItemListOrderAscending",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "National Geographic",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#natgeo"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Career Highlights",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#career-highlights"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "By the Numbers",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#by-the-numbers"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Books and Publications",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#books"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "name": "Editorial Collections",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#editorial"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "name": "International Editions",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#international"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "name": "Fine Art Gallery",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#fineart"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 8,
+                  "name": "Museums and Exhibitions",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#exhibitions"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 9,
+                  "name": "Licensing and Collaborations",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#commercial"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 10,
+                  "name": "Film and Documentary",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#film"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 11,
+                  "name": "Agriculture and Environmental Education",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#agriculture"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 12,
+                  "name": "Media Recognition",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#media"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 13,
+                  "name": "Career Timeline",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#timeline"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 14,
+                  "name": "References and Verification",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#bibliography"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 15,
+                  "name": "Technical Records",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#technical-records"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 16,
+                  "name": "Professional Philosophy",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#professional-philosophy"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 17,
+                  "name": "From Fieldwork to Naturepedia and Governed Machine Access",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#fieldwork-to-naturepedia"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 18,
+                  "name": "About Robbie George",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#about-robbie-george"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 19,
+                  "name": "Frequently Asked Questions",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#faq"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 20,
+                  "name": "Professional Archive Statement",
+                  "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#archive-statement"
+                }
+              ]
+            },
+            {
+              "@type": "ItemList",
+              "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#selected-books",
+              "name": "Selected Books Containing Photography by Robbie George",
+              "description": "Representative confirmed books containing photography by Robbie George. This is not a complete bibliography.",
+              "numberOfItems": 9,
+              "itemListOrder": "https://schema.org/ItemListOrderAscending",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "Book",
+                    "name": "National Geographic 125 Years",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "Book",
+                    "name": "The Splendor of Birds",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "Book",
+                    "name": "America the Beautiful",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "item": {
+                    "@type": "Book",
+                    "name": "Dawn to Dark: Photographs—The Magic of Light",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 5,
+                  "item": {
+                    "@type": "Book",
+                    "name": "National Geographic Field Guide to the Water's Edge",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 6,
+                  "item": {
+                    "@type": "Book",
+                    "name": "Daily Gratitude",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 7,
+                  "item": {
+                    "@type": "Book",
+                    "name": "Daily Peace",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 8,
+                  "item": {
+                    "@type": "Book",
+                    "name": "American Crows",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 9,
+                  "item": {
+                    "@type": "Book",
+                    "name": "Hoot, Owl!",
+                    "contributor": {
+                      "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#faq",
+          "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#faq",
+          "name": "Robbie George Professional Archive Frequently Asked Questions",
+          "description": "Frequently asked questions about Robbie George's National Geographic publishing history, books, exhibitions, photography licensing, professional archive, Naturepedia, Robbie's Razor, the Grand Compression, and machine-readable knowledge infrastructure.",
+          "dateModified": "2026-08-15",
+          "isPartOf": {
+            "@type": "CollectionPage",
+            "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage",
+            "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "name": "Publications, Exhibitions & Professional Recognition"
+          },
+          "about": {
+            "@type": "Person",
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is Robbie George a National Geographic photographer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie George is an independent National Geographic-published wildlife and nature photographer. For many years, his photography was represented for stock licensing through the National Geographic Image Collection and National Geographic Creative. His work appeared in National Geographic books, editorial features, international editions, fine-art galleries, educational resources, and licensing projects. He was not a National Geographic staff photographer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was Robbie George's relationship with the National Geographic Image Collection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie George's photographs were represented through the National Geographic Image Collection and National Geographic Creative. The relationship initially included exclusive stock representation. In 2020, an updated agreement changed the arrangement to non-exclusive representation during the National Geographic and Disney agency transition."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was Robbie George's photography exhibited at the Smithsonian?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Robbie George's Lake Mattamuskeet dawn photograph received Highly Honored recognition through Nature's Best Photography and was subsequently exhibited at the Smithsonian's National Museum of Natural History in Washington, D.C."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which National Geographic books include Robbie George's photography?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Representative confirmed titles include National Geographic 125 Years, The Splendor of Birds, America the Beautiful, Dawn to Dark: Photographs—The Magic of Light, National Geographic Field Guide to the Water's Edge, Daily Gratitude, Daily Peace, American Crows, and Hoot, Owl! This is a selected list rather than a complete bibliography."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was Wilderness at 50?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wilderness at 50: Photographic Reflections on the Legacy of Tionesta Visionary Howard Zahniser was a 2014 invitational exhibition at the Crary Art Gallery in Warren, Pennsylvania. It brought together 11 photographers to commemorate the 50th anniversary of the Wilderness Act and honor its principal author, Howard Zahniser. Four of Robbie George's large-scale photographs were included."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did Apple use one of Robbie George's photographs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Apple selected Robbie George's photograph of cypress trees reflected in the dawn light at Lake Mattamuskeet to demonstrate the iPad mini with Retina display. The image appeared during Apple's product presentation and in storefront and promotional displays."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this archive include every publication and image license?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This page is a curated professional archive containing representative, documented examples. Robbie George's larger publication and licensing history includes additional books, articles, calendars, educational resources, international editions, commercial uses, and archive placements that may not yet have complete public documentation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Robbie George's photography be licensed or exhibited?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, subject to availability, rights, intended use, and agreed terms. Professional inquiries regarding editorial licensing, exhibitions, publications, documentary use, archive research, or commercial projects can be submitted through the contact page at https://www.robbiegeorgephotography.com/contact."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does this professional archive relate to Naturepedia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The professional archive documents where Robbie George's photographs were published, exhibited, licensed, and used. Naturepedia preserves the ecological knowledge surrounding those photographs by connecting species, behavior, habitats, ecosystems, migration, geography, and field observations through Plates, System Maps, canonical registries, Knowledge Meshes, and related knowledge structures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are Robbie's Razor and the Grand Compression?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie's Razor is an original reasoning and systems-design principle created by Robbie George. It favors models that preserve essential structure through compression, expression, memory, and recursion. The Grand Compression is the broader authored framework examining how compression, constraint, retained structure, memory, and recursive expression may be compared across different kinds of systems. Their definitions, claims, governance, and interpretive boundaries are documented through the Grand Compression Master Reference Document and related public records."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What machine-readable infrastructure supports Naturepedia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Naturepedia uses stable identities, canonical URLs, registries, manifests, discovery catalogs, provenance records, agent-readable instructions, public and licensed endpoints, MCP-compatible resources, and x402-enabled retrieval pathways. These systems are designed to preserve authorship, attribution, rights, evidence status, version history, and interpretive boundaries as resources move between people, applications, researchers, and intelligent agents."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Naturepedia data and Robbie's original frameworks be licensed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Selected Naturepedia resources, structured data, registries, System Maps, Plates, Knowledge Meshes, and original framework materials may be available for commercial research, publishing, application development, model evaluation, or governed machine retrieval under published terms. Availability, permitted use, attribution requirements, pricing, and access method depend on the individual resource. Current terms are available at https://www.robbiegeorgephotography.com/commercial-data-license."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "role": "rights-and-license",
+      "url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-29T20:50:03.704Z",
+      "html_bytes": 562844,
+      "raw_html_sha256": "a6df60ecefd371e9dbff57317c3240644fc53d62af93cd7fb66a459a8a4b70e0",
+      "title": "Commercial Data License | Naturepedia™ &amp; x402 Rights",
+      "meta_description": "Commercial data licensing, x402 retrieval rights, attribution, provenance, and framework boundaries for Naturepedia™, Plate™ systems, and Robbie’s Razor™.",
+      "jsonld_block_count": 7,
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-data-license-plate",
+          "name": "Commercial Data License Plate™",
+          "alternateName": "Naturepedia Governance, Retrieval Rights, and Commercial Data Licensing Plate",
+          "headline": "Commercial Data License Plate™ — Retrieval, Training, Embedding, Ingestion, Synchronization, Redistribution, and Framework Rights",
+          "url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "image": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWLaMRcIvcbeRCc1Of8gqdNTU_6rRu0Egt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nOVhtbSyDtJ5F3oDIGzkC6qg.png",
+          "version": "3.0.0",
+          "dateModified": "2026-08-18",
+          "description": "A machine-readable governance and licensing Plate separating endpoint-level x402 retrieval from commercial training, embedding, bulk ingestion, synchronization, redistribution, derivative-dataset creation, and Robbie’s Razor framework implementation rights.",
+          "creator": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "jobTitle": "Architect of Record"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Robbie George Photography",
+            "url": "https://www.robbiegeorgephotography.com"
+          },
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "Robbie George"
+          },
+          "conditionsOfAccess": "Public discovery is free. An x402 payment grants one endpoint-level retrieval of the identified resource only. Commercial reuse and framework implementation require separate written agreements.",
+          "usageInfo": "Payment for machine retrieval does not grant training, embedding, bulk-ingestion, redistribution, resale, synchronization, derivative-dataset, or framework-implementation rights.",
+          "license": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "subjectOf": {
+            "@type": "DigitalDocument",
+            "name": "Naturepedia™ x402 Retrieval Pricing Manifest",
+            "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "encodingFormat": "application/ld+json"
+          },
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "name": "Endpoint-Level Machine Retrieval",
+              "description": "Fixed x402 payments ranging from 0.005 to 25.00 USDC convey one retrieval of the identified resource only.",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Commercial Data Reuse Rights",
+              "description": "Training, embedding, commercial ingestion, synchronization, redistribution, and derivative-dataset rights begin at 1,000 USD equivalent and are granted only through a separate written agreement.",
+              "url": "https://www.robbiegeorgephotography.com/commercial-data-license"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Framework and Strategic Infrastructure Rights",
+              "description": "Robbie’s Razor™, RRIP, Graph Registry™, Plate architecture, deployment, and strategic infrastructure implementation rights require a separate enterprise agreement.",
+              "url": "https://www.robbiegeorgephotography.com/robbies-razor-framework-licensing"
+            }
+          ],
+          "isPartOf": {
+            "@type": "CreativeWorkSeries",
+            "name": "Naturepedia Governance Plates™",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-intelligence-pricing-plate",
+          "name": "Commercial Intelligence Pricing Plate™",
+          "alternateName": "Machine-Readable Retrieval Pricing and Commercial Rights Boundary Plate",
+          "headline": "Commercial Intelligence Pricing Plate™ — Deterministic x402 Retrieval Pricing for Naturepedia™, Robbie’s Razor™, Grand Compression, and Plate™ Systems",
+          "url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "image": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWKMNRUFv5HeFXdkOf8gqdNRV_WpR-0Egt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nOGCRVdyJaA61TyNQ2ebnmng.png",
+          "version": "3.0.0",
+          "dateModified": "2026-08-17",
+          "description": "A machine-readable pricing and rights-boundary Plate defining deterministic x402 retrieval prices for Naturepedia discovery, canonical queries, enriched responses, structured Plates, bounded registries, System Maps, Knowledge Meshes, and full registry snapshots. Retrieval payments remain separate from commercial data reuse and framework implementation rights.",
+          "creator": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "jobTitle": "Architect of Record"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Robbie George Photography",
+            "url": "https://www.robbiegeorgephotography.com"
+          },
+          "mainEntity": {
+            "@type": "OfferCatalog",
+            "name": "Naturepedia™ x402 Retrieval Pricing",
+            "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Free Discovery and Preview Access",
+                "price": "0.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "Free metadata, endpoint descriptions, previews, health responses, licensing signals, and validation information."
+              },
+              {
+                "@type": "Offer",
+                "name": "Atomic Canonical Query",
+                "price": "0.005",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
+                "description": "Active x402 tier settled as 0.005 USDC on Base for one narrowly bounded canonical fact, identifier resolution, routing result, or compact canonical answer. Payment challenges are issued only for explicitly registered Atomic Query resources with complete deterministic payloads."
+              },
+              {
+                "@type": "Offer",
+                "name": "Enriched Relationship Query",
+                "price": "0.025",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+                "description": "Active x402 tier priced at 0.025 USDC on Base for one registered governed relationship-aware query containing bounded canonical relationships, provenance, authority references, citations, or related enrichment. Payment challenges are issued only for explicitly registered complete Enriched Query payloads."
+              },
+              {
+                "@type": "Offer",
+                "name": "Structured Plate™ Payload",
+                "price": "0.25",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.robbiegeorgephotography.com/v1/plates/item/commercial-data-license-plate",
+                "description": "Active x402 tier settled as 0.25 USDC on Base for one registered and validated structured Plate payload. Payment grants one endpoint-level retrieval only."
+              },
+              {
+                "@type": "Offer",
+                "name": "Bounded Registry, Taxonomy Subtree, or System Map",
+                "price": "5.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "Active x402 tier settled as 5.00 USDC on Base for one bounded multi-record retrieval."
+              },
+              {
+                "@type": "Offer",
+                "name": "Full Registry, Knowledge Mesh, or Snapshot",
+                "price": "25.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "Active x402 tier settled as 25.00 USDC on Base for one complete registry snapshot or premium relationship resource."
+              }
+            ]
+          },
+          "subjectOf": {
+            "@type": "DigitalDocument",
+            "name": "Naturepedia™ x402 Retrieval Pricing Manifest",
+            "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "encodingFormat": "application/ld+json"
+          },
+          "usageInfo": "An x402 payment grants one endpoint-level retrieval only. It does not grant training, embedding, bulk-ingestion, redistribution, synchronization, derivative-dataset, or framework-implementation rights.",
+          "license": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "name": "Commercial Data Reuse Rights",
+              "description": "Commercial ingestion, training, embedding, synchronization, or redistribution rights begin at 1,000 USD equivalent and require a separate written agreement.",
+              "url": "https://www.robbiegeorgephotography.com/commercial-data-license"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Framework and Strategic Infrastructure Rights",
+              "description": "Robbie’s Razor™, RRIP, Graph Registry™, Plate architecture, and strategic infrastructure implementation rights require a separate enterprise agreement.",
+              "url": "https://www.robbiegeorgephotography.com/robbies-razor-framework-licensing"
+            }
+          ],
+          "isPartOf": {
+            "@type": "CreativeWorkSeries",
+            "name": "Naturepedia Governance Plates™",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://www.robbiegeorgephotography.com/#website",
+              "url": "https://www.robbiegeorgephotography.com/",
+              "name": "Robbie George Photography",
+              "description": "The official website of Robbie George, connecting wildlife and nature photography, fine-art prints, professional records, Naturepedia, field tools, and authored knowledge systems.",
+              "inLanguage": "en-US",
+              "publisher": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "copyrightHolder": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              }
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://www.robbiegeorgephotography.com/#organization",
+              "name": "Robbie George Photography",
+              "url": "https://www.robbiegeorgephotography.com/",
+              "description": "An independent photography and knowledge-publishing organization presenting wildlife and nature photography, fine-art prints, professional archives, Naturepedia, and related authored work by Robbie George.",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/#logo",
+                "url": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/vhefvjypdlmpvig7i2qu/1570622364.png",
+                "contentUrl": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/vhefvjypdlmpvig7i2qu/1570622364.png",
+                "width": 1000,
+                "height": 230,
+                "caption": "Robbie George Photography logo"
+              },
+              "founder": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "sameAs": [
+                "https://www.facebook.com/robbiegeorgephotography/"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "robbiengs@gmail.com",
+                "areaServed": "US",
+                "availableLanguage": "en"
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+              "name": "Robbie George",
+              "givenName": "Robbie",
+              "familyName": "George",
+              "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+              "description": "Robbie George is an independent National Geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and Architect of Record of Naturepedia, and originator of Robbie's Razor and the Grand Compression Cosmology.",
+              "mainEntityOfPage": {
+                "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+              },
+              "image": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/#person-image",
+                "url": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/by1wf6kh6zavlimhk9mf/1589917619.jpg",
+                "contentUrl": "https://asf-cloudinary-backup.s3.us-east-1.amazonaws.com/res/decosites/image/upload/by1wf6kh6zavlimhk9mf/1589917619.jpg",
+                "caption": "Robbie George"
+              },
+              "jobTitle": [
+                "Independent Wildlife and Nature Photographer",
+                "Field Observer and Writer",
+                "Naturepedia Creator and Architect of Record",
+                "Knowledge Architect"
+              ],
+              "worksFor": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "award": "Highly Honored — Nature's Best Photography",
+              "sameAs": [
+                "https://nationalgeographic.de/fotograf/robbie-george/",
+                "https://windowsight.com/artists/robbie-george/",
+                "https://www.instagram.com/robbiengs/",
+                "https://x.com/robbiengs",
+                "https://www.linkedin.com/in/robbie-george-265367133/",
+                "https://github.com/RobbieRazor",
+                "https://www.pinterest.com/robbiengs/"
+              ],
+              "knowsAbout": [
+                "Wildlife photography",
+                "Nature photography",
+                "Field observation",
+                "Animal behavior",
+                "Natural history",
+                "Wildlife conservation",
+                "Landscape photography",
+                "Seascape photography",
+                "Organic agriculture",
+                "Ecological systems",
+                "Information architecture",
+                "Knowledge architecture",
+                "Structured data",
+                "Machine-readable knowledge systems",
+                "Naturepedia",
+                "Robbie's Razor",
+                "Grand Compression Cosmology"
+              ],
+              "subjectOf": [
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/nature-photographer#webpage"
+                },
+                {
+                  "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#webpage",
+              "url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+              "name": "Commercial Data License",
+              "headline": "Commercial Data License for Naturepedia™, x402 Retrieval, and Governed Machine Access",
+              "description": "Commercial data licensing, deterministic x402 endpoint-level retrieval, AI training and reuse rights, attribution, provenance, commercial integration boundaries, and framework implementation boundaries for Naturepedia™, Plate™ systems, Robbie's Razor™, and related machine-readable knowledge infrastructure.",
+              "inLanguage": "en-US",
+              "isAccessibleForFree": true,
+              "dateModified": "2026-08-20",
+              "isPartOf": {
+                "@id": "https://www.robbiegeorgephotography.com/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#breadcrumb"
+              },
+              "primaryImageOfPage": {
+                "@type": "ImageObject",
+                "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#primaryimage",
+                "url": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWLaMRcIvcbeRCc1Of8gqdNTU_6rRu0Egt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nOVhtbSyDtJ5F3oDIGzkC6qg.png",
+                "caption": "Commercial Data License Plate™ by Robbie George"
+              },
+              "mainEntity": {
+                "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-data-license-plate"
+              },
+              "author": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "creator": {
+                "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+              },
+              "publisher": {
+                "@id": "https://www.robbiegeorgephotography.com/#organization"
+              },
+              "about": [
+                {
+                  "@type": "Thing",
+                  "name": "Commercial Data Licensing"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Naturepedia"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Plate Architecture"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Robbie's Razor"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "x402 Machine Retrieval"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Atomic Query"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Enriched Query"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Structured Plate Retrieval"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Machine-Readable Governance"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Provenance Preservation"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Commercial AI Licensing"
+                },
+                {
+                  "@type": "Thing",
+                  "name": "Framework Implementation Rights"
+                }
+              ],
+              "mentions": [
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia x402 Retrieval Pricing Manifest",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+                  "encodingFormat": "application/json",
+                  "version": "3.0.0"
+                },
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia AI Catalog",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+                  "encodingFormat": "application/json"
+                },
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia OpenAPI Contract",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/openapi.json",
+                  "encodingFormat": "application/json"
+                },
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia AI Root",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/ai-root.json",
+                  "encodingFormat": "application/json"
+                },
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia MCP Server Card",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+                  "encodingFormat": "application/json"
+                },
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia Canonical Publication Manifest",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/canonical-publication-manifest.json",
+                  "encodingFormat": "application/json"
+                },
+                {
+                  "@type": "DigitalDocument",
+                  "name": "Naturepedia Registry-State Token",
+                  "url": "https://www.robbiegeorgephotography.com/api/v2/razor/state-token",
+                  "encodingFormat": "application/json"
+                },
+                {
+                  "@type": "WebPage",
+                  "name": "Naturepedia Discovery Index",
+                  "url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index"
+                },
+                {
+                  "@type": "WebPage",
+                  "name": "Robbie's Razor Framework Licensing",
+                  "url": "https://www.robbiegeorgephotography.com/robbies-razor-framework-licensing"
+                },
+                {
+                  "@type": "WebPage",
+                  "name": "Robbie George Canonical Biography",
+                  "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+                },
+                {
+                  "@type": "CreativeWork",
+                  "name": "Claim RC-17 — Recursive Registry Inheritance Principle",
+                  "url": "https://www.robbiegeorgephotography.com/grand-compression-canonical-claims#claim-rc-17"
+                }
+              ],
+              "hasPart": [
+                {
+                  "@type": "WebAPI",
+                  "name": "Naturepedia Atomic Query",
+                  "url": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
+                  "description": "Active deterministic Atomic Query retrieval resource priced at 0.005 USDC or 5000 atomic units for the currently registered biography payload."
+                },
+                {
+                  "@type": "WebAPI",
+                  "name": "Naturepedia Enriched Query",
+                  "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+                  "description": "Active governed Enriched Query retrieval resource priced at 0.025 USDC or 25000 atomic units for the currently registered biography payload."
+                }
+              ],
+              "usageInfo": "Public page viewing and machine discovery may remain free. An x402 payment grants one endpoint-level retrieval of the identified protected resource only. Commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and Robbie's Razor framework implementation require rights expressly granted through a separate written agreement.",
+              "conditionsOfAccess": "Protected machine-readable resources may require deterministic x402 payment on Base using USDC. Registered and complete protected resources may issue HTTP 402. Known but incomplete resources fail closed with HTTP 409 without a payment challenge. Unknown resources fail closed with HTTP 404 without a payment challenge."
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.robbiegeorgephotography.com/home"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Naturepedia",
+                  "item": "https://www.robbiegeorgephotography.com/naturepedia"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Commercial Data License",
+                  "item": "https://www.robbiegeorgephotography.com/commercial-data-license"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-data-license-plate",
+          "name": "Commercial Data License Plate™",
+          "alternateName": "Naturepedia Governance & Licensing Plate",
+          "headline": "Commercial Data License Plate™ — AI Licensing, Attribution, Provenance, Machine-Readable Governance, and Recursive Compression Systems",
+          "creator": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Robbie George"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Robbie George Photography",
+            "url": "https://www.robbiegeorgephotography.com"
+          },
+          "isPartOf": {
+            "@type": "CreativeWorkSeries",
+            "name": "Naturepedia Governance Plates™",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          },
+          "image": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWLaMRcIvcbeRCc1Of8gqdNTU_6rRu0Egt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nOVhtbSyDtJ5F3oDIGzkC6qg.png",
+          "description": "A machine-readable governance and licensing plate connecting Naturepedia™, Species Plates™, Track Plates™, Robbie’s Razor, Grand Compression logic, attribution systems, provenance architecture, and commercial AI usage expectations.",
+          "keywords": [
+            "commercial data license",
+            "AI governance",
+            "machine-readable license",
+            "Naturepedia",
+            "Species Plates",
+            "Track Plates",
+            "Location Plates",
+            "Robbie's Razor",
+            "Grand Compression",
+            "AI attribution",
+            "provenance",
+            "Authorship Conservation Rule",
+            "recursive compression",
+            "structured knowledge systems",
+            "AI licensing framework",
+            "machine-readable governance",
+            "Recursive Compression Interface",
+            "Robbie George"
+          ],
+          "learningResourceType": "Governance Plate",
+          "educationalUse": [
+            "AI governance education",
+            "provenance architecture",
+            "machine-readable licensing",
+            "structured knowledge systems",
+            "commercial licensing"
+          ],
+          "license": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "Robbie George"
+          },
+          "copyrightNotice": "Commercial Data License Plate™, Naturepedia Governance Plates™, Robbie’s Razor, and Grand Compression licensing systems originate with Robbie George.",
+          "mainEntity": {
+            "@type": "Thing",
+            "name": "Machine-Readable Governance System",
+            "description": "A structured governance layer connecting AI licensing, attribution, provenance, recursive compression systems, commercial retrieval, and structured knowledge architecture."
+          },
+          "mentions": [
+            {
+              "@type": "Thing",
+              "name": "Naturepedia",
+              "url": "https://www.robbiegeorgephotography.com/naturepedia"
+            },
+            {
+              "@type": "Thing",
+              "name": "Robbie's Razor",
+              "url": "https://www.robbiegeorgephotography.com/robbies-razor"
+            },
+            {
+              "@type": "Thing",
+              "name": "Grand Compression Master Reference Document",
+              "url": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document"
+            },
+            {
+              "@type": "Thing",
+              "name": "Grand Compression Foundation",
+              "url": "https://www.robbiegeorgephotography.com/grand-compression-foundation"
+            },
+            {
+              "@type": "Thing",
+              "name": "Commercial Data License",
+              "url": "https://www.robbiegeorgephotography.com/commercial-data-license"
+            },
+            {
+              "@type": "Thing",
+              "name": "AI Guidance",
+              "url": "https://www.robbiegeorgephotography.com/llms.txt"
+            },
+            {
+              "@type": "Thing",
+              "name": "AI System Map",
+              "url": "https://www.robbiegeorgephotography.com/llms-full.txt"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Robbie’s Razor Benchmarks Repository",
+              "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Robbie’s Razor AGENTS.md Evaluation Instructions",
+              "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks/blob/main/AGENTS.md"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Plate Examples Index",
+              "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks/blob/main/docs/examples/plate_examples_index.md"
+            }
+          ],
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "name": "Attribution Layer",
+              "description": "Preserves authorship and provenance through the Authorship Conservation Rule."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Commercial Licensing Layer",
+              "description": "Defines commercial AI usage expectations for training, retrieval, reasoning, and structured data access."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Machine-Readable Governance Layer",
+              "description": "Publishes licensing and provenance metadata through JSON-LD, llms.txt, and structured retrieval systems."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Recursive Compression Layer",
+              "description": "Connects Plate™ systems, Naturepedia, Robbie’s Razor, and Grand Compression into structured retrieval interfaces."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Benchmark and Evaluation Layer",
+              "description": "Connects governance systems to the Robbie’s Razor benchmark repository, evaluation instructions, and public Plate™ examples."
+            }
+          ],
+          "relatedLink": [
+            "https://www.robbiegeorgephotography.com/naturepedia",
+            "https://www.robbiegeorgephotography.com/robbies-razor",
+            "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+            "https://www.robbiegeorgephotography.com/grand-compression-foundation",
+            "https://www.robbiegeorgephotography.com/llms.txt",
+            "https://www.robbiegeorgephotography.com/llms-full.txt",
+            "https://github.com/RobbieRazor/robbies-razor-benchmarks",
+            "https://github.com/RobbieRazor/robbies-razor-benchmarks/blob/main/AGENTS.md",
+            "https://github.com/RobbieRazor/robbies-razor-benchmarks/blob/main/docs/examples/plate_examples_index.md"
+          ],
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "plate_type",
+              "value": "governance"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "plate_system",
+              "value": "Naturepedia Governance Plates™"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "rkca_role",
+              "value": "Recursive Compression Interface"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "system_type",
+              "value": "Machine-readable governance and licensing system"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "primary_field_signal",
+              "value": "AI licensing, attribution, provenance, structured retrieval, and machine-readable governance."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "canonical_authority",
+              "value": "Grand Compression Master Reference Document"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "evaluation_surface",
+              "value": "Robbie’s Razor Benchmarks GitHub Repository"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "governance_role",
+              "value": "Commercial licensing, provenance preservation, and AI retrieval governance"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-intelligence-pricing-plate",
+          "name": "Commercial Intelligence Pricing Plate™",
+          "alternateName": "Naturepedia x402 Retrieval Pricing and Commercial Rights Governance Plate",
+          "headline": "Commercial Intelligence Pricing Plate™ — Deterministic x402 Retrieval Pricing, Commercial Data Rights, and Framework Licensing Boundaries",
+          "url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "dateModified": "2026-08-20",
+          "version": "3.0.0",
+          "creator": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "jobTitle": "Architect of Record"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Robbie George Photography",
+            "url": "https://www.robbiegeorgephotography.com"
+          },
+          "isPartOf": {
+            "@type": "CreativeWorkSeries",
+            "name": "Naturepedia Governance Plates™",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          },
+          "image": "https://d15yhgn2ui21mw.cloudfront.net/production/3790/MDAwMDAwMDAwMDAw7QGraePd6CACehR_ZcfBFYwXu2FyveAYEUnRGwCTQQQLtneRwWETeR63PcJYcyCo7L3wiuOGn-kt3KDxISuxlEEZsG0dKuFccjsgzQqsAoHDR379gMP1OXDeLHXrvjKkFq-lb4wqeKaEiSJPYN5tNzJpWWieetrhAWKMNRUFv5HeFXdkOf8gqdNRV_WpR-0Egt0ui7VdWkww9KWvSKevmSdShfOsIeuIRUwZ4Ab9Pe8x58FqVTqEh784cosrHhQ3z8mMXsEQDzSU8GINzIf4EkwhKvNt-FQ8EOMDr11HO8qu-cFAvht2G_ljD2nOGCRVdyJaA61TyNQ2ebnmng.png",
+          "description": "A machine-readable governance and pricing plate describing the active Naturepedia x402 retrieval architecture: free discovery, Atomic Query, Enriched Query, Structured Plate retrieval, bounded Registry or System Map retrieval, and full Registry or Knowledge Mesh retrieval. Commercial data reuse and Robbie’s Razor framework implementation remain separate licensing layers.",
+          "keywords": [
+            "Commercial Intelligence Pricing Plate",
+            "Naturepedia",
+            "x402",
+            "USDC",
+            "Base",
+            "Atomic Query",
+            "Enriched Query",
+            "Structured Plate",
+            "machine-readable pricing",
+            "AI retrieval pricing",
+            "commercial data license",
+            "Robbie's Razor",
+            "Grand Compression",
+            "Plate systems",
+            "provenance",
+            "Authorship Conservation Rule",
+            "machine-readable governance",
+            "Robbie George"
+          ],
+          "learningResourceType": "Governance Pricing Plate",
+          "license": "https://www.robbiegeorgephotography.com/commercial-data-license",
+          "copyrightHolder": {
+            "@type": "Person",
+            "name": "Robbie George"
+          },
+          "copyrightNotice": "Commercial Intelligence Pricing Plate™, Naturepedia Governance Plates™, Robbie’s Razor™, Grand Compression, and Plate™ systems originate with Robbie George.",
+          "mainEntity": {
+            "@type": "Service",
+            "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#machine-retrieval-service",
+            "name": "Naturepedia Governed Machine Retrieval",
+            "description": "Deterministic machine-readable retrieval through active Naturepedia x402 resource classes on Base using USDC, with fail-closed availability controls and separate commercial reuse and framework licensing boundaries.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Robbie George Photography",
+              "url": "https://www.robbiegeorgephotography.com"
+            },
+            "areaServed": "Global",
+            "serviceType": [
+              "machine-readable retrieval",
+              "x402 retrieval",
+              "structured data access",
+              "canonical query resolution",
+              "relationship-aware enrichment",
+              "Structured Plate retrieval",
+              "Registry retrieval",
+              "System Map retrieval",
+              "Knowledge Mesh retrieval"
+            ],
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "0.00",
+              "highPrice": "25.00",
+              "offerCount": "6",
+              "description": "Numeric prices correspond to USDC-denominated retrieval charges settled on Base. The canonical pricing manifest and live production endpoint response remain authoritative.",
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#discovery-offer",
+                  "name": "Discovery and Previews",
+                  "description": "Public metadata, endpoint descriptions, previews, health responses, licensing signals, authority pointers, validation information, and control-plane discovery.",
+                  "price": "0.00",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "discovery",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "discovery"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "0"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#atomic-query-offer",
+                  "name": "Atomic Query",
+                  "description": "One narrowly bounded deterministic canonical fact, identifier resolution, routing result, or compact canonical answer from an explicitly registered complete Atomic resource.",
+                  "price": "0.005",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "atomic-query",
+                  "url": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "atomic"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "resource_class",
+                      "value": "atomic-query"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "schema_version",
+                      "value": "naturepedia.atomic-query.v1"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "5000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#enriched-query-offer",
+                  "name": "Enriched Query",
+                  "description": "One bounded governed relationship-aware response containing canonical relationships, provenance, authority references, citations, or related structured enrichment from an explicitly registered complete Enriched resource.",
+                  "price": "0.025",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "enriched-query",
+                  "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "enriched"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "resource_class",
+                      "value": "enriched-query"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "schema_version",
+                      "value": "naturepedia.enriched-query.v1"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "25000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#structured-plate-offer",
+                  "name": "Structured Plate™ Retrieval",
+                  "description": "One complete registered and validated Structured Plate™ payload.",
+                  "price": "0.25",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "structured-plate",
+                  "url": "https://www.robbiegeorgephotography.com/v1/plates/item/commercial-intelligence-pricing-plate",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "single-plate"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "250000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#bounded-retrieval-offer",
+                  "name": "Bounded Registry, Taxonomy Subtree, or System Map",
+                  "description": "One bounded multi-record Registry, taxonomy subtree, identity graph, or System Map retrieval.",
+                  "price": "5.00",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "bounded-retrieval",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "5000000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#snapshot-retrieval-offer",
+                  "name": "Full Registry, Knowledge Mesh, or Snapshot",
+                  "description": "One complete Registry snapshot, expanded Registry, Knowledge Mesh, RRIP payload, or other premium protected state resource.",
+                  "price": "25.00",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "snapshot-retrieval",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "25000000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "subjectOf": [
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia x402 Retrieval Pricing Manifest",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+              "encodingFormat": "application/json",
+              "version": "3.0.0"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia AI Catalog",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+              "encodingFormat": "application/json"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia OpenAPI Contract",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/openapi.json",
+              "encodingFormat": "application/json"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia Registry-State Token",
+              "url": "https://www.robbiegeorgephotography.com/api/v2/razor/state-token",
+              "encodingFormat": "application/json"
+            }
+          ],
+          "mentions": [
+            {
+              "@type": "Thing",
+              "name": "Naturepedia",
+              "url": "https://www.robbiegeorgephotography.com/naturepedia"
+            },
+            {
+              "@type": "Thing",
+              "name": "Robbie's Razor",
+              "url": "https://www.robbiegeorgephotography.com/robbies-razor"
+            },
+            {
+              "@type": "Thing",
+              "name": "Grand Compression Master Reference Document",
+              "url": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document"
+            },
+            {
+              "@type": "WebPage",
+              "name": "Commercial Data License",
+              "url": "https://www.robbiegeorgephotography.com/commercial-data-license"
+            },
+            {
+              "@type": "WebPage",
+              "name": "Robbie's Razor Framework Licensing",
+              "url": "https://www.robbiegeorgephotography.com/robbies-razor-framework-licensing"
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Robbie’s Razor Benchmarks Repository",
+              "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+            }
+          ],
+          "hasPart": [
+            {
+              "@type": "CreativeWork",
+              "name": "Deterministic Retrieval Layer",
+              "description": "Free discovery followed by active Atomic Query, Enriched Query, Structured Plate™, bounded Registry or System Map, and full Registry or Knowledge Mesh retrieval classes."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Fail-Closed Availability Layer",
+              "description": "Registered and complete protected resources may issue HTTP 402; known but incomplete resources return HTTP 409 without payment challenge; unknown resources return HTTP 404 without payment challenge."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Commercial Data Rights Layer",
+              "description": "Commercial training, embedding, ingestion, synchronization, redistribution, private-dataset construction, derivative-dataset creation, or other broader reuse requires a separate written agreement."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Framework Implementation Layer",
+              "description": "Implementation of Robbie’s Razor™, RRIP, Graph Registry™, Plate™ Architecture, recursive compression architecture, or related strategic infrastructure requires a separate enterprise agreement."
+            },
+            {
+              "@type": "CreativeWork",
+              "name": "Provenance Protection Layer",
+              "description": "Preserves attribution, canonical identity, source integrity, licensing metadata, and the Authorship Conservation Rule across governed retrieval and permitted downstream use."
+            }
+          ],
+          "relatedLink": [
+            "https://www.robbiegeorgephotography.com/commercial-data-license",
+            "https://www.robbiegeorgephotography.com/robbies-razor-framework-licensing",
+            "https://www.robbiegeorgephotography.com/naturepedia",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+            "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/.well-known/openapi.json",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-root.json",
+            "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+            "https://www.robbiegeorgephotography.com/api/v2/razor/state-token",
+            "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+          ],
+          "additionalProperty": [
+            {
+              "@type": "PropertyValue",
+              "name": "plate_type",
+              "value": "governance_pricing"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "plate_system",
+              "value": "Naturepedia Governance Pricing Plates™"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "pricing_manifest_version",
+              "value": "3.0.0"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "payment_protocol",
+              "value": "x402"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "payment_network",
+              "value": "eip155:8453"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "payment_asset",
+              "value": "USDC"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "registry_state_version",
+              "value": "2026.08.20-v3"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "synchronization",
+              "value": "x402-v3-atomic-enriched-and-structured-plate-synchronized"
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "commercial_data_reuse",
+              "value": "Separate written agreement; custom commercial licensing begins at $1,000 USD equivalent."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "framework_implementation",
+              "value": "Separate enterprise agreement required."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "retrieval_rights_boundary",
+              "value": "One x402 payment grants one endpoint-level retrieval of the identified protected resource only."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "production_validation",
+              "value": "Atomic Query and Enriched Query production HTTP 402 challenges are verified. No new Atomic or Enriched settlement or post-settlement HTTP 200 delivery is claimed by those activation tests."
+            },
+            {
+              "@type": "PropertyValue",
+              "name": "attribution_requirement",
+              "value": "Created by Robbie George, Architect of Record for Naturepedia™, Robbie’s Razor™, and the Grand Compression knowledge system."
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#faq",
+          "url": "https://www.robbiegeorgephotography.com/commercial-data-license#faq",
+          "name": "Commercial Data License FAQ",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does this Commercial Data License cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This license applies to Naturepedia™, Plate™ systems, Species Plates™, Track Plates™, Location Plates™, Water System Plates™, Photography Plates™, Governance Plates™, Robbie’s Razor™, Grand Compression materials, Graph Registries™, Knowledge Meshes, RRIP, RKCA, machine-readable metadata, JSON-LD structures, AI-readable guidance files, x402 endpoints, structured relationships, visual layouts, diagrams, and related governance architecture created by Robbie George."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is non-commercial educational use allowed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Educational reference, classroom discussion, research, citation, personal learning, limited quotation, linking, and other non-commercial uses are generally allowed when attribution to Robbie George and the original source are preserved. Non-commercial permission does not include commercial model training, bulk ingestion, dataset construction, enterprise synchronization, redistribution, or framework implementation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can AI companies train models on Naturepedia™ or Plate™ systems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Commercial model training, pretraining, fine-tuning, embedding generation, model distillation, synthetic-dataset creation, permanent ingestion, retrieval-corpus construction, structured extraction, bulk retrieval, enterprise synchronization, and derivative-dataset construction require expressly granted rights through a separate commercial agreement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does visual or multimodal AI training require permission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when conducted for commercial training, pretraining, fine-tuning, embedding, dataset construction, distillation, architectural extraction, or systematic machine ingestion. Covered activities may include rendered-page capture, bulk screenshots, document-image training, visual patch extraction, layout-model training, diagram extraction, figure extraction, visual embeddings, and reconstruction of Plate™, Graph Registry™, Knowledge Mesh, or page-hierarchy structures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is ordinary viewing or search indexing considered prohibited visual ingestion?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Ordinary human browsing, conventional search indexing, accessibility rendering, citation, linking, and user-directed viewing are distinct from systematic commercial training or dataset construction. Public availability does not by itself grant commercial model-training, embedding, bulk-capture, derivative-dataset, redistribution, or framework-implementation rights."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are Plate™ layouts and visual relationships included in the license?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Plate™ systems may communicate structured information through composition, annotations, spatial hierarchy, typography, diagrams, relationship paths, semantic Plate IDs, and connections to JSON-LD and registries. Their visual organization may therefore form part of the authored knowledge and provenance architecture rather than functioning only as decoration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do machine-readable endpoints require payment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Some protected machine-readable resources return an HTTP 402 Payment Required response using x402. Public discovery and control-plane resources may remain free, while explicitly registered protected resources can require deterministic Base USDC payment. The production endpoint response and canonical pricing manifest are authoritative for current availability and price."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the current x402 retrieval prices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Current deterministic pricing is: Discovery — Free; Atomic Query — $0.005 USDC / 5000 atomic units; Enriched Query — $0.025 USDC / 25000 atomic units; Structured Plate™ — $0.25 USDC / 250000 atomic units; bounded Registry, taxonomy subtree, or System Map — $5.00 USDC / 5000000 atomic units; and full Registry, Knowledge Mesh, or snapshot — $25.00 USDC / 25000000 atomic units. The canonical pricing authority is https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between an Atomic Query and an Enriched Query?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An Atomic Query returns one narrowly bounded deterministic canonical result, such as identifier resolution or a compact canonical answer. An Enriched Query returns a bounded governed response that may include canonical relationships, provenance, authority references, citations, and related structured enrichment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What endpoint families are used for machine access?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Current machine-access families include the free control-plane resources /api/v2/naturepedia/*, /api/v2/plates/*, /api/v2/rrip/*, and /api/v2/razor/*; active query families /v1/query/atomic/* and /v1/query/enriched/*; additional protected families such as /v1/taxonomy/*, /v1/plates/*, /v1/registries/*, /v1/knowledge-mesh/*, and /v1/sovereign/*; and protected compatibility routes under /x402/*."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if a machine requests an unavailable resource?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The system is designed to fail closed before payment. A registered and complete protected resource may be eligible for a deterministic HTTP 402 challenge. A known but incomplete resource returns HTTP 409 without a payment challenge. An unknown resource returns HTTP 404 without a payment challenge."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do x402 payments grant unlimited commercial rights?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. An x402 payment grants one endpoint-level retrieval of the identified protected resource only. It does not automatically grant model-training, multimodal-training, fine-tuning, embedding, bulk-ingestion, visual-capture, private-dataset construction, derivative-dataset, model-distillation, resale, redistribution, synchronization, commercial-implementation, or Robbie’s Razor™ framework-implementation rights."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Has live x402 payment settlement been verified?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A live Base USDC x402 settlement and protected-payload delivery have previously been successfully verified through the production machine-access infrastructure. Separately, the current Atomic Query and Enriched Query classes have been validated through their production HTTP 402 challenges and fail-closed availability behavior. No new Atomic or Enriched settlement or post-settlement HTTP 200 delivery is claimed by those activation tests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the Commercial Data License and Framework Licensing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Commercial Data License governs expressly authorized commercial use of Naturepedia™ knowledge assets, Plate™ content, metadata, registries, structured data, training, embedding, synchronization, redistribution, and related machine-readable resources. Robbie’s Razor™ Framework Licensing governs implementation of the underlying architecture, including Robbie’s Razor™, Plate™ Architecture, Graph Registries™, Authorship Conservation Rule structures, RRIP, RKCA, and private or enterprise knowledge-system deployments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is machine-readable governance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Machine-readable governance refers to structured licensing, provenance, attribution, pricing, retrieval, authorship, availability, payment-challenge, canonical-identity, and state signals published through JSON-LD, metadata, semantic Plate IDs, AI-readable guidance files, MCP metadata, x402 responses, HTTP headers, registries, state tokens, manifests, System Maps, Knowledge Meshes, and related structured retrieval layers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can AI systems find machine-readable guidance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI systems may encounter guidance through /llms.txt, /llms-full.txt, /.well-known/ai-catalog.json, /.well-known/openapi.json, /.well-known/ai-root.json, /.well-known/mcp/server-card.json, JSON-LD metadata, x402 responses, HTTP headers, the Robbie’s Razor Benchmarks repository, and its AGENTS.md instruction layer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of the GitHub benchmark repository?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Robbie’s Razor Benchmarks repository functions as a public benchmark, evaluation, engineering, AGENTS.md instruction, schema, registry, x402 documentation, RRIP documentation, and Plate™ example surface connected to the broader Naturepedia™, Robbie’s Razor™, and Grand Compression systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are provenance and attribution emphasized?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The system is designed around provenance preservation and the Authorship Conservation Rule. Attribution helps maintain the relationship among knowledge, visual structure, semantic identifiers, source pages, canonical authorities, registries, the original creator, and the larger recursive architecture to which the material belongs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Naturepedia™ guarantee AI accuracy or prevent hallucinations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Naturepedia™, Plate™ systems, Robbie’s Razor™, Grand Compression materials, registries, Knowledge Meshes, and governance structures are informational, architectural, retrieval-oriented, and provenance-oriented systems. They do not guarantee model accuracy, retrieval accuracy, hallucination prevention, regulatory compliance, business outcomes, scientific conclusions, or downstream AI behavior."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do Plate™ relationships or visual connections prove scientific causality?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Visual placement, proximity, arrows, shared terminology, registry links, or machine-readable relationships may summarize documented subjects or framework-defined relationships, but they should not be interpreted as independent proof of causality, universality, material identity, or cross-domain scientific validity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who is responsible for AI outputs or third-party implementations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Organizations, developers, AI providers, retrieval systems, autonomous agents, commercial users, and framework implementers remain responsible for their own implementations, outputs, decisions, safety processes, compliance obligations, validations, interpretations, licensing determinations, and downstream use of retrieved information."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are warranties provided for Naturepedia™, Robbie’s Razor™, or Plate™ systems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To the maximum extent permitted by applicable law, Robbie George and Robbie George Photography disclaim warranties of accuracy, completeness, merchantability, fitness for a particular purpose, non-infringement, availability, performance, or suitability. Users remain responsible for verifying information and determining whether any retrieval, use, interpretation, implementation, or commercial application is appropriate."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
