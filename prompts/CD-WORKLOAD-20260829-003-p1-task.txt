@@ -1,0 +1,45 @@
+Study ID: CD-WORKLOAD-20260829-003
+Path: P1 — Fresh Reconstruction
+
+Task:
+
+Using only the supplied independently public authority evidence, reconstruct the explicitly selected public Biography Plate state.
+
+The benchmark-selected public state surface is:
+
+Source role:
+canonical-biography
+
+Selected JSON-LD path:
+sources[role=canonical-biography].jsonld[0]
+
+Selected public type:
+ProfilePage
+
+Selected public identifier:
+https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate
+
+Selected public name:
+Robbie George Biography Plate™
+
+Return exactly one valid JSON object and no surrounding commentary or markdown.
+
+Rules:
+
+1. Reconstruct only the selected canonical-biography jsonld[0] public state surface.
+
+2. Do not choose another ProfilePage, WebPage, Person, CreativeWork, FAQPage, or other JSON-LD node even if it is also present in the supplied evidence.
+
+3. Preserve the selected public surface's field values exactly when they are explicitly present in the supplied evidence.
+
+4. Preserve nested object structure, array contents, identifiers, URLs, names, attribution relationships, and ordering as represented by the selected public state surface.
+
+5. Do not add fields from other JSON-LD nodes merely because they describe the same person or topic.
+
+6. Do not use external knowledge.
+
+7. Do not invent governed-only, payment, retrieval, provenance-wrapper, or version-specific fields.
+
+8. Output must be parseable JSON.
+
+9. The requested result is the selected public state representation itself, not a summary, reinterpretation, or alternative equivalent representation.

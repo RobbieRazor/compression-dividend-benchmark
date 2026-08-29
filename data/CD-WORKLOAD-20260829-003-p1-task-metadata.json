@@ -1,0 +1,54 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "path": "P1",
+  "status": "P1_TASK_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-29T21:54:16Z",
+  "git_head_before_task_freeze": "024d655704d4390e5388fc99d0a17a6a56703b14",
+  "explicit_surface_selection": {
+    "source_role": "canonical-biography",
+    "selected_jsonld_path": "sources[role=canonical-biography].jsonld[0]",
+    "selected_public_type": "ProfilePage",
+    "selected_public_id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+    "selected_public_name": "Robbie George Biography Plate™"
+  },
+  "model_visible_inputs": [
+    {
+      "role": "task_prompt",
+      "path": "prompts/CD-WORKLOAD-20260829-003-p1-task.txt",
+      "sha256": "50d24afbef6ba35c96f28fa30ae859dceb4a250df32f2e8d3816ad06ce416af8"
+    },
+    {
+      "role": "independent_public_authority_evidence",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"
+    }
+  ],
+  "evaluator_only_not_model_visible": [
+    {
+      "role": "frozen_public_surface_answer_key",
+      "path": "data/CD-WORKLOAD-20260829-003-public-state-surface.json",
+      "sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55"
+    },
+    {
+      "role": "public_surface_metadata",
+      "path": "data/CD-WORKLOAD-20260829-003-public-state-surface-metadata.json",
+      "sha256": "58ff12fa230763194935fa5fb86dbadda457ac9c4d2baa3b5c35f44d12cb4120"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260829-003-quality-contract.json",
+      "sha256": "42d5205889a0974477c7ff070ef4b9ff8e4e7a25b2d377a3312562453f5477b5"
+    },
+    {
+      "role": "registered_p3_structured_source",
+      "path": "data/CD-WORKLOAD-20260829-002-structured-source.json",
+      "sha256": "9af055ea4a71cf2fa21b228eeb69cd2590d37ca0455f4756144b615ee2892d73"
+    }
+  ],
+  "answer_key_visible_to_p1": false,
+  "quality_contract_visible_to_p1": false,
+  "registered_p3_source_visible_to_p1": false,
+  "external_knowledge_allowed": false,
+  "measurement_started": false,
+  "x402_payment_performed_for_study_003": false
+}
