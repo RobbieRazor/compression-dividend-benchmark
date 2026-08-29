@@ -2,3 +2,12 @@ node_modules/
 .DS_Store
 coverage/
 .vitest/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+wallet.json
+wallet-*.json
+secrets/
+.private/
