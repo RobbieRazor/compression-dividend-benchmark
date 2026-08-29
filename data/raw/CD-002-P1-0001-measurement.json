@@ -1,0 +1,50 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "observation_id": "CD-002-P1-0001",
+  "path": "P1",
+  "status": "P1_MEASUREMENT_CAPTURED_QUALITY_NOT_YET_EVALUATED",
+  "timestamp_utc": "2026-08-29T21:25:46.401Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "request": {
+    "task_sha256": "8cae726e0b508c9d098b985dacc4d40fe68da217af702ca69fe5e085a44a6e31",
+    "public_authority_source_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "model_input_sha256": "10c47fe013678bfce0e07dd91bee34a8c5956284ca5007a709394438c7843971",
+    "model_input_bytes": 141137,
+    "p3_source_visible": false,
+    "quality_contract_visible": false,
+    "reference_projection_visible": false
+  },
+  "response": {
+    "http_status": 200,
+    "output_json_valid": true,
+    "raw_response_file": "data/raw/CD-002-P1-0001-response.json",
+    "output_file": "data/raw/CD-002-P1-0001-output.json"
+  },
+  "usage": {
+    "input_tokens": 30119,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "uncached_input_tokens": 30119,
+    "output_tokens": 966,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": {
+    "input": "0.006023800000",
+    "cached_input": "0.000000000000",
+    "cache_write": "0.000000000000",
+    "output": "0.001159200000",
+    "total_requester_model_cost": "0.007183000000"
+  },
+  "cache_state": "P1_EXPLICIT_NO_CACHE",
+  "measurement_valid_for_p1": true,
+  "latency_total_ms": 7293.435,
+  "quality": {
+    "contract_id": "CD002-QC-1.0",
+    "reference_id": "CD002-REFERENCE-1.0",
+    "status": "NOT_YET_EVALUATED",
+    "pass": null
+  },
+  "x402_payment_performed": false
+}

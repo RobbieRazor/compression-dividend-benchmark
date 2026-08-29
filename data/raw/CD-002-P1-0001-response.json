@@ -1,0 +1,98 @@
+{
+  "id": "resp_01b637db00b844d7016a934e5b6a6c87d29eace1f35dd9229e",
+  "object": "response",
+  "created_at": 1788038747,
+  "status": "completed",
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1788038753,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 4096,
+  "max_tool_calls": null,
+  "model": "gpt-5.6-luna",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_01b637db00b844d7016a934e5c5f6c87d288eda9fb868546d7",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"@context\":\"https://schema.org\",\"@type\":\"ProfilePage\",\"@id\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage\",\"name\":\"Who Is Robbie George?\",\"alternateName\":\"Robbie George Biography Plate\u2122\",\"headline\":\"Who Is Robbie George? \u2014 Photographer, Field Observer, Writer, and Naturepedia Creator\",\"url\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george\",\"inLanguage\":\"en-US\",\"creator\":{\"@id\":\"https://www.robbiegeorgephotography.com/#person-robbie-george\"},\"author\":{\"@id\":\"https://www.robbiegeorgephotography.com/#person-robbie-george\"},\"publisher\":{\"@id\":\"https://www.robbiegeorgephotography.com/#organization\"},\"license\":\"https://www.robbiegeorgephotography.com/commercial-data-license\",\"copyrightHolder\":{\"@id\":\"https://www.robbiegeorgephotography.com/#person-robbie-george\"},\"copyrightNotice\":\"Robbie George Biography Plate\u2122 and Naturepedia Biography Plates\u2122 originate with Robbie George.\",\"description\":\"The canonical identity, authorship, contribution, and public-reference profile for Robbie George, connected to his personal field biography and curated professional archive.\",\"mainEntity\":{\"@type\":\"Person\",\"@id\":\"https://www.robbiegeorgephotography.com/#person-robbie-george\",\"name\":\"Robbie George\",\"url\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george\",\"jobTitle\":[\"Independent Wildlife and Nature Photographer\",\"Field Observer and Writer\",\"Naturepedia Creator and Architect of Record\",\"Knowledge Architect\"],\"description\":\"Robbie George is an independent National Geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and Architect of Record of Naturepedia, and originator of Robbie's Razor and the Grand Compression Cosmology.\",\"sameAs\":[\"https://nationalgeographic.de/fotograf/robbie-george/\",\"https://windowsight.com/artists/robbie-george/\",\"https://www.instagram.com/robbiengs/\",\"https://x.com/robbiengs\",\"https://www.linkedin.com/in/robbie-george-265367133/\",\"https://github.com/RobbieRazor\",\"https://www.pinterest.com/robbiengs/\"],\"knowsAbout\":[\"Wildlife photography\",\"Nature photography\",\"Field observation\",\"Animal behavior\",\"Natural history\",\"Wildlife conservation\",\"Landscape photography\",\"Seascape photography\",\"Organic agriculture\",\"Ecological systems\",\"Information architecture\",\"Knowledge architecture\",\"Structured data\",\"Machine-readable knowledge systems\",\"Naturepedia\",\"Robbie's Razor\",\"Grand Compression Cosmology\"],\"subjectOf\":[{\"@id\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage\"},{\"@id\":\"https://www.robbiegeorgephotography.com/nature-photographer#webpage\"},{\"@id\":\"https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage\"}]},\"isPartOf\":{\"@id\":\"https://www.robbiegeorgephotography.com/#website\"},\"about\":{\"@id\":\"https://www.robbiegeorgephotography.com/#person-robbie-george\"},\"subjectOf\":[{\"@id\":\"https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage\"},{\"@id\":\"https://www.robbiegeorgephotography.com/commercial-data-license#webpage\"}],\"citation\":[\"https://nationalgeographic.de/fotograf/robbie-george/\",\"https://windowsight.com/artists/robbie-george/\",\"https://www.wral.com/archive/18932622/\",\"https://www.paenvironmentdigest.com/newsletter/default.asp?NewsletterArticleID=29610&SubjectID=5\",\"https://www.craryartgallery.org/focusedonnature.html\",\"https://defenders.org/magazine/summer-2015/restoring-grizzlies-cascades\",\"https://citylifestyle.com/portlandme/issues/2026-02\"],\"usageInfo\":\"Public page viewing and machine discovery may remain free. An x402 payment grants one endpoint-level retrieval of the identified protected resource only. Commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and Robbie's Razor framework implementation require rights expressly granted through a separate written agreement.\",\"creditText\":\"Created by Robbie George, Architect of Record for Naturepedia\u2122, Robbie\u2019s Razor\u2122, and the Grand Compression knowledge system.\"}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "low"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 30119,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 966,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 31085
+  },
+  "user": null,
+  "metadata": {}
+}
