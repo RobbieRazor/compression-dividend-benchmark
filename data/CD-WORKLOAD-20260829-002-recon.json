@@ -1,0 +1,54 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "status": "PUBLIC_REFERENCE_NOT_YET_FOUND",
+  "captured_utc": "2026-08-29T20:32:54Z",
+  "goal": "Determine whether a public task-equivalent reference exists for the paid Structured Plate route before any paid Study 002 measurement begins.",
+  "target_candidate": {
+    "route_class": "single-plate",
+    "route_url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+    "price_usdc": 0.25,
+    "network": "eip155:8453",
+    "asset": "USDC"
+  },
+  "public_sources_checked": [
+    {
+      "source_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "source_type": "canonical_human_page",
+      "inspection_method": "enumeration_of_application_ld_json_blocks"
+    },
+    {
+      "source_url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "source_type": "pricing_manifest",
+      "inspection_method": "retrieval_tier_and_active_route_confirmation"
+    },
+    {
+      "source_url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+      "source_type": "x402_payment_challenge",
+      "inspection_method": "challenge_schema_and_example_payload_inspection"
+    }
+  ],
+  "findings": {
+    "canonical_page_contains_biography_plate_node": true,
+    "canonical_page_contains_public_full_structured_plate_payload": false,
+    "public_biography_node_type": "CreativeWork",
+    "public_biography_node_identifier": "robbie-george-biography-plate",
+    "public_biography_node_name": "Robbie George Biography Plate™",
+    "public_biography_node_description": "A visual identity interface connecting Robbie George’s photography, field observation, organic farming, conservation, storytelling, Naturepedia, Robbie’s Razor, and knowledge architecture.",
+    "structured_plate_challenge_exists": true,
+    "structured_plate_challenge_price_usdc": 0.25,
+    "structured_plate_example_name": "Robbie George Biography Plate™",
+    "structured_plate_example_description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source."
+  },
+  "scientific_interpretation": [
+    "The public canonical page exposes the compact Biography Plate CreativeWork node.",
+    "The public canonical page does not expose a public full structured payload that is demonstrably task-equivalent to the paid Structured Plate route.",
+    "Therefore no independently frozen public reference currently exists for a fair pre-payment Study 002 semantic-equivalence test.",
+    "A paid Study 002 run should not begin until a public reference source or explicitly designed task-equivalent governed route is identified."
+  ],
+  "recommended_next_action": {
+    "action": "design_or_identify_task_equivalent_reference",
+    "measurement_ready": false,
+    "pay_structured_plate_now": false,
+    "reason": "Would be speculative and not yet scientifically comparable."
+  }
+}
