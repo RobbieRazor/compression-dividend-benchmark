@@ -1,0 +1,67 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "status": "HUMAN_REVIEWED_FIELD_ADJUDICATION_FROZEN",
+  "adjudication_timestamp_utc": "2026-08-29T21:01:31Z",
+  "git_head_before_adjudication": "229621e33e62e1c0fd520f13268412b91f0ccb89",
+  "evidence": {
+    "structured_source_sha256": "9af055ea4a71cf2fa21b228eeb69cd2590d37ca0455f4756144b615ee2892d73",
+    "public_authority_sources_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "first_pass_matrix_sha256": "49e0ad1f00b1785fa74e6777f893a2dc4aae1ea24fad6c4575bd1e656b38ed8d",
+    "unresolved_review_sha256": "e7294160c8e85549695df4d2184eeb6ee37c27080b493f68ea3d55a618f71b0c"
+  },
+  "field_count": 25,
+  "classes": {
+    "independently_supported_exact_core": {
+      "count": 13,
+      "fields": [
+        "@context",
+        "@type",
+        "name",
+        "alternateName",
+        "headline",
+        "url",
+        "inLanguage",
+        "creator",
+        "author",
+        "publisher",
+        "license",
+        "copyrightHolder",
+        "copyrightNotice"
+      ],
+      "benchmark_treatment": "Eligible for exact structural/value comparison after an independent Study 002 reference projection is frozen."
+    },
+    "transport_normalized": {
+      "count": 1,
+      "fields": [
+        "@id"
+      ],
+      "benchmark_treatment": "Eligible for identity-equivalence comparison after normalization. The paid Structured Plate route intentionally rewrites @id to the protected retrieval URL, so literal route identity is not required."
+    },
+    "derivable_from_public_authority": {
+      "count": 8,
+      "fields": [
+        "description",
+        "mainEntity",
+        "isPartOf",
+        "about",
+        "subjectOf",
+        "citation",
+        "usageInfo",
+        "creditText"
+      ],
+      "benchmark_treatment": "Eligible for semantic or structural comparison under field-specific rules. Exact P3 wording is not automatically required because these values are reconstructed from independently frozen public authority."
+    },
+    "governed_only_or_source_specific": {
+      "count": 3,
+      "fields": [
+        "identifier",
+        "dateModified",
+        "keywords"
+      ],
+      "benchmark_treatment": "Recorded diagnostically but excluded from the primary semantic-equivalence Quality Gate. These fields contain governed normalization, source-version state, or curated representation choices that are not independently recoverable with sufficient specificity from the frozen P1 authority package."
+    }
+  },
+  "scientific_boundary": "The registered P3 Structured Plate source was used to identify the candidate output surface and to audit field support. It must not be supplied to Path 1 as source material. Path 1 must reconstruct the accepted state only from independently frozen public authority sources and the frozen Study 002 task specification.",
+  "measurement_started": false,
+  "x402_payment_authorized_for_study_002": false
+}

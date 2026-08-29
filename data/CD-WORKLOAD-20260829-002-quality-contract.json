@@ -1,0 +1,138 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "contract_id": "CD002-QC-1.0",
+  "status": "QUALITY_CONTRACT_INITIAL_FROZEN",
+  "created_timestamp_utc": "2026-08-29T21:01:31Z",
+  "purpose": "Determine whether fresh recomputation and governed Structured Plate reuse satisfy the same accepted biography-state task before any economic comparison is permitted.",
+  "central_rule": "Economic substitution is valid only when both paths satisfy this same Quality Gate.",
+  "p1_source_boundary": {
+    "allowed_source": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+    "registered_p3_source_allowed_as_p1_input": false,
+    "registered_p3_source": "data/CD-WORKLOAD-20260829-002-structured-source.json"
+  },
+  "comparison_layers": {
+    "exact_core": {
+      "fields": [
+        "@context",
+        "@type",
+        "name",
+        "alternateName",
+        "headline",
+        "url",
+        "inLanguage",
+        "creator",
+        "author",
+        "publisher",
+        "license",
+        "copyrightHolder",
+        "copyrightNotice"
+      ],
+      "rule": "Compare against an independently frozen Study 002 reference projection. Object key order is insignificant. Arrays remain order-sensitive unless a field-specific rule later declares set semantics."
+    },
+    "transport_normalized": {
+      "fields": [
+        "@id"
+      ],
+      "rule": "Normalize accepted identity representations before comparison.",
+      "accepted_identity_representations": [
+        "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+        "https://www.robbiegeorgephotography.com/x402/plates/item/robbie-george-biography-plate",
+        "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate"
+      ]
+    },
+    "derivable_semantic": {
+      "fields": [
+        "description",
+        "mainEntity",
+        "isPartOf",
+        "about",
+        "subjectOf",
+        "citation",
+        "usageInfo",
+        "creditText"
+      ],
+      "rule": "Evaluate against independently frozen public-authority facts and field-specific structural/semantic requirements. P1 is not required to reproduce hidden P3-only phrasing merely because the governed payload uses that wording.",
+      "field_rules": {
+        "description": {
+          "required_concepts": [
+            "Robbie George",
+            "National Geographic-published",
+            "wildlife and/or nature photographer",
+            "Naturepedia",
+            "Robbie's Razor",
+            "Grand Compression"
+          ]
+        },
+        "mainEntity": {
+          "required_identity": "Robbie George",
+          "required_type": "Person",
+          "required_canonical_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "required_role_or_knowledge_concepts": [
+            "wildlife or nature photography",
+            "Naturepedia",
+            "Robbie's Razor",
+            "Plate Architecture",
+            "Architect of Record"
+          ]
+        },
+        "isPartOf": {
+          "required_concept": "Naturepedia",
+          "required_url": "https://www.robbiegeorgephotography.com/naturepedia"
+        },
+        "about": {
+          "required_concepts": [
+            "Naturepedia",
+            "Robbie's Razor",
+            "Grand Compression",
+            "Recursive Knowledge Compression Architecture or RKCA",
+            "Recursive Registry Inheritance Principle or RRIP",
+            "Plate Architecture",
+            "Machine-Readable Governance"
+          ]
+        },
+        "subjectOf": {
+          "required_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition"
+        },
+        "citation": {
+          "required_targets": [
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+          ]
+        },
+        "usageInfo": {
+          "required_meanings": [
+            "x402 payment grants endpoint-level retrieval only",
+            "training rights are not automatically granted",
+            "embedding rights are not automatically granted",
+            "redistribution or resale rights are not automatically granted",
+            "framework implementation rights are not automatically granted"
+          ]
+        },
+        "creditText": {
+          "required_meanings": [
+            "created by Robbie George",
+            "Naturepedia creator",
+            "Architect of Record"
+          ]
+        }
+      }
+    },
+    "diagnostic_only": {
+      "fields": [
+        "identifier",
+        "dateModified",
+        "keywords"
+      ],
+      "rule": "Record values but exclude these fields from primary pass/fail semantic equivalence."
+    }
+  },
+  "extra_fields_allowed": true,
+  "object_key_order_significant": false,
+  "primary_pass_rule": "PASS requires exact-core acceptance, normalized identity acceptance, and all derivable semantic field rules to pass. Diagnostic-only fields cannot cause failure.",
+  "failure_rule": "If either P1 or P3 fails the Quality Gate, no Compression Dividend or economic substitution result may be computed from that pair.",
+  "reference_projection_status": "NOT_YET_FROZEN",
+  "task_prompt_status": "NOT_YET_FROZEN",
+  "empirical_measurements_started": false,
+  "x402_payment_performed_for_study_002": false
+}
