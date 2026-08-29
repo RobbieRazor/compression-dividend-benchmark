@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+  "name": "Robbie George Biography Plate™",
+  "alternateName": "Naturepedia Biography Plate™",
+  "headline": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+  "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george",
+    "name": "Robbie George",
+    "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "jobTitle": [
+      "Wildlife Photographer",
+      "Naturepedia Creator",
+      "Architect of Record"
+    ],
+    "description": "Robbie George is the creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, and the Grand Compression knowledge architecture.",
+    "sameAs": [
+      "https://www.linkedin.com/in/robbiegeorge"
+    ]
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Robbie George",
+    "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Robbie George Photography",
+    "url": "https://www.robbiegeorgephotography.com"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Naturepedia Wildlife Knowledge System",
+    "url": "https://www.robbiegeorgephotography.com/naturepedia"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Naturepedia"
+    },
+    {
+      "@type": "Thing",
+      "name": "Robbie's Razor"
+    },
+    {
+      "@type": "Thing",
+      "name": "Grand Compression Cosmology"
+    },
+    {
+      "@type": "Thing",
+      "name": "Plate Systems"
+    },
+    {
+      "@type": "Thing",
+      "name": "Recursive Compression Interface"
+    }
+  ],
+  "copyrightHolder": {
+    "@type": "Person",
+    "name": "Robbie George"
+  },
+  "copyrightNotice": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George."
+}

@@ -1,0 +1,41 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "surface_id": "CD003-PUBLIC-SURFACE-1.0",
+  "status": "EXPLICIT_PUBLIC_STATE_SURFACE_FROZEN",
+  "created_timestamp_utc": "2026-08-29T21:48:12Z",
+  "source": {
+    "role": "canonical-biography",
+    "public_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "authority_package": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+    "authority_package_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "selected_jsonld_path": "sources[role=canonical-biography].jsonld[0]"
+  },
+  "selected_surface": {
+    "path": "data/CD-WORKLOAD-20260829-003-public-state-surface.json",
+    "sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+    "top_level_field_count": 14,
+    "@type": "ProfilePage",
+    "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+    "name": "Robbie George Biography Plate™"
+  },
+  "design": {
+    "path": "WORKLOAD-CD-20260829-003.md",
+    "sha256": "1f677ee23027abe5d45e4941862c36079351d611b5270a4daa19b85b88116d9e",
+    "git_head_before_surface_freeze": "5f3032c9a30d72c8fa312da78e9ef4eb6e8c9fa2"
+  },
+  "construction_boundary": {
+    "registered_p3_structured_source_read": false,
+    "registered_p3_structured_source_used": false,
+    "paid_p3_response_read": false,
+    "openai_api_call_performed": false,
+    "x402_payment_performed": false
+  },
+  "measurement_state": {
+    "quality_contract_frozen": false,
+    "reference_projection_frozen": false,
+    "p1_task_frozen": false,
+    "evaluator_frozen": false,
+    "p1_measurement_started": false,
+    "p3_payment_performed": false
+  }
+}
