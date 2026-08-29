@@ -1,0 +1,218 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "observation_id": "CD-003-P1-0001",
+  "evaluator_id": "CD003-EVAL-1.0",
+  "contract_id": "CD003-QC-1.0",
+  "surface_id": "CD003-PUBLIC-SURFACE-1.0",
+  "status": "QUALITY_EVALUATION_COMPLETE",
+  "evaluation_policy": {
+    "deep_exact": "Python deep equality against the frozen explicit public state surface. Dict key order is insignificant; list order is significant.",
+    "transport": "Observed @id must belong to the predeclared accepted transport-identity set.",
+    "extra_fields": "Allowed and ignored for primary pass/fail.",
+    "alternate_public_representations": "Not accepted."
+  },
+  "surface_sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+  "deep_exact": {
+    "pass": true,
+    "pass_count": 13,
+    "field_count": 13,
+    "results": {
+      "@context": {
+        "present": true,
+        "pass": true,
+        "expected": "https://schema.org",
+        "observed": "https://schema.org"
+      },
+      "@type": {
+        "present": true,
+        "pass": true,
+        "expected": "ProfilePage",
+        "observed": "ProfilePage"
+      },
+      "name": {
+        "present": true,
+        "pass": true,
+        "expected": "Robbie George Biography Plate™",
+        "observed": "Robbie George Biography Plate™"
+      },
+      "alternateName": {
+        "present": true,
+        "pass": true,
+        "expected": "Naturepedia Biography Plate™",
+        "observed": "Naturepedia Biography Plate™"
+      },
+      "headline": {
+        "present": true,
+        "pass": true,
+        "expected": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+        "observed": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record"
+      },
+      "url": {
+        "present": true,
+        "pass": true,
+        "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+        "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+      },
+      "mainEntity": {
+        "present": true,
+        "pass": true,
+        "expected": {
+          "@type": "Person",
+          "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george",
+          "name": "Robbie George",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "jobTitle": [
+            "Wildlife Photographer",
+            "Naturepedia Creator",
+            "Architect of Record"
+          ],
+          "description": "Robbie George is the creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, and the Grand Compression knowledge architecture.",
+          "sameAs": [
+            "https://www.linkedin.com/in/robbiegeorge"
+          ]
+        },
+        "observed": {
+          "@type": "Person",
+          "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george",
+          "name": "Robbie George",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "jobTitle": [
+            "Wildlife Photographer",
+            "Naturepedia Creator",
+            "Architect of Record"
+          ],
+          "description": "Robbie George is the creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, and the Grand Compression knowledge architecture.",
+          "sameAs": [
+            "https://www.linkedin.com/in/robbiegeorge"
+          ]
+        }
+      },
+      "creator": {
+        "present": true,
+        "pass": true,
+        "expected": {
+          "@type": "Person",
+          "name": "Robbie George",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+        },
+        "observed": {
+          "@type": "Person",
+          "name": "Robbie George",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+        }
+      },
+      "publisher": {
+        "present": true,
+        "pass": true,
+        "expected": {
+          "@type": "Organization",
+          "name": "Robbie George Photography",
+          "url": "https://www.robbiegeorgephotography.com"
+        },
+        "observed": {
+          "@type": "Organization",
+          "name": "Robbie George Photography",
+          "url": "https://www.robbiegeorgephotography.com"
+        }
+      },
+      "copyrightHolder": {
+        "present": true,
+        "pass": true,
+        "expected": {
+          "@type": "Person",
+          "name": "Robbie George"
+        },
+        "observed": {
+          "@type": "Person",
+          "name": "Robbie George"
+        }
+      },
+      "copyrightNotice": {
+        "present": true,
+        "pass": true,
+        "expected": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George.",
+        "observed": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George."
+      },
+      "isPartOf": {
+        "present": true,
+        "pass": true,
+        "expected": {
+          "@type": "CreativeWork",
+          "name": "Naturepedia Wildlife Knowledge System",
+          "url": "https://www.robbiegeorgephotography.com/naturepedia"
+        },
+        "observed": {
+          "@type": "CreativeWork",
+          "name": "Naturepedia Wildlife Knowledge System",
+          "url": "https://www.robbiegeorgephotography.com/naturepedia"
+        }
+      },
+      "about": {
+        "present": true,
+        "pass": true,
+        "expected": [
+          {
+            "@type": "Thing",
+            "name": "Naturepedia"
+          },
+          {
+            "@type": "Thing",
+            "name": "Robbie's Razor"
+          },
+          {
+            "@type": "Thing",
+            "name": "Grand Compression Cosmology"
+          },
+          {
+            "@type": "Thing",
+            "name": "Plate Systems"
+          },
+          {
+            "@type": "Thing",
+            "name": "Recursive Compression Interface"
+          }
+        ],
+        "observed": [
+          {
+            "@type": "Thing",
+            "name": "Naturepedia"
+          },
+          {
+            "@type": "Thing",
+            "name": "Robbie's Razor"
+          },
+          {
+            "@type": "Thing",
+            "name": "Grand Compression Cosmology"
+          },
+          {
+            "@type": "Thing",
+            "name": "Plate Systems"
+          },
+          {
+            "@type": "Thing",
+            "name": "Recursive Compression Interface"
+          }
+        ]
+      }
+    }
+  },
+  "transport_normalized": {
+    "field": "@id",
+    "present": true,
+    "pass": true,
+    "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+    "accepted_identity_representations": [
+      "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+      "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+      "https://www.robbiegeorgephotography.com/x402/plates/item/robbie-george-biography-plate"
+    ]
+  },
+  "missing_selected_fields": [],
+  "extra_fields": [],
+  "primary_quality_gate_pass": true,
+  "economic_comparison_permitted_for_this_observation": true,
+  "raw_measurement_modified": false,
+  "api_call_performed_by_evaluator": false,
+  "x402_payment_performed_by_evaluator": false
+}
