@@ -4,7 +4,21 @@ import { execFileSync } from "node:child_process";
 import { performance } from "node:perf_hooks";
 
 const STUDY_ID = "CD-WORKLOAD-20260828-001";
-const OBSERVATION_ID = "CD-001-P1-0001";
+const observationNumber = process.argv[2];
+
+if (
+  !observationNumber ||
+  !/^\d{4}$/.test(observationNumber)
+) {
+  console.error(
+    "Usage: node scripts/run-study001-p1.mjs 0002"
+  );
+  process.exit(1);
+}
+
+const OBSERVATION_ID =
+  "CD-001-P1-" + observationNumber;
+
 const PATH_ID = "P1";
 const ROOT = process.cwd();
 
