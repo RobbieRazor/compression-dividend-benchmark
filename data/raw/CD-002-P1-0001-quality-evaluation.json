@@ -1,0 +1,364 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "observation_id": "CD-002-P1-0001",
+  "evaluator_id": "CD002-EVAL-1.0",
+  "contract_id": "CD002-QC-1.0",
+  "reference_id": "CD002-REFERENCE-1.0",
+  "status": "QUALITY_EVALUATION_COMPLETE",
+  "evaluation_policy": {
+    "exact_core": "Deep exact-value comparison against frozen independent reference projection.",
+    "transport": "Membership in the frozen accepted @id representation set.",
+    "semantic": "Explicit conservative concept checks derived from the frozen CD002-QC-1.0 field rules.",
+    "diagnostic_only": "Recorded but excluded from primary pass/fail."
+  },
+  "exact_core": {
+    "pass": false,
+    "pass_count": 7,
+    "field_count": 13,
+    "results": {
+      "@context": {
+        "pass": true,
+        "expected": "https://schema.org",
+        "observed": "https://schema.org"
+      },
+      "@type": {
+        "pass": true,
+        "expected": "ProfilePage",
+        "observed": "ProfilePage"
+      },
+      "name": {
+        "pass": false,
+        "expected": "Robbie George Biography Plate™",
+        "observed": "Who Is Robbie George?"
+      },
+      "alternateName": {
+        "pass": false,
+        "expected": "Naturepedia Biography Plate™",
+        "observed": "Robbie George Biography Plate™"
+      },
+      "headline": {
+        "pass": false,
+        "expected": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+        "observed": "Who Is Robbie George? — Photographer, Field Observer, Writer, and Naturepedia Creator"
+      },
+      "url": {
+        "pass": true,
+        "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+        "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+      },
+      "inLanguage": {
+        "pass": true,
+        "expected": "en-US",
+        "observed": "en-US"
+      },
+      "creator": {
+        "pass": false,
+        "expected": {
+          "@type": "Person",
+          "name": "Robbie George",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+        },
+        "observed": {
+          "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+        }
+      },
+      "author": {
+        "pass": true,
+        "expected": {
+          "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+        },
+        "observed": {
+          "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+        }
+      },
+      "publisher": {
+        "pass": false,
+        "expected": {
+          "@type": "Organization",
+          "name": "Robbie George Photography",
+          "url": "https://www.robbiegeorgephotography.com"
+        },
+        "observed": {
+          "@id": "https://www.robbiegeorgephotography.com/#organization"
+        }
+      },
+      "license": {
+        "pass": true,
+        "expected": "https://www.robbiegeorgephotography.com/commercial-data-license",
+        "observed": "https://www.robbiegeorgephotography.com/commercial-data-license"
+      },
+      "copyrightHolder": {
+        "pass": false,
+        "expected": {
+          "@type": "Person",
+          "name": "Robbie George"
+        },
+        "observed": {
+          "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+        }
+      },
+      "copyrightNotice": {
+        "pass": true,
+        "expected": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George.",
+        "observed": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George."
+      }
+    }
+  },
+  "transport_normalized": {
+    "field": "@id",
+    "pass": false,
+    "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage",
+    "accepted_identity_representations": [
+      "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+      "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+      "https://www.robbiegeorgephotography.com/x402/plates/item/robbie-george-biography-plate"
+    ]
+  },
+  "derivable_semantic": {
+    "pass": false,
+    "pass_count": 1,
+    "field_count": 8,
+    "results": {
+      "description": {
+        "pass": false,
+        "checks": [
+          {
+            "criterion": "Robbie George",
+            "pass": true,
+            "evidence": "the canonical identity, authorship, contribution, and public-reference profile for robbie george, connected to his personal field biography and curated professional archive."
+          },
+          {
+            "criterion": "National Geographic-published",
+            "pass": false,
+            "evidence": "the canonical identity, authorship, contribution, and public-reference profile for robbie george, connected to his personal field biography and curated professional archive."
+          },
+          {
+            "criterion": "wildlife and/or nature photographer",
+            "pass": false,
+            "evidence": "the canonical identity, authorship, contribution, and public-reference profile for robbie george, connected to his personal field biography and curated professional archive."
+          },
+          {
+            "criterion": "Naturepedia",
+            "pass": false,
+            "evidence": "the canonical identity, authorship, contribution, and public-reference profile for robbie george, connected to his personal field biography and curated professional archive."
+          },
+          {
+            "criterion": "Robbie's Razor",
+            "pass": false,
+            "evidence": "the canonical identity, authorship, contribution, and public-reference profile for robbie george, connected to his personal field biography and curated professional archive."
+          },
+          {
+            "criterion": "Grand Compression",
+            "pass": false,
+            "evidence": "the canonical identity, authorship, contribution, and public-reference profile for robbie george, connected to his personal field biography and curated professional archive."
+          }
+        ]
+      },
+      "mainEntity": {
+        "pass": false,
+        "checks": [
+          {
+            "criterion": "identity Robbie George",
+            "pass": true,
+            "evidence": "Robbie George"
+          },
+          {
+            "criterion": "type Person",
+            "pass": true,
+            "evidence": "Person"
+          },
+          {
+            "criterion": "canonical URL",
+            "pass": true,
+            "evidence": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          {
+            "criterion": "wildlife or nature photography",
+            "pass": true,
+            "evidence": "person https://www.robbiegeorgephotography.com/#person-robbie-george robbie george https://www.robbiegeorgephotography.com/who-is-robbie-george independent wildlife and nature photographer field observer and writer naturepedia creator and architect of record knowledge architect robbie george is an independent national geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and architect of record of naturepedia, and originator of robbie's razor and the grand compression cosmology. https://nationalgeographic.de/fotograf/robbie-george/ https://windowsight.com/artists/robbie-george/ https://www.instagram.com/robbiengs/ https://x.com/robbiengs https://www.linkedin.com/in/robbie-george-265367133/ https://github.com/robbierazor https://www.pinterest.com/robbiengs/ wildlife photography nature photography field observation animal behavior natural history wildlife conservation landscape photography seascape photography organic agriculture ecological systems information architecture knowledge architecture structured data machine-readable knowledge systems naturepedia robbie's razor grand compression cosmology https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage https://www.robbiegeorgephotography.com/nature-photographer#webpage https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          },
+          {
+            "criterion": "Naturepedia",
+            "pass": true,
+            "evidence": "person https://www.robbiegeorgephotography.com/#person-robbie-george robbie george https://www.robbiegeorgephotography.com/who-is-robbie-george independent wildlife and nature photographer field observer and writer naturepedia creator and architect of record knowledge architect robbie george is an independent national geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and architect of record of naturepedia, and originator of robbie's razor and the grand compression cosmology. https://nationalgeographic.de/fotograf/robbie-george/ https://windowsight.com/artists/robbie-george/ https://www.instagram.com/robbiengs/ https://x.com/robbiengs https://www.linkedin.com/in/robbie-george-265367133/ https://github.com/robbierazor https://www.pinterest.com/robbiengs/ wildlife photography nature photography field observation animal behavior natural history wildlife conservation landscape photography seascape photography organic agriculture ecological systems information architecture knowledge architecture structured data machine-readable knowledge systems naturepedia robbie's razor grand compression cosmology https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage https://www.robbiegeorgephotography.com/nature-photographer#webpage https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          },
+          {
+            "criterion": "Robbie's Razor",
+            "pass": true,
+            "evidence": "person https://www.robbiegeorgephotography.com/#person-robbie-george robbie george https://www.robbiegeorgephotography.com/who-is-robbie-george independent wildlife and nature photographer field observer and writer naturepedia creator and architect of record knowledge architect robbie george is an independent national geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and architect of record of naturepedia, and originator of robbie's razor and the grand compression cosmology. https://nationalgeographic.de/fotograf/robbie-george/ https://windowsight.com/artists/robbie-george/ https://www.instagram.com/robbiengs/ https://x.com/robbiengs https://www.linkedin.com/in/robbie-george-265367133/ https://github.com/robbierazor https://www.pinterest.com/robbiengs/ wildlife photography nature photography field observation animal behavior natural history wildlife conservation landscape photography seascape photography organic agriculture ecological systems information architecture knowledge architecture structured data machine-readable knowledge systems naturepedia robbie's razor grand compression cosmology https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage https://www.robbiegeorgephotography.com/nature-photographer#webpage https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          },
+          {
+            "criterion": "Plate Architecture",
+            "pass": false,
+            "evidence": "person https://www.robbiegeorgephotography.com/#person-robbie-george robbie george https://www.robbiegeorgephotography.com/who-is-robbie-george independent wildlife and nature photographer field observer and writer naturepedia creator and architect of record knowledge architect robbie george is an independent national geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and architect of record of naturepedia, and originator of robbie's razor and the grand compression cosmology. https://nationalgeographic.de/fotograf/robbie-george/ https://windowsight.com/artists/robbie-george/ https://www.instagram.com/robbiengs/ https://x.com/robbiengs https://www.linkedin.com/in/robbie-george-265367133/ https://github.com/robbierazor https://www.pinterest.com/robbiengs/ wildlife photography nature photography field observation animal behavior natural history wildlife conservation landscape photography seascape photography organic agriculture ecological systems information architecture knowledge architecture structured data machine-readable knowledge systems naturepedia robbie's razor grand compression cosmology https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage https://www.robbiegeorgephotography.com/nature-photographer#webpage https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          },
+          {
+            "criterion": "Architect of Record",
+            "pass": true,
+            "evidence": "person https://www.robbiegeorgephotography.com/#person-robbie-george robbie george https://www.robbiegeorgephotography.com/who-is-robbie-george independent wildlife and nature photographer field observer and writer naturepedia creator and architect of record knowledge architect robbie george is an independent national geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and architect of record of naturepedia, and originator of robbie's razor and the grand compression cosmology. https://nationalgeographic.de/fotograf/robbie-george/ https://windowsight.com/artists/robbie-george/ https://www.instagram.com/robbiengs/ https://x.com/robbiengs https://www.linkedin.com/in/robbie-george-265367133/ https://github.com/robbierazor https://www.pinterest.com/robbiengs/ wildlife photography nature photography field observation animal behavior natural history wildlife conservation landscape photography seascape photography organic agriculture ecological systems information architecture knowledge architecture structured data machine-readable knowledge systems naturepedia robbie's razor grand compression cosmology https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage https://www.robbiegeorgephotography.com/nature-photographer#webpage https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          }
+        ]
+      },
+      "isPartOf": {
+        "pass": false,
+        "checks": [
+          {
+            "criterion": "Naturepedia",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#website"
+          },
+          {
+            "criterion": "Naturepedia canonical URL",
+            "pass": false,
+            "evidence": [
+              "https://www.robbiegeorgephotography.com/#website"
+            ]
+          }
+        ]
+      },
+      "about": {
+        "pass": false,
+        "checks": [
+          {
+            "criterion": "Naturepedia",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          {
+            "criterion": "Robbie's Razor",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          {
+            "criterion": "Grand Compression",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          {
+            "criterion": "RKCA",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          {
+            "criterion": "RRIP",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          {
+            "criterion": "Plate Architecture",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          {
+            "criterion": "Machine-Readable Governance",
+            "pass": false,
+            "evidence": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          }
+        ]
+      },
+      "subjectOf": {
+        "pass": false,
+        "required_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+        "observed_string_values": [
+          "https://www.robbiegeorgephotography.com/commercial-data-license#webpage",
+          "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+        ],
+        "comparison_note": "Strict string comparison. Fragment normalization was frozen only for the transport @id layer."
+      },
+      "citation": {
+        "pass": false,
+        "checks": [
+          {
+            "target": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "pass": false
+          },
+          {
+            "target": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "pass": false
+          },
+          {
+            "target": "https://github.com/RobbieRazor/robbies-razor-benchmarks",
+            "pass": false
+          }
+        ],
+        "observed_string_values": [
+          "https://citylifestyle.com/portlandme/issues/2026-02",
+          "https://defenders.org/magazine/summer-2015/restoring-grizzlies-cascades",
+          "https://nationalgeographic.de/fotograf/robbie-george/",
+          "https://windowsight.com/artists/robbie-george/",
+          "https://www.craryartgallery.org/focusedonnature.html",
+          "https://www.paenvironmentdigest.com/newsletter/default.asp?NewsletterArticleID=29610&SubjectID=5",
+          "https://www.wral.com/archive/18932622/"
+        ]
+      },
+      "usageInfo": {
+        "pass": true,
+        "checks": [
+          {
+            "criterion": "x402 endpoint-level retrieval only",
+            "pass": true,
+            "evidence": "public page viewing and machine discovery may remain free. an x402 payment grants one endpoint-level retrieval of the identified protected resource only. commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and robbie's razor framework implementation require rights expressly granted through a separate written agreement."
+          },
+          {
+            "criterion": "training rights not automatically granted",
+            "pass": true,
+            "evidence": "public page viewing and machine discovery may remain free. an x402 payment grants one endpoint-level retrieval of the identified protected resource only. commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and robbie's razor framework implementation require rights expressly granted through a separate written agreement."
+          },
+          {
+            "criterion": "embedding rights not automatically granted",
+            "pass": true,
+            "evidence": "public page viewing and machine discovery may remain free. an x402 payment grants one endpoint-level retrieval of the identified protected resource only. commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and robbie's razor framework implementation require rights expressly granted through a separate written agreement."
+          },
+          {
+            "criterion": "redistribution or resale rights not automatically granted",
+            "pass": true,
+            "evidence": "public page viewing and machine discovery may remain free. an x402 payment grants one endpoint-level retrieval of the identified protected resource only. commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and robbie's razor framework implementation require rights expressly granted through a separate written agreement."
+          },
+          {
+            "criterion": "framework implementation rights not automatically granted",
+            "pass": true,
+            "evidence": "public page viewing and machine discovery may remain free. an x402 payment grants one endpoint-level retrieval of the identified protected resource only. commercial model training, fine-tuning, embeddings, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, and robbie's razor framework implementation require rights expressly granted through a separate written agreement."
+          }
+        ]
+      },
+      "creditText": {
+        "pass": false,
+        "checks": [
+          {
+            "criterion": "created by Robbie George",
+            "pass": true,
+            "evidence": "created by robbie george, architect of record for naturepedia™, robbie's razor™, and the grand compression knowledge system."
+          },
+          {
+            "criterion": "Naturepedia creator",
+            "pass": false,
+            "evidence": "created by robbie george, architect of record for naturepedia™, robbie's razor™, and the grand compression knowledge system."
+          },
+          {
+            "criterion": "Architect of Record",
+            "pass": true,
+            "evidence": "created by robbie george, architect of record for naturepedia™, robbie's razor™, and the grand compression knowledge system."
+          }
+        ]
+      }
+    }
+  },
+  "diagnostic_only": {
+    "identifier": {
+      "present": false,
+      "value": null
+    },
+    "dateModified": {
+      "present": false,
+      "value": null
+    },
+    "keywords": {
+      "present": false,
+      "value": null
+    }
+  },
+  "primary_quality_gate_pass": false,
+  "economic_comparison_permitted_for_this_observation": false,
+  "raw_measurement_modified": false,
+  "x402_payment_performed_by_evaluator": false
+}
