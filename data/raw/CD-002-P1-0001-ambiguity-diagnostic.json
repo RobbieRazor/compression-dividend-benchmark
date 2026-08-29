@@ -1,0 +1,5348 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-002",
+  "observation_id": "CD-002-P1-0001",
+  "diagnostic_id": "CD002-AMBIGUITY-DIAG-1.0",
+  "status": "TASK_AMBIGUITY_DIAGNOSTIC_COMPLETE",
+  "frozen_quality_result_preserved": {
+    "primary_quality_gate_pass": false,
+    "quality_evaluation_file": "data/raw/CD-002-P1-0001-quality-evaluation.json",
+    "quality_result_modified": false
+  },
+  "diagnostic_question": "Did the failed P1 observation use values that were themselves explicitly present in the independently frozen public-authority evidence, indicating multiple plausible public representations rather than simple unsupported generation?",
+  "task_specificity": {
+    "explicit_jsonld_path_selection": false,
+    "explicit_biography_plate_fragment_selection": false,
+    "canonical_biography_jsonld_block_count": 4
+  },
+  "failed_field_count": 14,
+  "failed_fields": [
+    "name",
+    "alternateName",
+    "headline",
+    "creator",
+    "publisher",
+    "copyrightHolder",
+    "@id",
+    "description",
+    "mainEntity",
+    "isPartOf",
+    "about",
+    "subjectOf",
+    "citation",
+    "creditText"
+  ],
+  "publicly_grounded_failed_field_count": 12,
+  "public_multi_representation_conflict_count": 6,
+  "field_results": {
+    "name": {
+      "observed": "Who Is Robbie George?",
+      "reference_value": "Robbie George Biography Plate™",
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].name"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[5].itemListElement[1].name"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].name"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[5].itemListElement[1].name"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].name"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].name"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 186,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": "Robbie George Biography Plate™",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie George",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].copyrightHolder.name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie George Photography",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].publisher.name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Wildlife Knowledge System",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].isPartOf.name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie's Razor",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[3].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Grand Compression Cosmology",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Plate Systems",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Recursive Compression Interface",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Who Is Robbie George?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].name"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[5].itemListElement[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Home",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[5].itemListElement[0].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[2].itemListElement[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Frequently Asked Questions About Robbie George",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Who is Robbie George?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Where can readers find Robbie George’s publications, exhibitions, and professional recognition?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[1].name"
+            }
+          ]
+        },
+        {
+          "value": "What is Naturepedia?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[2].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the exact canonical formulation of Robbie’s Razor?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[3].name"
+            }
+          ]
+        },
+        {
+          "value": "What is GC-MRD-v2.0?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[4].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the Grand Compression Canonical Claims Register?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Does publishing or implementing one of Robbie George’s systems validate its effectiveness?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[6].name"
+            }
+          ]
+        },
+        {
+          "value": "How are claims about Robbie’s Razor evaluated?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[7].name"
+            }
+          ]
+        },
+        {
+          "value": "Is the Robbie George Biography Plate automatically a canonical Plate?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[8].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the role of the E8 lattice in Robbie George’s work?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[9].name"
+            }
+          ]
+        },
+        {
+          "value": "Does Robbie George claim that E8 is the literal geometry of nature?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[10].name"
+            }
+          ]
+        },
+        {
+          "value": "How is Naturepedia designed for intelligent agents?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[11].name"
+            }
+          ]
+        },
+        {
+          "value": "How does x402 fit into the system?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[12].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the role of the Robbie’s Razor GitHub repository?",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity[13].name"
+            }
+          ]
+        },
+        {
+          "value": "Publications, Exhibitions & Professional Recognition",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[2].itemListElement[2].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].isPartOf.name"
+            }
+          ]
+        },
+        {
+          "value": "National Geographic",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[0].name"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Smithsonian National Museum of Natural History",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Nature's Best Photography",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Apple",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Defenders of Wildlife",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Crary Art Gallery",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Four Season Farm",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mentions[6].name"
+            }
+          ]
+        },
+        {
+          "value": "Howlin' Wolf",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].name"
+            }
+          ]
+        },
+        {
+          "value": "About",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[2].itemListElement[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie George Professional Archive Sections",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Career Highlights",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[1].name"
+            }
+          ]
+        },
+        {
+          "value": "By the Numbers",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Books and Publications",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Editorial Collections",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[4].name"
+            }
+          ]
+        },
+        {
+          "value": "International Editions",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Fine Art Gallery",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[6].name"
+            }
+          ]
+        },
+        {
+          "value": "Museums and Exhibitions",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[7].name"
+            }
+          ]
+        },
+        {
+          "value": "Licensing and Collaborations",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[8].name"
+            }
+          ]
+        },
+        {
+          "value": "Film and Documentary",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[9].name"
+            }
+          ]
+        },
+        {
+          "value": "Agriculture and Environmental Education",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[10].name"
+            }
+          ]
+        },
+        {
+          "value": "Media Recognition",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[11].name"
+            }
+          ]
+        },
+        {
+          "value": "Career Timeline",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[12].name"
+            }
+          ]
+        },
+        {
+          "value": "References and Verification",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[13].name"
+            }
+          ]
+        },
+        {
+          "value": "Technical Records",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[14].name"
+            }
+          ]
+        },
+        {
+          "value": "Professional Philosophy",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[15].name"
+            }
+          ]
+        },
+        {
+          "value": "From Fieldwork to Naturepedia and Governed Machine Access",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[16].name"
+            }
+          ]
+        },
+        {
+          "value": "About Robbie George",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[17].name"
+            }
+          ]
+        },
+        {
+          "value": "Frequently Asked Questions",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[18].name"
+            }
+          ]
+        },
+        {
+          "value": "Professional Archive Statement",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].itemListElement[19].name"
+            }
+          ]
+        },
+        {
+          "value": "Selected Books Containing Photography by Robbie George",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].name"
+            }
+          ]
+        },
+        {
+          "value": "National Geographic 125 Years",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[0].item.name"
+            }
+          ]
+        },
+        {
+          "value": "The Splendor of Birds",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[1].item.name"
+            }
+          ]
+        },
+        {
+          "value": "America the Beautiful",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[2].item.name"
+            }
+          ]
+        },
+        {
+          "value": "Dawn to Dark: Photographs—The Magic of Light",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[3].item.name"
+            }
+          ]
+        },
+        {
+          "value": "National Geographic Field Guide to the Water's Edge",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[4].item.name"
+            }
+          ]
+        },
+        {
+          "value": "Daily Gratitude",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[5].item.name"
+            }
+          ]
+        },
+        {
+          "value": "Daily Peace",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[6].item.name"
+            }
+          ]
+        },
+        {
+          "value": "American Crows",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[7].item.name"
+            }
+          ]
+        },
+        {
+          "value": "Hoot, Owl!",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].itemListElement[8].item.name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie George Professional Archive Frequently Asked Questions",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Is Robbie George a National Geographic photographer?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[0].name"
+            }
+          ]
+        },
+        {
+          "value": "What was Robbie George's relationship with the National Geographic Image Collection?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Was Robbie George's photography exhibited at the Smithsonian?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Which National Geographic books include Robbie George's photography?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[3].name"
+            }
+          ]
+        },
+        {
+          "value": "What was Wilderness at 50?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Did Apple use one of Robbie George's photographs?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Does this archive include every publication and image license?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[6].name"
+            }
+          ]
+        },
+        {
+          "value": "Can Robbie George's photography be licensed or exhibited?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[7].name"
+            }
+          ]
+        },
+        {
+          "value": "How does this professional archive relate to Naturepedia?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[8].name"
+            }
+          ]
+        },
+        {
+          "value": "What are Robbie's Razor and the Grand Compression?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[9].name"
+            }
+          ]
+        },
+        {
+          "value": "What machine-readable infrastructure supports Naturepedia?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[10].name"
+            }
+          ]
+        },
+        {
+          "value": "Can Naturepedia data and Robbie's original frameworks be licensed?",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity[11].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data License Plate™",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia™ x402 Retrieval Pricing Manifest",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].subjectOf.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].subjectOf.name"
+            }
+          ]
+        },
+        {
+          "value": "Endpoint-Level Machine Retrieval",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data Reuse Rights",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Framework and Strategic Infrastructure Rights",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Governance Plates™",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].isPartOf.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].isPartOf.name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].isPartOf.name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Intelligence Pricing Plate™",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia™ x402 Retrieval Pricing",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.name"
+            }
+          ]
+        },
+        {
+          "value": "Free Discovery and Preview Access",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Atomic Canonical Query",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Enriched Relationship Query",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Structured Plate™ Payload",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Bounded Registry, Taxonomy Subtree, or System Map",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[4].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Full Registry, Knowledge Mesh, or Snapshot",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[5].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data License",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].itemListElement[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data Licensing",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Plate Architecture",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[2].name"
+            }
+          ]
+        },
+        {
+          "value": "x402 Machine Retrieval",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Atomic Query",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[5].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Enriched Query",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[6].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Structured Plate Retrieval",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[7].name"
+            }
+          ]
+        },
+        {
+          "value": "Machine-Readable Governance",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[8].name"
+            }
+          ]
+        },
+        {
+          "value": "Provenance Preservation",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[9].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial AI Licensing",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[10].name"
+            }
+          ]
+        },
+        {
+          "value": "Framework Implementation Rights",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about[11].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia x402 Retrieval Pricing Manifest",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].subjectOf[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia AI Catalog",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].subjectOf[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia OpenAPI Contract",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].subjectOf[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia AI Root",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia MCP Server Card",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Canonical Publication Manifest",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Registry-State Token",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[6].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].subjectOf[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Discovery Index",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[7].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie's Razor Framework Licensing",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[8].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie George Canonical Biography",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[9].name"
+            }
+          ]
+        },
+        {
+          "value": "Claim RC-17 — Recursive Registry Inheritance Principle",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mentions[10].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Atomic Query",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].hasPart[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Enriched Query",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].hasPart[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Machine-Readable Governance System",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.name"
+            }
+          ]
+        },
+        {
+          "value": "Grand Compression Master Reference Document",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Grand Compression Foundation",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[3].name"
+            }
+          ]
+        },
+        {
+          "value": "AI Guidance",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[5].name"
+            }
+          ]
+        },
+        {
+          "value": "AI System Map",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[6].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie’s Razor Benchmarks Repository",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[7].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mentions[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Robbie’s Razor AGENTS.md Evaluation Instructions",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[8].name"
+            }
+          ]
+        },
+        {
+          "value": "Plate Examples Index",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mentions[9].name"
+            }
+          ]
+        },
+        {
+          "value": "Attribution Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Licensing Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Machine-Readable Governance Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Recursive Compression Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Benchmark and Evaluation Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[4].name"
+            }
+          ]
+        },
+        {
+          "value": "plate_type",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[0].name"
+            }
+          ]
+        },
+        {
+          "value": "plate_system",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[1].name"
+            }
+          ]
+        },
+        {
+          "value": "rkca_role",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[2].name"
+            }
+          ]
+        },
+        {
+          "value": "system_type",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[3].name"
+            }
+          ]
+        },
+        {
+          "value": "primary_field_signal",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[4].name"
+            }
+          ]
+        },
+        {
+          "value": "canonical_authority",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[5].name"
+            }
+          ]
+        },
+        {
+          "value": "evaluation_surface",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[6].name"
+            }
+          ]
+        },
+        {
+          "value": "governance_role",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].additionalProperty[7].name"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Governed Machine Retrieval",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.name"
+            }
+          ]
+        },
+        {
+          "value": "Discovery and Previews",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[0].name"
+            }
+          ]
+        },
+        {
+          "value": "access_class",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[0].additionalProperty[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[2].name"
+            }
+          ]
+        },
+        {
+          "value": "atomic_units",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[0].additionalProperty[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[5].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[5].name"
+            }
+          ]
+        },
+        {
+          "value": "route_status",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[0].additionalProperty[2].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[6].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[6].name"
+            }
+          ]
+        },
+        {
+          "value": "payment_asset",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[0].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[3].additionalProperty[0].name"
+            }
+          ]
+        },
+        {
+          "value": "network",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[1].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[3].additionalProperty[1].name"
+            }
+          ]
+        },
+        {
+          "value": "resource_class",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[3].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[3].name"
+            }
+          ]
+        },
+        {
+          "value": "schema_version",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].additionalProperty[4].name"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].additionalProperty[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Structured Plate™ Retrieval",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Deterministic Retrieval Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Fail-Closed Availability Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data Rights Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Framework Implementation Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Provenance Protection Layer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[4].name"
+            }
+          ]
+        },
+        {
+          "value": "pricing_manifest_version",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[2].name"
+            }
+          ]
+        },
+        {
+          "value": "payment_protocol",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[3].name"
+            }
+          ]
+        },
+        {
+          "value": "payment_network",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[4].name"
+            }
+          ]
+        },
+        {
+          "value": "registry_state_version",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[6].name"
+            }
+          ]
+        },
+        {
+          "value": "synchronization",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[7].name"
+            }
+          ]
+        },
+        {
+          "value": "commercial_data_reuse",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[8].name"
+            }
+          ]
+        },
+        {
+          "value": "framework_implementation",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[9].name"
+            }
+          ]
+        },
+        {
+          "value": "retrieval_rights_boundary",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[10].name"
+            }
+          ]
+        },
+        {
+          "value": "production_validation",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[11].name"
+            }
+          ]
+        },
+        {
+          "value": "attribution_requirement",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].additionalProperty[12].name"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data License FAQ",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].name"
+            }
+          ]
+        },
+        {
+          "value": "What does this Commercial Data License cover?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[0].name"
+            }
+          ]
+        },
+        {
+          "value": "Is non-commercial educational use allowed?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[1].name"
+            }
+          ]
+        },
+        {
+          "value": "Can AI companies train models on Naturepedia™ or Plate™ systems?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[2].name"
+            }
+          ]
+        },
+        {
+          "value": "Does visual or multimodal AI training require permission?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[3].name"
+            }
+          ]
+        },
+        {
+          "value": "Is ordinary viewing or search indexing considered prohibited visual ingestion?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[4].name"
+            }
+          ]
+        },
+        {
+          "value": "Why are Plate™ layouts and visual relationships included in the license?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[5].name"
+            }
+          ]
+        },
+        {
+          "value": "Do machine-readable endpoints require payment?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[6].name"
+            }
+          ]
+        },
+        {
+          "value": "What are the current x402 retrieval prices?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[7].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the difference between an Atomic Query and an Enriched Query?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[8].name"
+            }
+          ]
+        },
+        {
+          "value": "What endpoint families are used for machine access?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[9].name"
+            }
+          ]
+        },
+        {
+          "value": "What happens if a machine requests an unavailable resource?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[10].name"
+            }
+          ]
+        },
+        {
+          "value": "Do x402 payments grant unlimited commercial rights?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[11].name"
+            }
+          ]
+        },
+        {
+          "value": "Has live x402 payment settlement been verified?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[12].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the difference between the Commercial Data License and Framework Licensing?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[13].name"
+            }
+          ]
+        },
+        {
+          "value": "What is machine-readable governance?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[14].name"
+            }
+          ]
+        },
+        {
+          "value": "Where can AI systems find machine-readable guidance?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[15].name"
+            }
+          ]
+        },
+        {
+          "value": "What is the role of the GitHub benchmark repository?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[16].name"
+            }
+          ]
+        },
+        {
+          "value": "Why are provenance and attribution emphasized?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[17].name"
+            }
+          ]
+        },
+        {
+          "value": "Does Naturepedia™ guarantee AI accuracy or prevent hallucinations?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[18].name"
+            }
+          ]
+        },
+        {
+          "value": "Do Plate™ relationships or visual connections prove scientific causality?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[19].name"
+            }
+          ]
+        },
+        {
+          "value": "Who is responsible for AI outputs or third-party implementations?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[20].name"
+            }
+          ]
+        },
+        {
+          "value": "Are warranties provided for Naturepedia™, Robbie’s Razor™, or Plate™ systems?",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity[21].name"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "PUBLIC_MULTI_REPRESENTATION_CONFLICT"
+    },
+    "alternateName": {
+      "observed": "Robbie George Biography Plate™",
+      "reference_value": "Naturepedia Biography Plate™",
+      "observed_same_key_public_support": [],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].name"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].name"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].alternateName"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 5,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": "Naturepedia Biography Plate™",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].alternateName"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Governance, Retrieval Rights, and Commercial Data Licensing Plate",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].alternateName"
+            }
+          ]
+        },
+        {
+          "value": "Machine-Readable Retrieval Pricing and Commercial Rights Boundary Plate",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].alternateName"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia Governance & Licensing Plate",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].alternateName"
+            }
+          ]
+        },
+        {
+          "value": "Naturepedia x402 Retrieval Pricing and Commercial Rights Governance Plate",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].alternateName"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "OBSERVED_VALUE_EXPLICITLY_PUBLIC_ELSEWHERE"
+    },
+    "headline": {
+      "observed": "Who Is Robbie George? — Photographer, Field Observer, Writer, and Naturepedia Creator",
+      "reference_value": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].headline"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].headline"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].headline"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 8,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].headline"
+            }
+          ]
+        },
+        {
+          "value": "Who Is Robbie George? — Photographer, Field Observer, Writer, and Naturepedia Creator",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].headline"
+            }
+          ]
+        },
+        {
+          "value": "Publications, Exhibitions & Professional Recognition",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].headline"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data License Plate™ — Retrieval, Training, Embedding, Ingestion, Synchronization, Redistribution, and Framework Rights",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].headline"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Intelligence Pricing Plate™ — Deterministic x402 Retrieval Pricing for Naturepedia™, Robbie’s Razor™, Grand Compression, and Plate™ Systems",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].headline"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data License for Naturepedia™, x402 Retrieval, and Governed Machine Access",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].headline"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Data License Plate™ — AI Licensing, Attribution, Provenance, Machine-Readable Governance, and Recursive Compression Systems",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].headline"
+            }
+          ]
+        },
+        {
+          "value": "Commercial Intelligence Pricing Plate™ — Deterministic x402 Retrieval Pricing, Commercial Data Rights, and Framework Licensing Boundaries",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].headline"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "PUBLIC_MULTI_REPRESENTATION_CONFLICT"
+    },
+    "creator": {
+      "observed": {
+        "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+      },
+      "reference_value": {
+        "@type": "Person",
+        "name": "Robbie George",
+        "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+      },
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].creator"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].creator"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[1].founder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].author"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].mainEntity"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].author"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[3].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[1].founder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].author"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].copyrightHolder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[1].founder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].author"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].creator"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].creator"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[4].creator"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 3,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].creator"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].creator"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].creator"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].creator"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].creator"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "Person",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "jobTitle": "Architect of Record"
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].creator"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].creator"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].creator"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "PUBLIC_MULTI_REPRESENTATION_CONFLICT"
+    },
+    "publisher": {
+      "observed": {
+        "@id": "https://www.robbiegeorgephotography.com/#organization"
+      },
+      "reference_value": {
+        "@type": "Organization",
+        "name": "Robbie George Photography",
+        "url": "https://www.robbiegeorgephotography.com"
+      },
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].publisher"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].publisher"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].publisher"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].publisher"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].publisher"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[2].worksFor"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].publisher"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].publisher"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[2].worksFor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].publisher"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[2].worksFor"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].publisher"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[0].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[1].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[4].publisher"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[5].publisher"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 2,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": {
+            "@type": "Organization",
+            "name": "Robbie George Photography",
+            "url": "https://www.robbiegeorgephotography.com"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].publisher"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].publisher"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].publisher"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#organization"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].publisher"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].publisher"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].publisher"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "PUBLIC_MULTI_REPRESENTATION_CONFLICT"
+    },
+    "copyrightHolder": {
+      "observed": {
+        "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+      },
+      "reference_value": {
+        "@type": "Person",
+        "name": "Robbie George"
+      },
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].copyrightHolder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].copyrightHolder"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[1].founder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].author"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].mainEntity"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].author"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[3].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[1].founder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].author"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].copyrightHolder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[1].founder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].author"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].creator"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].copyrightHolder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[0].copyrightHolder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[4].copyrightHolder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[5].copyrightHolder"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 3,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": {
+            "@type": "Person",
+            "name": "Robbie George"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].copyrightHolder"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].copyrightHolder"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].copyrightHolder"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#organization"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].copyrightHolder"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].copyrightHolder"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].copyrightHolder"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].copyrightHolder"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].copyrightHolder"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].copyrightHolder"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "PUBLIC_MULTI_REPRESENTATION_CONFLICT"
+    },
+    "@id": {
+      "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage",
+      "reference_value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[2].mainEntityOfPage.@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[2].subjectOf[0].@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].isPartOf.@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[3].isPartOf.@id"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[2].mainEntityOfPage.@id"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[2].subjectOf[0].@id"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[2].mainEntityOfPage.@id"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[2].subjectOf[0].@id"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[2].mainEntityOfPage.@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[2].subjectOf[0].@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].isPartOf.@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[3].isPartOf.@id"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[2].mainEntityOfPage.@id"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[2].subjectOf[0].@id"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[2].mainEntityOfPage.@id"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[2].subjectOf[0].@id"
+        }
+      ],
+      "reference_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[0].@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].hasPart[0].@id"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].@id"
+        }
+      ],
+      "distinct_public_same_key_candidate_count": 39,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].hasPart[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/#website",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].isPartOf.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/#organization",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].publisher.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].copyrightHolder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].creator.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].founder.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/#logo",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].logo.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].logo.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].logo.@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].mainEntityOfPage.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].subjectOf[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/#person-image",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].image.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].image.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].image.@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/nature-photographer#webpage",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].subjectOf[1].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].subjectOf[1].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].subjectOf[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].subjectOf[2].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].subjectOf[2].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#primaryimage",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].primaryImageOfPage.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].image[1].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[2].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#profile-image",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].image[0].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#biography-plate-image",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].image[2].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[3].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].image.@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#breadcrumbs",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].breadcrumb.@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[5].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/who-is-robbie-george#faqpage",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].hasPart[1].@id"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/naturepedia#series",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mentions[0].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/robbies-razor#creativework",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mentions[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/the-grand-compression#creativework",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mentions[2].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document#techarticle",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mentions[3].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/grand-compression-canonical-claims#creativework",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mentions[4].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://github.com/RobbieRazor/robbies-razor-benchmarks#software",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mentions[5].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#primaryimage",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].primaryImageOfPage.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#breadcrumbs",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].breadcrumb.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[2].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#archive-sections",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mainEntity.@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#selected-books",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].hasPart[0].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#faq",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].hasPart[1].@id"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-data-license-plate",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mainEntity.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-intelligence-pricing-plate",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#webpage",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#breadcrumb",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].breadcrumb.@id"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#primaryimage",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].primaryImageOfPage.@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#machine-retrieval-service",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#discovery-offer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[0].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#atomic-query-offer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#enriched-query-offer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#structured-plate-offer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[3].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#bounded-retrieval-offer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[4].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#snapshot-retrieval-offer",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[5].@id"
+            }
+          ]
+        },
+        {
+          "value": "https://www.robbiegeorgephotography.com/commercial-data-license#faq",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].@id"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": true,
+      "multiple_public_candidates": true,
+      "classification": "PUBLIC_MULTI_REPRESENTATION_CONFLICT"
+    },
+    "description": {
+      "observed": "The canonical identity, authorship, contribution, and public-reference profile for Robbie George, connected to his personal field biography and curated professional archive.",
+      "reference_value": null,
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].description"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].description"
+        }
+      ],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 48,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": "Robbie George is the creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, and the Grand Compression knowledge architecture.",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity.description"
+            }
+          ]
+        },
+        {
+          "value": "The official website of Robbie George, connecting wildlife and nature photography, fine-art prints, professional records, Naturepedia, field tools, and authored knowledge systems.",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[0].description"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[0].description"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[0].description"
+            }
+          ]
+        },
+        {
+          "value": "An independent photography and knowledge-publishing organization presenting wildlife and nature photography, fine-art prints, professional archives, Naturepedia, and related authored work by Robbie George.",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[1].description"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[1].description"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Robbie George is an independent National Geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and Architect of Record of Naturepedia, and originator of Robbie's Razor and the Grand Compression Cosmology.",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].description"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].description"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].description"
+            }
+          ]
+        },
+        {
+          "value": "The canonical identity, authorship, contribution, and public-reference profile for Robbie George, connected to his personal field biography and curated professional archive.",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].description"
+            }
+          ]
+        },
+        {
+          "value": "A visual identity interface connecting Robbie George’s photography, field observation, organic farming, conservation, storytelling, Naturepedia, Robbie’s Razor, and knowledge architecture.",
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].description"
+            }
+          ]
+        },
+        {
+          "value": "A curated, evidence-based archive documenting Robbie George's National Geographic publications, books, museum exhibitions, conservation photography, fine-art work, documentary participation, Naturepedia, Robbie's Razor, and public technical records for governed machine access.",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Gray wolf wildlife photograph by Robbie George, featured as the primary image for his professional publications and exhibitions archive.",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].description"
+            }
+          ]
+        },
+        {
+          "value": "The principal sections of Robbie George's professional publications, exhibitions, licensing, recognition, and technical-record archive.",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[3].description"
+            }
+          ]
+        },
+        {
+          "value": "Representative confirmed books containing photography by Robbie George. This is not a complete bibliography.",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[4].description"
+            }
+          ]
+        },
+        {
+          "value": "Frequently asked questions about Robbie George's National Geographic publishing history, books, exhibitions, photography licensing, professional archive, Naturepedia, Robbie's Razor, the Grand Compression, and machine-readable knowledge infrastructure.",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].description"
+            }
+          ]
+        },
+        {
+          "value": "A machine-readable governance and licensing Plate separating endpoint-level x402 retrieval from commercial training, embedding, bulk ingestion, synchronization, redistribution, derivative-dataset creation, and Robbie’s Razor framework implementation rights.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Fixed x402 payments ranging from 0.005 to 25.00 USDC convey one retrieval of the identified resource only.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Training, embedding, commercial ingestion, synchronization, redistribution, and derivative-dataset rights begin at 1,000 USD equivalent and are granted only through a separate written agreement.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Robbie’s Razor™, RRIP, Graph Registry™, Plate architecture, deployment, and strategic infrastructure implementation rights require a separate enterprise agreement.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].hasPart[2].description"
+            }
+          ]
+        },
+        {
+          "value": "A machine-readable pricing and rights-boundary Plate defining deterministic x402 retrieval prices for Naturepedia discovery, canonical queries, enriched responses, structured Plates, bounded registries, System Maps, Knowledge Meshes, and full registry snapshots. Retrieval payments remain separate from commercial data reuse and framework implementation rights.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Free metadata, endpoint descriptions, previews, health responses, licensing signals, and validation information.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Active x402 tier settled as 0.005 USDC on Base for one narrowly bounded canonical fact, identifier resolution, routing result, or compact canonical answer. Payment challenges are issued only for explicitly registered Atomic Query resources with complete deterministic payloads.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Active x402 tier priced at 0.025 USDC on Base for one registered governed relationship-aware query containing bounded canonical relationships, provenance, authority references, citations, or related enrichment. Payment challenges are issued only for explicitly registered complete Enriched Query payloads.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[2].description"
+            }
+          ]
+        },
+        {
+          "value": "Active x402 tier settled as 0.25 USDC on Base for one registered and validated structured Plate payload. Payment grants one endpoint-level retrieval only.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[3].description"
+            }
+          ]
+        },
+        {
+          "value": "Active x402 tier settled as 5.00 USDC on Base for one bounded multi-record retrieval.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[4].description"
+            }
+          ]
+        },
+        {
+          "value": "Active x402 tier settled as 25.00 USDC on Base for one complete registry snapshot or premium relationship resource.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity.itemListElement[5].description"
+            }
+          ]
+        },
+        {
+          "value": "Commercial ingestion, training, embedding, synchronization, or redistribution rights begin at 1,000 USD equivalent and require a separate written agreement.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Robbie’s Razor™, RRIP, Graph Registry™, Plate architecture, and strategic infrastructure implementation rights require a separate enterprise agreement.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].hasPart[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Commercial data licensing, deterministic x402 endpoint-level retrieval, AI training and reuse rights, attribution, provenance, commercial integration boundaries, and framework implementation boundaries for Naturepedia™, Plate™ systems, Robbie's Razor™, and related machine-readable knowledge infrastructure.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Active deterministic Atomic Query retrieval resource priced at 0.005 USDC or 5000 atomic units for the currently registered biography payload.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].hasPart[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Active governed Enriched Query retrieval resource priced at 0.025 USDC or 25000 atomic units for the currently registered biography payload.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].hasPart[1].description"
+            }
+          ]
+        },
+        {
+          "value": "A machine-readable governance and licensing plate connecting Naturepedia™, Species Plates™, Track Plates™, Robbie’s Razor, Grand Compression logic, attribution systems, provenance architecture, and commercial AI usage expectations.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].description"
+            }
+          ]
+        },
+        {
+          "value": "A structured governance layer connecting AI licensing, attribution, provenance, recursive compression systems, commercial retrieval, and structured knowledge architecture.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity.description"
+            }
+          ]
+        },
+        {
+          "value": "Preserves authorship and provenance through the Authorship Conservation Rule.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Defines commercial AI usage expectations for training, retrieval, reasoning, and structured data access.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Publishes licensing and provenance metadata through JSON-LD, llms.txt, and structured retrieval systems.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[2].description"
+            }
+          ]
+        },
+        {
+          "value": "Connects Plate™ systems, Naturepedia, Robbie’s Razor, and Grand Compression into structured retrieval interfaces.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[3].description"
+            }
+          ]
+        },
+        {
+          "value": "Connects governance systems to the Robbie’s Razor benchmark repository, evaluation instructions, and public Plate™ examples.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].hasPart[4].description"
+            }
+          ]
+        },
+        {
+          "value": "A machine-readable governance and pricing plate describing the active Naturepedia x402 retrieval architecture: free discovery, Atomic Query, Enriched Query, Structured Plate retrieval, bounded Registry or System Map retrieval, and full Registry or Knowledge Mesh retrieval. Commercial data reuse and Robbie’s Razor framework implementation remain separate licensing layers.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].description"
+            }
+          ]
+        },
+        {
+          "value": "Deterministic machine-readable retrieval through active Naturepedia x402 resource classes on Base using USDC, with fail-closed availability controls and separate commercial reuse and framework licensing boundaries.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.description"
+            }
+          ]
+        },
+        {
+          "value": "Numeric prices correspond to USDC-denominated retrieval charges settled on Base. The canonical pricing manifest and live production endpoint response remain authoritative.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.description"
+            }
+          ]
+        },
+        {
+          "value": "Public metadata, endpoint descriptions, previews, health responses, licensing signals, authority pointers, validation information, and control-plane discovery.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[0].description"
+            }
+          ]
+        },
+        {
+          "value": "One narrowly bounded deterministic canonical fact, identifier resolution, routing result, or compact canonical answer from an explicitly registered complete Atomic resource.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[1].description"
+            }
+          ]
+        },
+        {
+          "value": "One bounded governed relationship-aware response containing canonical relationships, provenance, authority references, citations, or related structured enrichment from an explicitly registered complete Enriched resource.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[2].description"
+            }
+          ]
+        },
+        {
+          "value": "One complete registered and validated Structured Plate™ payload.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[3].description"
+            }
+          ]
+        },
+        {
+          "value": "One bounded multi-record Registry, taxonomy subtree, identity graph, or System Map retrieval.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[4].description"
+            }
+          ]
+        },
+        {
+          "value": "One complete Registry snapshot, expanded Registry, Knowledge Mesh, RRIP payload, or other premium protected state resource.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity.offers.offers[5].description"
+            }
+          ]
+        },
+        {
+          "value": "Free discovery followed by active Atomic Query, Enriched Query, Structured Plate™, bounded Registry or System Map, and full Registry or Knowledge Mesh retrieval classes.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[0].description"
+            }
+          ]
+        },
+        {
+          "value": "Registered and complete protected resources may issue HTTP 402; known but incomplete resources return HTTP 409 without payment challenge; unknown resources return HTTP 404 without payment challenge.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[1].description"
+            }
+          ]
+        },
+        {
+          "value": "Commercial training, embedding, ingestion, synchronization, redistribution, private-dataset construction, derivative-dataset creation, or other broader reuse requires a separate written agreement.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[2].description"
+            }
+          ]
+        },
+        {
+          "value": "Implementation of Robbie’s Razor™, RRIP, Graph Registry™, Plate™ Architecture, recursive compression architecture, or related strategic infrastructure requires a separate enterprise agreement.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[3].description"
+            }
+          ]
+        },
+        {
+          "value": "Preserves attribution, canonical identity, source integrity, licensing metadata, and the Authorship Conservation Rule across governed retrieval and permitted downstream use.",
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].hasPart[4].description"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": true,
+      "classification": "OBSERVED_VALUE_EXPLICITLY_PUBLIC_AT_SAME_FIELD"
+    },
+    "mainEntity": {
+      "observed": {
+        "@type": "Person",
+        "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+        "name": "Robbie George",
+        "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+        "jobTitle": [
+          "Independent Wildlife and Nature Photographer",
+          "Field Observer and Writer",
+          "Naturepedia Creator and Architect of Record",
+          "Knowledge Architect"
+        ],
+        "description": "Robbie George is an independent National Geographic-published wildlife and nature photographer, field observer, writer, former organic farmer, creator and Architect of Record of Naturepedia, and originator of Robbie's Razor and the Grand Compression Cosmology.",
+        "sameAs": [
+          "https://nationalgeographic.de/fotograf/robbie-george/",
+          "https://windowsight.com/artists/robbie-george/",
+          "https://www.instagram.com/robbiengs/",
+          "https://x.com/robbiengs",
+          "https://www.linkedin.com/in/robbie-george-265367133/",
+          "https://github.com/RobbieRazor",
+          "https://www.pinterest.com/robbiengs/"
+        ],
+        "knowsAbout": [
+          "Wildlife photography",
+          "Nature photography",
+          "Field observation",
+          "Animal behavior",
+          "Natural history",
+          "Wildlife conservation",
+          "Landscape photography",
+          "Seascape photography",
+          "Organic agriculture",
+          "Ecological systems",
+          "Information architecture",
+          "Knowledge architecture",
+          "Structured data",
+          "Machine-readable knowledge systems",
+          "Naturepedia",
+          "Robbie's Razor",
+          "Grand Compression Cosmology"
+        ],
+        "subjectOf": [
+          {
+            "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+          },
+          {
+            "@id": "https://www.robbiegeorgephotography.com/nature-photographer#webpage"
+          },
+          {
+            "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          }
+        ]
+      },
+      "reference_value": null,
+      "observed_same_key_public_support": [],
+      "observed_anywhere_public_support": [],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 10,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": {
+            "@type": "Person",
+            "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "jobTitle": [
+              "Wildlife Photographer",
+              "Naturepedia Creator",
+              "Architect of Record"
+            ],
+            "description": "Robbie George is the creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, and the Grand Compression knowledge architecture.",
+            "sameAs": [
+              "https://www.linkedin.com/in/robbiegeorge"
+            ]
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": [
+            {
+              "@type": "Question",
+              "name": "Who is Robbie George?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie George is an independent National Geographic–published nature photographer, field observer, former organic farmer, writer, creator of Naturepedia, originator of Robbie’s Razor, author of the Grand Compression Master Reference Document, and designer of the Razor Auditor evaluation framework. His work connects field observation, photography, ecology, structured knowledge, recursive architecture, canonical publishing, and machine-readable retrieval."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can readers find Robbie George’s publications, exhibitions, and professional recognition?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Publications, Exhibitions & Recognition page is Robbie George’s dedicated professional archive. It documents representative National Geographic books and editorial work, international editions, museum and gallery exhibitions, conservation collaborations, licensing uses, career milestones, and selected external verification sources. The About page preserves the first-person life story, while the Who Is Robbie George? page preserves the canonical identity, authorship, and system record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Naturepedia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Naturepedia is Robbie George’s human- and machine-readable knowledge architecture for wildlife, ecology, living systems, Earth systems, natural patterns, and field observation. Its published layers include pages, Plates, registries, system maps, Knowledge Meshes, indexes, structured data, discovery resources, and selected retrieval endpoints."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the exact canonical formulation of Robbie’s Razor?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The exact canonical formulation is: “When competing explanations exist, prefer the model that follows compression → expression → memory → recursion.” The governing public reference is the canonical Robbie’s Razor page."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is GC-MRD-v2.0?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "GC-MRD-v2.0 is the governing Master Reference Document for the Grand Compression framework. It controls the framework’s definitions, terminology, equations, relationships, scope boundaries, governance requirements, authorship structure, and distinctions between interpretation, implementation, testing, and validation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the Grand Compression Canonical Claims Register?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Canonical Claims Register records formal propositions and their evidence states separately from explanatory pages, implementations, individual findings, professional recognition, licensing, and publication history. Its permitted states are Proposed, Testing, Provisionally Supported, Supported, Challenged, Inconclusive, and Retired."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does publishing or implementing one of Robbie George’s systems validate its effectiveness?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Creating a framework, page, Plate, registry, schema, repository, tool, retrieval endpoint, licensed implementation, or commercial pathway demonstrates authorship, publication, implementation, access, or adoption. It does not automatically establish independent validation or a Supported evidence state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are claims about Robbie’s Razor evaluated?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Technical propositions should be preregistered and evaluated under defined system, version, configuration, workload, baseline, quality, metric, unit, cost, observation-period, and failure boundaries. The Razor Auditor supports diagnosis, the Razor Evaluation Protocol defines testing, and the Claims Register records the resulting formal evidence state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the Robbie George Biography Plate automatically a canonical Plate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Displaying a Biography Plate, title, image, or visible identifier on a webpage does not by itself establish canonical registry membership. Canonical Plate status exists only when a matching resource is recorded in the applicable Canonical Plate Registry and Canonical Publication Manifest with the appropriate identity, resource class, version, authorship, and publication state."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of the E8 lattice in Robbie George’s work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E8 lattice is treated as a bounded mathematical case study involving symmetry, constraint, projection, dense organization, and representation. It is one example within Comparative Compression Geometry—not the foundation of the entire Grand Compression framework."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Robbie George claim that E8 is the literal geometry of nature?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. A visual or structural correspondence does not establish shared material identity, identical causation, or a common physical mechanism. E8 is used as a bounded comparative model, and any application to a natural system remains subject to domain-specific observation, evidence, testing, and scientific constraints."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Naturepedia designed for intelligent agents?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Naturepedia publishes structured data, canonical identifiers, registries, system maps, Knowledge Meshes, indexes, version information, provenance, AI discovery resources, agent guidance, and selected machine-readable endpoints. These layers help compatible agents discover and retrieve resources without relying solely on unstructured page text. They do not guarantee that every agent will interpret or use a resource correctly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does x402 fit into the system?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Where implemented, x402 provides a machine-payment and delivery layer for selected structured resources. Boundary checks may confirm route, identity, resource class, version, publication, payment, serialization, and provenance state. They do not establish scientific accuracy, framework effectiveness, certified compliance, or permission for every downstream use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of the Robbie’s Razor GitHub repository?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The public Robbie’s Razor Benchmark Repository is the reproducibility and versioned reference layer for specifications, benchmark assets, schemas, examples, and result-record resources. It is not the governing canonical authority; that role remains with GC-MRD-v2.0 and the Canonical Claims Register on the website."
+              }
+            }
+          ],
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#archive-sections"
+          },
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": [
+            {
+              "@type": "Question",
+              "name": "Is Robbie George a National Geographic photographer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie George is an independent National Geographic-published wildlife and nature photographer. For many years, his photography was represented for stock licensing through the National Geographic Image Collection and National Geographic Creative. His work appeared in National Geographic books, editorial features, international editions, fine-art galleries, educational resources, and licensing projects. He was not a National Geographic staff photographer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was Robbie George's relationship with the National Geographic Image Collection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie George's photographs were represented through the National Geographic Image Collection and National Geographic Creative. The relationship initially included exclusive stock representation. In 2020, an updated agreement changed the arrangement to non-exclusive representation during the National Geographic and Disney agency transition."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Was Robbie George's photography exhibited at the Smithsonian?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Robbie George's Lake Mattamuskeet dawn photograph received Highly Honored recognition through Nature's Best Photography and was subsequently exhibited at the Smithsonian's National Museum of Natural History in Washington, D.C."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which National Geographic books include Robbie George's photography?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Representative confirmed titles include National Geographic 125 Years, The Splendor of Birds, America the Beautiful, Dawn to Dark: Photographs—The Magic of Light, National Geographic Field Guide to the Water's Edge, Daily Gratitude, Daily Peace, American Crows, and Hoot, Owl! This is a selected list rather than a complete bibliography."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was Wilderness at 50?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wilderness at 50: Photographic Reflections on the Legacy of Tionesta Visionary Howard Zahniser was a 2014 invitational exhibition at the Crary Art Gallery in Warren, Pennsylvania. It brought together 11 photographers to commemorate the 50th anniversary of the Wilderness Act and honor its principal author, Howard Zahniser. Four of Robbie George's large-scale photographs were included."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Did Apple use one of Robbie George's photographs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Apple selected Robbie George's photograph of cypress trees reflected in the dawn light at Lake Mattamuskeet to demonstrate the iPad mini with Retina display. The image appeared during Apple's product presentation and in storefront and promotional displays."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does this archive include every publication and image license?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. This page is a curated professional archive containing representative, documented examples. Robbie George's larger publication and licensing history includes additional books, articles, calendars, educational resources, international editions, commercial uses, and archive placements that may not yet have complete public documentation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Robbie George's photography be licensed or exhibited?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, subject to availability, rights, intended use, and agreed terms. Professional inquiries regarding editorial licensing, exhibitions, publications, documentary use, archive research, or commercial projects can be submitted through the contact page at https://www.robbiegeorgephotography.com/contact."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does this professional archive relate to Naturepedia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The professional archive documents where Robbie George's photographs were published, exhibited, licensed, and used. Naturepedia preserves the ecological knowledge surrounding those photographs by connecting species, behavior, habitats, ecosystems, migration, geography, and field observations through Plates, System Maps, canonical registries, Knowledge Meshes, and related knowledge structures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are Robbie's Razor and the Grand Compression?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Robbie's Razor is an original reasoning and systems-design principle created by Robbie George. It favors models that preserve essential structure through compression, expression, memory, and recursion. The Grand Compression is the broader authored framework examining how compression, constraint, retained structure, memory, and recursive expression may be compared across different kinds of systems. Their definitions, claims, governance, and interpretive boundaries are documented through the Grand Compression Master Reference Document and related public records."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What machine-readable infrastructure supports Naturepedia?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Naturepedia uses stable identities, canonical URLs, registries, manifests, discovery catalogs, provenance records, agent-readable instructions, public and licensed endpoints, MCP-compatible resources, and x402-enabled retrieval pathways. These systems are designed to preserve authorship, attribution, rights, evidence status, version history, and interpretive boundaries as resources move between people, applications, researchers, and intelligent agents."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Naturepedia data and Robbie's original frameworks be licensed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Selected Naturepedia resources, structured data, registries, System Maps, Plates, Knowledge Meshes, and original framework materials may be available for commercial research, publishing, application development, model evaluation, or governed machine retrieval under published terms. Availability, permitted use, attribution requirements, pricing, and access method depend on the individual resource. Current terms are available at https://www.robbiegeorgephotography.com/commercial-data-license."
+              }
+            }
+          ],
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "OfferCatalog",
+            "name": "Naturepedia™ x402 Retrieval Pricing",
+            "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "name": "Free Discovery and Preview Access",
+                "price": "0.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "Free metadata, endpoint descriptions, previews, health responses, licensing signals, and validation information."
+              },
+              {
+                "@type": "Offer",
+                "name": "Atomic Canonical Query",
+                "price": "0.005",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
+                "description": "Active x402 tier settled as 0.005 USDC on Base for one narrowly bounded canonical fact, identifier resolution, routing result, or compact canonical answer. Payment challenges are issued only for explicitly registered Atomic Query resources with complete deterministic payloads."
+              },
+              {
+                "@type": "Offer",
+                "name": "Enriched Relationship Query",
+                "price": "0.025",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+                "description": "Active x402 tier priced at 0.025 USDC on Base for one registered governed relationship-aware query containing bounded canonical relationships, provenance, authority references, citations, or related enrichment. Payment challenges are issued only for explicitly registered complete Enriched Query payloads."
+              },
+              {
+                "@type": "Offer",
+                "name": "Structured Plate™ Payload",
+                "price": "0.25",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "https://www.robbiegeorgephotography.com/v1/plates/item/commercial-data-license-plate",
+                "description": "Active x402 tier settled as 0.25 USDC on Base for one registered and validated structured Plate payload. Payment grants one endpoint-level retrieval only."
+              },
+              {
+                "@type": "Offer",
+                "name": "Bounded Registry, Taxonomy Subtree, or System Map",
+                "price": "5.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "Active x402 tier settled as 5.00 USDC on Base for one bounded multi-record retrieval."
+              },
+              {
+                "@type": "Offer",
+                "name": "Full Registry, Knowledge Mesh, or Snapshot",
+                "price": "25.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "Active x402 tier settled as 25.00 USDC on Base for one complete registry snapshot or premium relationship resource."
+              }
+            ]
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-data-license-plate"
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "Thing",
+            "name": "Machine-Readable Governance System",
+            "description": "A structured governance layer connecting AI licensing, attribution, provenance, recursive compression systems, commercial retrieval, and structured knowledge architecture."
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "Service",
+            "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#machine-retrieval-service",
+            "name": "Naturepedia Governed Machine Retrieval",
+            "description": "Deterministic machine-readable retrieval through active Naturepedia x402 resource classes on Base using USDC, with fail-closed availability controls and separate commercial reuse and framework licensing boundaries.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Robbie George Photography",
+              "url": "https://www.robbiegeorgephotography.com"
+            },
+            "areaServed": "Global",
+            "serviceType": [
+              "machine-readable retrieval",
+              "x402 retrieval",
+              "structured data access",
+              "canonical query resolution",
+              "relationship-aware enrichment",
+              "Structured Plate retrieval",
+              "Registry retrieval",
+              "System Map retrieval",
+              "Knowledge Mesh retrieval"
+            ],
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "0.00",
+              "highPrice": "25.00",
+              "offerCount": "6",
+              "description": "Numeric prices correspond to USDC-denominated retrieval charges settled on Base. The canonical pricing manifest and live production endpoint response remain authoritative.",
+              "offers": [
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#discovery-offer",
+                  "name": "Discovery and Previews",
+                  "description": "Public metadata, endpoint descriptions, previews, health responses, licensing signals, authority pointers, validation information, and control-plane discovery.",
+                  "price": "0.00",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "discovery",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "discovery"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "0"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#atomic-query-offer",
+                  "name": "Atomic Query",
+                  "description": "One narrowly bounded deterministic canonical fact, identifier resolution, routing result, or compact canonical answer from an explicitly registered complete Atomic resource.",
+                  "price": "0.005",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "atomic-query",
+                  "url": "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "atomic"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "resource_class",
+                      "value": "atomic-query"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "schema_version",
+                      "value": "naturepedia.atomic-query.v1"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "5000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#enriched-query-offer",
+                  "name": "Enriched Query",
+                  "description": "One bounded governed relationship-aware response containing canonical relationships, provenance, authority references, citations, or related structured enrichment from an explicitly registered complete Enriched resource.",
+                  "price": "0.025",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "enriched-query",
+                  "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "enriched"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "resource_class",
+                      "value": "enriched-query"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "schema_version",
+                      "value": "naturepedia.enriched-query.v1"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "25000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#structured-plate-offer",
+                  "name": "Structured Plate™ Retrieval",
+                  "description": "One complete registered and validated Structured Plate™ payload.",
+                  "price": "0.25",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "structured-plate",
+                  "url": "https://www.robbiegeorgephotography.com/v1/plates/item/commercial-intelligence-pricing-plate",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "access_class",
+                      "value": "single-plate"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "250000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#bounded-retrieval-offer",
+                  "name": "Bounded Registry, Taxonomy Subtree, or System Map",
+                  "description": "One bounded multi-record Registry, taxonomy subtree, identity graph, or System Map retrieval.",
+                  "price": "5.00",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "bounded-retrieval",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "5000000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                },
+                {
+                  "@type": "Offer",
+                  "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#snapshot-retrieval-offer",
+                  "name": "Full Registry, Knowledge Mesh, or Snapshot",
+                  "description": "One complete Registry snapshot, expanded Registry, Knowledge Mesh, RRIP payload, or other premium protected state resource.",
+                  "price": "25.00",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "category": "snapshot-retrieval",
+                  "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+                  "additionalProperty": [
+                    {
+                      "@type": "PropertyValue",
+                      "name": "payment_asset",
+                      "value": "USDC"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "network",
+                      "value": "eip155:8453"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "atomic_units",
+                      "value": "25000000"
+                    },
+                    {
+                      "@type": "PropertyValue",
+                      "name": "route_status",
+                      "value": "active"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].mainEntity"
+            }
+          ]
+        },
+        {
+          "value": [
+            {
+              "@type": "Question",
+              "name": "What does this Commercial Data License cover?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This license applies to Naturepedia™, Plate™ systems, Species Plates™, Track Plates™, Location Plates™, Water System Plates™, Photography Plates™, Governance Plates™, Robbie’s Razor™, Grand Compression materials, Graph Registries™, Knowledge Meshes, RRIP, RKCA, machine-readable metadata, JSON-LD structures, AI-readable guidance files, x402 endpoints, structured relationships, visual layouts, diagrams, and related governance architecture created by Robbie George."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is non-commercial educational use allowed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Educational reference, classroom discussion, research, citation, personal learning, limited quotation, linking, and other non-commercial uses are generally allowed when attribution to Robbie George and the original source are preserved. Non-commercial permission does not include commercial model training, bulk ingestion, dataset construction, enterprise synchronization, redistribution, or framework implementation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can AI companies train models on Naturepedia™ or Plate™ systems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Commercial model training, pretraining, fine-tuning, embedding generation, model distillation, synthetic-dataset creation, permanent ingestion, retrieval-corpus construction, structured extraction, bulk retrieval, enterprise synchronization, and derivative-dataset construction require expressly granted rights through a separate commercial agreement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does visual or multimodal AI training require permission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when conducted for commercial training, pretraining, fine-tuning, embedding, dataset construction, distillation, architectural extraction, or systematic machine ingestion. Covered activities may include rendered-page capture, bulk screenshots, document-image training, visual patch extraction, layout-model training, diagram extraction, figure extraction, visual embeddings, and reconstruction of Plate™, Graph Registry™, Knowledge Mesh, or page-hierarchy structures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is ordinary viewing or search indexing considered prohibited visual ingestion?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Ordinary human browsing, conventional search indexing, accessibility rendering, citation, linking, and user-directed viewing are distinct from systematic commercial training or dataset construction. Public availability does not by itself grant commercial model-training, embedding, bulk-capture, derivative-dataset, redistribution, or framework-implementation rights."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are Plate™ layouts and visual relationships included in the license?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Plate™ systems may communicate structured information through composition, annotations, spatial hierarchy, typography, diagrams, relationship paths, semantic Plate IDs, and connections to JSON-LD and registries. Their visual organization may therefore form part of the authored knowledge and provenance architecture rather than functioning only as decoration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do machine-readable endpoints require payment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Some protected machine-readable resources return an HTTP 402 Payment Required response using x402. Public discovery and control-plane resources may remain free, while explicitly registered protected resources can require deterministic Base USDC payment. The production endpoint response and canonical pricing manifest are authoritative for current availability and price."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the current x402 retrieval prices?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Current deterministic pricing is: Discovery — Free; Atomic Query — $0.005 USDC / 5000 atomic units; Enriched Query — $0.025 USDC / 25000 atomic units; Structured Plate™ — $0.25 USDC / 250000 atomic units; bounded Registry, taxonomy subtree, or System Map — $5.00 USDC / 5000000 atomic units; and full Registry, Knowledge Mesh, or snapshot — $25.00 USDC / 25000000 atomic units. The canonical pricing authority is https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between an Atomic Query and an Enriched Query?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "An Atomic Query returns one narrowly bounded deterministic canonical result, such as identifier resolution or a compact canonical answer. An Enriched Query returns a bounded governed response that may include canonical relationships, provenance, authority references, citations, and related structured enrichment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What endpoint families are used for machine access?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Current machine-access families include the free control-plane resources /api/v2/naturepedia/*, /api/v2/plates/*, /api/v2/rrip/*, and /api/v2/razor/*; active query families /v1/query/atomic/* and /v1/query/enriched/*; additional protected families such as /v1/taxonomy/*, /v1/plates/*, /v1/registries/*, /v1/knowledge-mesh/*, and /v1/sovereign/*; and protected compatibility routes under /x402/*."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens if a machine requests an unavailable resource?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The system is designed to fail closed before payment. A registered and complete protected resource may be eligible for a deterministic HTTP 402 challenge. A known but incomplete resource returns HTTP 409 without a payment challenge. An unknown resource returns HTTP 404 without a payment challenge."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do x402 payments grant unlimited commercial rights?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. An x402 payment grants one endpoint-level retrieval of the identified protected resource only. It does not automatically grant model-training, multimodal-training, fine-tuning, embedding, bulk-ingestion, visual-capture, private-dataset construction, derivative-dataset, model-distillation, resale, redistribution, synchronization, commercial-implementation, or Robbie’s Razor™ framework-implementation rights."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Has live x402 payment settlement been verified?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. A live Base USDC x402 settlement and protected-payload delivery have previously been successfully verified through the production machine-access infrastructure. Separately, the current Atomic Query and Enriched Query classes have been validated through their production HTTP 402 challenges and fail-closed availability behavior. No new Atomic or Enriched settlement or post-settlement HTTP 200 delivery is claimed by those activation tests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the Commercial Data License and Framework Licensing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Commercial Data License governs expressly authorized commercial use of Naturepedia™ knowledge assets, Plate™ content, metadata, registries, structured data, training, embedding, synchronization, redistribution, and related machine-readable resources. Robbie’s Razor™ Framework Licensing governs implementation of the underlying architecture, including Robbie’s Razor™, Plate™ Architecture, Graph Registries™, Authorship Conservation Rule structures, RRIP, RKCA, and private or enterprise knowledge-system deployments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is machine-readable governance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Machine-readable governance refers to structured licensing, provenance, attribution, pricing, retrieval, authorship, availability, payment-challenge, canonical-identity, and state signals published through JSON-LD, metadata, semantic Plate IDs, AI-readable guidance files, MCP metadata, x402 responses, HTTP headers, registries, state tokens, manifests, System Maps, Knowledge Meshes, and related structured retrieval layers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can AI systems find machine-readable guidance?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI systems may encounter guidance through /llms.txt, /llms-full.txt, /.well-known/ai-catalog.json, /.well-known/openapi.json, /.well-known/ai-root.json, /.well-known/mcp/server-card.json, JSON-LD metadata, x402 responses, HTTP headers, the Robbie’s Razor Benchmarks repository, and its AGENTS.md instruction layer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the role of the GitHub benchmark repository?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Robbie’s Razor Benchmarks repository functions as a public benchmark, evaluation, engineering, AGENTS.md instruction, schema, registry, x402 documentation, RRIP documentation, and Plate™ example surface connected to the broader Naturepedia™, Robbie’s Razor™, and Grand Compression systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why are provenance and attribution emphasized?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The system is designed around provenance preservation and the Authorship Conservation Rule. Attribution helps maintain the relationship among knowledge, visual structure, semantic identifiers, source pages, canonical authorities, registries, the original creator, and the larger recursive architecture to which the material belongs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Naturepedia™ guarantee AI accuracy or prevent hallucinations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Naturepedia™, Plate™ systems, Robbie’s Razor™, Grand Compression materials, registries, Knowledge Meshes, and governance structures are informational, architectural, retrieval-oriented, and provenance-oriented systems. They do not guarantee model accuracy, retrieval accuracy, hallucination prevention, regulatory compliance, business outcomes, scientific conclusions, or downstream AI behavior."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do Plate™ relationships or visual connections prove scientific causality?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Visual placement, proximity, arrows, shared terminology, registry links, or machine-readable relationships may summarize documented subjects or framework-defined relationships, but they should not be interpreted as independent proof of causality, universality, material identity, or cross-domain scientific validity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who is responsible for AI outputs or third-party implementations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Organizations, developers, AI providers, retrieval systems, autonomous agents, commercial users, and framework implementers remain responsible for their own implementations, outputs, decisions, safety processes, compliance obligations, validations, interpretations, licensing determinations, and downstream use of retrieved information."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are warranties provided for Naturepedia™, Robbie’s Razor™, or Plate™ systems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To the maximum extent permitted by applicable law, Robbie George and Robbie George Photography disclaim warranties of accuracy, completeness, merchantability, fitness for a particular purpose, non-infringement, availability, performance, or suitability. Users remain responsible for verifying information and determining whether any retrieval, use, interpretation, implementation, or commercial application is appropriate."
+              }
+            }
+          ],
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[6].mainEntity"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": false,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": true,
+      "classification": "OBSERVED_VALUE_NOT_EXACTLY_PRESENT_IN_PUBLIC_PACKAGE"
+    },
+    "isPartOf": {
+      "observed": {
+        "@id": "https://www.robbiegeorgephotography.com/#website"
+      },
+      "reference_value": null,
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].isPartOf"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].isPartOf"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].isPartOf"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].isPartOf"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].isPartOf"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].isPartOf"
+        }
+      ],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 6,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": {
+            "@type": "CreativeWork",
+            "name": "Naturepedia Wildlife Knowledge System",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].isPartOf"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#website"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].isPartOf"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].isPartOf"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].isPartOf"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].isPartOf"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].isPartOf"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+          },
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].isPartOf"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "CollectionPage",
+            "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage",
+            "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "name": "Publications, Exhibitions & Professional Recognition"
+          },
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].isPartOf"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "CreativeWorkSeries",
+            "name": "Naturepedia Governance Plates™",
+            "url": "https://www.robbiegeorgephotography.com/naturepedia"
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].isPartOf"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].isPartOf"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[4].isPartOf"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": true,
+      "classification": "OBSERVED_VALUE_EXPLICITLY_PUBLIC_AT_SAME_FIELD"
+    },
+    "about": {
+      "observed": {
+        "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+      },
+      "reference_value": null,
+      "observed_same_key_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[3].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].about"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[1].@graph[1].founder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].author"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].mainEntity"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[0].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[3].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].creator"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].author"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].copyrightHolder"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[2].@graph[4].about"
+        },
+        {
+          "role": "canonical-biography",
+          "path": "jsonld[3].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[0].@graph[1].founder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].author"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].about"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].creator"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[1].copyrightHolder"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[0].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[1].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[2].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[3].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[4].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[5].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[6].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[7].item.contributor"
+        },
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[4].itemListElement[8].item.contributor"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[0].creator"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[2].@graph[1].founder"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].author"
+        },
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[3].@graph[0].creator"
+        }
+      ],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 4,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": [
+            {
+              "@type": "Thing",
+              "name": "Naturepedia"
+            },
+            {
+              "@type": "Thing",
+              "name": "Robbie's Razor"
+            },
+            {
+              "@type": "Thing",
+              "name": "Grand Compression Cosmology"
+            },
+            {
+              "@type": "Thing",
+              "name": "Plate Systems"
+            },
+            {
+              "@type": "Thing",
+              "name": "Recursive Compression Interface"
+            }
+          ],
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[0].about"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+          },
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[0].about"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[2].@graph[4].about"
+            },
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[3].about"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "Person",
+            "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+            "name": "Robbie George",
+            "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          },
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[2].about"
+            }
+          ]
+        },
+        {
+          "value": [
+            {
+              "@type": "Thing",
+              "name": "Commercial Data Licensing"
+            },
+            {
+              "@type": "Thing",
+              "name": "Naturepedia"
+            },
+            {
+              "@type": "Thing",
+              "name": "Plate Architecture"
+            },
+            {
+              "@type": "Thing",
+              "name": "Robbie's Razor"
+            },
+            {
+              "@type": "Thing",
+              "name": "x402 Machine Retrieval"
+            },
+            {
+              "@type": "Thing",
+              "name": "Atomic Query"
+            },
+            {
+              "@type": "Thing",
+              "name": "Enriched Query"
+            },
+            {
+              "@type": "Thing",
+              "name": "Structured Plate Retrieval"
+            },
+            {
+              "@type": "Thing",
+              "name": "Machine-Readable Governance"
+            },
+            {
+              "@type": "Thing",
+              "name": "Provenance Preservation"
+            },
+            {
+              "@type": "Thing",
+              "name": "Commercial AI Licensing"
+            },
+            {
+              "@type": "Thing",
+              "name": "Framework Implementation Rights"
+            }
+          ],
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[3].@graph[0].about"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": true,
+      "classification": "OBSERVED_VALUE_EXPLICITLY_PUBLIC_AT_SAME_FIELD"
+    },
+    "subjectOf": {
+      "observed": [
+        {
+          "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+        },
+        {
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#webpage"
+        }
+      ],
+      "reference_value": null,
+      "observed_same_key_public_support": [],
+      "observed_anywhere_public_support": [],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 3,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": [
+            {
+              "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#webpage"
+            },
+            {
+              "@id": "https://www.robbiegeorgephotography.com/nature-photographer#webpage"
+            },
+            {
+              "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+            }
+          ],
+          "examples": [
+            {
+              "role": "canonical-biography",
+              "path": "jsonld[1].@graph[2].subjectOf"
+            },
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[0].@graph[2].subjectOf"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[2].@graph[2].subjectOf"
+            }
+          ]
+        },
+        {
+          "value": {
+            "@type": "DigitalDocument",
+            "name": "Naturepedia™ x402 Retrieval Pricing Manifest",
+            "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "encodingFormat": "application/ld+json"
+          },
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[0].subjectOf"
+            },
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[1].subjectOf"
+            }
+          ]
+        },
+        {
+          "value": [
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia x402 Retrieval Pricing Manifest",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+              "encodingFormat": "application/json",
+              "version": "3.0.0"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia AI Catalog",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+              "encodingFormat": "application/json"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia OpenAPI Contract",
+              "url": "https://www.robbiegeorgephotography.com/.well-known/openapi.json",
+              "encodingFormat": "application/json"
+            },
+            {
+              "@type": "DigitalDocument",
+              "name": "Naturepedia Registry-State Token",
+              "url": "https://www.robbiegeorgephotography.com/api/v2/razor/state-token",
+              "encodingFormat": "application/json"
+            }
+          ],
+          "examples": [
+            {
+              "role": "rights-and-license",
+              "path": "jsonld[5].subjectOf"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": false,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": true,
+      "classification": "OBSERVED_VALUE_NOT_EXACTLY_PRESENT_IN_PUBLIC_PACKAGE"
+    },
+    "citation": {
+      "observed": [
+        "https://nationalgeographic.de/fotograf/robbie-george/",
+        "https://windowsight.com/artists/robbie-george/",
+        "https://www.wral.com/archive/18932622/",
+        "https://www.paenvironmentdigest.com/newsletter/default.asp?NewsletterArticleID=29610&SubjectID=5",
+        "https://www.craryartgallery.org/focusedonnature.html",
+        "https://defenders.org/magazine/summer-2015/restoring-grizzlies-cascades",
+        "https://citylifestyle.com/portlandme/issues/2026-02"
+      ],
+      "reference_value": null,
+      "observed_same_key_public_support": [
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].citation"
+        }
+      ],
+      "observed_anywhere_public_support": [
+        {
+          "role": "professional-evidence",
+          "path": "jsonld[1].@graph[0].citation"
+        }
+      ],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 1,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": [
+            "https://nationalgeographic.de/fotograf/robbie-george/",
+            "https://windowsight.com/artists/robbie-george/",
+            "https://www.wral.com/archive/18932622/",
+            "https://www.paenvironmentdigest.com/newsletter/default.asp?NewsletterArticleID=29610&SubjectID=5",
+            "https://www.craryartgallery.org/focusedonnature.html",
+            "https://defenders.org/magazine/summer-2015/restoring-grizzlies-cascades",
+            "https://citylifestyle.com/portlandme/issues/2026-02"
+          ],
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[0].citation"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": false,
+      "classification": "OBSERVED_VALUE_EXPLICITLY_PUBLIC_AT_SAME_FIELD"
+    },
+    "creditText": {
+      "observed": "Created by Robbie George, Architect of Record for Naturepedia™, Robbie’s Razor™, and the Grand Compression knowledge system.",
+      "reference_value": null,
+      "observed_same_key_public_support": [],
+      "observed_anywhere_public_support": [
+        {
+          "role": "rights-and-license",
+          "path": "jsonld[5].additionalProperty[12].value"
+        }
+      ],
+      "reference_same_key_public_support": [],
+      "distinct_public_same_key_candidate_count": 1,
+      "distinct_public_same_key_candidates": [
+        {
+          "value": "Photograph by Robbie George",
+          "examples": [
+            {
+              "role": "professional-evidence",
+              "path": "jsonld[1].@graph[1].creditText"
+            }
+          ]
+        }
+      ],
+      "observed_publicly_grounded": true,
+      "reference_publicly_grounded": false,
+      "multiple_public_candidates": false,
+      "classification": "OBSERVED_VALUE_EXPLICITLY_PUBLIC_ELSEWHERE"
+    }
+  },
+  "interpretation_boundary": "This diagnostic does not alter CD002-QC-1.0, CD002-REFERENCE-1.0, CD002-EVAL-1.0, or the frozen PASS/FAIL result. It only characterizes whether rejected output values were independently present in the frozen public evidence.",
+  "api_call_performed": false,
+  "x402_payment_performed": false
+}
