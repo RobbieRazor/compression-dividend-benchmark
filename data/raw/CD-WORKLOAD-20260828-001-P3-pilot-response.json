@@ -1,0 +1,41 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "https://www.robbiegeorgephotography.com/x402/query/atomic/robbie-george-biography-plate",
+  "name": "Robbie George Biography Plate™ Canonical Identifier Resolution",
+  "description": "Atomic canonical resolution for the registered Robbie George Biography Plate™ identifier.",
+  "resourceClass": "atomic-query",
+  "schemaVersion": "naturepedia.atomic-query.v1",
+  "version": "1.0",
+  "queryType": "canonical-identifier-resolution",
+  "result": {
+    "identifier": "robbie-george#robbie-george-biography-plate",
+    "canonicalUrl": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+  },
+  "provenance": {
+    "registry": "https://www.robbiegeorgephotography.com/v1/plates/canonical",
+    "authority": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "creator": "Robbie George",
+    "governance": "GC-MRD-v2.0"
+  },
+  "retrievalTerms": {
+    "accessClass": "atomic",
+    "priceUSDC": "0.005",
+    "atomicUnits": "5000",
+    "rights": "One endpoint-level retrieval of this registered Atomic Query result only.",
+    "excludedRights": [
+      "training",
+      "embedding",
+      "bulk ingestion",
+      "redistribution",
+      "resale",
+      "synchronization",
+      "private dataset construction",
+      "derivative dataset creation",
+      "commercial implementation",
+      "framework implementation"
+    ]
+  },
+  "license": "https://www.robbiegeorgephotography.com/commercial-data-license",
+  "governance": "GC-MRD-v2.0"
+}
