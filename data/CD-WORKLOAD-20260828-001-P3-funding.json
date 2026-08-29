@@ -1,0 +1,17 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "path": "P3",
+  "capture_timestamp_utc": "2026-08-29T19:54:01.302Z",
+  "network": "eip155:8453",
+  "payer_address": "0x590AB6f178335e80e5238e6082fb6c518b914B46",
+  "usdc_asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "observed_base_eth": "0",
+  "observed_base_usdc": "0.05",
+  "starting_base_usdc": "0",
+  "funding_delta_usdc": "0.05",
+  "x402_unit_price_usdc": "0.005",
+  "theoretical_payment_capacity": 10,
+  "status": "FUNDED_READY_FOR_P3_PILOT",
+  "pre_payment": true,
+  "git_head": "1e7bf22f4656468884d12832ec11e5fb962dc0e4"
+}
