@@ -1,0 +1,12 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "path": "P3",
+  "network": "eip155:8453",
+  "payer_address": "0x590AB6f178335e80e5238e6082fb6c518b914B46",
+  "starting_base_eth": "0",
+  "starting_base_usdc": "0",
+  "intended_test_funding_usdc": "0.05",
+  "intended_eth_funding": "0",
+  "private_key_recorded": false,
+  "purpose": "Dedicated low-balance payer wallet for Study 001 governed x402 retrieval measurements"
+}
