@@ -1,0 +1,141 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-29T22:38:21Z",
+  "benchmark_outcome": "NEGATIVE_INCREMENTAL_COMPRESSION_DIVIDEND_AT_LIVE_P3_PRICE",
+  "primary_conclusion": "Study 003 successfully established an unambiguous quality-equivalent task surface for fresh recomputation and provider prompt caching. Both P1 and P2 reproduced the explicitly selected public Biography Plate state under the same frozen CD003-QC-1.0 Quality Gate.",
+  "economic_conclusion": "The measured quality-equivalent P2 cache-hit requester cost is the best available baseline at $0.00111572. The live governed Structured Plate retrieval price is $0.25, approximately 224.07 times the best baseline before adding any verification, residual-compute, or fallback cost. Therefore a positive requester-side incremental Compression Dividend is impossible at the current P3 price.",
+  "p1": {
+    "observation_id": "CD-003-P1-0001",
+    "model": "gpt-5.6-luna",
+    "cost_usd": 0.0065402,
+    "input_tokens": 30139,
+    "cached_input_tokens": 0,
+    "output_tokens": 427,
+    "quality_gate_pass": true,
+    "deep_exact_pass": "13/13"
+  },
+  "p2": {
+    "observation_id": "CD-003-P2-0001",
+    "model": "gpt-5.6-luna",
+    "cost_usd": 0.00111572,
+    "input_tokens": 30139,
+    "cached_input_tokens": 30136,
+    "uncached_input_tokens": 3,
+    "cache_write_tokens": 0,
+    "cache_state": "P2_CACHE_HIT",
+    "quality_gate_pass": true,
+    "deep_exact_pass": "13/13",
+    "cost_reduction_vs_p1_usd": 0.005424480000000001,
+    "cost_reduction_vs_p1_fraction": 0.8294058285679338
+  },
+  "best_quality_equivalent_baseline": {
+    "path": "P2",
+    "cost_usd": 0.00111572
+  },
+  "p3": {
+    "governed_route": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+    "live_http_status": 402,
+    "live_network": "eip155:8453",
+    "live_price_atomic_usdc": "250000",
+    "live_price_usd": 0.25,
+    "payment_performed": false,
+    "semantic_quality_measured": false,
+    "semantic_quality_status": "NOT_MEASURED",
+    "reason_payment_not_performed": "The live retrieval price was already economically dominated by the measured quality-equivalent P2 baseline. A paid P3 response could answer the separate semantic-validity question but could not change the negative requester-side economic conclusion at the current price."
+  },
+  "economic_dominance": {
+    "p3_vs_best_baseline_ratio": 224.07055533646437,
+    "p3_excess_cost_usd": 0.24888428,
+    "p3_break_even_price_usd": 0.00111572,
+    "current_p3_price_fraction_required_to_break_even": 0.00446288,
+    "positive_incremental_compression_dividend_possible": false
+  },
+  "scientific_interpretation": {
+    "study_001": "Payment success and HTTP success do not establish governed-state equivalence.",
+    "study_002": "A benchmark can remain underdetermined when multiple public representations exist and the task does not select one explicitly.",
+    "study_003": "Explicit representation selection resolved the Study 002 ambiguity. P1 achieved exact reconstruction, P2 achieved an exact quality-equivalent cache hit, and the live P3 price was economically dominated before payment.",
+    "combined_learning": "A defensible Compression Dividend benchmark requires semantic equivalence, representation-selection equivalence, empirical availability of competing paths, and comparison against the cheapest measured quality-equivalent baseline."
+  },
+  "quality_contract": {
+    "contract_id": "CD003-QC-1.0",
+    "surface_sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+    "surface_top_level_fields": 14
+  },
+  "study_boundary": {
+    "p3_semantic_quality_unknown": true,
+    "p3_semantic_failure_asserted": false,
+    "p3_semantic_pass_asserted": false,
+    "p3_payment_required_for_economic_conclusion": false,
+    "additional_paid_study003_measurements_recommended": false
+  },
+  "artifact_provenance": {
+    "design": {
+      "path": "WORKLOAD-CD-20260829-003.md",
+      "sha256": "1f677ee23027abe5d45e4941862c36079351d611b5270a4daa19b85b88116d9e",
+      "latest_commit": "5f3032c9a30d72c8fa312da78e9ef4eb6e8c9fa2"
+    },
+    "public_surface": {
+      "path": "data/CD-WORKLOAD-20260829-003-public-state-surface.json",
+      "sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+      "latest_commit": "3eac990d389ae9735d42a99a48706b28d29897bb"
+    },
+    "public_surface_metadata": {
+      "path": "data/CD-WORKLOAD-20260829-003-public-state-surface-metadata.json",
+      "sha256": "58ff12fa230763194935fa5fb86dbadda457ac9c4d2baa3b5c35f44d12cb4120",
+      "latest_commit": "3eac990d389ae9735d42a99a48706b28d29897bb"
+    },
+    "quality_contract": {
+      "path": "data/CD-WORKLOAD-20260829-003-quality-contract.json",
+      "sha256": "42d5205889a0974477c7ff070ef4b9ff8e4e7a25b2d377a3312562453f5477b5",
+      "latest_commit": "024d655704d4390e5388fc99d0a17a6a56703b14"
+    },
+    "p1_task_metadata": {
+      "path": "data/CD-WORKLOAD-20260829-003-p1-task-metadata.json",
+      "sha256": "34f975e0a6c175db26102190d0e77c16a25ce020cba82f76ad772b7b6f10a8b8",
+      "latest_commit": "6ed21c08e709a0c176981ab038504f2f3534b27e"
+    },
+    "provider": {
+      "path": "data/CD-WORKLOAD-20260829-003-provider.json",
+      "sha256": "1303d3cb56d8fc1cadade5dc456a9ffa91f1f7d708fff50513c5442d5f196a0c",
+      "latest_commit": "e7f1ae97e06ec3c8284a2ea768ab2cf1a65a4b99"
+    },
+    "p1_measurement": {
+      "path": "data/raw/CD-003-P1-0001-measurement.json",
+      "sha256": "de08884074062ea9bf417523bf56979ebbc654500c6d0214481866e0ef1b76ab",
+      "latest_commit": "5b142468812e51b578708216a75c2d821895c5f2"
+    },
+    "p1_evaluation": {
+      "path": "data/raw/CD-003-P1-0001-quality-evaluation.json",
+      "sha256": "a2ca5b9beaf4abc5dc71fd8b99dbabcbf3e607f3376e4079099dec84ee2c5c46",
+      "latest_commit": "ad513afdf29d8689ca49e6f76c07b84c7cf65982"
+    },
+    "p2_eligibility": {
+      "path": "data/CD-WORKLOAD-20260829-003-P2-eligibility.json",
+      "sha256": "adc7396187db063e04545960ca38fe78bbc4a8a49262bc6ea431b8c56724082a",
+      "latest_commit": "795b9b3c672554df5ddb790778a97075131d512f"
+    },
+    "p2_measurement": {
+      "path": "data/raw/CD-003-P2-0001-measurement.json",
+      "sha256": "85a199c33e38f4309ffee54bbba62f15ce9b1488f5bac25ded3c6d457a3f1887",
+      "latest_commit": "b3cb5feb7db24d9e3c4bbc533765f24fc1387187"
+    },
+    "p2_evaluation": {
+      "path": "data/raw/CD-003-P2-0001-quality-evaluation.json",
+      "sha256": "6a5238772538a98d6cfba6632d02760545a8678b2d48b6df03ed391cc5453f4f",
+      "latest_commit": "7ff17c1a3f55c73cf1491311acbb616fa82056ee"
+    },
+    "p3_challenge": {
+      "path": "data/CD-WORKLOAD-20260829-003-P3-challenge.json",
+      "sha256": "af8c9f72e9ab44790b80608fc87a34f26a47f65847b5ad24dc18289c229be7a4",
+      "latest_commit": "1112eac5e6e2765cfc0f2212cb05a7bc94e8929f"
+    },
+    "economic_dominance": {
+      "path": "data/CD-WORKLOAD-20260829-003-economic-dominance.json",
+      "sha256": "c88c78292deb7f5a36b63ce3a2edf7762c3f03cc71a061713afff27be5bc4f9d",
+      "latest_commit": "17ee4b5973a9192fde73565b13591599fac2c366"
+    }
+  },
+  "api_call_performed_by_closure": false,
+  "x402_payment_performed_by_closure": false
+}
