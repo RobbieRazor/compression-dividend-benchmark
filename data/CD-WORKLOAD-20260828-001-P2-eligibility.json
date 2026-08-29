@@ -1,0 +1,50 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "path": "P2",
+  "status": "P2_PROMPT_CACHE_NOT_ACTIVE_FOR_WORKLOAD",
+  "capture_timestamp_utc": "2026-08-29T19:18:18+00:00",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "workload_input_tokens": 275,
+  "probe_class": "UNRECORDED_ELIGIBILITY_PROBE",
+  "implicit_probe": {
+    "request_count": 2,
+    "request_1": {
+      "input_tokens": 275,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 62
+    },
+    "request_2": {
+      "input_tokens": 275,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 62
+    },
+    "cache_activated": false
+  },
+  "explicit_breakpoint_probe": {
+    "request_count": 2,
+    "request_1": {
+      "input_tokens": 275,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 62
+    },
+    "request_2": {
+      "input_tokens": 275,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 62
+    },
+    "cache_activated": false
+  },
+  "conclusion": "Provider prompt caching did not activate under either implicit mode or an explicit breakpoint for the exact frozen Study 001 workload. The workload will not be enlarged or altered solely to manufacture a cache hit.",
+  "benchmark_treatment": {
+    "C2_status": "UNAVAILABLE_FOR_THIS_WORKLOAD",
+    "best_available_baseline_rule": "Use measured P1 Cre as the best available baseline unless another actually available competing path is measured.",
+    "do_not_set_synthetic_C2": true
+  },
+  "calibration_commit": "f45f0c6770858bbdfe5b1e691f0b5701f2d1a5e0",
+  "notes": "The four API requests used for eligibility probing are excluded from observations.csv and are not empirical P2 cost observations."
+}

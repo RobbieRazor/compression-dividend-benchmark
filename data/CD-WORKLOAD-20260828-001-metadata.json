@@ -68,5 +68,8 @@
   "quality_contract_revision": "CD001-QC-1.1",
   "quality_contract_revision_reason": "Narrowed to Atomic required output contract before first recorded pilot observation; no empirical observations existed under CD001-QC-1.0.",
   "provider_configuration_frozen": true,
-  "provider_configuration_file": "data/CD-WORKLOAD-20260828-001-provider.json"
+  "provider_configuration_file": "data/CD-WORKLOAD-20260828-001-provider.json",
+  "p2_status": "PROMPT_CACHE_NOT_ACTIVE_FOR_EXACT_WORKLOAD",
+  "p2_eligibility_file": "data/CD-WORKLOAD-20260828-001-P2-eligibility.json",
+  "p2_observations_required": false
 }
