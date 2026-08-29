@@ -1,0 +1,136 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+  "identifier": "robbie-george#robbie-george-biography-plate",
+  "name": "Robbie George Biography Plate™",
+  "alternateName": "Naturepedia Biography Plate™",
+  "headline": "Robbie George Biography Plate™ — Creator, Photographer, Naturepedia Architect, and Architect of Record",
+  "description": "Canonical machine-readable biography Plate for Robbie George, a National Geographic-published wildlife and nature photographer, creator of Naturepedia™, architect of Robbie’s Razor™, and author of the Grand Compression knowledge system.",
+  "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+  "inLanguage": "en-US",
+  "dateModified": "2026-08-19",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george",
+    "name": "Robbie George",
+    "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "jobTitle": [
+      "Wildlife and Nature Photographer",
+      "Naturepedia Creator",
+      "Knowledge-System Architect",
+      "Architect of Record"
+    ],
+    "description": "Robbie George is a National Geographic-published wildlife and nature photographer, creator of Naturepedia™, Robbie’s Razor™, Plate™ systems, Recursive Knowledge Compression Architecture, and the Grand Compression knowledge system.",
+    "sameAs": [
+      "https://www.linkedin.com/in/robbiegeorge"
+    ],
+    "knowsAbout": [
+      "Wildlife photography",
+      "Nature photography",
+      "Ecology",
+      "Naturepedia",
+      "Plate Architecture",
+      "Robbie's Razor",
+      "Recursive Knowledge Compression Architecture",
+      "Recursive Registry Inheritance Principle",
+      "Machine-readable knowledge systems",
+      "Provenance and attribution governance"
+    ]
+  },
+  "creator": {
+    "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+  },
+  "author": {
+    "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.robbiegeorgephotography.com/#organization",
+    "name": "Robbie George Photography",
+    "url": "https://www.robbiegeorgephotography.com"
+  },
+  "isPartOf": {
+    "@type": "WebPage",
+    "@id": "https://www.robbiegeorgephotography.com/naturepedia#webpage",
+    "name": "Naturepedia™",
+    "url": "https://www.robbiegeorgephotography.com/naturepedia"
+  },
+  "keywords": [
+    "Robbie George",
+    "Naturepedia",
+    "Biography Plate",
+    "Robbie's Razor",
+    "Grand Compression",
+    "Plate Systems",
+    "Recursive Compression Interface",
+    "RKCA",
+    "RRIP",
+    "Architect of Record",
+    "Wildlife Photographer",
+    "Nature Photographer"
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Naturepedia"
+    },
+    {
+      "@type": "Thing",
+      "name": "Robbie's Razor"
+    },
+    {
+      "@type": "Thing",
+      "name": "Grand Compression"
+    },
+    {
+      "@type": "Thing",
+      "name": "Recursive Knowledge Compression Architecture",
+      "alternateName": "RKCA"
+    },
+    {
+      "@type": "Thing",
+      "name": "Recursive Registry Inheritance Principle",
+      "alternateName": "RRIP"
+    },
+    {
+      "@type": "Thing",
+      "name": "Plate Architecture"
+    },
+    {
+      "@type": "Thing",
+      "name": "Machine-Readable Governance"
+    }
+  ],
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "name": "Robbie George Professional Archive",
+      "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition"
+    }
+  ],
+  "citation": [
+    {
+      "@type": "WebPage",
+      "name": "Who Is Robbie George",
+      "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Robbie George Professional Archive",
+      "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "Robbie's Razor Benchmarks Repository",
+      "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks"
+    }
+  ],
+  "license": "https://www.robbiegeorgephotography.com/commercial-data-license",
+  "usageInfo": "Public discovery and citation do not grant training, embedding, bulk-ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, commercial implementation, or framework-implementation rights. Any x402 payment grants one endpoint-level retrieval only.",
+  "creditText": "Created by Robbie George, Naturepedia creator and Architect of Record.",
+  "copyrightHolder": {
+    "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+  },
+  "copyrightNotice": "Robbie George Biography Plate™ and Naturepedia Biography Plates™ originate with Robbie George."
+}
