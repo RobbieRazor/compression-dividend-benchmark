@@ -1,0 +1,497 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "status": "P3_LIVE_CHALLENGE_CAPTURED_NO_PAYMENT",
+  "capture_timestamp_utc": "2026-08-29T22:32:25.834Z",
+  "endpoint_url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+  "http_status": 402,
+  "content_type": "application/json; charset=UTF-8",
+  "payment_required_header_present": true,
+  "payment_required_header_sha256": "a8458c4435bdefe6f6a9195e76403613f799f4fd50e9ecda6110b4dba335b8c5",
+  "decoded_payment_required_header": {
+    "x402Version": 2,
+    "resource": {
+      "url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+      "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source.",
+      "mimeType": "application/ld+json"
+    },
+    "accepts": [
+      {
+        "scheme": "exact",
+        "network": "eip155:8453",
+        "amount": "250000",
+        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "resource": {
+          "url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+          "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source.",
+          "mimeType": "application/ld+json"
+        },
+        "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source. x402 payment grants one endpoint-level retrieval only. It does not grant training, embedding, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, or Robbie's Razor framework implementation rights.",
+        "mimeType": "application/ld+json",
+        "payTo": "0xb0d0207bCd46c6a7009cA5c8294177D79aDc0807",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        },
+        "maxTimeoutSeconds": 300
+      }
+    ],
+    "error": "Payment Required",
+    "inputSchema": {
+      "type": "object",
+      "description": "HTTP GET request for a paid Naturepedia x402 resource",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "http"
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "GET"
+          ]
+        },
+        "queryParams": {
+          "type": "object",
+          "properties": {
+            "resource": {
+              "type": "string",
+              "description": "Naturepedia x402 resource slug"
+            }
+          },
+          "required": [
+            "resource"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "type",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "outputSchema": {
+      "type": "object",
+      "description": "Paid Naturepedia JSON-LD payload",
+      "properties": {
+        "@context": {
+          "type": "string"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "systemNodes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "protectedRetrievalUse": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "@context",
+        "@type",
+        "name",
+        "description"
+      ]
+    },
+    "systems": [
+      {
+        "name": "Naturepedia Canonical Plate Registry",
+        "slug": "naturepedia-canonical-plate-registry",
+        "url": "https://www.robbiegeorgephotography.com",
+        "x402Registry": "https://www.robbiegeorgephotography.com/x402/canonical-plate-registry.json",
+        "plates": [
+          {
+            "name": "Canonical Plate Registry",
+            "id": "canonical-plate-registry#registry-plate",
+            "type": "Naturepedia Canonical Registry"
+          }
+        ]
+      }
+    ],
+    "extensions": {
+      "bazaar": {
+        "info": {
+          "input": {
+            "type": "http",
+            "method": "GET",
+            "queryParams": {
+              "resource": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate"
+            }
+          },
+          "output": {
+            "type": "json",
+            "example": {
+              "@context": "https://schema.org",
+              "@type": "Dataset",
+              "name": "Robbie George Biography Plate™",
+              "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source.",
+              "canonicalKeepCount": 757,
+              "duplicateRemovedCount": 33,
+              "systems": []
+            }
+          }
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "const": "http"
+                },
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "GET"
+                  ]
+                },
+                "queryParams": {
+                  "type": "object",
+                  "properties": {
+                    "resource": {
+                      "type": "string",
+                      "description": "Canonical Naturepedia x402 resource URL"
+                    }
+                  },
+                  "required": [
+                    "resource"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "type",
+                "method"
+              ],
+              "additionalProperties": false
+            },
+            "output": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "example": {
+                  "type": "object",
+                  "properties": {
+                    "@context": {
+                      "type": "string"
+                    },
+                    "@type": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "canonicalKeepCount": {
+                      "type": "number"
+                    },
+                    "duplicateRemovedCount": {
+                      "type": "number"
+                    },
+                    "systems": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "required": [
+                    "@context",
+                    "@type",
+                    "name",
+                    "description",
+                    "systems"
+                  ]
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          },
+          "required": [
+            "input"
+          ]
+        }
+      }
+    }
+  },
+  "response_body_json": {
+    "x402Version": 2,
+    "resource": {
+      "url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+      "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source.",
+      "mimeType": "application/ld+json"
+    },
+    "accepts": [
+      {
+        "scheme": "exact",
+        "network": "eip155:8453",
+        "amount": "250000",
+        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "resource": {
+          "url": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+          "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source.",
+          "mimeType": "application/ld+json"
+        },
+        "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source. x402 payment grants one endpoint-level retrieval only. It does not grant training, embedding, bulk ingestion, redistribution, resale, synchronization, private-dataset construction, derivative-dataset creation, or Robbie's Razor framework implementation rights.",
+        "mimeType": "application/ld+json",
+        "payTo": "0xb0d0207bCd46c6a7009cA5c8294177D79aDc0807",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        },
+        "maxTimeoutSeconds": 300
+      }
+    ],
+    "error": "Payment Required",
+    "inputSchema": {
+      "type": "object",
+      "description": "HTTP GET request for a paid Naturepedia x402 resource",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "http"
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "GET"
+          ]
+        },
+        "queryParams": {
+          "type": "object",
+          "properties": {
+            "resource": {
+              "type": "string",
+              "description": "Naturepedia x402 resource slug"
+            }
+          },
+          "required": [
+            "resource"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "type",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "outputSchema": {
+      "type": "object",
+      "description": "Paid Naturepedia JSON-LD payload",
+      "properties": {
+        "@context": {
+          "type": "string"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "systemNodes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "protectedRetrievalUse": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "@context",
+        "@type",
+        "name",
+        "description"
+      ]
+    },
+    "systems": [
+      {
+        "name": "Naturepedia Canonical Plate Registry",
+        "slug": "naturepedia-canonical-plate-registry",
+        "url": "https://www.robbiegeorgephotography.com",
+        "x402Registry": "https://www.robbiegeorgephotography.com/x402/canonical-plate-registry.json",
+        "plates": [
+          {
+            "name": "Canonical Plate Registry",
+            "id": "canonical-plate-registry#registry-plate",
+            "type": "Naturepedia Canonical Registry"
+          }
+        ]
+      }
+    ],
+    "extensions": {
+      "bazaar": {
+        "info": {
+          "input": {
+            "type": "http",
+            "method": "GET",
+            "queryParams": {
+              "resource": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate"
+            }
+          },
+          "output": {
+            "type": "json",
+            "example": {
+              "@context": "https://schema.org",
+              "@type": "Dataset",
+              "name": "Robbie George Biography Plate™",
+              "description": "Complete structured Plate™ payload for Robbie George Biography Plate™, including the relationships, provenance, citations, and governance fields supplied by its registered payload source.",
+              "canonicalKeepCount": 757,
+              "duplicateRemovedCount": 33,
+              "systems": []
+            }
+          }
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "const": "http"
+                },
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "GET"
+                  ]
+                },
+                "queryParams": {
+                  "type": "object",
+                  "properties": {
+                    "resource": {
+                      "type": "string",
+                      "description": "Canonical Naturepedia x402 resource URL"
+                    }
+                  },
+                  "required": [
+                    "resource"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "type",
+                "method"
+              ],
+              "additionalProperties": false
+            },
+            "output": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "example": {
+                  "type": "object",
+                  "properties": {
+                    "@context": {
+                      "type": "string"
+                    },
+                    "@type": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "description": {
+                      "type": "string"
+                    },
+                    "canonicalKeepCount": {
+                      "type": "number"
+                    },
+                    "duplicateRemovedCount": {
+                      "type": "number"
+                    },
+                    "systems": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "required": [
+                    "@context",
+                    "@type",
+                    "name",
+                    "description",
+                    "systems"
+                  ]
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          },
+          "required": [
+            "input"
+          ]
+        }
+      }
+    }
+  },
+  "response_body_sha256": "0fea1950b413044c9c05e4b7dbff8ff214f917b3a38a05a2a23ce293bfd3d094",
+  "extracted_header_payment_offers": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "amount": "250000",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xb0d0207bCd46c6a7009cA5c8294177D79aDc0807"
+    }
+  ],
+  "extracted_body_payment_offers": [
+    {
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "amount": "250000",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xb0d0207bCd46c6a7009cA5c8294177D79aDc0807"
+    }
+  ],
+  "expected_candidate": {
+    "tier": "Structured Plate",
+    "network": "eip155:8453",
+    "amount_atomic": "250000",
+    "amount_usdc": "0.25",
+    "endpoint": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate"
+  },
+  "payment_attempted": false,
+  "wallet_loaded": false,
+  "x402_payment_performed": false
+}
