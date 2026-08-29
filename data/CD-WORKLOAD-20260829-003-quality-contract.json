@@ -1,0 +1,87 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "contract_id": "CD003-QC-1.0",
+  "status": "QUALITY_CONTRACT_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-29T21:51:45Z",
+  "purpose": "Determine whether P1 fresh reconstruction and P3 governed Structured Plate retrieval satisfy the same explicitly selected public Biography Plate state before any economic comparison.",
+  "selected_public_surface": {
+    "surface_id": "CD003-PUBLIC-SURFACE-1.0",
+    "path": "data/CD-WORKLOAD-20260829-003-public-state-surface.json",
+    "sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+    "selected_jsonld_path": "sources[role=canonical-biography].jsonld[0]",
+    "top_level_field_count": 14
+  },
+  "primary_comparison": {
+    "field_count": 13,
+    "fields": [
+      "@context",
+      "@type",
+      "name",
+      "alternateName",
+      "headline",
+      "url",
+      "mainEntity",
+      "creator",
+      "publisher",
+      "copyrightHolder",
+      "copyrightNotice",
+      "isPartOf",
+      "about"
+    ],
+    "rule": "Each selected field must deep-equal the independently frozen public state surface. Object key order is insignificant. Array order is significant. No semantic substitution or alternative public representation is accepted for these fields.",
+    "comparison_type": "DEEP_EXACT_VALUE"
+  },
+  "transport_normalization": {
+    "field": "@id",
+    "rule": "The public Biography Plate identity and predeclared protected retrieval identities are treated as transport-equivalent only for @id.",
+    "accepted_identity_representations": [
+      "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+      "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+      "https://www.robbiegeorgephotography.com/x402/plates/item/robbie-george-biography-plate"
+    ],
+    "semantic_normalization_allowed": false
+  },
+  "extra_field_policy": {
+    "extra_fields_allowed": true,
+    "reason": "Governed retrieval may add retrieval, provenance, version, governance, payment, or wrapper metadata. Extra fields do not cause failure, but they cannot compensate for a mismatch in any selected public-surface field."
+  },
+  "representation_selection": {
+    "task_must_explicitly_identify_surface": true,
+    "required_source_role": "canonical-biography",
+    "required_jsonld_path": "sources[role=canonical-biography].jsonld[0]",
+    "required_public_type": "ProfilePage",
+    "required_public_name": "Robbie George Biography Plate™",
+    "alternate_public_nodes_accepted": false
+  },
+  "p1_boundary": {
+    "registered_p3_source_visible": false,
+    "paid_p3_response_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "external_knowledge_allowed": false
+  },
+  "p3_boundary": {
+    "http_200_sufficient": false,
+    "successful_x402_payment_sufficient": false,
+    "valid_json_sufficient": false,
+    "selected_public_state_match_required": true
+  },
+  "primary_pass_rule": "PASS requires all 13 deep-exact public-surface fields to pass plus accepted @id transport identity. Extra fields are ignored for primary pass/fail.",
+  "failure_rule": "If either P1 or P3 fails CD003-QC-1.0, no Compression Dividend, economic substitution fraction, or P1-versus-P3 economic comparison may be computed for that pair.",
+  "post_measurement_changes_allowed": false,
+  "measurement_state": {
+    "p1_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "p1_measurement_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "construction_boundary": {
+    "registered_p3_structured_source_read": false,
+    "registered_p3_structured_source_used": false,
+    "openai_api_call_performed": false,
+    "x402_payment_performed": false
+  }
+}
