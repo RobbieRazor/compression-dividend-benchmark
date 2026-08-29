@@ -1,0 +1,47 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "path": "P2",
+  "status": "P2_PROMPT_CACHE_ACTIVE_FOR_EXACT_WORKLOAD",
+  "probe_class": "UNRECORDED_ELIGIBILITY_PROBE",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "cache_configuration": {
+    "mode": "implicit",
+    "ttl": "30m",
+    "prompt_cache_key": "cd003-biography-plate-v1"
+  },
+  "exact_p1_model_input_sha256": "f6024dcdab5700ece30deb2bfa163b8fc14fca244fa6e0693a117e4df7b878c7",
+  "probe_model_input_sha256": "f6024dcdab5700ece30deb2bfa163b8fc14fca244fa6e0693a117e4df7b878c7",
+  "exact_input_match": true,
+  "request_count": 2,
+  "requests": [
+    {
+      "request_number": 1,
+      "http_status": 200,
+      "input_tokens": 30139,
+      "cached_tokens": 0,
+      "cache_write_tokens": 30136,
+      "output_tokens": 427,
+      "latency_ms": 4067.239
+    },
+    {
+      "request_number": 2,
+      "http_status": 200,
+      "input_tokens": 30139,
+      "cached_tokens": 30136,
+      "cache_write_tokens": 0,
+      "output_tokens": 427,
+      "latency_ms": 2881.895
+    }
+  ],
+  "cache_write_observed": true,
+  "cache_read_observed": true,
+  "cache_activated": true,
+  "benchmark_treatment": {
+    "C2_status": "MEASURABLE_AFTER_ELIGIBILITY",
+    "do_not_set_synthetic_C2": true,
+    "note": "Prompt caching activated for the exact frozen Study 003 model-visible input. A separate measured P2 cost observation may now be designed."
+  },
+  "api_requests_performed": 2,
+  "x402_payment_performed": false
+}
