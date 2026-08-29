@@ -1,0 +1,45 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-003",
+  "status": "ECONOMIC_DOMINANCE_ESTABLISHED_BEFORE_P3_PAYMENT",
+  "created_timestamp_utc": "2026-08-29T22:35:16Z",
+  "quality_equivalent_baselines": {
+    "P1": {
+      "cost_usd": 0.0065402,
+      "quality_gate_pass": true
+    },
+    "P2": {
+      "cost_usd": 0.00111572,
+      "quality_gate_pass": true,
+      "cache_hit": true
+    }
+  },
+  "best_measured_baseline": {
+    "path": "P2",
+    "cost_usd": 0.00111572
+  },
+  "live_p3_challenge": {
+    "retrieval_price_usd": 0.25,
+    "amount_atomic": "250000",
+    "network": "eip155:8453",
+    "payment_performed": false
+  },
+  "economic_dominance": {
+    "p3_retrieval_cost_divided_by_best_baseline": 224.07055533646437,
+    "p3_excess_cost_usd": 0.24888428,
+    "p3_break_even_price_usd": 0.00111572,
+    "current_p3_price_fraction_required_to_break_even": 0.00446288,
+    "positive_incremental_compression_dividend_possible_at_current_p3_price": false
+  },
+  "interpretation": "The live P3 retrieval price alone exceeds the measured quality-equivalent best baseline before any P3 verification, residual compute, or fallback cost is added. Therefore no positive requester-side incremental Compression Dividend is possible at the current $0.25 P3 price.",
+  "scientific_boundary": "This result establishes economic dominance only. It does not establish whether a paid P3 response would pass CD003-QC-1.0.",
+  "p3_payment_scientific_status": "OPTIONAL_FOR_SEMANTIC_VALIDATION_NOT_REQUIRED_FOR_ECONOMIC_CONCLUSION",
+  "artifacts": {
+    "p1_measurement_sha256": "de08884074062ea9bf417523bf56979ebbc654500c6d0214481866e0ef1b76ab",
+    "p1_evaluation_sha256": "a2ca5b9beaf4abc5dc71fd8b99dbabcbf3e607f3376e4079099dec84ee2c5c46",
+    "p2_measurement_sha256": "85a199c33e38f4309ffee54bbba62f15ce9b1488f5bac25ded3c6d457a3f1887",
+    "p2_evaluation_sha256": "6a5238772538a98d6cfba6632d02760545a8678b2d48b6df03ed391cc5453f4f",
+    "p3_challenge_sha256": "af8c9f72e9ab44790b80608fc87a34f26a47f65847b5ad24dc18289c229be7a4"
+  },
+  "api_call_performed_by_dominance_check": false,
+  "x402_payment_performed": false
+}
