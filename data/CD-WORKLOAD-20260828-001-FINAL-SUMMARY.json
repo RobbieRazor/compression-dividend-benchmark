@@ -1,0 +1,77 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "study_name": "Single Canonical Structured-State Retrieval",
+  "study_status": "COMPLETE",
+  "economic_perspective": "Requesting AI / Agent",
+  "benchmark_outcome": "NO_SUCCESSFUL_GOVERNED_STATE_HIT",
+  "compression_dividend_demonstrated": false,
+  "formal_conclusion": "Study 001 did not demonstrate a Compression Dividend because the paid governed-state retrieval did not satisfy the frozen semantic-equivalence quality contract. Payment settlement succeeded, but the returned canonical identifier-resolution representation was not equivalent to the frozen Biography Plate state.",
+  "path_1": {
+    "name": "Fresh Recomputation",
+    "status": "MEASURED",
+    "observation_count": 5,
+    "quality_pass_rate": 1.0,
+    "input_tokens_per_run": 275,
+    "output_tokens_per_run": 62,
+    "cached_input_tokens": 0,
+    "measured_cre_usd": 0.0001294,
+    "cost_variance_observed": false,
+    "result": "VALID_BASELINE"
+  },
+  "path_2": {
+    "name": "Provider Prompt Caching",
+    "status": "PROMPT_CACHE_NOT_ACTIVE_FOR_EXACT_WORKLOAD",
+    "implicit_cache_probe": "NO_CACHE_ACTIVITY",
+    "explicit_breakpoint_probe": "NO_CACHE_ACTIVITY",
+    "synthetic_c2_assigned": false,
+    "result": "UNAVAILABLE_FOR_THIS_WORKLOAD"
+  },
+  "path_3": {
+    "name": "Governed State Reuse via x402 Atomic Query",
+    "status": "PAID_PILOT_COMPLETED",
+    "x402_version": 2,
+    "scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "price_usdc": 0.005,
+    "payment_succeeded": true,
+    "http_status": 200,
+    "json_valid": true,
+    "quality_contract": "CD001-QC-1.1",
+    "quality_pass": false,
+    "successful_governed_hit": false,
+    "failed_fields": [
+      "name",
+      "description"
+    ],
+    "observed_name": "Robbie George Biography Plate™ Canonical Identifier Resolution",
+    "observed_description": "Atomic canonical resolution for the registered Robbie George Biography Plate™ identifier.",
+    "result": "PAYMENT_SUCCESS_QUALITY_FAILURE"
+  },
+  "economic_findings": {
+    "best_available_quality_valid_baseline": "P1_FRESH_RECOMPUTATION",
+    "p1_cost_usd": 0.0001294,
+    "p3_paid_attempt_cost_usd": 0.005,
+    "p3_attempt_to_p1_cost_ratio": 38.63987635239567,
+    "successful_p3_cost_available": false,
+    "incremental_compression_dividend": null,
+    "incremental_compression_dividend_status": "NOT_COMPUTED_BECAUSE_P3_FAILED_SEMANTIC_EQUIVALENCE",
+    "interpretation": "The paid P3 attempt cost approximately 38.64 times the measured fresh-recomputation baseline. However, because the P3 payload failed semantic equivalence, it is not a valid substitute and therefore is not eligible for a conventional Compression Dividend calculation."
+  },
+  "scientific_findings": [
+    "Fresh recomputation was deterministic in cost, token usage, and output across five measured observations.",
+    "Provider prompt caching did not activate for the exact frozen 275-token workload under either implicit or explicit-breakpoint probing.",
+    "The x402 payment system successfully enforced and settled a 0.005 USDC Atomic Query payment on Base.",
+    "The governed endpoint returned valid JSON and the expected schema context and type.",
+    "The governed endpoint returned a canonical identifier-resolution representation rather than the frozen Biography Plate state.",
+    "The frozen quality gate correctly prevented payment success from being misclassified as semantic substitution.",
+    "A negative or non-qualifying result was preserved rather than modifying the workload, route, quality contract, or price to favor governed reuse."
+  ],
+  "methodological_conclusion": "Study 001 validates the benchmark methodology more strongly than it validates governed reuse. The experiment successfully distinguished transport/payment success from semantic-equivalence success and prevented an economically or semantically non-equivalent path from being counted as a Compression Dividend.",
+  "next_study_recommendation": {
+    "study_id": "CD-WORKLOAD-002",
+    "goal": "Evaluate a governed retrieval endpoint whose returned state is intentionally designed to satisfy the same frozen task contract as fresh recomputation.",
+    "do_not_modify_study_001": true,
+    "preserve_negative_result": true
+  }
+}
