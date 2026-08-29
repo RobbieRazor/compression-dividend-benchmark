@@ -1,0 +1,40 @@
+{
+  "study_id": "CD-WORKLOAD-20260828-001",
+  "path": "P1",
+  "status": "P1_PILOT_COMPLETE",
+  "summary_timestamp_utc": "2026-08-29T00:40:53+00:00",
+  "observation_count": 5,
+  "observation_ids": [
+    "CD-001-P1-0001",
+    "CD-001-P1-0002",
+    "CD-001-P1-0003",
+    "CD-001-P1-0004",
+    "CD-001-P1-0005"
+  ],
+  "cost_usd": {
+    "mean": 0.0001294,
+    "median": 0.0001294,
+    "minimum": 0.0001294,
+    "maximum": 0.0001294,
+    "sample_stdev": 0.0
+  },
+  "latency_ms": {
+    "mean": 2059.1014,
+    "median": 2178.898,
+    "minimum": 1589.29,
+    "maximum": 2722.199,
+    "sample_stdev": 471.096424743173
+  },
+  "input_tokens_unique": [
+    275
+  ],
+  "output_tokens_unique": [
+    62
+  ],
+  "cached_tokens_total": 0,
+  "quality_pass_count": 5,
+  "quality_pass_rate": 1.0,
+  "measured_Cre_usd": 0.0001294,
+  "benchmark_commit_at_summary": "a7728dff41040c8705af58de1fb92104a4214960",
+  "interpretation": "P1 pilot establishes the measured fresh-recomputation control cost for this workload. No Compression Dividend conclusion is made until P2 and P3 are measured."
+}
