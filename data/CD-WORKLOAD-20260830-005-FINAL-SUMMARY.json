@@ -1,0 +1,209 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-005",
+  "module_id": "CD005-SCHEMA-CONSTRAINED-ENRICHED-BIOGRAPHY-001",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-30T15:29:32Z",
+  "benchmark_outcome": "QUALITY_CENSORED_CANONICAL_VALUE_FIDELITY_FAILURE_AFTER_STRUCTURAL_SUCCESS",
+  "primary_conclusion": "Study 005 established that a neutral schema and exact graph-placement instructions can eliminate the structural placement failures observed in Study 004. The single preregistered P1 output passed the complete schema gate, instantiated all nine relationship classes, and passed provenance for all nine relationships. It did not reproduce the complete frozen canonical value contract, so it did not establish a quality-equivalent P1 baseline.",
+  "methodological_conclusion": "The intervention isolated schema-following from exact governed-value reconstruction. Structural placement failures fell to zero, while exact fidelity passed 47 of 73 governed facts. The remaining 26 failures comprised one shortened canonical identifier, five ontology-type substitutions, four canonical-descriptor paraphrases, five trademark omissions, and eleven exact rights-lexicon mismatches. Rights meaning was preserved, but semantic equivalence cannot retroactively satisfy the preregistered exact lexical gate.",
+  "economic_conclusion": "No Compression Dividend, best-baseline cost, transition threshold, P1-versus-P2 comparison, or P1-versus-P3 comparison is permitted. The measured P1 requester cost is retained only as evidence for a rejected task because initial feasibility and quality equivalence were not established.",
+  "p1_observation": {
+    "observation_id": "CD-005-P1-0001",
+    "phase": "INITIAL_FEASIBILITY",
+    "model": "gpt-5.6-luna",
+    "http_status": 200,
+    "api_status": "completed",
+    "input_tokens": 37088,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 1037,
+    "requester_model_cost_usd": "0.008662000000",
+    "latency_total_ms": 7575.454,
+    "cache_state": "P1_EXPLICIT_NO_CACHE",
+    "measurement_valid_for_p1": true,
+    "output_json_valid": true,
+    "automatic_retry_allowed": false,
+    "accepted_quality_equivalent_task": false
+  },
+  "quality_result": {
+    "contract_id": "CD005-QC-1.0",
+    "evaluator_id": "CD005-STRICT-SCHEMA-EVAL-1.0",
+    "schema_pass": true,
+    "subject_pass": false,
+    "subject_fact_pass_count": 7,
+    "subject_fact_count": 8,
+    "relationships_pass": false,
+    "relationships_pass_count": 1,
+    "relationships_required": 9,
+    "retrieval_rights_pass": false,
+    "primary_quality_gate_pass": false,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false,
+    "raw_measurement_modified": false
+  },
+  "semantic_adjudication": {
+    "adjudicator_id": "CD005-P1-SEMANTIC-ADJ-1.0",
+    "design_timing": "POST_HOC_FROZEN_BEFORE_ADJUDICATION_EXECUTION",
+    "primary_diagnostic_label": "SCHEMA_PLACEMENT_SUCCESS_WITH_CANONICAL_VALUE_FIDELITY_FAILURE",
+    "secondary_diagnostic_label": "RIGHTS_SEMANTICS_PRESERVED_BUT_EXACT_LEXICAL_GATE_FAILED",
+    "schema_and_graph_placement_intervention_succeeded": true,
+    "structural_placement_failure_count": 0,
+    "provenance_pass_count": 9,
+    "provenance_relationship_count": 9,
+    "subject_fact_pass_count": 7,
+    "subject_fact_count": 8,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "rights_fact_pass_count": 2,
+    "rights_fact_count": 13,
+    "total_exact_fact_pass_count": 47,
+    "total_exact_fact_count": 73,
+    "total_exact_mismatch_count": 26,
+    "semantic_rights_boundary_preserved": true,
+    "frozen_quality_result_modified": false
+  },
+  "path_treatment": {
+    "p1": {
+      "measurement_performed": true,
+      "quality_equivalent": false,
+      "initial_feasibility_established": false,
+      "eligible_baseline": false,
+      "cost_treatment": "REJECTED_TASK_EVIDENCE_ONLY"
+    },
+    "p2": {
+      "eligibility_probe_performed": false,
+      "measurement_performed": false,
+      "reason_not_run": "The preregistration prohibited P2 until Study 005 established an accepted P1 baseline. Observation CD-005-P1-0001 failed CD005-QC-1.0."
+    },
+    "p3": {
+      "challenge_reconfirmation_performed": false,
+      "payment_performed": false,
+      "semantic_quality_measured": false,
+      "reason_not_run": "Without a quality-equivalent P1 baseline, a paid governed retrieval could not support a valid substitution or economic comparison."
+    }
+  },
+  "best_quality_equivalent_baseline": {
+    "status": "NONE_MEASURED_FOR_STUDY005",
+    "path": null,
+    "cost_usd": null
+  },
+  "transition_surface_treatment": {
+    "new_empirical_point_created": false,
+    "new_transition_threshold_established": false,
+    "study003_anchors_modified": false,
+    "study004_result_modified": false,
+    "classification": "QUALITY_CENSORED"
+  },
+  "pricing_and_public_claims": {
+    "pricing_change_supported": false,
+    "website_pricing_change_recommended": false,
+    "positive_compression_dividend_claim_supported": false,
+    "negative_compression_dividend_claim_supported_for_study005": false,
+    "architectural_result_supported": "Neutral schema vocabulary can materially improve exact graph placement and provenance reconstruction, but schema conformance alone does not guarantee exact canonical identity, vocabulary, trademark, descriptor, or rights fidelity. Governed structured state remains architecturally motivated but is not economically validated by this study."
+  },
+  "scientific_interpretation": {
+    "study_003": "A compact selected public state surface supported quality-equivalent baselines and a defensible negative economic conclusion at the measured live Structured Plate price.",
+    "study_004": "A nine-relationship Enriched graph failed exact structural reconstruction despite model-visible authority support.",
+    "study_005": "Adding a neutral schema eliminated structural placement failures and preserved all relationship provenance, but exact canonical value fidelity still failed.",
+    "combined_learning": "Schema, semantics, and canonical governed identity are separate reliability layers. Passing one layer cannot substitute for another, and economic comparison begins only after the complete preregistered quality contract passes."
+  },
+  "recommended_next_study": {
+    "design_goal": "Canonical Lexical Fidelity Without Protected Target Disclosure",
+    "required_correction": "In a separately preregistered successor, retain the successful neutral schema intervention and add neutral preservation rules for canonical identifiers, trademark marks, controlled ontology types, nonparaphrased descriptors, and exact public rights vocabulary without revealing the frozen target mapping, evaluator, or protected P3 payload.",
+    "measurement_sequence": [
+      "Freeze the successor design, neutral lexical rules, authority evidence, independent target, Quality Gate, provider configuration, and evaluator before measurement.",
+      "Use one fresh P1 observation as an initial feasibility gate with no automatic retry.",
+      "Only if initial feasibility passes, preregister repeated fresh P1 samples to estimate stability and accepted-task cost.",
+      "Probe P2 only after a quality-equivalent P1 baseline exists and verify actual cache behavior for the exact frozen request.",
+      "Reconfirm a live P3 challenge and consider payment only after a valid quality-equivalent baseline exists."
+    ],
+    "do_not_do": [
+      "Do not modify or reinterpret the Study 005 Quality Gate failure.",
+      "Do not count semantic rights equivalence as an exact lexical pass.",
+      "Do not retry observation 0001 or use its cost as an accepted-task baseline.",
+      "Do not run Study 005 P2 or pay P3 after closure.",
+      "Do not change public pricing or website economic claims based on this result.",
+      "Do not expose protected target values or tune a successor to force governed retrieval to win."
+    ]
+  },
+  "artifact_provenance": {
+    "design": {
+      "path": "WORKLOAD-CD-20260830-005.md",
+      "sha256": "e052af1e3a0a87dfdfe78ccebfa612370e4ad55f8a8281d6e12a44b888e68990",
+      "latest_commit": "5f715016530d3fef32994d948ba4abdc09a2f9cf"
+    },
+    "design_manifest": {
+      "path": "data/CD-WORKLOAD-20260830-005-design-manifest.json",
+      "sha256": "b0d0612d6fdc0e44a38eec5bb9c1ccb83c6bc9d0fdf32d45909eed08026f1c33",
+      "latest_commit": "5f715016530d3fef32994d948ba4abdc09a2f9cf"
+    },
+    "neutral_schema": {
+      "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+      "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+      "latest_commit": "5f715016530d3fef32994d948ba4abdc09a2f9cf"
+    },
+    "public_authority": {
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-public-authority-package.json",
+      "sha256": "6a5dc766a33f71a3dc674f2da0ce244ada311029feb1c78469fdc2e69651dc4b",
+      "latest_commit": "54822567a234e68cf8df865bae6101d096115f71"
+    },
+    "target_representation": {
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07",
+      "latest_commit": "54822567a234e68cf8df865bae6101d096115f71"
+    },
+    "quality_contract": {
+      "path": "data/CD-WORKLOAD-20260830-005-quality-contract.json",
+      "sha256": "e9cc4b3f499284c74143943b409daee0bcffc65ce0b158f6d6ad22be22e4d881",
+      "latest_commit": "2942c57cbffff5bce931dccb0d3058630a69ed38"
+    },
+    "preregistration": {
+      "path": "data/CD-WORKLOAD-20260830-005-preregistration-manifest.json",
+      "sha256": "88d00b628a7e3f2846caacc237945ecf620aaac3d8f656a29ba11df56b8f6c43",
+      "latest_commit": "2942c57cbffff5bce931dccb0d3058630a69ed38"
+    },
+    "p1_runner_metadata": {
+      "path": "data/CD-WORKLOAD-20260830-005-p1-runner-metadata.json",
+      "sha256": "1ca51beca7a887aad44dd7a567fdaad08c2b7e75e86266aac9550a2941e1da77",
+      "latest_commit": "1ac94485a65172fa6602564e987308028e3dd00f"
+    },
+    "p1_measurement": {
+      "path": "data/raw/CD-005-P1-0001-measurement.json",
+      "sha256": "3b536f4884e228d845a2910090d1e83ac4a5429f03d0b65a71516316f1bcbac2",
+      "latest_commit": "fe801c8637c1d68ab36c499639c72e0769ad4c98"
+    },
+    "p1_quality_evaluation": {
+      "path": "data/raw/CD-005-P1-0001-quality-evaluation.json",
+      "sha256": "2c547d5e902d73386c1c544c9345ad40e471b4a1a0f56ba1f9fd68a3d713f6b1",
+      "latest_commit": "2d8a976dd01bad089603902a8fd339fa121f5aed"
+    },
+    "semantic_adjudicator": {
+      "path": "data/CD-WORKLOAD-20260830-005-p1-semantic-adjudicator-metadata.json",
+      "sha256": "2029fab56ac53248f731c6354787aeb8a363b939ab68385856f407fd11035dd9",
+      "latest_commit": "4100b342c48b8abb63c2557a1ffb4224db6a65ee"
+    },
+    "semantic_adjudication": {
+      "path": "data/raw/CD-005-P1-0001-semantic-adjudication.json",
+      "sha256": "87b52c7a7db518d7ea74662c8ba90109df1ab9d1fffa68942ebd5c9210f17ed4",
+      "latest_commit": "64c01423e56a4b83f713ed75459b8637098a1f9f"
+    },
+    "semantic_adjudication_record": {
+      "path": "data/CD-WORKLOAD-20260830-005-p1-semantic-adjudication-record.json",
+      "sha256": "86178863b9af66ab0e5541888884c77ad0dd61744ecb0b3e19b9ed1483d18a0a",
+      "latest_commit": "8850f98a2f7bb23c030651d2a0318110b4dea15a"
+    }
+  },
+  "actions_performed_by_closure": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "semantic_adjudication_modified": false,
+    "api_call": false,
+    "retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
