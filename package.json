@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest run engine.test.ts",
-    "test:study004": "node --test study004-calculator.test.mjs"
+    "test:study004": "node --test study004-calculator.test.mjs study004-initial-surface.test.mjs",
+    "generate:study004-surface": "node scripts/generate-study004-initial-surface.mjs",
+    "check:study004-surface": "node scripts/generate-study004-initial-surface.mjs --check"
   },
   "keywords": [],
   "author": "",

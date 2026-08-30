@@ -1,0 +1,967 @@
+{
+  "surface_id": "CD004-STUDY003-INITIAL-TRANSITION-SURFACE-1.0",
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "source_study_id": "CD-WORKLOAD-20260829-003",
+  "status": "COMPUTED_BOUNDED_ANALYTICAL_SURFACE",
+  "generated_timestamp_utc": "2026-08-30T11:40:22Z",
+  "economic_perspective": "REQUESTING_AI_OR_AGENT",
+  "model_registry_id": "CD004-MODEL-REGISTRY-1.0",
+  "generator": {
+    "path": "scripts/generate-study004-initial-surface.mjs",
+    "sha256": "7f233f1d9669dabf23bca61fb9a25e7148412d0b79c7715f2d2e2c1f5cbe0016"
+  },
+  "calculation_engine": {
+    "path": "study004-calculator.mjs",
+    "sha256": "ab461c1533a3d054c1378b61725adb69f7b7c51050437574105a8ebfd49d0586"
+  },
+  "source_artifacts": [
+    {
+      "path": "data/CD-WORKLOAD-20260829-004-model-registry.json",
+      "sha256": "2c19dba4ee2ea7b5daf1fe05117ddcf65944bf38042cd1a5fbb0659b6ad27187"
+    },
+    {
+      "path": "data/CD-WORKLOAD-20260829-003-FINAL-SUMMARY.json",
+      "sha256": "5bde7bea1032b8b26c55a1cf9b458d7e11bc17d3952c1fc7ca321ead25300499"
+    },
+    {
+      "path": "data/CD-WORKLOAD-20260829-003-economic-dominance.json",
+      "sha256": "c88c78292deb7f5a36b63ce3a2edf7762c3f03cc71a061713afff27be5bc4f9d"
+    },
+    {
+      "path": "data/raw/CD-003-P2-0001-measurement.json",
+      "sha256": "85a199c33e38f4309ffee54bbba62f15ce9b1488f5bac25ded3c6d457a3f1887"
+    }
+  ],
+  "measured_inputs": {
+    "P1_cost_usd_per_accepted_task": "0.00654020",
+    "P1_quality_gate_pass": true,
+    "P2_single_cache_hit_cost_usd_per_accepted_task": "0.00111572",
+    "P2_single_cache_hit_quality_gate_pass": true,
+    "P3_live_challenge_price_usdc": "0.25",
+    "P3_live_challenge_http_status": 402,
+    "P3_payment_performed": false,
+    "P3_semantic_quality_status": "NOT_MEASURED"
+  },
+  "scenario_assumptions": {
+    "currency_rule": "Nominal 1 USDC to 1 USD for Study 003 anchors.",
+    "I3": "0",
+    "F3": "0",
+    "acquisition_count_per_single_cycle": 1,
+    "P2_sustained_hit_slice": {
+      "q2": "1",
+      "W2": "0",
+      "status": "OPTIMISTIC_LOWER_BOUND_NOT_A_MEASURED_LIFECYCLE_HIT_RATE"
+    },
+    "P1_only_slice": {
+      "condition": "P2 unavailable for the evaluated lifecycle"
+    },
+    "G_definition": "Aggregate expected downstream Path 3 cost per accepted-task opportunity. G is not decomposed into invented h, s, Cr, Cv, Cres, Cmiss, or Cf values in this initial surface.",
+    "multi_use_rights": "ASSUMED_ONLY_FOR_CONDITIONAL_SURFACE_AND_NOT_EMPIRICALLY_ESTABLISHED"
+  },
+  "boundaries": {
+    "p1_only": {
+      "baseline_id": "P1_ONLY_WHEN_P2_UNAVAILABLE",
+      "baseline_path": "P1",
+      "threshold_accepted_tasks_at_G_zero": 39,
+      "immediately_prior_accepted_tasks": 38,
+      "immediately_prior_regime": "REGIME_I_DEFICIT",
+      "threshold_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+      "maximum_G_at_threshold_fanout": {
+        "numerator": "25339",
+        "denominator": "195000000",
+        "decimal_18_rounded": "0.00012994358974359"
+      },
+      "maximum_G_fraction_of_baseline_at_threshold_fanout": {
+        "numerator": "25339",
+        "denominator": "1275339",
+        "decimal_18_rounded": "0.019868442821869323"
+      }
+    },
+    "p2_sustained_hit": {
+      "baseline_id": "P2_SUSTAINED_HIT_LOWER_BOUND",
+      "baseline_path": "P2",
+      "threshold_accepted_tasks_at_G_zero": 225,
+      "immediately_prior_accepted_tasks": 224,
+      "immediately_prior_regime": "REGIME_II_INTERMEDIATE_ADVANTAGE",
+      "threshold_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+      "maximum_G_at_threshold_fanout": {
+        "numerator": "1037",
+        "denominator": "225000000",
+        "decimal_18_rounded": "0.000004608888888889"
+      },
+      "maximum_G_fraction_of_baseline_at_threshold_fanout": {
+        "numerator": "1037",
+        "denominator": "251037",
+        "decimal_18_rounded": "0.004130865171269574"
+      }
+    }
+  },
+  "downstream_cost_sensitivity": [
+    {
+      "baseline_id": "P1_ONLY_WHEN_P2_UNAVAILABLE",
+      "baseline_path": "P1",
+      "baseline_cost_per_accepted_task": "0.00654020",
+      "p3_acquisition_price": "0.25",
+      "equation_id": "CD004-EQ-K-MIN",
+      "slice_rule": "G is evaluated at every decile from zero through 0.9 of Cbest, plus a 0.99 near-limit slice.",
+      "points": [
+        {
+          "downstream_cost_fraction_of_baseline": "0",
+          "G": {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_18_rounded": "0"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 39
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.1",
+          "G": {
+            "numerator": "32701",
+            "denominator": "50000000",
+            "decimal_18_rounded": "0.00065402"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 43
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.2",
+          "G": {
+            "numerator": "32701",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.00130804"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 48
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.3",
+          "G": {
+            "numerator": "98103",
+            "denominator": "50000000",
+            "decimal_18_rounded": "0.00196206"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 55
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.4",
+          "G": {
+            "numerator": "32701",
+            "denominator": "12500000",
+            "decimal_18_rounded": "0.00261608"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 64
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.5",
+          "G": {
+            "numerator": "32701",
+            "denominator": "10000000",
+            "decimal_18_rounded": "0.0032701"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 77
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.6",
+          "G": {
+            "numerator": "98103",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.00392412"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 96
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.7",
+          "G": {
+            "numerator": "228907",
+            "denominator": "50000000",
+            "decimal_18_rounded": "0.00457814"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 128
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.8",
+          "G": {
+            "numerator": "32701",
+            "denominator": "6250000",
+            "decimal_18_rounded": "0.00523216"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 192
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.9",
+          "G": {
+            "numerator": "294309",
+            "denominator": "50000000",
+            "decimal_18_rounded": "0.00588618"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 383
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.99",
+          "G": {
+            "numerator": "3237399",
+            "denominator": "500000000",
+            "decimal_18_rounded": "0.006474798"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 3823
+        }
+      ]
+    },
+    {
+      "baseline_id": "P2_SUSTAINED_HIT_LOWER_BOUND",
+      "baseline_path": "P2",
+      "baseline_cost_per_accepted_task": "0.00111572",
+      "p3_acquisition_price": "0.25",
+      "equation_id": "CD004-EQ-K-MIN",
+      "slice_rule": "G is evaluated at every decile from zero through 0.9 of Cbest, plus a 0.99 near-limit slice.",
+      "points": [
+        {
+          "downstream_cost_fraction_of_baseline": "0",
+          "G": {
+            "numerator": "0",
+            "denominator": "1",
+            "decimal_18_rounded": "0"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 225
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.1",
+          "G": {
+            "numerator": "27893",
+            "denominator": "250000000",
+            "decimal_18_rounded": "0.000111572"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 249
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.2",
+          "G": {
+            "numerator": "27893",
+            "denominator": "125000000",
+            "decimal_18_rounded": "0.000223144"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 281
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.3",
+          "G": {
+            "numerator": "83679",
+            "denominator": "250000000",
+            "decimal_18_rounded": "0.000334716"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 321
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.4",
+          "G": {
+            "numerator": "27893",
+            "denominator": "62500000",
+            "decimal_18_rounded": "0.000446288"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 374
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.5",
+          "G": {
+            "numerator": "27893",
+            "denominator": "50000000",
+            "decimal_18_rounded": "0.00055786"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 449
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.6",
+          "G": {
+            "numerator": "83679",
+            "denominator": "125000000",
+            "decimal_18_rounded": "0.000669432"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 561
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.7",
+          "G": {
+            "numerator": "195251",
+            "denominator": "250000000",
+            "decimal_18_rounded": "0.000781004"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 747
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.8",
+          "G": {
+            "numerator": "27893",
+            "denominator": "31250000",
+            "decimal_18_rounded": "0.000892576"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 1121
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.9",
+          "G": {
+            "numerator": "251037",
+            "denominator": "250000000",
+            "decimal_18_rounded": "0.001004148"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 2241
+        },
+        {
+          "downstream_cost_fraction_of_baseline": "0.99",
+          "G": {
+            "numerator": "2761407",
+            "denominator": "2500000000",
+            "decimal_18_rounded": "0.0011045628"
+          },
+          "threshold_status": "FEASIBLE",
+          "minimum_accepted_tasks": 22408
+        }
+      ]
+    }
+  ],
+  "live_price_fanout_sensitivity": [
+    {
+      "baseline_id": "P1_ONLY_WHEN_P2_UNAVAILABLE",
+      "baseline_path": "P1",
+      "baseline_cost_per_accepted_task": "0.00654020",
+      "p3_acquisition_price": "0.25",
+      "equation_ids": [
+        "CD004-EQ-K-MIN",
+        "CD004-EQ-LC3",
+        "CD004-EQ-REGIME-III-BOUNDARY"
+      ],
+      "slice_rule": "Use a 1-2-5 fan-out series with the adjacent preregistered boundary pairs 38 and 39 plus 224 and 225.",
+      "points": [
+        {
+          "fanout": 1,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0065402"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-1217299",
+            "denominator": "5000000",
+            "decimal_18_rounded": "-0.2434598"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 2,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "2500000",
+            "decimal_18_rounded": "0.0130804"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-592299",
+            "denominator": "5000000",
+            "decimal_18_rounded": "-0.1184598"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 5,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "1000000",
+            "decimal_18_rounded": "0.032701"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-217299",
+            "denominator": "5000000",
+            "decimal_18_rounded": "-0.0434598"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 10,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "500000",
+            "decimal_18_rounded": "0.065402"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-92299",
+            "denominator": "5000000",
+            "decimal_18_rounded": "-0.0184598"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 25,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "200000",
+            "decimal_18_rounded": "0.163505"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-17299",
+            "denominator": "5000000",
+            "decimal_18_rounded": "-0.0034598"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 38,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "621319",
+            "denominator": "2500000",
+            "decimal_18_rounded": "0.2485276"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-3681",
+            "denominator": "95000000",
+            "decimal_18_rounded": "-0.000038747368421053"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 39,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "1275339",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.2550678"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "25339",
+            "denominator": "195000000",
+            "decimal_18_rounded": "0.00012994358974359"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "25339",
+            "denominator": "1275339",
+            "decimal_18_rounded": "0.019868442821869323"
+          }
+        },
+        {
+          "fanout": 50,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "100000",
+            "decimal_18_rounded": "0.32701"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "7701",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0015402"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "7701",
+            "denominator": "32701",
+            "decimal_18_rounded": "0.235497385401058072"
+          }
+        },
+        {
+          "fanout": 100,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "50000",
+            "decimal_18_rounded": "0.65402"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "20201",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0040402"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "20201",
+            "denominator": "32701",
+            "decimal_18_rounded": "0.617748692700529036"
+          }
+        },
+        {
+          "fanout": 224,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "228907",
+            "denominator": "156250",
+            "decimal_18_rounded": "1.4650048"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "379689",
+            "denominator": "70000000",
+            "decimal_18_rounded": "0.005424128571428571"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "379689",
+            "denominator": "457814",
+            "decimal_18_rounded": "0.82935209495559332"
+          }
+        },
+        {
+          "fanout": 225,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "294309",
+            "denominator": "200000",
+            "decimal_18_rounded": "1.471545"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "244309",
+            "denominator": "45000000",
+            "decimal_18_rounded": "0.005429088888888889"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "244309",
+            "denominator": "294309",
+            "decimal_18_rounded": "0.830110530089124016"
+          }
+        },
+        {
+          "fanout": 250,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "20000",
+            "decimal_18_rounded": "1.63505"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "27701",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0055402"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "27701",
+            "denominator": "32701",
+            "decimal_18_rounded": "0.847099477080211614"
+          }
+        },
+        {
+          "fanout": 500,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "10000",
+            "decimal_18_rounded": "3.2701"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "30201",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0060402"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "30201",
+            "denominator": "32701",
+            "decimal_18_rounded": "0.923549738540105807"
+          }
+        },
+        {
+          "fanout": 1000,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "32701",
+            "denominator": "5000",
+            "decimal_18_rounded": "6.5402"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "31451",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0062902"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "31451",
+            "denominator": "32701",
+            "decimal_18_rounded": "0.961774869270052904"
+          }
+        }
+      ]
+    },
+    {
+      "baseline_id": "P2_SUSTAINED_HIT_LOWER_BOUND",
+      "baseline_path": "P2",
+      "baseline_cost_per_accepted_task": "0.00111572",
+      "p3_acquisition_price": "0.25",
+      "equation_ids": [
+        "CD004-EQ-K-MIN",
+        "CD004-EQ-LC3",
+        "CD004-EQ-REGIME-III-BOUNDARY"
+      ],
+      "slice_rule": "Use a 1-2-5 fan-out series with the adjacent preregistered boundary pairs 38 and 39 plus 224 and 225.",
+      "points": [
+        {
+          "fanout": 1,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.00111572"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-6222107",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.24888428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 2,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "12500000",
+            "decimal_18_rounded": "0.00223144"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-3097107",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.12388428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 5,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "5000000",
+            "decimal_18_rounded": "0.0055786"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-1222107",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.04888428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 10,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "2500000",
+            "decimal_18_rounded": "0.0111572"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-597107",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.02388428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 25,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "1000000",
+            "decimal_18_rounded": "0.027893"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-222107",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.00888428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 38,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_I_DEFICIT",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "529967",
+            "denominator": "12500000",
+            "decimal_18_rounded": "0.04239736"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-2595033",
+            "denominator": "475000000",
+            "decimal_18_rounded": "-0.005463227368421053"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 39,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_II_INTERMEDIATE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "1087827",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.04351308"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-5162173",
+            "denominator": "975000000",
+            "decimal_18_rounded": "-0.00529453641025641"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 50,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_II_INTERMEDIATE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "500000",
+            "decimal_18_rounded": "0.055786"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-97107",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.00388428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 100,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_II_INTERMEDIATE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "250000",
+            "decimal_18_rounded": "0.111572"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-34607",
+            "denominator": "25000000",
+            "decimal_18_rounded": "-0.00138428"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 224,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_II_INTERMEDIATE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "195251",
+            "denominator": "781250",
+            "decimal_18_rounded": "0.24992128"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "-123",
+            "denominator": "350000000",
+            "decimal_18_rounded": "-0.000000351428571429"
+          },
+          "nonnegative_downstream_cost_feasible": false,
+          "downstream_cost_tolerance_fraction_of_baseline": null
+        },
+        {
+          "fanout": 225,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "251037",
+            "denominator": "1000000",
+            "decimal_18_rounded": "0.251037"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "1037",
+            "denominator": "225000000",
+            "decimal_18_rounded": "0.000004608888888889"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "1037",
+            "denominator": "251037",
+            "decimal_18_rounded": "0.004130865171269574"
+          }
+        },
+        {
+          "fanout": 250,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "100000",
+            "decimal_18_rounded": "0.27893"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "2893",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.00011572"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "2893",
+            "denominator": "27893",
+            "decimal_18_rounded": "0.103717778654142616"
+          }
+        },
+        {
+          "fanout": 500,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "50000",
+            "decimal_18_rounded": "0.55786"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "15393",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.00061572"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "15393",
+            "denominator": "27893",
+            "decimal_18_rounded": "0.551858889327071308"
+          }
+        },
+        {
+          "fanout": 1000,
+          "acquisition_count": 1,
+          "conditional_zero_downstream_cost_regime": "REGIME_III_BEST_BASELINE_ADVANTAGE",
+          "maximum_acquisition_price_at_zero_downstream_cost": {
+            "numerator": "27893",
+            "denominator": "25000",
+            "decimal_18_rounded": "1.11572"
+          },
+          "maximum_downstream_cost_at_live_price": {
+            "numerator": "21643",
+            "denominator": "25000000",
+            "decimal_18_rounded": "0.00086572"
+          },
+          "nonnegative_downstream_cost_feasible": true,
+          "downstream_cost_tolerance_fraction_of_baseline": {
+            "numerator": "21643",
+            "denominator": "27893",
+            "decimal_18_rounded": "0.775929444663535654"
+          }
+        }
+      ]
+    }
+  ],
+  "unresolved_empirical_axes": [
+    {
+      "axis": "P3_SEMANTIC_EQUIVALENCE",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "P3_MULTI_USE_RIGHTS",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "axis": "P2_LIFECYCLE_HIT_RATE_Q2",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "P2_CACHE_MISS_OR_WRITE_COST_C2MISS",
+      "status": "NOT_FROZEN_AS_A_FORMAL_ACCEPTED_TASK_MEASUREMENT"
+    },
+    {
+      "axis": "P2_LIFECYCLE_WARMUP_COST_W2",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "PATH3_VERIFICATION_AND_POLICY_COST_CV",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "PATH3_LOCAL_ACCESS_COST_CR",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "PATH3_RESIDUAL_COMPUTE_CRES_OR_S",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "PATH3_STATE_LIFETIME_T",
+      "status": "NOT_MEASURED"
+    },
+    {
+      "axis": "PATH3_PRESERVATION_MAINTENANCE_REPAIR_F3",
+      "status": "NOT_MEASURED"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CD004-FINDING-INITIAL-001",
+      "statement": "Against P1 alone, one 0.25 acquisition requires at least 39 accepted downstream tasks when aggregate downstream Path 3 cost G is zero.",
+      "boundary": "CONDITIONAL_IDEALIZED_LOWER_BOUND"
+    },
+    {
+      "id": "CD004-FINDING-INITIAL-002",
+      "statement": "Against a sustained P2 cache-hit baseline of 0.00111572 per accepted task, one 0.25 acquisition requires at least 225 accepted downstream tasks when G is zero.",
+      "boundary": "CONDITIONAL_OPTIMISTIC_P2_AND_ZERO_OVERHEAD_LOWER_BOUND"
+    },
+    {
+      "id": "CD004-FINDING-INITIAL-003",
+      "statement": "At 225 accepted tasks against the P2 slice, the maximum aggregate downstream Path 3 cost is 0.000004608888888889 USD per task, equal to 0.004130865171269574 of the baseline cost.",
+      "boundary": "EXACT_ALGEBRAIC_TOLERANCE_AT_THE_DECLARED_SLICE"
+    },
+    {
+      "id": "CD004-FINDING-INITIAL-004",
+      "statement": "Any required second acquisition creates a discontinuous lifecycle-cost step; smooth per-task amortization cannot replace the ceiling-based acquisition count.",
+      "boundary": "FROZEN_MODEL_RULE"
+    }
+  ],
+  "evidence_conclusion": "The initial surface locates conditional economic boundaries but does not establish an empirical governed-state Compression Dividend because P3 semantic equivalence, reusable rights, and real downstream lifecycle costs remain unresolved.",
+  "pricing_conclusion": "No production pricing change or pricing-v4 recommendation is supported by this initial surface alone.",
+  "actions_performed": {
+    "model_api_call": false,
+    "x402_payment": false,
+    "production_pricing_change": false,
+    "website_change": false
+  }
+}
