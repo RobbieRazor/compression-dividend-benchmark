@@ -1,0 +1,142 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-005",
+  "module_id": "CD005-SCHEMA-CONSTRAINED-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD005-DESIGN-FREEZE-1.0",
+  "status": "DESIGN_AND_NEUTRAL_SCHEMA_FROZEN_BEFORE_TASK_TARGET_PROVIDER_OR_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T13:35:55Z",
+  "purpose": "Test whether value-free machine-schema guidance resolves Study 004 structural placement loss without revealing protected target payload values.",
+  "predecessor_evidence": {
+    "study004_closure": {
+      "path": "data/CD-WORKLOAD-20260829-004-FINAL-SUMMARY.json",
+      "sha256": "a88f3248a663e7941ff48f1fd45132a7546798e64013ba943ce93d57f3d733be",
+      "commit": "b1ed956"
+    },
+    "study004_structural_adjudication": {
+      "path": "data/raw/CD-004-P1-0001-structural-adjudication.json",
+      "sha256": "72439587e1144fb2fc8c2b14281f9ebb6dda7c51ea96ad0b87f621609f5b63cd",
+      "commit": "cb49d2c"
+    },
+    "study004_adjudication_record": {
+      "path": "data/CD-WORKLOAD-20260829-004-p1-structural-adjudication-record.json",
+      "sha256": "b23109b52d0e4d16f784dd044814679137ebda56543119525527f50a1eb3a4c4",
+      "commit": "f89ea12"
+    },
+    "study004_outcome": "QUALITY_CENSORED_STRUCTURAL_FIDELITY_FAILURE",
+    "study004_quality_result_modified": false,
+    "study004_cost_inherited_as_accepted_baseline": false
+  },
+  "frozen_design_artifacts": {
+    "design": {
+      "path": "WORKLOAD-CD-20260830-005.md",
+      "sha256": "e052af1e3a0a87dfdfe78ccebfa612370e4ad55f8a8281d6e12a44b888e68990"
+    },
+    "neutral_schema": {
+      "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+      "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786"
+    }
+  },
+  "experimental_intervention": {
+    "name": "VALUE_FREE_SCHEMA_AND_GRAPH_PLACEMENT_GUIDANCE",
+    "introduced_relative_to_study004": [
+      "exact root container names",
+      "exact subject and main-entity field names",
+      "exact relationship target field names",
+      "exact graph nesting and placement",
+      "exact relationship cardinality",
+      "exact provenance container placement",
+      "exact retrieval-rights container placement",
+      "scalar data types"
+    ],
+    "relationship_labels_inherited_from_study004_task": true,
+    "target_payload_values_introduced": false,
+    "protected_p3_payload_values_introduced": false
+  },
+  "neutral_schema_metrics": {
+    "root_required_container_count": 3,
+    "subject_required_field_count": 6,
+    "main_entity_required_field_count": 3,
+    "relationship_class_count": 9,
+    "relationship_target_required_field_count_total": 52,
+    "retrieval_rights_required_field_count": 4,
+    "relationship_order_semantically_required": false,
+    "exactly_one_object_per_relationship_class_required": true
+  },
+  "future_model_visibility_boundary": {
+    "visible_after_later_freeze": [
+      "neutral task",
+      "value-free neutral schema",
+      "independently frozen public authority evidence"
+    ],
+    "always_hidden_from_p1_p2": [
+      "completed target representation",
+      "target payload values except where independently present in public authority evidence",
+      "Quality Contract",
+      "evaluator implementation and output",
+      "protected or paid P3 payload",
+      "Study 004 model output",
+      "Study 004 quality evaluation",
+      "Study 004 structural adjudication",
+      "Study 004 final summary"
+    ],
+    "design_manifest_model_visible": false,
+    "study004_failure_specific_locations_model_visible": false
+  },
+  "quality_and_economic_boundary": {
+    "complete_quality_gate_required": true,
+    "subject_gate_required": true,
+    "all_nine_relationships_required": true,
+    "provenance_required_for_every_relationship": true,
+    "retrieval_rights_gate_required": true,
+    "partial_credit_changes_primary_pass": false,
+    "rejected_task_cost_eligible_as_baseline": false,
+    "p2_allowed_before_accepted_p1": false,
+    "p3_payment_allowed_before_quality_equivalent_baseline": false,
+    "economic_comparison_allowed_now": false
+  },
+  "sampling_boundary": {
+    "one_feasibility_observation_may_establish_initial_feasibility": true,
+    "one_observation_sufficient_for_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_for_calibration": true,
+    "sample_target_frozen_now": false,
+    "stopping_rule_frozen_now": false,
+    "retry_policy_frozen_now": false
+  },
+  "cross_study_boundary": {
+    "quality_outcomes_may_be_compared_descriptively": true,
+    "raw_requester_costs_directly_interchangeable": false,
+    "reason": "Study 005 deliberately adds schema tokens and structural instructions, changing the model-visible input and cost boundary."
+  },
+  "current_freeze_state": {
+    "design_frozen": true,
+    "neutral_schema_frozen": true,
+    "public_authority_package_frozen": false,
+    "target_values_frozen": false,
+    "target_representation_frozen": false,
+    "quality_contract_frozen": false,
+    "neutral_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "runner_frozen": false,
+    "measurement_authorized": false
+  },
+  "actions_performed": {
+    "api_call": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_artifact": {
+    "type": "INDEPENDENT_PUBLIC_AUTHORITY_AND_TARGET_FREEZE",
+    "requirements": [
+      "construct the Study 005 authority package independently of P1, P2, and protected P3 output",
+      "construct the completed target using the already frozen neutral schema",
+      "verify that every target value has traceable public authority support",
+      "keep the completed target and all evaluator-only artifacts hidden from P1 and P2"
+    ],
+    "api_call_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false
+  }
+}
