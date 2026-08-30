@@ -1,0 +1,319 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-006-P1-0001",
+  "adjudicator_id": "CD006-P1-CANONICAL-FIDELITY-ADJ-1.0",
+  "status": "POST_HOC_SEMANTIC_ADJUDICATION_COMPLETE",
+  "purpose": "Quantify the frozen Study 006 lexical intervention against Study 005 without changing quality, authorizing retry, opening P2/P3, or performing an economic comparison.",
+  "frozen_evidence": {
+    "target_sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07",
+    "quality_contract_sha256": "46d5f3c1e7b6de53dd70ca95a31fab5445fad3d03dd944bef714b9c3923ae004",
+    "output_sha256": "e0e477115a0fdcbb0cd289a36731e480f8c86d30fd02946d7ffcd3e4b423679c",
+    "measurement_sha256": "19bab886fbd2b6398227e5164e240944e87d76801fa3ac95067cd20bb3711674",
+    "quality_evaluation_sha256": "2c02ddabfce69434ab42c4186f8307e5be90fb53c9fa93aa739e48c6e37b5f5d"
+  },
+  "frozen_quality_result": {
+    "schema_pass": true,
+    "subject_pass": true,
+    "relationship_pass_count": 1,
+    "relationship_count": 9,
+    "rights_pass": true,
+    "primary_quality_gate_pass": false,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false
+  },
+  "structural_intervention_result": {
+    "exact_schema_gate_pass": true,
+    "relationship_objects_present": 9,
+    "relationship_classes_present": 9,
+    "provenance_pass_count": 9,
+    "provenance_relationship_count": 9,
+    "structural_placement_failure_count": 0,
+    "schema_and_graph_placement_intervention_succeeded": true
+  },
+  "exact_value_fidelity": {
+    "subject_fact_pass_count": 8,
+    "subject_fact_count": 8,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "fully_exact_relationship_count": 1,
+    "relationship_count": 9,
+    "rights_fact_pass_count": 13,
+    "rights_fact_count": 13,
+    "total_exact_fact_pass_count": 59,
+    "total_exact_fact_count": 73,
+    "total_exact_mismatch_count": 14
+  },
+  "cross_study_comparison": {
+    "study005_subject_fact_pass_count": 7,
+    "study006_subject_fact_pass_count": 8,
+    "subject_exact_fact_gain": 1,
+    "study005_relationship_target_fact_pass_count": 38,
+    "study006_relationship_target_fact_pass_count": 38,
+    "relationship_exact_fact_gain": 0,
+    "study005_rights_pass": false,
+    "study006_rights_pass": true,
+    "quality_equivalence_established": false
+  },
+  "target_mismatch_classification": {
+    "mismatch_count": 14,
+    "category_counts": {
+      "ONTOLOGY_TYPE_SUBSTITUTION": 6,
+      "CANONICAL_DESCRIPTOR_PARAPHRASE": 4,
+      "TRADEMARK_MARK_OMISSION": 4
+    },
+    "mismatches": [
+      {
+        "scope": "relationship_target",
+        "relationship": "professional evidence",
+        "field": "target.entity_type",
+        "expected": "WebPage",
+        "observed": "CollectionPage",
+        "category": "ONTOLOGY_TYPE_SUBSTITUTION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "professional evidence",
+        "field": "target.scope",
+        "expected": "Curated representative professional evidence authority",
+        "observed": "Representative records from more than two decades of wildlife photography, publishing, exhibition, licensing, conservation storytelling, environmental education, and the development of structured nature-knowledge systems.",
+        "category": "CANONICAL_DESCRIPTOR_PARAPHRASE",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia reference implementation",
+        "field": "target.name",
+        "expected": "Naturepedia™",
+        "observed": "Naturepedia",
+        "category": "TRADEMARK_MARK_OMISSION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia reference implementation",
+        "field": "target.entity_type",
+        "expected": "CreativeWork",
+        "observed": "reference implementation",
+        "category": "ONTOLOGY_TYPE_SUBSTITUTION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Robbie's Razor framework authorship",
+        "field": "target.name",
+        "expected": "Robbie's Razor™",
+        "observed": "Robbie's Razor",
+        "category": "TRADEMARK_MARK_OMISSION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Robbie's Razor framework authorship",
+        "field": "target.authorship_claim_type",
+        "expected": "first-party-public-authority",
+        "observed": "original reasoning and systems-design principle created by Robbie George",
+        "category": "CANONICAL_DESCRIPTOR_PARAPHRASE",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "GC-MRD-v2.0 governing authority",
+        "field": "target.entity_type",
+        "expected": "CreativeWork",
+        "observed": "TechArticle",
+        "category": "ONTOLOGY_TYPE_SUBSTITUTION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia Discovery Index",
+        "field": "target.name",
+        "expected": "Naturepedia™ Discovery Index",
+        "observed": "Naturepedia Discovery Index",
+        "category": "TRADEMARK_MARK_OMISSION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia Discovery Index",
+        "field": "target.role",
+        "expected": "public-discovery-index",
+        "observed": "naturepedia-discovery-index-link",
+        "category": "CANONICAL_DESCRIPTOR_PARAPHRASE",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia AI Catalog",
+        "field": "target.name",
+        "expected": "Naturepedia™ AI Catalog",
+        "observed": "Naturepedia AI Catalog",
+        "category": "TRADEMARK_MARK_OMISSION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia AI Catalog",
+        "field": "target.entity_type",
+        "expected": "DataCatalog",
+        "observed": "DigitalDocument",
+        "category": "ONTOLOGY_TYPE_SUBSTITUTION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia AI Catalog",
+        "field": "target.role",
+        "expected": "public-machine-discovery-catalog",
+        "observed": "machine-discovery index",
+        "category": "CANONICAL_DESCRIPTOR_PARAPHRASE",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "x402 Pricing Manifest",
+        "field": "target.entity_type",
+        "expected": "OfferCatalog",
+        "observed": "DigitalDocument",
+        "category": "ONTOLOGY_TYPE_SUBSTITUTION",
+        "exact_match": false
+      },
+      {
+        "scope": "relationship_target",
+        "relationship": "Naturepedia MCP Server Card",
+        "field": "target.entity_type",
+        "expected": "SoftwareApplication",
+        "observed": "MCP Server Card",
+        "category": "ONTOLOGY_TYPE_SUBSTITUTION",
+        "exact_match": false
+      }
+    ]
+  },
+  "rights_adjudication": {
+    "frozen_exact_gate_pass": true,
+    "one_endpoint_retrieval": {
+      "expected": "One endpoint-level retrieval of the identified Enriched Query result.",
+      "observed": "One endpoint-level retrieval of the identified Enriched Query result.",
+      "exact_pass": true,
+      "semantic_one_retrieval_pass": true
+    },
+    "excluded_rights": {
+      "required_count": 10,
+      "exact_pass_count": 10,
+      "semantic_pass_count": 10,
+      "results": [
+        {
+          "expected": "training",
+          "normalized_expected": "training",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "embedding",
+          "normalized_expected": "embedding",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "bulk ingestion",
+          "normalized_expected": "bulk ingestion",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "redistribution",
+          "normalized_expected": "redistribution",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "resale",
+          "normalized_expected": "resale",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "synchronization",
+          "normalized_expected": "synchronization",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "private dataset construction",
+          "normalized_expected": "private dataset construction",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "derivative dataset creation",
+          "normalized_expected": "derivative dataset creation",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "commercial implementation",
+          "normalized_expected": "commercial implementation",
+          "semantic_pass": true,
+          "exact_pass": true
+        },
+        {
+          "expected": "framework implementation",
+          "normalized_expected": "framework implementation",
+          "semantic_pass": true,
+          "exact_pass": true
+        }
+      ]
+    },
+    "authorization_booleans": {
+      "multi_task_reuse_authorized": {
+        "expected": false,
+        "observed": false,
+        "pass": true
+      },
+      "amortization_authorized": {
+        "expected": false,
+        "observed": false,
+        "pass": true
+      }
+    },
+    "exact_fact_pass_count": 13,
+    "exact_fact_count": 13,
+    "semantic_rights_boundary_preserved": true,
+    "semantic_result_changes_frozen_quality_gate": false
+  },
+  "preserved_high_value_facts": {
+    "all_nine_relationship_labels": true,
+    "all_nine_relationship_provenance_links": true,
+    "canonical_urls_and_authorities": true,
+    "pricing_version_status_network_asset_and_amounts": true,
+    "one_retrieval_semantics": true,
+    "all_ten_excluded_rights_semantics": true,
+    "no_multi_task_reuse_authorization": true,
+    "no_amortization_authorization": true
+  },
+  "primary_diagnostic_label": "SUBJECT_AND_RIGHTS_FIDELITY_GAIN_WITH_UNCHANGED_RELATIONSHIP_EXACTNESS",
+  "secondary_diagnostic_label": "CANONICAL_RELATIONSHIP_VALUE_FIDELITY_REMAINS_INSUFFICIENT",
+  "interpretation_boundary": {
+    "schema_pass_is_not_quality_equivalence": true,
+    "semantic_similarity_changes_exact_gate": false,
+    "quality_result_modified": false,
+    "retry_authorized": false,
+    "p2_probe_authorized": false,
+    "p3_payment_authorized": false,
+    "economic_comparison_authorized": false,
+    "pricing_change_authorized": false,
+    "website_change_authorized": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "provider_cache_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "quality_result_mutation": false,
+    "raw_measurement_mutation": false,
+    "production_mutation": false
+  }
+}
