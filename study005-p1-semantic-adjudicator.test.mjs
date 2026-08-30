@@ -23,6 +23,12 @@ const metadata = readJson(
 const evaluation = readJson(
   './data/raw/CD-005-P1-0001-quality-evaluation.json'
 );
+const record = readJson(
+  './data/CD-WORKLOAD-20260830-005-p1-semantic-adjudication-record.json'
+);
+const adjudication = readJson(
+  './data/raw/CD-005-P1-0001-semantic-adjudication.json'
+);
 
 
 test('post-hoc adjudicator pins its implementation and every frozen input', () => {
@@ -43,12 +49,89 @@ test('post-hoc adjudicator pins its implementation and every frozen input', () =
 });
 
 
-test('adjudicator preflight reproduces frozen counts without writing an artifact', () => {
+test('completed adjudication is pinned to its frozen inputs and evidence commit', () => {
+  assert.equal(record.status, 'POST_HOC_SEMANTIC_ADJUDICATION_RECORDED');
+  assert.equal(record.adjudication_artifact.commit, '64c0142');
+  assert.equal(
+    record.adjudication_artifact.sha256,
+    sha256('./data/raw/CD-005-P1-0001-semantic-adjudication.json')
+  );
+  assert.equal(
+    record.frozen_adjudicator_metadata.sha256,
+    sha256(
+      './data/CD-WORKLOAD-20260830-005-p1-semantic-adjudicator-metadata.json'
+    )
+  );
+  assert.equal(
+    record.frozen_quality_evaluation.sha256,
+    sha256('./data/raw/CD-005-P1-0001-quality-evaluation.json')
+  );
+  assert.equal(
+    adjudication.primary_diagnostic_label,
+    record.primary_diagnostic_label
+  );
+  assert.equal(
+    adjudication.secondary_diagnostic_label,
+    record.secondary_diagnostic_label
+  );
+});
+
+
+test('completed adjudication records structural success and exact-value failure', () => {
+  assert.equal(
+    adjudication.structural_intervention_result
+      .schema_and_graph_placement_intervention_succeeded,
+    true
+  );
+  assert.equal(
+    adjudication.structural_intervention_result.structural_placement_failure_count,
+    0
+  );
+  assert.equal(
+    adjudication.structural_intervention_result.provenance_pass_count,
+    9
+  );
+  assert.deepEqual(
+    record.exact_value_fidelity,
+    {
+      subject_fact_pass_count: 7,
+      subject_fact_count: 8,
+      relationship_target_fact_pass_count: 38,
+      relationship_target_fact_count: 52,
+      rights_fact_pass_count: 2,
+      rights_fact_count: 13,
+      total_exact_fact_pass_count: 47,
+      total_exact_fact_count: 73,
+      total_exact_mismatch_count: 26
+    }
+  );
+  assert.equal(adjudication.target_mismatch_classification.mismatch_count, 15);
+  assert.deepEqual(
+    adjudication.target_mismatch_classification.category_counts,
+    {
+      SHORTENED_CANONICAL_IDENTIFIER: 1,
+      ONTOLOGY_TYPE_SUBSTITUTION: 5,
+      CANONICAL_DESCRIPTOR_PARAPHRASE: 4,
+      TRADEMARK_MARK_OMISSION: 5
+    }
+  );
+  assert.equal(
+    adjudication.rights_adjudication.semantic_rights_boundary_preserved,
+    true
+  );
+  assert.equal(adjudication.rights_adjudication.frozen_exact_gate_pass, false);
+});
+
+
+test('adjudicator preflight remains read-only after completion', () => {
   const resultPath = new URL(
     './data/raw/CD-005-P1-0001-semantic-adjudication.json',
     import.meta.url
   );
-  assert.equal(existsSync(resultPath), false);
+  assert.equal(existsSync(resultPath), true);
+  const hashBefore = sha256(
+    './data/raw/CD-005-P1-0001-semantic-adjudication.json'
+  );
 
   const result = spawnSync(
     'python3',
@@ -73,7 +156,11 @@ test('adjudicator preflight reproduces frozen counts without writing an artifact
   assert.match(result.stdout, /API_CALL_PERFORMED: False/);
   assert.match(result.stdout, /X402_PAYMENT_PERFORMED: False/);
   assert.match(result.stdout, /PREFLIGHT_PASS: True/);
-  assert.equal(existsSync(resultPath), false);
+  assert.equal(existsSync(resultPath), true);
+  assert.equal(
+    sha256('./data/raw/CD-005-P1-0001-semantic-adjudication.json'),
+    hashBefore
+  );
 });
 
 
@@ -110,4 +197,18 @@ test('adjudicator cannot relax quality or authorize downstream activity', () => 
   assert.equal(metadata.next_action.retry_allowed, false);
   assert.equal(metadata.next_action.p2_probe_allowed, false);
   assert.equal(metadata.next_action.p3_payment_allowed, false);
+  assert.equal(adjudication.frozen_quality_result.primary_quality_gate_pass, false);
+  assert.equal(
+    adjudication.interpretation_boundary.quality_result_modified,
+    false
+  );
+  assert.equal(adjudication.interpretation_boundary.retry_authorized, false);
+  assert.equal(adjudication.interpretation_boundary.p2_probe_authorized, false);
+  assert.equal(adjudication.interpretation_boundary.p3_payment_authorized, false);
+  assert.equal(
+    adjudication.interpretation_boundary.economic_comparison_authorized,
+    false
+  );
+  assert.equal(adjudication.actions_performed.model_api_call, false);
+  assert.equal(adjudication.actions_performed.x402_payment, false);
 });

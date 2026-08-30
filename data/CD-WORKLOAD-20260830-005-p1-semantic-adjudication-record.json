@@ -1,0 +1,75 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-005",
+  "module_id": "CD005-SCHEMA-CONSTRAINED-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-005-P1-0001",
+  "adjudicator_id": "CD005-P1-SEMANTIC-ADJ-1.0",
+  "status": "POST_HOC_SEMANTIC_ADJUDICATION_RECORDED",
+  "recorded_timestamp_utc": "2026-08-30T14:58:00Z",
+  "adjudication_artifact": {
+    "path": "data/raw/CD-005-P1-0001-semantic-adjudication.json",
+    "sha256": "87b52c7a7db518d7ea74662c8ba90109df1ab9d1fffa68942ebd5c9210f17ed4",
+    "commit": "64c0142"
+  },
+  "frozen_adjudicator_metadata": {
+    "path": "data/CD-WORKLOAD-20260830-005-p1-semantic-adjudicator-metadata.json",
+    "sha256": "2029fab56ac53248f731c6354787aeb8a363b939ab68385856f407fd11035dd9"
+  },
+  "frozen_quality_evaluation": {
+    "path": "data/raw/CD-005-P1-0001-quality-evaluation.json",
+    "sha256": "2c547d5e902d73386c1c544c9345ad40e471b4a1a0f56ba1f9fd68a3d713f6b1",
+    "primary_quality_gate_pass": false,
+    "quality_result_modified": false
+  },
+  "structural_intervention_result": {
+    "schema_pass": true,
+    "relationship_objects_present": 9,
+    "relationship_classes_present": 9,
+    "provenance_pass_count": 9,
+    "provenance_relationship_count": 9,
+    "structural_placement_failure_count": 0,
+    "schema_and_graph_placement_intervention_succeeded": true
+  },
+  "exact_value_fidelity": {
+    "subject_fact_pass_count": 7,
+    "subject_fact_count": 8,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "rights_fact_pass_count": 2,
+    "rights_fact_count": 13,
+    "total_exact_fact_pass_count": 47,
+    "total_exact_fact_count": 73,
+    "total_exact_mismatch_count": 26
+  },
+  "target_mismatch_categories": {
+    "mismatch_count": 15,
+    "SHORTENED_CANONICAL_IDENTIFIER": 1,
+    "ONTOLOGY_TYPE_SUBSTITUTION": 5,
+    "CANONICAL_DESCRIPTOR_PARAPHRASE": 4,
+    "TRADEMARK_MARK_OMISSION": 5
+  },
+  "rights_result": {
+    "exact_gate_pass": false,
+    "semantic_rights_boundary_preserved": true,
+    "semantic_result_changes_frozen_quality_gate": false
+  },
+  "primary_diagnostic_label": "SCHEMA_PLACEMENT_SUCCESS_WITH_CANONICAL_VALUE_FIDELITY_FAILURE",
+  "secondary_diagnostic_label": "RIGHTS_SEMANTICS_PRESERVED_BUT_EXACT_LEXICAL_GATE_FAILED",
+  "study_treatment": {
+    "quality_censored": true,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false,
+    "retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "pricing_change_authorized": false,
+    "website_change_authorized": false
+  },
+  "actions_performed_by_record": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "api_call": false,
+    "x402_payment": false,
+    "production_mutation": false
+  }
+}
