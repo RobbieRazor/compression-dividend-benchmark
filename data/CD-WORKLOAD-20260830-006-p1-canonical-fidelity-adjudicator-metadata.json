@@ -1,0 +1,80 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-006-P1-0001",
+  "adjudicator_id": "CD006-P1-CANONICAL-FIDELITY-ADJ-1.0",
+  "status": "POST_HOC_CANONICAL_FIDELITY_ADJUDICATOR_FROZEN_BEFORE_EXECUTION",
+  "created_timestamp_utc": "2026-08-30T16:55:00Z",
+  "evidence_commit": "1d27c73",
+  "adjudicator": {
+    "path": "scripts/adjudicate-study006-p1.py",
+    "sha256": "8d74ecf974240f67fa9ffbc818e3efb9e1eb4bbf8ed5d5c8563d3f0ebf45c007"
+  },
+  "frozen_inputs": [
+    {
+      "role": "independent_target_representation_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07"
+    },
+    {
+      "role": "study006_quality_contract",
+      "path": "data/CD-WORKLOAD-20260830-006-quality-contract.json",
+      "sha256": "46d5f3c1e7b6de53dd70ca95a31fab5445fad3d03dd944bef714b9c3923ae004"
+    },
+    {
+      "role": "study006_model_output",
+      "path": "data/raw/CD-006-P1-0001-output.json",
+      "sha256": "e0e477115a0fdcbb0cd289a36731e480f8c86d30fd02946d7ffcd3e4b423679c"
+    },
+    {
+      "role": "study006_raw_measurement",
+      "path": "data/raw/CD-006-P1-0001-measurement.json",
+      "sha256": "19bab886fbd2b6398227e5164e240944e87d76801fa3ac95067cd20bb3711674"
+    },
+    {
+      "role": "study006_frozen_quality_evaluation",
+      "path": "data/raw/CD-006-P1-0001-quality-evaluation.json",
+      "sha256": "2c02ddabfce69434ab42c4186f8307e5be90fb53c9fa93aa739e48c6e37b5f5d"
+    },
+    {
+      "role": "study005_frozen_quality_evaluation_baseline",
+      "path": "data/raw/CD-005-P1-0001-quality-evaluation.json",
+      "sha256": "2c547d5e902d73386c1c544c9345ad40e471b4a1a0f56ba1f9fd68a3d713f6b1"
+    }
+  ],
+  "frozen_observed_state": {
+    "schema_pass": true,
+    "subject_pass": true,
+    "relationship_pass_count": 1,
+    "relationship_count": 9,
+    "rights_pass": true,
+    "primary_quality_gate_pass": false,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false
+  },
+  "adjudication_scope": {
+    "classify_exact_relationship_target_mismatches": true,
+    "count_exact_governed_value_fidelity": true,
+    "compare_subject_relationship_and_rights_results_to_study005": true,
+    "modify_frozen_quality_result": false,
+    "authorize_retry": false,
+    "authorize_p2_probe": false,
+    "authorize_p3_payment": false,
+    "perform_economic_comparison": false
+  },
+  "preflight": {
+    "adjudication_file_expected_absent": true,
+    "model_api_call_allowed": false,
+    "provider_cache_probe_allowed": false,
+    "x402_payment_allowed": false,
+    "production_mutation_allowed": false
+  },
+  "next_action": {
+    "type": "RUN_READ_ONLY_PREFLIGHT_THEN_SINGLE_LOCAL_ADJUDICATION",
+    "quality_result_remains_frozen": true,
+    "retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false
+  }
+}

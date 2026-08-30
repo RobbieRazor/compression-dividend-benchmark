@@ -154,14 +154,33 @@ test('only reserved observation 0001 is accepted by the runner', () => {
 });
 
 
-test('observation 0001 remains reserved and unmeasured at runner freeze', () => {
-  for (const suffix of ['response.json', 'output.json', 'output.txt', 'measurement.json']) {
+test('observation 0001 is captured while runner metadata preserves its historical freeze', () => {
+  for (const suffix of [
+    'response.json',
+    'output.json',
+    'measurement.json',
+    'quality-evaluation.json'
+  ]) {
     assert.equal(
       existsSync(new URL(`./data/raw/CD-006-P1-0001-${suffix}`, import.meta.url)),
-      false,
+      true,
       suffix
     );
   }
+  assert.equal(
+    existsSync(new URL('./data/raw/CD-006-P1-0001-output.txt', import.meta.url)),
+    false
+  );
+  const measurement = readJson('./data/raw/CD-006-P1-0001-measurement.json');
+  const evaluation = readJson(
+    './data/raw/CD-006-P1-0001-quality-evaluation.json'
+  );
+  assert.equal(measurement.measurement_valid_for_p1, true);
+  assert.equal(measurement.api_call_performed, true);
+  assert.equal(measurement.p2_probe_performed, false);
+  assert.equal(measurement.x402_payment_performed, false);
+  assert.equal(evaluation.primary_quality_gate_pass, false);
+  assert.equal(evaluation.raw_measurement_modified, false);
   assert.equal(runnerMetadata.measurement_state.measurement_started, false);
   assert.equal(runnerMetadata.measurement_state.measurement_artifacts_created, false);
   assert.equal(runnerMetadata.measurement_state.quality_evaluation_started, false);
