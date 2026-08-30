@@ -1,0 +1,607 @@
+{
+  "registry_id": "CD004-MODEL-REGISTRY-1.0",
+  "schema_version": "1.0.0",
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "study_title": "Regime III Transition Surface",
+  "status": "FROZEN_PRE_CALCULATION",
+  "freeze_timestamp_utc": "2026-08-30T11:24:48Z",
+  "design_authority": {
+    "path": "WORKLOAD-CD-20260829-004.md",
+    "branch": "v1.1-empirical-calibration",
+    "commit_sha": "90d3a0f2b3927a19bdb2432d312ca20049e887fa",
+    "sha256": "cabe9e07fac52c6304a031289b8f7110cacef474055d32261091bdfbaad02afd"
+  },
+  "economic_perspective": "REQUESTING_AI_OR_AGENT",
+  "accepted_task_unit": {
+    "id": "ACCEPTED_DOWNSTREAM_TASK",
+    "definition": "One downstream task whose output passes the workload-specific frozen Quality Gate.",
+    "rejected_task_rule": "Rejected outputs retain their lifecycle costs but do not increase accepted-task volume N."
+  },
+  "accounting_boundary": {
+    "primary_metric": "REQUESTER_LIFECYCLE_MONETARY_COST",
+    "currency": "USD_OR_USDC_AT_DECLARED_PARITY",
+    "currency_conversion_rule": "Each empirical observation must record its USD or USDC denomination and any conversion assumption. The two preregistered Study 003 anchors use the declared nominal rate of 1 USDC to 1 USD.",
+    "included_cost_classes": [
+      "fresh_reconstruction",
+      "provider_cache_hit",
+      "provider_cache_miss_or_write",
+      "provider_cache_warmup_or_reestablishment",
+      "governed_state_setup_when_workload_attributable",
+      "governed_state_acquisition_or_refresh",
+      "preservation",
+      "storage",
+      "maintenance",
+      "repair",
+      "local_retrieval_or_access",
+      "verification",
+      "policy_validation",
+      "residual_computation",
+      "miss_detection_and_routing",
+      "quality_equivalent_fallback"
+    ],
+    "excluded_primary_claim_classes": [
+      "operator_revenue",
+      "general_sunk_platform_development",
+      "latency",
+      "physical_energy",
+      "water",
+      "emissions",
+      "hardware_utilization"
+    ],
+    "no_double_counting": true,
+    "no_silent_omission": true
+  },
+  "study_003_calibration_evidence": {
+    "bounded_workload": "Explicitly selected Biography Plate public-state reconstruction",
+    "quality_contract": "CD003-QC-1.0",
+    "p1_cost_usd": "0.00654020",
+    "p1_quality_gate_pass": true,
+    "p2_cache_hit_cost_usd": "0.00111572",
+    "p2_quality_gate_pass": true,
+    "p3_live_price_usd": "0.25",
+    "p3_semantic_quality_status": "NOT_MEASURED",
+    "p3_divided_by_p2": "224.07055533646437",
+    "p3_excess_cost_over_p2_usd": "0.24888428",
+    "study_003_outcome": "NEGATIVE_INCREMENTAL_COMPRESSION_DIVIDEND_AT_LIVE_P3_PRICE",
+    "transfer_rule": "These observations are bounded calibration evidence and are not universal prices, costs, hit rates, fan-out rights, or performance claims."
+  },
+  "symbols": {
+    "N": {
+      "name": "lifecycle_accepted_task_volume",
+      "kind": "input",
+      "type": "positive_safe_integer",
+      "unit": "accepted_tasks",
+      "minimum_exclusive": 0,
+      "description": "Accepted downstream task units in the declared lifecycle."
+    },
+    "C1": {
+      "name": "fresh_reconstruction_cost_per_accepted_task",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_accepted_task",
+      "description": "Measured requester cost for a quality-equivalent fresh reconstruction."
+    },
+    "q2": {
+      "name": "provider_cache_hit_probability",
+      "kind": "empirical_input",
+      "type": "probability_decimal_string",
+      "minimum_inclusive": "0",
+      "maximum_inclusive": "1",
+      "description": "Empirically supported provider-cache hit probability for the exact workload and lifecycle."
+    },
+    "C2hit": {
+      "name": "provider_cache_hit_cost",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_accepted_task",
+      "description": "Requester cost of one quality-equivalent accepted P2 cache-hit task."
+    },
+    "C2miss": {
+      "name": "provider_cache_miss_or_write_cost",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_accepted_task",
+      "description": "Requester cost of one quality-equivalent accepted P2 cache miss or cache write."
+    },
+    "W2": {
+      "name": "provider_cache_lifecycle_warmup_cost",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_lifecycle",
+      "description": "Total cache warm-up, rewrite, or re-establishment cost not already included in C2miss."
+    },
+    "I3": {
+      "name": "path3_workload_attributable_setup_cost",
+      "kind": "empirical_or_scenario_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_lifecycle",
+      "description": "Incremental Path 3 setup cost attributable to the evaluated workload."
+    },
+    "P3a": {
+      "name": "governed_state_acquisition_price",
+      "kind": "empirical_or_scenario_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_acquisition_or_refresh",
+      "description": "Requester price for one governed state acquisition or required refresh."
+    },
+    "Ktechnical": {
+      "name": "technical_fanout_limit",
+      "kind": "empirical_input",
+      "type": "positive_safe_integer",
+      "unit": "accepted_task_opportunities_per_acquisition",
+      "description": "Maximum downstream accepted-task opportunities technically coverable by one acquisition."
+    },
+    "Krights": {
+      "name": "rights_fanout_limit",
+      "kind": "rights_evidence_input",
+      "type": "positive_safe_integer",
+      "unit": "accepted_task_opportunities_per_acquisition",
+      "description": "Maximum downstream accepted-task opportunities permitted by the applicable rights and license."
+    },
+    "Klifetime": {
+      "name": "state_lifetime_fanout_limit",
+      "kind": "derived_or_empirical_input",
+      "type": "nonnegative_safe_integer",
+      "unit": "accepted_task_opportunities_per_acquisition",
+      "description": "Maximum downstream accepted-task opportunities before state expiry or mandatory refresh."
+    },
+    "Kdemand": {
+      "name": "remaining_demand_fanout_limit",
+      "kind": "input",
+      "type": "positive_safe_integer",
+      "unit": "accepted_tasks",
+      "description": "Remaining downstream accepted-task demand available to amortize an acquisition."
+    },
+    "lambda": {
+      "name": "accepted_task_arrival_rate",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "accepted_tasks_per_declared_time_unit",
+      "description": "Accepted-task arrival rate used only when deriving Klifetime from state lifetime."
+    },
+    "T": {
+      "name": "state_lifetime",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "declared_time_unit",
+      "description": "Period during which an acquired state remains valid before mandatory refresh."
+    },
+    "Keff": {
+      "name": "effective_fanout",
+      "kind": "derived",
+      "type": "positive_safe_integer",
+      "unit": "accepted_task_opportunities_per_acquisition",
+      "description": "Binding technical, rights, lifetime, and demand fan-out limit."
+    },
+    "A": {
+      "name": "required_governed_acquisition_count",
+      "kind": "derived",
+      "type": "positive_safe_integer",
+      "unit": "acquisitions_or_refreshes",
+      "description": "Ceiling-based acquisition count over N accepted-task opportunities."
+    },
+    "F3": {
+      "name": "path3_other_fixed_lifecycle_cost",
+      "kind": "empirical_or_bounded_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_lifecycle",
+      "description": "Total preservation, storage, maintenance, refresh, synchronization, validation-state renewal, and repair cost not included elsewhere."
+    },
+    "h": {
+      "name": "governed_accepted_hit_probability",
+      "kind": "empirical_or_scenario_input",
+      "type": "probability_decimal_string",
+      "minimum_inclusive": "0",
+      "maximum_inclusive": "1",
+      "description": "Probability that the acquired governed state is located, valid, accepted, and task-appropriate."
+    },
+    "Cr": {
+      "name": "local_retrieval_or_access_cost",
+      "kind": "empirical_or_bounded_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_governed_hit",
+      "description": "Requester cost to access an already acquired governed state for one accepted hit."
+    },
+    "Cv": {
+      "name": "verification_and_policy_validation_cost",
+      "kind": "empirical_or_bounded_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_governed_hit",
+      "description": "Requester cost to verify and policy-check the governed state for one accepted hit."
+    },
+    "Cres": {
+      "name": "residual_computation_cost",
+      "kind": "empirical_or_derived_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_governed_hit",
+      "description": "Requester computation still required after successful governed-state reuse."
+    },
+    "Cre": {
+      "name": "replaceable_fresh_computation_cost",
+      "kind": "empirical_input",
+      "type": "positive_decimal_string",
+      "unit": "usd_per_accepted_task",
+      "description": "Fresh computation cost inside the same boundary as Cres and potentially replaceable by a governed hit."
+    },
+    "s": {
+      "name": "economic_substitution_fraction",
+      "kind": "empirical_or_scenario_input",
+      "type": "probability_decimal_string",
+      "minimum_inclusive": "0",
+      "maximum_inclusive": "1",
+      "description": "Cost-weighted fraction of Cre eliminated by a successful governed hit."
+    },
+    "Cmiss": {
+      "name": "path3_miss_overhead",
+      "kind": "empirical_or_bounded_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_governed_miss",
+      "description": "Requester cost to detect and route around one Path 3 miss, excluding fallback."
+    },
+    "Cf": {
+      "name": "quality_equivalent_fallback_cost",
+      "kind": "empirical_input",
+      "type": "nonnegative_decimal_string",
+      "unit": "usd_per_governed_miss",
+      "description": "Requester cost of the declared quality-equivalent fallback executed after a Path 3 miss."
+    },
+    "LC1": {
+      "name": "path1_lifecycle_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_lifecycle"
+    },
+    "LC2": {
+      "name": "path2_lifecycle_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_lifecycle"
+    },
+    "LCbest": {
+      "name": "best_available_quality_equivalent_baseline_lifecycle_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_lifecycle"
+    },
+    "Cbest": {
+      "name": "stable_best_baseline_cost_per_accepted_task",
+      "kind": "derived_or_empirical_input",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_accepted_task",
+      "description": "Per-task best-baseline cost used only where the threshold equation declares stable per-task baseline economics."
+    },
+    "Chit": {
+      "name": "path3_governed_hit_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_governed_hit"
+    },
+    "Cmisspath": {
+      "name": "path3_complete_miss_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_governed_miss"
+    },
+    "G": {
+      "name": "path3_expected_downstream_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_accepted_task_opportunity"
+    },
+    "LC3": {
+      "name": "path3_lifecycle_cost",
+      "kind": "derived",
+      "type": "nonnegative_decimal",
+      "unit": "usd_per_lifecycle"
+    },
+    "Dincremental": {
+      "name": "incremental_compression_dividend",
+      "kind": "derived",
+      "type": "signed_decimal",
+      "unit": "usd_per_lifecycle",
+      "description": "Best-baseline lifecycle cost minus governed-state lifecycle cost."
+    }
+  },
+  "equations": {
+    "path1_lifecycle": {
+      "id": "CD004-EQ-LC1",
+      "expression": "LC1 = N * C1"
+    },
+    "path2_lifecycle": {
+      "id": "CD004-EQ-LC2",
+      "expression": "LC2 = W2 + N * (q2 * C2hit + (1 - q2) * C2miss)",
+      "eligibility": "P2 must be empirically available and quality-equivalent for the exact workload."
+    },
+    "best_available_baseline": {
+      "id": "CD004-EQ-LCBEST",
+      "expression": "LCbest = min(LCi for each quality-equivalent and empirically available baseline i)",
+      "two_path_special_case": "LCbest = min(LC1, LC2) when P1 and P2 are the only eligible baselines"
+    },
+    "lifetime_fanout": {
+      "id": "CD004-EQ-KLIFETIME",
+      "expression": "Klifetime = floor(lambda * T)",
+      "condition": "Use only when lambda and T share a declared time unit and lifetime limits fan-out."
+    },
+    "effective_fanout": {
+      "id": "CD004-EQ-KEFF",
+      "expression": "Keff = min(Ktechnical, Krights, Klifetime, Kdemand)"
+    },
+    "acquisition_count": {
+      "id": "CD004-EQ-A",
+      "expression": "A = ceil(N / Keff)"
+    },
+    "residual_from_substitution": {
+      "id": "CD004-EQ-CRES",
+      "expression": "Cres = (1 - s) * Cre",
+      "condition": "Use when s is the controlled input and Cres is derived."
+    },
+    "substitution_from_residual": {
+      "id": "CD004-EQ-S",
+      "expression": "s = 1 - (Cres / Cre)",
+      "condition": "Use when Cres is directly measured and Cre is measured inside the same cost boundary."
+    },
+    "path3_hit_cost": {
+      "id": "CD004-EQ-CHIT",
+      "expression": "Chit = Cr + Cv + Cres"
+    },
+    "path3_miss_cost": {
+      "id": "CD004-EQ-CMISSPATH",
+      "expression": "Cmisspath = Cmiss + Cf"
+    },
+    "path3_expected_downstream_cost": {
+      "id": "CD004-EQ-G",
+      "expression": "G = h * Chit + (1 - h) * Cmisspath"
+    },
+    "path3_lifecycle": {
+      "id": "CD004-EQ-LC3",
+      "expression": "LC3 = I3 + A * P3a + F3 + N * G"
+    },
+    "incremental_dividend": {
+      "id": "CD004-EQ-DINCREMENTAL",
+      "expression": "Dincremental = LCbest - LC3"
+    },
+    "regime_iii_boundary": {
+      "id": "CD004-EQ-REGIME-III-BOUNDARY",
+      "expression": "LC3 = LCbest"
+    },
+    "maximum_viable_acquisition_price": {
+      "id": "CD004-EQ-P3A-MAX",
+      "expression": "P3a_max = (LCbest - I3 - F3 - N * G) / A",
+      "condition": "N and A are fixed and A is greater than zero.",
+      "infeasible_rule": "A negative result means no nonnegative acquisition price reaches Regime III under the declared conditions."
+    },
+    "minimum_single_cycle_fanout": {
+      "id": "CD004-EQ-K-MIN",
+      "expression": "K_min = ceil((I3 + P3a + F3) / (Cbest - G))",
+      "condition": "One acquisition cycle, stable per-task Cbest and G, and Cbest greater than G.",
+      "infeasible_rule": "If Cbest is less than or equal to G, additional fan-out cannot amortize Path 3 into Regime III."
+    },
+    "minimum_hit_rate": {
+      "id": "CD004-EQ-H-MIN",
+      "expression": "h_min = (I3 + A * P3a + F3 + N * Cmisspath - LCbest) / (N * (Cmisspath - Chit))",
+      "condition": "Chit is less than Cmisspath and N is greater than zero.",
+      "interpretation": {
+        "at_or_below_zero": "All valid hit rates satisfy the economic threshold.",
+        "between_zero_and_one": "The result is the transition hit rate.",
+        "above_one": "Regime III is infeasible through hit-rate improvement alone.",
+        "chit_at_or_above_miss": "Increasing h cannot lower lifecycle cost under the declared costs."
+      }
+    },
+    "minimum_substitution_fraction": {
+      "id": "CD004-EQ-S-MIN",
+      "expression": "s_min = (I3 + A * P3a + F3 + N * (h * (Cr + Cv + Cre) + (1 - h) * Cmisspath) - LCbest) / (N * h * Cre)",
+      "condition": "h is greater than zero, Cre is greater than zero, and Cres is derived from s.",
+      "interpretation": {
+        "at_or_below_zero": "Zero substitution is already economically sufficient.",
+        "between_zero_and_one": "The result is the transition substitution fraction.",
+        "above_one": "Regime III is infeasible through substitution improvement alone.",
+        "zero_hit_rate": "The substitution threshold is undefined."
+      }
+    },
+    "minimum_stable_lifecycle_volume": {
+      "id": "CD004-EQ-N-MIN",
+      "expression": "N_min = ceil((I3 + A * P3a + F3) / (Cbest - G))",
+      "condition": "A, fixed lifecycle costs, Cbest, and G remain constant across the interval and Cbest is greater than G.",
+      "piecewise_rule": "Recalculate by acquisition interval whenever A changes; do not replace ceiling-based acquisition count with smooth amortization."
+    }
+  },
+  "dependency_rules": {
+    "residual_and_substitution": {
+      "rule": "Exactly one of Cres or s is independently supplied for an observation; the other is derived.",
+      "violation_label": "MEASUREMENT_INCOMPLETE"
+    },
+    "fanout_rights": {
+      "rule": "A claimed Keff above one requires explicit technical, rights, lifetime, and demand support.",
+      "unknown_limit_policy": "If any binding reuse limit is unknown, Keff may not exceed one in an empirical result.",
+      "violation_label": "RIGHTS_CENSORED"
+    },
+    "fanout_availability": {
+      "rule": "If a measured or derived binding fan-out limit makes Keff less than one, Path 3 is unavailable for the declared lifecycle and A must not be evaluated.",
+      "violation_label": "AVAILABILITY_CENSORED"
+    },
+    "cache_availability": {
+      "rule": "P2 eligibility, q2, C2hit, C2miss, and W2 must be measured or explicitly bounded for the exact workload.",
+      "unavailable_baseline_policy": "An unavailable P2 is excluded from the eligible baseline set; its unavailability does not invalidate P1 or force the entire point to be censored."
+    },
+    "fallback": {
+      "rule": "Cf must identify an actually available quality-equivalent fallback and remain inside Path 3 lifecycle cost."
+    },
+    "accepted_volume": {
+      "rule": "N and fan-out count only tasks passing the frozen workload-specific Quality Gate."
+    }
+  },
+  "path_eligibility": {
+    "universal_requirements": [
+      "same_semantic_task",
+      "same_explicitly_selected_representation",
+      "same_preregistered_quality_gate",
+      "accepted_task_cost_boundary",
+      "empirical_availability_or_explicit_bound"
+    ],
+    "p1": {
+      "eligible_when": "Fresh reconstruction is measured and passes the frozen Quality Gate."
+    },
+    "p2": {
+      "eligible_when": "Provider caching is empirically active for the exact workload and the output passes the frozen Quality Gate.",
+      "no_synthetic_cache": true
+    },
+    "p3": {
+      "eligible_when": "The governed state passes the frozen Quality Gate and all acquisition, fan-out, rights, lifetime, verification, residual, miss, fallback, and fixed lifecycle inputs are measured or defensibly bounded.",
+      "transport_or_payment_success_sufficient": false
+    }
+  },
+  "classification": {
+    "economic_labels": {
+      "REGIME_I_DEFICIT": "LC3 > LC1",
+      "REGIME_II_INTERMEDIATE_ADVANTAGE": "LC3 <= LC1 and LC3 > LCbest",
+      "REGIME_III_BEST_BASELINE_ADVANTAGE": "LC3 <= LCbest"
+    },
+    "boundary_policy": "LC3 equal to LCbest is Regime III with Dincremental equal to zero.",
+    "regime_ii_zero_width_policy": "Regime II may have zero width when P1 is the best available baseline.",
+    "censor_labels": [
+      "QUALITY_CENSORED",
+      "AVAILABILITY_CENSORED",
+      "RIGHTS_CENSORED",
+      "MEASUREMENT_INCOMPLETE"
+    ],
+    "censor_reason_policy": "Record every applicable censor reason.",
+    "primary_censor_precedence": [
+      "QUALITY_CENSORED",
+      "AVAILABILITY_CENSORED",
+      "RIGHTS_CENSORED",
+      "MEASUREMENT_INCOMPLETE"
+    ],
+    "economic_classification_after_censoring": false
+  },
+  "numeric_policy": {
+    "canonical_cost_input_encoding": "base_10_decimal_string",
+    "canonical_probability_input_encoding": "base_10_decimal_string",
+    "integer_input_encoding": "json_safe_integer",
+    "calculation_requirement": "Exact decimal or rational arithmetic is canonical for deterministic artifacts.",
+    "binary_float_policy": "Binary floating-point output is noncanonical unless its precision and tolerance are explicitly recorded.",
+    "intermediate_rounding_allowed": false,
+    "threshold_rounding": "Apply ceiling only after evaluating the unrounded positive quotient.",
+    "classification_boundary": "Do not use display-rounded values for regime classification.",
+    "observed_value_policy": "Preserve raw provider or payment values and separately record any normalized decimal value."
+  },
+  "threshold_outputs": {
+    "P3a_max": {
+      "type": "signed_decimal_or_infeasible",
+      "unit": "usd_per_acquisition_or_refresh",
+      "equation_id": "CD004-EQ-P3A-MAX"
+    },
+    "K_min": {
+      "type": "positive_safe_integer_or_infeasible",
+      "unit": "accepted_tasks",
+      "equation_id": "CD004-EQ-K-MIN"
+    },
+    "h_min": {
+      "type": "signed_decimal_threshold_or_infeasible",
+      "unit": "probability",
+      "equation_id": "CD004-EQ-H-MIN"
+    },
+    "s_min": {
+      "type": "signed_decimal_threshold_or_undefined",
+      "unit": "fraction",
+      "equation_id": "CD004-EQ-S-MIN"
+    },
+    "N_min": {
+      "type": "positive_safe_integer_or_infeasible",
+      "unit": "accepted_tasks",
+      "equation_id": "CD004-EQ-N-MIN"
+    }
+  },
+  "calibration_anchors": [
+    {
+      "anchor_id": "CD004-ANCHOR-STUDY003-P1",
+      "status": "PREREGISTERED_EXPECTATION_NOT_EXECUTED",
+      "purpose": "Lower-bound fan-out algebra check against the measured Study 003 P1 cost.",
+      "conditions": {
+        "single_acquisition": true,
+        "P3a": "0.25",
+        "Cbest": "0.00654020",
+        "I3": "0",
+        "F3": "0",
+        "G": "0"
+      },
+      "equation_id": "CD004-EQ-K-MIN",
+      "expected_threshold_accepted_tasks": 39,
+      "claim_boundary": "Conditional idealized lower-bound anchor; not evidence of multi-use rights or zero real overhead."
+    },
+    {
+      "anchor_id": "CD004-ANCHOR-STUDY003-P2",
+      "status": "PREREGISTERED_EXPECTATION_NOT_EXECUTED",
+      "purpose": "Lower-bound fan-out algebra check against the measured Study 003 P2 cache-hit cost.",
+      "conditions": {
+        "single_acquisition": true,
+        "P3a": "0.25",
+        "Cbest": "0.00111572",
+        "I3": "0",
+        "F3": "0",
+        "G": "0"
+      },
+      "equation_id": "CD004-EQ-K-MIN",
+      "expected_threshold_accepted_tasks": 225,
+      "claim_boundary": "Conditional idealized lower-bound anchor; not evidence of sustained P2 availability, multi-use rights, or zero real overhead."
+    }
+  ],
+  "required_surface_axes": [
+    "P3a",
+    "Keff",
+    "N",
+    "C1",
+    "Cre",
+    "q2",
+    "C2hit",
+    "C2miss",
+    "W2",
+    "h",
+    "s_or_Cres",
+    "Cr",
+    "Cv",
+    "F3",
+    "Cmiss",
+    "Cf",
+    "T",
+    "lambda",
+    "A"
+  ],
+  "scientific_integrity_rules": [
+    "Studies 001, 002, and 003 remain immutable.",
+    "The v1.0 frozen engine and v1.0 release remain immutable.",
+    "Inputs must not be tuned to make Path 3 win.",
+    "Quality requirements must not be lowered after observing outputs.",
+    "Payment and HTTP success do not establish semantic success.",
+    "Provider-cache availability must not be assumed.",
+    "Multi-use rights for an x402 response must not be assumed.",
+    "Zero verification, residual, preservation, maintenance, repair, miss, refresh, or fallback cost must not be used in an empirical claim without evidence.",
+    "Production pricing must not be changed to manufacture a favorable result.",
+    "Pricing v4 must not be recommended until the relevant transition surfaces are measured.",
+    "Production price and workload-specific break-even price remain distinct.",
+    "Requester economics remain distinct from operator economics.",
+    "Monetary findings remain distinct from latency and physical-resource claims."
+  ],
+  "planned_next_artifact": {
+    "type": "DETERMINISTIC_THRESHOLD_CALCULATOR",
+    "requirements": [
+      "consume this registry without changing its equations",
+      "use canonical decimal or rational arithmetic",
+      "validate every input domain",
+      "implement censoring before economic classification",
+      "preserve ceiling-based acquisition counts",
+      "test both preregistered Study 003 anchors",
+      "emit equation and registry identifiers with every result"
+    ]
+  },
+  "freeze_state": {
+    "registry_created": true,
+    "threshold_calculator_created": false,
+    "threshold_calculator_executed": false,
+    "study_003_anchor_calculations_executed_by_study_004": false,
+    "new_model_api_call_performed": false,
+    "x402_payment_performed": false,
+    "production_pricing_changed": false,
+    "website_evidence_changed": false,
+    "pricing_v4_recommendation_made": false
+  }
+}
