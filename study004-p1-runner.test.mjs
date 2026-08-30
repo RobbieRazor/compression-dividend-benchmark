@@ -17,6 +17,11 @@ function sha256(relativePath) {
 }
 
 
+function stripAnsi(value) {
+  return value.replace(/\u001b\[[0-9;]*m/g, '');
+}
+
+
 const runnerMetadata = readJson(
   './data/CD-WORKLOAD-20260829-004-p1-runner-metadata.json'
 );
@@ -53,12 +58,13 @@ test('runner preflight reproduces the frozen request without API activity', () =
   );
 
   assert.equal(result.status, 0, result.stderr || result.stdout);
-  assert.match(result.stdout, /PREFLIGHT_PASS: true/);
-  assert.match(result.stdout, /API_CALL_PERFORMED: false/);
-  assert.match(result.stdout, /P2_PROBE_PERFORMED: false/);
-  assert.match(result.stdout, /X402_PAYMENT_PERFORMED: false/);
+  const stdout = stripAnsi(result.stdout);
+  assert.match(stdout, /PREFLIGHT_PASS: true/);
+  assert.match(stdout, /API_CALL_PERFORMED: false/);
+  assert.match(stdout, /P2_PROBE_PERFORMED: false/);
+  assert.match(stdout, /X402_PAYMENT_PERFORMED: false/);
   assert.match(
-    result.stdout,
+    stdout,
     new RegExp('MODEL_INPUT_SHA256: ' + runnerMetadata.frozen_request.model_input_sha256)
   );
 });
