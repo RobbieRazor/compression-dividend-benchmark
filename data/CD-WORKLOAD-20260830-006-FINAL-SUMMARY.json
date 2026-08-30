@@ -1,0 +1,143 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-30T17:22:00Z",
+  "benchmark_outcome": "QUALITY_CENSORED_SUBJECT_AND_RIGHTS_FIDELITY_GAIN_WITH_UNCHANGED_RELATIONSHIP_EXACTNESS",
+  "primary_conclusion": "Value-free canonical-preservation rules improved exact subject and rights fidelity while preserving schema and provenance, but did not improve exact relationship-target reconstruction. Study 006 therefore did not establish a quality-equivalent P1 baseline.",
+  "methodological_conclusion": "Relative to Study 005, exact fidelity increased from 47/73 to 59/73: subject gained one fact, rights gained eleven facts, and relationship targets gained zero facts. The remaining 14 failures are six ontology substitutions, four descriptor paraphrases, and four trademark omissions inside relationship targets.",
+  "economic_conclusion": "No Compression Dividend, best-baseline cost, P1-versus-P2 comparison, or P1-versus-P3 comparison is permitted. The measured P1 requester cost is retained only as rejected-task evidence.",
+  "p1_observation": {
+    "observation_id": "CD-006-P1-0001",
+    "phase": "INITIAL_FEASIBILITY",
+    "model": "gpt-5.6-luna",
+    "http_status": 200,
+    "api_status": "completed",
+    "input_tokens": 38113,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 1055,
+    "requester_model_cost_usd": "0.008888600000",
+    "latency_total_ms": 8066.009,
+    "cache_state": "P1_EXPLICIT_NO_CACHE",
+    "measurement_valid_for_p1": true,
+    "output_json_valid": true,
+    "automatic_retry_allowed": false,
+    "accepted_quality_equivalent_task": false
+  },
+  "quality_result": {
+    "contract_id": "CD006-QC-1.0",
+    "evaluator_id": "CD006-STRICT-CANONICAL-EVAL-1.0",
+    "schema_pass": true,
+    "subject_pass": true,
+    "subject_fact_pass_count": 8,
+    "subject_fact_count": 8,
+    "relationships_pass": false,
+    "relationships_pass_count": 1,
+    "relationships_required": 9,
+    "retrieval_rights_pass": true,
+    "primary_quality_gate_pass": false,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false,
+    "raw_measurement_modified": false
+  },
+  "canonical_fidelity_adjudication": {
+    "adjudicator_id": "CD006-P1-CANONICAL-FIDELITY-ADJ-1.0",
+    "primary_diagnostic_label": "SUBJECT_AND_RIGHTS_FIDELITY_GAIN_WITH_UNCHANGED_RELATIONSHIP_EXACTNESS",
+    "secondary_diagnostic_label": "CANONICAL_RELATIONSHIP_VALUE_FIDELITY_REMAINS_INSUFFICIENT",
+    "provenance_pass_count": 9,
+    "provenance_relationship_count": 9,
+    "subject_fact_pass_count": 8,
+    "subject_fact_count": 8,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "rights_fact_pass_count": 13,
+    "rights_fact_count": 13,
+    "total_exact_fact_pass_count": 59,
+    "total_exact_fact_count": 73,
+    "total_exact_mismatch_count": 14,
+    "study005_total_exact_fact_pass_count": 47,
+    "total_exact_fact_gain": 12,
+    "subject_exact_fact_gain": 1,
+    "relationship_exact_fact_gain": 0,
+    "rights_exact_fact_gain": 11,
+    "frozen_quality_result_modified": false
+  },
+  "path_treatment": {
+    "p1": {
+      "measurement_performed": true,
+      "quality_equivalent": false,
+      "initial_feasibility_established": false,
+      "eligible_baseline": false,
+      "cost_treatment": "REJECTED_TASK_EVIDENCE_ONLY"
+    },
+    "p2": {
+      "eligibility_probe_performed": false,
+      "measurement_performed": false,
+      "reason_not_run": "Observation CD-006-P1-0001 failed the complete CD006-QC-1.0 gate."
+    },
+    "p3": {
+      "payment_performed": false,
+      "semantic_quality_measured": false,
+      "reason_not_run": "No quality-equivalent baseline existed for a valid substitution or economic comparison."
+    }
+  },
+  "best_quality_equivalent_baseline": {
+    "status": "NONE_MEASURED_FOR_STUDY006",
+    "path": null,
+    "cost_usd": null
+  },
+  "transition_surface_treatment": {
+    "new_empirical_point_created": false,
+    "new_transition_threshold_established": false,
+    "study003_anchors_modified": false,
+    "study004_result_modified": false,
+    "study005_result_modified": false,
+    "classification": "QUALITY_CENSORED"
+  },
+  "pricing_and_public_claims": {
+    "pricing_change_supported": false,
+    "website_pricing_change_recommended": false,
+    "positive_compression_dividend_claim_supported": false,
+    "negative_compression_dividend_claim_supported_for_study006": false,
+    "architectural_result_supported": "Neutral structural and lexical controls can improve bounded fidelity classes, but exact governed relationship values remain a distinct reliability layer."
+  },
+  "recommended_next_study": {
+    "design_goal": "Canonical Relationship Value Selection Without Protected Target Disclosure",
+    "required_correction": "Test value-free source-grounding and extraction rules that distinguish authority-source lexical values from model-generated semantic descriptions while preserving the hidden target and unchanged exact gate.",
+    "do_not_do": [
+      "Do not retry Study 006 observation 0001.",
+      "Do not relax the exact quality contract.",
+      "Do not run Study 006 P2 or pay P3 after closure.",
+      "Do not use rejected-task cost as an accepted baseline.",
+      "Do not change public pricing or economic claims from this result."
+    ]
+  },
+  "artifact_provenance": {
+    "design": {"path": "WORKLOAD-CD-20260830-006.md", "sha256": "0ea6c27cbedaed139601120db23df8288a228a23aa7cca849f801e8b60ad3658", "latest_commit": "04e279cdae296c27a279b0eb520cb1e11e2f00bb"},
+    "design_manifest": {"path": "data/CD-WORKLOAD-20260830-006-design-manifest.json", "sha256": "9417eb4ba6a014305fd1a523af08dcc71b2100724ddab1860c4d186f0b3a9d22", "latest_commit": "04e279cdae296c27a279b0eb520cb1e11e2f00bb"},
+    "preservation_rules": {"path": "data/CD-WORKLOAD-20260830-006-neutral-canonical-preservation-rules.json", "sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4", "latest_commit": "04e279cdae296c27a279b0eb520cb1e11e2f00bb"},
+    "authority_target_freeze": {"path": "data/CD-WORKLOAD-20260830-006-authority-target-freeze.json", "sha256": "4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b", "latest_commit": "175ebb93826c39500fe2a2bc2c56a141931cc6a5"},
+    "quality_contract": {"path": "data/CD-WORKLOAD-20260830-006-quality-contract.json", "sha256": "46d5f3c1e7b6de53dd70ca95a31fab5445fad3d03dd944bef714b9c3923ae004", "latest_commit": "e918307f2129d629b37885109c8e0d1c89291baf"},
+    "preregistration": {"path": "data/CD-WORKLOAD-20260830-006-preregistration-manifest.json", "sha256": "848571631f3115be0bf8ebc4c187482344492916b2775715660e915549c8454b", "latest_commit": "e918307f2129d629b37885109c8e0d1c89291baf"},
+    "p1_runner_metadata": {"path": "data/CD-WORKLOAD-20260830-006-p1-runner-metadata.json", "sha256": "6ccb6c071f508ea5ddc66cf3d6cc83a539ce1bfdd11c9adff7b17dfb00194d88", "latest_commit": "97602adf5ff07148acc54f04b9529ebd5c2bf414"},
+    "p1_measurement": {"path": "data/raw/CD-006-P1-0001-measurement.json", "sha256": "19bab886fbd2b6398227e5164e240944e87d76801fa3ac95067cd20bb3711674", "latest_commit": "23aaa06aea12510f19138f35b6a233c3aa14ffdd"},
+    "p1_quality_evaluation": {"path": "data/raw/CD-006-P1-0001-quality-evaluation.json", "sha256": "2c02ddabfce69434ab42c4186f8307e5be90fb53c9fa93aa739e48c6e37b5f5d", "latest_commit": "1d27c7300044bca58f8855a9bc32a7ea06fa6f9a"},
+    "adjudicator_metadata": {"path": "data/CD-WORKLOAD-20260830-006-p1-canonical-fidelity-adjudicator-metadata.json", "sha256": "1d08b7fdfcbdf6a07aca12d2f340354c833ff59f3d88190b256320af9e58b6a1", "latest_commit": "5c9e21590b83fd34c5d2e4c7616dc20bc995f5f6"},
+    "adjudication": {"path": "data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json", "sha256": "1419179016dddbda81bb34f772ee9272503213c8e1287c602637892bab772398", "latest_commit": "3bd148737919227388fbeeee84e8d026451398cf"},
+    "adjudication_record": {"path": "data/CD-WORKLOAD-20260830-006-p1-canonical-fidelity-adjudication-record.json", "sha256": "f9b211a8d97e7cd1566a74f75a255bf488461c1f3ab77e3f76550f69a4cb7192", "latest_commit": "a41b5dfc99bccfaaa5d6d0fbb95351a77133ba49"}
+  },
+  "actions_performed_by_closure": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "adjudication_modified": false,
+    "api_call": false,
+    "retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
