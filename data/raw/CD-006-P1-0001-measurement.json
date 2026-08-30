@@ -1,0 +1,67 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-006-P1-0001",
+  "path": "P1",
+  "phase": "INITIAL_FEASIBILITY",
+  "status": "P1_MEASUREMENT_CAPTURED_QUALITY_NOT_YET_EVALUATED",
+  "timestamp_utc": "2026-08-30T16:48:58.914Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "request": {
+    "task_sha256": "4b0228a02a14fba72b2dbbb98272352c48d1373ecb4cf7b1c56663e99ad54819",
+    "neutral_schema_sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+    "canonical_preservation_rules_sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4",
+    "study004_public_authority_package_sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5",
+    "inherited_public_authority_evidence_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "model_input_sha256": "53009f934aa73ed4e260f3b153da32b1f19e954d59aed8d5c0a5ed818f0b5e0d",
+    "model_input_bytes": 176173,
+    "neutral_schema_visible": true,
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "study005_failure_diagnostics_visible": false,
+    "protected_p3_payload_visible": false
+  },
+  "response": {
+    "http_status": 200,
+    "api_status": "completed",
+    "output_json_valid": true,
+    "raw_response_file": "data/raw/CD-006-P1-0001-response.json",
+    "raw_response_sha256": "37dfcd4249ca24411cfb6bfe2a1de932ad5022fcc53465454dc86760096fe64d",
+    "output_file": "data/raw/CD-006-P1-0001-output.json",
+    "output_sha256": "e0e477115a0fdcbb0cd289a36731e480f8c86d30fd02946d7ffcd3e4b423679c"
+  },
+  "usage": {
+    "input_tokens": 38113,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "uncached_input_tokens": 38113,
+    "output_tokens": 1055,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": {
+    "accounting_schedule": "INHERITED_FROZEN_PROVIDER_PRICE",
+    "input": "0.007622600000",
+    "cached_input": "0.000000000000",
+    "cache_write": "0.000000000000",
+    "output": "0.001266000000",
+    "total_requester_model_cost": "0.008888600000"
+  },
+  "cache_state": "P1_EXPLICIT_NO_CACHE",
+  "measurement_valid_for_p1": true,
+  "latency_total_ms": 8066.009,
+  "quality": {
+    "contract_id": "CD006-QC-1.0",
+    "status": "NOT_YET_EVALUATED",
+    "pass": null,
+    "initial_feasibility_established": null,
+    "stable_cost_calibration_established": false
+  },
+  "automatic_retry_allowed": false,
+  "api_call_performed": true,
+  "p2_probe_performed": false,
+  "x402_payment_performed": false,
+  "economic_comparison_performed": false
+}
