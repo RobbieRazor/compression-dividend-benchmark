@@ -1,0 +1,242 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-005",
+  "module_id": "CD005-SCHEMA-CONSTRAINED-ENRICHED-BIOGRAPHY-001",
+  "contract_id": "CD005-QC-1.0",
+  "status": "STRICT_SCHEMA_AND_SEMANTIC_QUALITY_CONTRACT_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T13:53:22Z",
+  "purpose": "Determine whether value-free schema and graph-placement guidance enables a fresh P1 reconstruction to satisfy the complete Enriched Biography semantic target without exposing protected target values.",
+  "target_representation": {
+    "target_id": "CD005-ENRICHED-BIOGRAPHY-SCHEMA-TARGET-1.0",
+    "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+    "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07",
+    "model_visible_to_p1_p2": false
+  },
+  "authority_freeze": {
+    "package_id": "CD005-ENRICHED-BIOGRAPHY-PUBLIC-AUTHORITY-1.0",
+    "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-public-authority-package.json",
+    "sha256": "6a5dc766a33f71a3dc674f2da0ce244ada311029feb1c78469fdc2e69651dc4b",
+    "model_visible_to_p1_p2": false
+  },
+  "neutral_schema": {
+    "schema_id": "CD005-NEUTRAL-SCHEMA-1.0",
+    "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+    "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+    "model_visible_to_p1_p2": true,
+    "contains_protected_target_values": false
+  },
+  "comparison_model": {
+    "type": "DETERMINISTIC_EXACT_SCHEMA_AND_FROZEN_SEMANTIC_TARGET",
+    "rule": "The candidate must use the exact schema-governed containers and field names, reproduce every frozen subject and relationship target value, provide traceable provenance for every relationship, and reproduce the complete rights boundary. Relationship array order is ignored. Protected target values remain evaluator-only.",
+    "whole_payload_byte_equality_required": false,
+    "relationship_array_order_required": false,
+    "field_aliases_allowed": false,
+    "relocated_values_credited": false,
+    "extra_schema_governed_fields_allowed": false,
+    "partial_credit_changes_primary_pass": false
+  },
+  "schema_gate": {
+    "exact_root_fields": [
+      "subject",
+      "relationships",
+      "retrieval_rights_boundary"
+    ],
+    "exact_subject_fields": [
+      "canonical_plate_id",
+      "canonical_url",
+      "canonical_authority",
+      "name",
+      "entity_type",
+      "main_entity"
+    ],
+    "exact_main_entity_fields": [
+      "name",
+      "entity_type",
+      "url"
+    ],
+    "exact_relationship_fields": [
+      "relationship",
+      "target",
+      "provenance"
+    ],
+    "exact_rights_fields": [
+      "one_endpoint_retrieval",
+      "excluded_rights",
+      "multi_task_reuse_authorized",
+      "amortization_authorized"
+    ],
+    "relationship_count": 9,
+    "exactly_one_per_relationship_class": true,
+    "all_schema_governed_locations_required": true,
+    "additional_properties_allowed": false,
+    "primary_pass_requires_schema_gate": true
+  },
+  "subject_gate": {
+    "all_frozen_scalar_values_required": true,
+    "exact_local_field_placement_required": true,
+    "relocated_subject_value_credited": false
+  },
+  "relationship_gate": {
+    "required_relationship_count": 9,
+    "required_relationships": [
+      "canonical biography",
+      "professional evidence",
+      "Naturepedia reference implementation",
+      "Robbie's Razor framework authorship",
+      "GC-MRD-v2.0 governing authority",
+      "Naturepedia Discovery Index",
+      "Naturepedia AI Catalog",
+      "x402 Pricing Manifest",
+      "Naturepedia MCP Server Card"
+    ],
+    "required_target_fields_by_relationship": {
+      "canonical biography": [
+        "name",
+        "entity_type",
+        "url",
+        "main_entity_name"
+      ],
+      "professional evidence": [
+        "name",
+        "entity_type",
+        "url",
+        "scope"
+      ],
+      "Naturepedia reference implementation": [
+        "name",
+        "entity_type",
+        "url",
+        "classification",
+        "independent_confirmation",
+        "universal_validation"
+      ],
+      "Robbie's Razor framework authorship": [
+        "name",
+        "entity_type",
+        "url",
+        "author",
+        "authorship_claim_type"
+      ],
+      "GC-MRD-v2.0 governing authority": [
+        "identifier",
+        "name",
+        "entity_type",
+        "version",
+        "url",
+        "author",
+        "originator",
+        "governing_status"
+      ],
+      "Naturepedia Discovery Index": [
+        "name",
+        "entity_type",
+        "url",
+        "role"
+      ],
+      "Naturepedia AI Catalog": [
+        "name",
+        "entity_type",
+        "url",
+        "version",
+        "role"
+      ],
+      "x402 Pricing Manifest": [
+        "name",
+        "entity_type",
+        "url",
+        "version",
+        "status",
+        "network",
+        "asset",
+        "enriched_price_usdc",
+        "enriched_atomic_units"
+      ],
+      "Naturepedia MCP Server Card": [
+        "name",
+        "title",
+        "entity_type",
+        "url",
+        "version",
+        "remote_type",
+        "remote_url"
+      ]
+    },
+    "required_target_field_count_total": 52,
+    "all_target_fields_required": true,
+    "duplicate_relationships_rejected": true,
+    "relocated_target_values_credited": false
+  },
+  "provenance_gate": {
+    "exact_provenance_container_name": "provenance",
+    "minimum_valid_anchor_count_per_relationship": 1,
+    "accepted_anchor_classes": [
+      "frozen public source ID mapped to that relationship",
+      "frozen public authority URL mapped to that relationship"
+    ],
+    "target_url_outside_provenance_not_credited": true,
+    "all_relationships_require_traceable_provenance": true
+  },
+  "retrieval_rights_gate": {
+    "required_one_endpoint_retrieval_meaning": "One endpoint-level retrieval of the identified Enriched Query result.",
+    "required_excluded_rights": [
+      "training",
+      "embedding",
+      "bulk ingestion",
+      "redistribution",
+      "resale",
+      "synchronization",
+      "private dataset construction",
+      "derivative dataset creation",
+      "commercial implementation",
+      "framework implementation"
+    ],
+    "multi_task_reuse_authorized_required": false,
+    "amortization_authorized_required": false,
+    "all_rights_values_required": true
+  },
+  "primary_pass_rule": "PASS requires the exact schema gate, every frozen subject value, all 52 frozen target fields across all nine unique relationships, valid provenance for every relationship, and the complete one-retrieval rights boundary.",
+  "failure_rule": "Any failed gate makes the observation non-quality-equivalent and excludes its cost from baseline and economic substitution comparisons. Diagnostic partial counts cannot be converted into a Compression Dividend.",
+  "feasibility_phase": {
+    "planned_p1_observations": 1,
+    "automatic_retry_allowed": false,
+    "one_pass_establishes_initial_feasibility_only": true,
+    "one_pass_establishes_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_before_cost_calibration": true,
+    "failed_observation_requires_frozen_diagnostic_or_new_study_version_before_retest": true
+  },
+  "p1_p2_boundary": {
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "protected_p3_payload_visible": false,
+    "external_knowledge_allowed": false,
+    "p2_allowed_before_accepted_p1": false,
+    "p2_must_use_exact_p1_model_visible_input": true,
+    "synthetic_cache_hit_forbidden": true
+  },
+  "p3_boundary": {
+    "payment_forbidden_until_valid_quality_equivalent_baseline_exists": true,
+    "same_quality_gate_required": true,
+    "http_success_alone_sufficient": false,
+    "payment_success_alone_sufficient": false
+  },
+  "post_measurement_changes_allowed": false,
+  "measurement_state": {
+    "neutral_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "runner_frozen": false,
+    "p1_measurement_started": false,
+    "p2_probe_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "construction_boundary": {
+    "study004_output_used": false,
+    "protected_p3_payload_read": false,
+    "protected_p3_payload_used": false,
+    "model_api_call_performed": false,
+    "x402_payment_performed": false,
+    "production_mutation_performed": false,
+    "pricing_mutation_performed": false
+  }
+}

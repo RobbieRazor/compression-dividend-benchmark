@@ -1,0 +1,132 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-005",
+  "module_id": "CD005-SCHEMA-CONSTRAINED-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD005-SCHEMA-CONSTRAINED-P1-PREREGISTRATION-1.0",
+  "status": "QUALITY_SCHEMA_TASK_PROVIDER_AND_EVALUATOR_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T13:53:22Z",
+  "artifacts": [
+    {
+      "role": "study005_design_manifest",
+      "path": "data/CD-WORKLOAD-20260830-005-design-manifest.json",
+      "sha256": "b0d0612d6fdc0e44a38eec5bb9c1ccb83c6bc9d0fdf32d45909eed08026f1c33"
+    },
+    {
+      "role": "value_free_neutral_schema",
+      "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+      "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786"
+    },
+    {
+      "role": "study005_authority_freeze_control",
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-public-authority-package.json",
+      "sha256": "6a5dc766a33f71a3dc674f2da0ce244ada311029feb1c78469fdc2e69651dc4b"
+    },
+    {
+      "role": "study004_public_authority_package_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+    },
+    {
+      "role": "inherited_public_authority_evidence_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"
+    },
+    {
+      "role": "independent_target_representation",
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260830-005-quality-contract.json",
+      "sha256": "e9cc4b3f499284c74143943b409daee0bcffc65ce0b158f6d6ad22be22e4d881"
+    },
+    {
+      "role": "neutral_task",
+      "path": "prompts/CD-WORKLOAD-20260830-005-neutral-task.txt",
+      "sha256": "743cedc6380223b14dc8d00d6d9b0bc1f628274240bfaedb10a3321a941425eb"
+    },
+    {
+      "role": "task_metadata",
+      "path": "data/CD-WORKLOAD-20260830-005-task-metadata.json",
+      "sha256": "affa6e624616535eb320d0fde3fa6da82d5f67cf9b295be3c86c3b668959c504"
+    },
+    {
+      "role": "provider_configuration",
+      "path": "data/CD-WORKLOAD-20260830-005-provider.json",
+      "sha256": "7a4557ca1529f40021b5145ce77a8a3fb2ff8a1ad9c353ba212b189a9c314725"
+    },
+    {
+      "role": "deterministic_evaluator",
+      "path": "scripts/evaluate-study005.py",
+      "sha256": "5f98676401af18ddf8f75f3649aac578e96144ee4ac6c1de2cb9cc99b1b0c4b5"
+    }
+  ],
+  "frozen_state": {
+    "design_frozen": true,
+    "neutral_schema_frozen": true,
+    "public_authority_evidence_frozen": true,
+    "target_representation_frozen": true,
+    "quality_contract_frozen": true,
+    "neutral_task_frozen": true,
+    "task_visibility_boundary_frozen": true,
+    "provider_configuration_frozen": true,
+    "evaluator_frozen": true,
+    "runner_frozen": false,
+    "p1_measurement_started": false,
+    "p2_eligibility_probe_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "experimental_control": {
+    "study004_public_authority_bytes_preserved": true,
+    "inherited_public_authority_bytes_preserved": true,
+    "value_free_neutral_schema_added": true,
+    "schema_matching_task_instructions_added": true,
+    "protected_target_values_added_to_model_input": false,
+    "study004_output_or_failure_diagnostics_added_to_model_input": false
+  },
+  "quality_gate_summary": {
+    "exact_schema_gate_required": true,
+    "subject_required": true,
+    "relationship_count_required": 9,
+    "relationship_target_field_count_required": 52,
+    "all_relationship_target_fields_required": true,
+    "provenance_required_for_every_relationship": true,
+    "complete_one_retrieval_rights_boundary_required": true,
+    "partial_credit_changes_primary_pass": false,
+    "same_gate_required_for_future_P1_P2_P3": true
+  },
+  "feasibility_plan": {
+    "planned_p1_observation_count": 1,
+    "automatic_retry_allowed": false,
+    "passing_observation_establishes_initial_feasibility": true,
+    "passing_observation_establishes_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_before_cost_calibration": true,
+    "rejected_observation_cost_eligible_as_baseline": false
+  },
+  "payment_gate": {
+    "p2_probe_allowed_now": false,
+    "p3_payment_allowed_now": false,
+    "remaining_requirements": [
+      "run the single frozen P1 feasibility observation",
+      "obtain a complete Study 005 quality-gate pass before any P2 probe",
+      "establish a valid quality-equivalent baseline before any P3 payment",
+      "reconfirm the live 0.025 USDC Enriched challenge immediately before any future payment"
+    ]
+  },
+  "next_artifact": {
+    "type": "P1_FRESH_RECONSTRUCTION_RUNNER_AND_SINGLE_FEASIBILITY_MEASUREMENT",
+    "required_before_p2_probe": true,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "provider_cache_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_pricing_change": false,
+    "website_change": false
+  }
+}
