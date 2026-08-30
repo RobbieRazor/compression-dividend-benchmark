@@ -25,6 +25,12 @@ function sha256(relativePath) {
 const metadata = readJson(
   './data/CD-WORKLOAD-20260829-004-p1-structural-adjudicator.json'
 );
+const record = readJson(
+  './data/CD-WORKLOAD-20260829-004-p1-structural-adjudication-record.json'
+);
+const adjudication = readJson(
+  './data/raw/CD-004-P1-0001-structural-adjudication.json'
+);
 
 
 test('post-hoc adjudicator pins its script and every frozen input', () => {
@@ -48,7 +54,88 @@ test('post-hoc adjudicator pins its script and every frozen input', () => {
 });
 
 
-test('adjudicator preflight reproduces frozen counts without writing an artifact', () => {
+test('completed adjudication is pinned to its frozen inputs and evidence commit', () => {
+  assert.equal(
+    record.status,
+    'POST_HOC_STRUCTURAL_ADJUDICATION_RECORDED'
+  );
+  assert.equal(record.adjudication_artifact.commit, 'cb49d2c');
+  assert.equal(
+    record.adjudication_artifact.sha256,
+    sha256('./data/raw/CD-004-P1-0001-structural-adjudication.json')
+  );
+  assert.equal(
+    record.frozen_adjudicator_metadata.sha256,
+    sha256('./data/CD-WORKLOAD-20260829-004-p1-structural-adjudicator.json')
+  );
+  assert.equal(
+    record.frozen_quality_evaluation.sha256,
+    sha256('./data/raw/CD-004-P1-0001-quality-evaluation.json')
+  );
+  assert.equal(
+    adjudication.primary_diagnostic_label,
+    'STRUCTURAL_FIDELITY_FAILURE_WITH_SINGLE_EXACT_IDENTIFIER_LOSS'
+  );
+  assert.deepEqual(adjudication.summary_counts, record.summary_counts);
+  assert.deepEqual(
+    adjudication.summary_counts,
+    metadata.frozen_post_hoc_expectations
+  );
+});
+
+
+test('completed adjudication classifies all nine failed contract criteria', () => {
+  const results = adjudication.failed_criterion_results;
+  const classificationCount = (classification) =>
+    results.filter((item) => item.classification === classification).length;
+
+  assert.equal(results.length, 9);
+  assert.equal(
+    results.filter(
+      (item) => item.exact_expected_value_present_in_model_visible_authority
+    ).length,
+    9
+  );
+  assert.equal(
+    results.filter((item) => item.exact_value_present_anywhere_in_output).length,
+    8
+  );
+  assert.equal(
+    classificationCount(
+      'EXACT_VALUE_LOCAL_BUT_CONTRACT_LOCATION_OR_ALIAS_FAILED'
+    ),
+    5
+  );
+  assert.equal(
+    classificationCount('EXACT_VALUE_RELOCATED_ELSEWHERE_IN_OUTPUT'),
+    3
+  );
+  assert.equal(
+    classificationCount('EXACT_VALUE_ABSENT_SUFFIX_ONLY_IDENTIFIER_OBSERVED'),
+    1
+  );
+
+  const exactLoss = results.find(
+    (item) => item.classification
+      === 'EXACT_VALUE_ABSENT_SUFFIX_ONLY_IDENTIFIER_OBSERVED'
+  );
+  assert.equal(exactLoss.criterion_id, 'SUBJECT.canonical_plate_id');
+});
+
+
+test('adjudicator preflight remains read-only after completion', () => {
+  assert.equal(
+    existsSync(
+      new URL(
+        './data/raw/CD-004-P1-0001-structural-adjudication.json',
+        import.meta.url
+      )
+    ),
+    true
+  );
+  const hashBefore = sha256(
+    './data/raw/CD-004-P1-0001-structural-adjudication.json'
+  );
   const result = spawnSync(
     'python3',
     ['scripts/adjudicate-study004-p1.py', '--preflight'],
@@ -62,17 +149,11 @@ test('adjudicator preflight reproduces frozen counts without writing an artifact
   assert.match(result.stdout, /FAILED_CONTRACT_CRITERIA: 9/);
   assert.match(result.stdout, /EXACT_VALUES_PRESENT_IN_OUTPUT: 8/);
   assert.match(result.stdout, /MODEL_VISIBLE_AUTHORITY_SUPPORT: 9/);
-  assert.match(result.stdout, /ADJUDICATION_FILE_CREATED: False/);
   assert.match(result.stdout, /QUALITY_RESULT_MODIFIED: False/);
   assert.match(result.stdout, /PREFLIGHT_PASS: True/);
   assert.equal(
-    existsSync(
-      new URL(
-        './data/raw/CD-004-P1-0001-structural-adjudication.json',
-        import.meta.url
-      )
-    ),
-    false
+    sha256('./data/raw/CD-004-P1-0001-structural-adjudication.json'),
+    hashBefore
   );
 });
 
@@ -106,6 +187,14 @@ test('adjudicator cannot relax quality or authorize downstream spending', () => 
   assert.equal(metadata.interpretation_boundary.p2_probe_allowed, false);
   assert.equal(metadata.interpretation_boundary.p3_payment_allowed, false);
   assert.equal(metadata.interpretation_boundary.new_api_measurement_allowed, false);
+  assert.equal(adjudication.frozen_quality_result.primary_quality_gate_pass, false);
+  assert.equal(adjudication.frozen_quality_result.quality_result_modified, false);
+  assert.equal(adjudication.study_boundary.quality_censored, true);
+  assert.equal(adjudication.study_boundary.p2_probe_allowed, false);
+  assert.equal(adjudication.study_boundary.p3_payment_allowed, false);
+  assert.equal(adjudication.study_boundary.economic_comparison_allowed, false);
+  assert.equal(adjudication.api_call_performed, false);
+  assert.equal(adjudication.x402_payment_performed, false);
 
   const script = readText('./scripts/adjudicate-study004-p1.py');
   assert.doesNotMatch(script, /OPENAI_API_KEY/);

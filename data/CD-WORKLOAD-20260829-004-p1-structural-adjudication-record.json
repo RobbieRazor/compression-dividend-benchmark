@@ -1,0 +1,45 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-004-P1-0001",
+  "adjudicator_id": "CD004-P1-STRUCTURAL-ADJ-1.0",
+  "status": "POST_HOC_STRUCTURAL_ADJUDICATION_RECORDED",
+  "adjudication_timestamp_utc": "2026-08-30T13:06:58.762271+00:00",
+  "adjudication_artifact": {
+    "path": "data/raw/CD-004-P1-0001-structural-adjudication.json",
+    "sha256": "72439587e1144fb2fc8c2b14281f9ebb6dda7c51ea96ad0b87f621609f5b63cd",
+    "commit": "cb49d2c"
+  },
+  "frozen_adjudicator_metadata": {
+    "path": "data/CD-WORKLOAD-20260829-004-p1-structural-adjudicator.json",
+    "sha256": "2840afc905cc519407a5e7ff852a75b8753cdcd7161cd93e2a8623392e004b09"
+  },
+  "frozen_quality_evaluation": {
+    "path": "data/raw/CD-004-P1-0001-quality-evaluation.json",
+    "sha256": "18cd164e8388ce8bc15f86d4e383f27bed6ac1a0e1c5116dd6a87b7c709d0109",
+    "primary_quality_gate_pass": false,
+    "quality_result_modified": false
+  },
+  "summary_counts": {
+    "failed_contract_criterion_count": 9,
+    "exact_value_present_anywhere_in_output_count": 8,
+    "exact_value_local_but_contract_location_or_alias_failed_count": 5,
+    "exact_value_relocated_elsewhere_in_output_count": 3,
+    "exact_value_absent_from_output_count": 1,
+    "exact_expected_value_present_in_model_visible_authority_count": 9
+  },
+  "primary_diagnostic_label": "STRUCTURAL_FIDELITY_FAILURE_WITH_SINGLE_EXACT_IDENTIFIER_LOSS",
+  "study_treatment": {
+    "quality_censored": true,
+    "economic_comparison_permitted": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "new_api_measurement_authorized": false
+  },
+  "actions_performed_by_record": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "api_call": false,
+    "x402_payment": false
+  }
+}
