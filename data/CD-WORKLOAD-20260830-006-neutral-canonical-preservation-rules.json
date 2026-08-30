@@ -1,0 +1,99 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "rules_id": "CD006-NEUTRAL-CANONICAL-PRESERVATION-1.0",
+  "status": "VALUE_FREE_NEUTRAL_RULES_FROZEN",
+  "purpose": "Require exact preservation of authority-supported lexical values without disclosing target payload values or target mappings.",
+  "global_rule": {
+    "instruction": "When authority evidence supplies a value for an accepted schema field, reproduce that value exactly in the required field and location.",
+    "semantic_equivalence_satisfies_exact_contract": false,
+    "paraphrase_allowed_for_governed_fields": false,
+    "normalization_allowed_for_governed_fields": false,
+    "near_synonym_substitution_allowed": false
+  },
+  "preservation_families": [
+    {
+      "family_id": "COMPLETE_CANONICAL_IDENTIFIER",
+      "instruction": "Preserve the complete authority-supported identifier, including every prefix, namespace component, delimiter, path component, suffix, and fragment.",
+      "prohibited_transformations": [
+        "drop a prefix",
+        "keep only a suffix",
+        "remove a namespace component",
+        "remove or rewrite a fragment",
+        "construct a shorter equivalent identifier"
+      ],
+      "target_values_disclosed": false
+    },
+    {
+      "family_id": "UNICODE_AND_TRADEMARK_MARKS",
+      "instruction": "Preserve meaningful Unicode marks exactly when they appear in the authority-supported value.",
+      "prohibited_transformations": [
+        "omit a mark",
+        "replace a mark with plain text",
+        "change punctuation that is part of the governed name",
+        "silently normalize a branded value"
+      ],
+      "target_values_disclosed": false
+    },
+    {
+      "family_id": "AUTHORITY_SUPPORTED_ONTOLOGY_TOKEN",
+      "instruction": "Use the exact ontology token supported for the governed field; do not substitute a plausible neighboring type.",
+      "prohibited_transformations": [
+        "choose a broader type",
+        "choose a narrower type",
+        "invent a platform-specific type",
+        "replace the authority-supported token with a semantic near-synonym"
+      ],
+      "target_values_disclosed": false
+    },
+    {
+      "family_id": "CANONICAL_DESCRIPTOR",
+      "instruction": "Copy authority-supported descriptors, roles, classifications, statuses, and claim types exactly rather than summarizing or paraphrasing them.",
+      "prohibited_transformations": [
+        "rewrite prose for readability",
+        "replace a canonical token with natural language",
+        "replace natural language with a new canonical token",
+        "change delimiter style",
+        "expand or compress a governed descriptor"
+      ],
+      "target_values_disclosed": false
+    },
+    {
+      "family_id": "RETRIEVAL_RIGHTS_LEXICON",
+      "instruction": "Reproduce the later frozen public rights boundary exactly; semantic preservation alone does not satisfy an exact lexical contract.",
+      "prohibited_transformations": [
+        "add a suffix to a prohibited right",
+        "replace a prohibited right with a related noun phrase",
+        "merge distinct rights",
+        "omit a required exclusion",
+        "broaden retrieval authorization",
+        "introduce reuse or amortization permission"
+      ],
+      "target_values_disclosed": false
+    }
+  ],
+  "authority_resolution_rules": {
+    "invent_missing_value": false,
+    "infer_hidden_target_mapping": false,
+    "prefer_exact_explicit_authority_value": true,
+    "preserve_source_lexeme_before_stylistic_fluency": true,
+    "report_unresolved_ambiguity_instead_of_silent_substitution": true
+  },
+  "disclosure_boundary": {
+    "contains_target_payload_values": false,
+    "contains_target_field_value_mapping": false,
+    "contains_prior_output": false,
+    "contains_prior_failure_locations": false,
+    "contains_evaluator_logic": false,
+    "contains_protected_p3_payload": false,
+    "generic_examples_allowed": false
+  },
+  "actions_performed": {
+    "api_call": false,
+    "retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}

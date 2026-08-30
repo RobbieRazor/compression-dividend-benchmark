@@ -1,0 +1,149 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD006-DESIGN-FREEZE-1.0",
+  "status": "DESIGN_AND_NEUTRAL_PRESERVATION_RULES_FROZEN_BEFORE_AUTHORITY_TARGET_TASK_PROVIDER_OR_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T16:17:28Z",
+  "purpose": "Test whether value-free canonical-preservation rules resolve the exact-value fidelity failures remaining after Study 005 structural success.",
+  "predecessor_evidence": {
+    "study005_closure": {
+      "path": "data/CD-WORKLOAD-20260830-005-FINAL-SUMMARY.json",
+      "sha256": "7fc8753b9c769282ede8aaaeaceb0589a486dc79b4ce5d5b68b665564fc2b58a",
+      "commit": "74a79f35974fd9ee593fe6a1a992edfe34aa0af8"
+    },
+    "study005_semantic_adjudication": {
+      "path": "data/raw/CD-005-P1-0001-semantic-adjudication.json",
+      "sha256": "87b52c7a7db518d7ea74662c8ba90109df1ab9d1fffa68942ebd5c9210f17ed4",
+      "commit": "64c01423e56a4b83f713ed75459b8637098a1f9f"
+    },
+    "study005_adjudication_record": {
+      "path": "data/CD-WORKLOAD-20260830-005-p1-semantic-adjudication-record.json",
+      "sha256": "86178863b9af66ab0e5541888884c77ad0dd61744ecb0b3e19b9ed1483d18a0a",
+      "commit": "8850f98a2f7bb23c030651d2a0318110b4dea15a"
+    },
+    "study005_outcome": "QUALITY_CENSORED_CANONICAL_VALUE_FIDELITY_FAILURE_AFTER_STRUCTURAL_SUCCESS",
+    "study005_schema_intervention_succeeded": true,
+    "study005_quality_result_modified": false,
+    "study005_cost_inherited_as_accepted_baseline": false
+  },
+  "frozen_design_artifacts": {
+    "design": {
+      "path": "WORKLOAD-CD-20260830-006.md",
+      "sha256": "0ea6c27cbedaed139601120db23df8288a228a23aa7cca849f801e8b60ad3658"
+    },
+    "neutral_canonical_preservation_rules": {
+      "path": "data/CD-WORKLOAD-20260830-006-neutral-canonical-preservation-rules.json",
+      "sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4"
+    }
+  },
+  "experimental_intervention": {
+    "name": "VALUE_FREE_CANONICAL_LEXICAL_PRESERVATION",
+    "study005_schema_intervention_retained": true,
+    "introduced_relative_to_study005": [
+      "complete canonical identifier preservation",
+      "meaningful Unicode and trademark mark preservation",
+      "exact authority-supported ontology token preservation",
+      "nonparaphrased canonical descriptor preservation",
+      "exact public retrieval-rights lexicon preservation"
+    ],
+    "target_payload_values_introduced": false,
+    "target_field_value_mapping_introduced": false,
+    "prior_failure_locations_introduced": false,
+    "protected_p3_payload_values_introduced": false
+  },
+  "neutral_rule_metrics": {
+    "preservation_family_count": 5,
+    "complete_identifier_family_present": true,
+    "unicode_mark_family_present": true,
+    "ontology_token_family_present": true,
+    "canonical_descriptor_family_present": true,
+    "retrieval_rights_lexicon_family_present": true,
+    "target_values_disclosed": 0,
+    "target_mappings_disclosed": 0
+  },
+  "future_model_visibility_boundary": {
+    "visible_after_later_freeze": [
+      "neutral task",
+      "Study 005 value-free neutral schema",
+      "Study 006 value-free canonical-preservation rules",
+      "independently frozen public authority evidence"
+    ],
+    "always_hidden_from_p1_p2": [
+      "completed target representation",
+      "target field-to-value mapping",
+      "Quality Contract",
+      "evaluator implementation and output",
+      "protected or paid P3 payload",
+      "Study 005 model output",
+      "Study 005 quality evaluation",
+      "Study 005 semantic adjudication",
+      "Study 005 final summary"
+    ],
+    "design_manifest_model_visible": false,
+    "prior_failure_specific_locations_model_visible": false
+  },
+  "quality_and_economic_boundary": {
+    "complete_quality_gate_required": true,
+    "schema_gate_required": true,
+    "exact_canonical_value_gate_required": true,
+    "provenance_required_for_every_relationship": true,
+    "retrieval_rights_exact_gate_required": true,
+    "semantic_similarity_changes_exact_pass": false,
+    "partial_credit_changes_primary_pass": false,
+    "rejected_task_cost_eligible_as_baseline": false,
+    "automatic_retry_allowed": false,
+    "p2_allowed_before_accepted_p1": false,
+    "p3_payment_allowed_before_quality_equivalent_baseline": false,
+    "economic_comparison_allowed_now": false
+  },
+  "sampling_boundary": {
+    "one_initial_feasibility_observation_allowed_after_full_preregistration": true,
+    "automatic_retry_allowed": false,
+    "one_observation_sufficient_for_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_for_calibration": true,
+    "sample_target_frozen_now": false,
+    "stopping_rule_frozen_now": false
+  },
+  "cross_study_boundary": {
+    "quality_outcomes_may_be_compared_descriptively": true,
+    "raw_requester_costs_directly_interchangeable": false,
+    "study004_modified": false,
+    "study005_modified": false,
+    "reason": "Study 006 adds lexical-preservation instructions, changing the model-visible token and instruction boundary."
+  },
+  "current_freeze_state": {
+    "design_frozen": true,
+    "neutral_preservation_rules_frozen": true,
+    "authority_package_frozen": false,
+    "target_representation_frozen": false,
+    "quality_contract_frozen": false,
+    "neutral_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "runner_frozen": false,
+    "measurement_authorized": false
+  },
+  "actions_performed": {
+    "api_call": false,
+    "retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_artifact": {
+    "type": "INDEPENDENT_AUTHORITY_AND_TARGET_FREEZE",
+    "requirements": [
+      "pin the Study 006 authority package independently of model output",
+      "pin the completed target independently of model output",
+      "preserve Study 005 authority and target bytes unless a separately documented correction is required",
+      "verify that no protected target value or target mapping appears in the neutral preservation rules",
+      "keep target, contract, evaluator, prior outputs, and protected P3 payload hidden from P1 and P2"
+    ],
+    "api_call_allowed": false,
+    "retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false
+  }
+}
