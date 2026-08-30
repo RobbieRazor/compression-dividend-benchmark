@@ -1,0 +1,59 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "runner_id": "CD004-P1-RUNNER-1.0",
+  "status": "P1_RUNNER_FROZEN_PREFLIGHT_PASS_MEASUREMENT_CREDENTIAL_BLOCKED",
+  "created_timestamp_utc": "2026-08-30T12:24:00Z",
+  "runner": {
+    "path": "scripts/run-study004-p1.mjs",
+    "sha256": "98a65ddea007cd76dacb78b53923eb4fe835c1121f6e941b833471cefb33a6b2"
+  },
+  "preregistration_manifest": {
+    "path": "data/CD-WORKLOAD-20260829-004-preregistration-manifest.json",
+    "sha256": "c21ce4b8f9404ecdd0d950477317cc19e8b0a538e8752bfa4300683954d8ffa2"
+  },
+  "frozen_request": {
+    "provider": "OpenAI",
+    "model": "gpt-5.6-luna",
+    "api_endpoint": "https://api.openai.com/v1/responses",
+    "reasoning_effort": "none",
+    "text_verbosity": "low",
+    "max_output_tokens": 8192,
+    "store": false,
+    "prompt_cache_mode": "explicit",
+    "explicit_cache_breakpoints": 0,
+    "model_visible_input_count": 3,
+    "model_input_bytes": 153595,
+    "model_input_sha256": "77ff244445473ee8fa3b288f5481b8074c4866d7acffae956dd21ad58fa22967"
+  },
+  "preflight": {
+    "pass": true,
+    "api_credential_present": false,
+    "api_call_performed": false,
+    "p2_probe_performed": false,
+    "x402_payment_performed": false
+  },
+  "visibility_boundary": {
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "protected_p3_payload_visible": false
+  },
+  "measurement_state": {
+    "observation_id_reserved": "CD-004-P1-0001",
+    "measurement_started": false,
+    "measurement_artifacts_created": false,
+    "quality_evaluation_started": false
+  },
+  "blocker": {
+    "type": "MISSING_TASK_RELEVANT_API_CREDENTIAL",
+    "environment_variable": "OPENAI_API_KEY",
+    "secret_value_read": false,
+    "resolution": "Restore OPENAI_API_KEY in the Terminal environment, rerun preflight, then execute observation 0001 exactly once."
+  },
+  "next_action": {
+    "type": "RUN_CD_004_P1_0001_THEN_EVALUATE",
+    "p2_allowed_before_p1_quality_pass": false,
+    "p3_payment_allowed": false
+  }
+}
