@@ -1,0 +1,58 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-004-P1-0001",
+  "path": "P1",
+  "status": "P1_MEASUREMENT_CAPTURED_QUALITY_NOT_YET_EVALUATED",
+  "timestamp_utc": "2026-08-30T12:43:14.906Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "request": {
+    "task_sha256": "95eb0730debb443c905d260bd0d83129893ae25a3e0fdfea7f71fab9955fe6e0",
+    "study004_public_authority_package_sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5",
+    "inherited_public_authority_evidence_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "model_input_sha256": "77ff244445473ee8fa3b288f5481b8074c4866d7acffae956dd21ad58fa22967",
+    "model_input_bytes": 153595,
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "protected_p3_payload_visible": false
+  },
+  "response": {
+    "http_status": 200,
+    "api_status": "completed",
+    "output_json_valid": true,
+    "raw_response_file": "data/raw/CD-004-P1-0001-response.json",
+    "raw_response_sha256": "0a6b26c513975f8ef435f85bc44672370747e3af6997e40cf3617a69c1a0befc",
+    "output_file": "data/raw/CD-004-P1-0001-output.json",
+    "output_sha256": "a40c83dde1bec7e0e9c06cc3e4f84d8118a2f6cfb4bab389bd7b30d8d72a0671"
+  },
+  "usage": {
+    "input_tokens": 33388,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "uncached_input_tokens": 33388,
+    "output_tokens": 1145,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": {
+    "accounting_schedule": "INHERITED_FROZEN_PROVIDER_PRICE",
+    "input": "0.006677600000",
+    "cached_input": "0.000000000000",
+    "cache_write": "0.000000000000",
+    "output": "0.001374000000",
+    "total_requester_model_cost": "0.008051600000"
+  },
+  "cache_state": "P1_EXPLICIT_NO_CACHE",
+  "measurement_valid_for_p1": true,
+  "latency_total_ms": 7903.548,
+  "quality": {
+    "contract_id": "CD004-QC-1.0",
+    "status": "NOT_YET_EVALUATED",
+    "pass": null
+  },
+  "api_call_performed": true,
+  "p2_probe_performed": false,
+  "x402_payment_performed": false
+}

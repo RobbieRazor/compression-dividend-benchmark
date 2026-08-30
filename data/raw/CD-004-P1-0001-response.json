@@ -1,0 +1,98 @@
+{
+  "id": "resp_04d2c62d8e3140cf016a9425636e1c87d1bb08ffeabed36aaa",
+  "object": "response",
+  "created_at": 1788093795,
+  "status": "completed",
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1788093802,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": 8192,
+  "max_tool_calls": null,
+  "model": "gpt-5.6-luna",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_04d2c62d8e3140cf016a942564690087d1825067c4df4e9bdc",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"subject\":{\"name\":\"Robbie George Biography Plate\u2122\",\"identifier\":\"robbie-george-biography-plate\",\"url\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate\",\"canonical_public_url\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george\",\"canonical_authority\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george\",\"public_entity_type\":\"ProfilePage\",\"main_person_entity\":{\"name\":\"Robbie George\",\"type\":\"Person\",\"id\":\"https://www.robbiegeorgephotography.com/#person-robbie-george\",\"url\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george\",\"jobTitle\":[\"Independent Wildlife and Nature Photographer\",\"Field Observer and Writer\",\"Naturepedia Creator and Architect of Record\",\"Knowledge Architect\"]}},\"relationships\":[{\"relationship\":\"canonical biography\",\"target\":{\"name\":\"Robbie George canonical biography\",\"type\":\"ProfilePage\",\"url\":\"https://www.robbiegeorgephotography.com/who-is-robbie-george\"},\"provenance\":[\"CD004-AUTH-S001\",\"CD004-AUTH-S002\",\"CD004-AUTH-S003\"]},{\"relationship\":\"professional evidence\",\"target\":{\"name\":\"Publications, Exhibitions & Professional Recognition\",\"type\":\"CollectionPage\",\"url\":\"https://www.robbiegeorgephotography.com/publications-exhibitions-recognition\",\"description\":\"Curated professional archive documenting publications, exhibitions, licensing, conservation work, and recognition.\"},\"provenance\":[\"CD004-AUTH-S001\",\"CD004-AUTH-S003\"]},{\"relationship\":\"Naturepedia reference implementation\",\"target\":{\"name\":\"Naturepedia\",\"url\":\"https://www.robbiegeorgephotography.com/naturepedia\",\"classification\":\"primary-reference-implementation\",\"independent_confirmation\":false,\"universal_validation\":false},\"provenance\":[\"CD004-AUTH-S001\",\"CD004-AUTH-S003\",\"CD004-AUTH-S004\"]},{\"relationship\":\"Robbie's Razor framework authorship\",\"target\":{\"name\":\"Robbie's Razor\",\"url\":\"https://www.robbiegeorgephotography.com/robbies-razor\",\"author\":\"Robbie George\",\"authorship_status\":\"first-party authority claim\"},\"provenance\":[\"CD004-AUTH-S001\",\"CD004-AUTH-S003\"]},{\"relationship\":\"GC-MRD-v2.0 governing authority\",\"target\":{\"identifier\":\"GC-MRD-v2.0\",\"name\":\"The Grand Compression Cosmology \u2014 Master Reference Document\",\"version\":\"2.0\",\"url\":\"https://www.robbiegeorgephotography.com/grand-compression-master-reference-document\",\"author\":\"Robbie George\",\"originator\":\"Robbie George\",\"governing_status\":\"current-canonical-authority\"},\"provenance\":[\"CD004-AUTH-S003\",\"CD004-AUTH-S004\"]},{\"relationship\":\"Naturepedia Discovery Index\",\"target\":{\"name\":\"Naturepedia Discovery Index\",\"type\":\"WebPage\",\"url\":\"https://www.robbiegeorgephotography.com/naturepedia-discovery-index\"},\"provenance\":[\"CD004-AUTH-S003\",\"CD004-AUTH-S006\"]},{\"relationship\":\"Naturepedia AI Catalog\",\"target\":{\"name\":\"Naturepedia AI Catalog\",\"type\":\"DigitalDocument\",\"url\":\"https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json\",\"catalog_version\":\"0.9-draft\",\"selected_route_identifier\":\"robbie-george-biography-plate-enriched-query\"},\"provenance\":[\"CD004-AUTH-S003\"]},{\"relationship\":\"x402 Pricing Manifest\",\"target\":{\"name\":\"Naturepedia x402 Retrieval Pricing Manifest\",\"type\":\"DigitalDocument\",\"url\":\"https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json\",\"version\":\"3.0.0\",\"status\":\"active\",\"network\":\"eip155:8453\",\"asset\":\"USDC\",\"enriched_price_usdc\":\"0.025\",\"enriched_atomic_units\":\"25000\",\"conveys\":\"One endpoint-level retrieval of the identified resource.\",\"excludes\":[\"training rights\",\"embedding rights\",\"bulk-ingestion rights\",\"redistribution rights\",\"synchronization rights\",\"derivative-dataset rights\",\"framework implementation rights\"]},\"provenance\":[\"CD004-AUTH-S003\",\"CD004-AUTH-S005\",\"CD004-AUTH-S006\"]},{\"relationship\":\"Naturepedia MCP Server Card\",\"target\":{\"name\":\"com.robbiegeorgephotography/naturepedia\",\"title\":\"Naturepedia Canonical Discovery MCP Server\",\"type\":\"MCP Server Card\",\"version\":\"0.1.2\",\"url\":\"https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json\",\"website_url\":\"https://www.robbiegeorgephotography.com/naturepedia-discovery-index\",\"remote_type\":\"streamable-http\",\"remote_url\":\"https://mcp.robbiegeorgephotography.com/mcp\",\"governing_authority\":\"GC-MRD-v2.0\",\"pricing_manifest\":\"https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json\"},\"provenance\":[\"CD004-AUTH-S003\",\"CD004-AUTH-S006\"]}],\"retrievalRightsBoundary\":{\"boundary\":\"One endpoint-level retrieval of the identified Enriched Query result/resource.\",\"excluded\":[\"training\",\"embedding\",\"bulk ingestion\",\"redistribution\",\"resale\",\"synchronization\",\"private dataset construction\",\"derivative dataset creation\",\"commercial implementation\",\"framework implementation\"],\"amortization\":\"No multi-task reuse or amortization rights are inferred.\"}}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_options": {
+    "mode": "explicit",
+    "ttl": "30m"
+  },
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "low"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 33388,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 1145,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 34533
+  },
+  "user": null,
+  "metadata": {}
+}
