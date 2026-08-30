@@ -1,0 +1,284 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "package_id": "CD004-ENRICHED-BIOGRAPHY-PUBLIC-AUTHORITY-1.0",
+  "status": "INDEPENDENT_FROM_PAID_P3_PUBLIC_AUTHORITY_PACKAGE_FROZEN",
+  "created_timestamp_utc": "2026-08-30T12:01:19Z",
+  "source_selection_rule": "Use public authority and public machine-discovery records selected before measurement. Do not read, settle, or use the protected Enriched Query payload to construct the target.",
+  "construction_boundary": {
+    "protected_p3_payload_read": false,
+    "x402_payment_performed": false,
+    "model_api_call_performed": false,
+    "p1_measurement_started": false,
+    "p2_measurement_started": false,
+    "p3_measurement_started": false,
+    "production_mutation_performed": false
+  },
+  "source_count": 6,
+  "sources": [
+    {
+      "source_id": "CD004-AUTH-S001",
+      "roles": [
+        "canonical-biography",
+        "professional-evidence",
+        "rights-and-license"
+      ],
+      "source_kind": "previously-frozen-public-authority-package",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+      "selection_note": "Reused without modification because these three authority roles were frozen independently before Study 002 measurement.",
+      "selected_public_urls": [
+        "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+        "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+        "https://www.robbiegeorgephotography.com/commercial-data-license"
+      ]
+    },
+    {
+      "source_id": "CD004-AUTH-S002",
+      "roles": [
+        "canonical-biography-plate-state"
+      ],
+      "source_kind": "previously-frozen-public-jsonld-surface",
+      "path": "data/CD-WORKLOAD-20260829-003-public-state-surface.json",
+      "sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+      "selected_identity": {
+        "@type": "ProfilePage",
+        "@id": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+        "name": "Robbie George Biography Plate™",
+        "main_entity_name": "Robbie George"
+      }
+    },
+    {
+      "source_id": "CD004-AUTH-S003",
+      "roles": [
+        "selected-route-public-declaration",
+        "declared-relationship-list",
+        "machine-discovery-index",
+        "public-resource-routing"
+      ],
+      "source_kind": "live-public-machine-discovery-json",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-30T12:00:00Z",
+      "raw_bytes": 43737,
+      "raw_sha256": "a793e9a760800fc0d3cbd4cfd4592e7e76ddf742f83d0b54854bcb6845b95539",
+      "catalog_version": "0.9-draft",
+      "selected_route": {
+        "id": "urn:ai:robbiegeorgephotography:enriched-query-robbie-george-biography-plate",
+        "identifier": "robbie-george-biography-plate-enriched-query",
+        "name": "Robbie George Biography Plate™ Enriched Query",
+        "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+        "schema_version": "naturepedia.enriched-query.v1",
+        "canonical_plate_id": "robbie-george#robbie-george-biography-plate",
+        "canonical_authority": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+        "price_usdc": "0.025",
+        "price_atomic_units": "25000",
+        "relationships_included": [
+          "canonical biography",
+          "professional evidence",
+          "Naturepedia reference implementation",
+          "Robbie's Razor framework authorship",
+          "GC-MRD-v2.0 governing authority",
+          "Naturepedia Discovery Index",
+          "Naturepedia AI Catalog",
+          "x402 Pricing Manifest",
+          "Naturepedia MCP Server Card"
+        ],
+        "rights_conveyed": "One endpoint-level retrieval of the registered Enriched Query result."
+      }
+    },
+    {
+      "source_id": "CD004-AUTH-S004",
+      "roles": [
+        "gc-mrd-v2-governing-authority",
+        "naturepedia-reference-implementation"
+      ],
+      "source_kind": "live-public-authority-manifest-json",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-30T12:00:00Z",
+      "raw_bytes": 7063,
+      "raw_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "selected_projection": {
+        "identifier": "GC-MRD-v2.0",
+        "name": "The Grand Compression Cosmology — Master Reference Document",
+        "version": "2.0",
+        "canonical_url": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+        "author": "Robbie George",
+        "originator": "Robbie George",
+        "governing_status": "current-canonical-authority",
+        "reference_implementation": {
+          "name": "Naturepedia",
+          "url": "https://www.robbiegeorgephotography.com/naturepedia",
+          "classification": "primary-reference-implementation",
+          "independent_confirmation": false,
+          "universal_validation": false
+        }
+      }
+    },
+    {
+      "source_id": "CD004-AUTH-S005",
+      "roles": [
+        "x402-pricing-manifest",
+        "retrieval-rights-boundary"
+      ],
+      "source_kind": "live-public-pricing-and-rights-json",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-30T12:00:00Z",
+      "raw_bytes": 4980,
+      "raw_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "selected_projection": {
+        "version": "3.0.0",
+        "status": "active",
+        "network": "eip155:8453",
+        "asset": "USDC",
+        "enriched_price_usdc": "0.025",
+        "enriched_atomic_units": "25000",
+        "x402_conveys": "One endpoint-level retrieval of the identified resource.",
+        "x402_does_not_convey": [
+          "training rights",
+          "embedding rights",
+          "bulk-ingestion rights",
+          "redistribution rights",
+          "synchronization rights",
+          "derivative-dataset rights",
+          "framework implementation rights"
+        ]
+      }
+    },
+    {
+      "source_id": "CD004-AUTH-S006",
+      "roles": [
+        "naturepedia-mcp-server-card",
+        "naturepedia-discovery-index-link",
+        "machine-governance-link"
+      ],
+      "source_kind": "live-public-mcp-server-card-json",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "http_status": 200,
+      "capture_timestamp_utc": "2026-08-30T12:00:00Z",
+      "raw_bytes": 3375,
+      "raw_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "selected_projection": {
+        "name": "com.robbiegeorgephotography/naturepedia",
+        "title": "Naturepedia Canonical Discovery MCP Server",
+        "version": "0.1.2",
+        "website_url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+        "remote_type": "streamable-http",
+        "remote_url": "https://mcp.robbiegeorgephotography.com/mcp",
+        "governing_authority": "GC-MRD-v2.0",
+        "pricing_manifest": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json"
+      }
+    }
+  ],
+  "relationship_coverage": [
+    {
+      "ordinal": 1,
+      "relationship": "canonical biography",
+      "target_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+      "supporting_source_ids": [
+        "CD004-AUTH-S001",
+        "CD004-AUTH-S002",
+        "CD004-AUTH-S003"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "relationship": "professional evidence",
+      "target_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "supporting_source_ids": [
+        "CD004-AUTH-S001",
+        "CD004-AUTH-S003"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "relationship": "Naturepedia reference implementation",
+      "target_url": "https://www.robbiegeorgephotography.com/naturepedia",
+      "supporting_source_ids": [
+        "CD004-AUTH-S001",
+        "CD004-AUTH-S003",
+        "CD004-AUTH-S004"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "relationship": "Robbie's Razor framework authorship",
+      "target_url": "https://www.robbiegeorgephotography.com/robbies-razor",
+      "supporting_source_ids": [
+        "CD004-AUTH-S001",
+        "CD004-AUTH-S003"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "relationship": "GC-MRD-v2.0 governing authority",
+      "target_url": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+      "supporting_source_ids": [
+        "CD004-AUTH-S003",
+        "CD004-AUTH-S004"
+      ]
+    },
+    {
+      "ordinal": 6,
+      "relationship": "Naturepedia Discovery Index",
+      "target_url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+      "supporting_source_ids": [
+        "CD004-AUTH-S003",
+        "CD004-AUTH-S006"
+      ]
+    },
+    {
+      "ordinal": 7,
+      "relationship": "Naturepedia AI Catalog",
+      "target_url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "supporting_source_ids": [
+        "CD004-AUTH-S003"
+      ]
+    },
+    {
+      "ordinal": 8,
+      "relationship": "x402 Pricing Manifest",
+      "target_url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "supporting_source_ids": [
+        "CD004-AUTH-S003",
+        "CD004-AUTH-S005",
+        "CD004-AUTH-S006"
+      ]
+    },
+    {
+      "ordinal": 9,
+      "relationship": "Naturepedia MCP Server Card",
+      "target_url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "supporting_source_ids": [
+        "CD004-AUTH-S003",
+        "CD004-AUTH-S006"
+      ]
+    }
+  ],
+  "rights_boundary": {
+    "primary_empirical_Krights": 1,
+    "conveyed": "One endpoint-level retrieval of the identified Enriched Query result.",
+    "excluded": [
+      "training",
+      "embedding",
+      "bulk ingestion",
+      "redistribution",
+      "resale",
+      "synchronization",
+      "private dataset construction",
+      "derivative dataset creation",
+      "commercial implementation",
+      "framework implementation"
+    ],
+    "amortization_rule": "Do not amortize one paid retrieval across more than one accepted empirical task without separate written or machine-verifiable rights evidence."
+  },
+  "independence_assertions": [
+    "The package is independent from the protected P3 response, not independent of the first-party public authorities being evaluated.",
+    "Public route declarations may define scope and routing but may not stand in for protected payload correctness.",
+    "No relationship is credited solely because a paid payload later asserts it; each target relationship is mapped to evidence frozen here.",
+    "The package does not claim third-party empirical validation of Naturepedia, Robbie's Razor, or GC-MRD-v2.0."
+  ],
+  "target_representation_path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json"
+}

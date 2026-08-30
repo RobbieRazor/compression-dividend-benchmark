@@ -1,0 +1,247 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "target_id": "CD004-ENRICHED-BIOGRAPHY-TARGET-1.0",
+  "status": "INDEPENDENT_PUBLIC_TARGET_REPRESENTATION_FROZEN",
+  "created_timestamp_utc": "2026-08-30T12:01:19Z",
+  "authority_package": {
+    "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+    "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+  },
+  "construction_boundary": {
+    "protected_p3_payload_read": false,
+    "protected_p3_payload_used": false,
+    "x402_payment_performed": false,
+    "transport_shape_inferred_from_paid_payload": false,
+    "representation_kind": "semantic-target-not-provider-payload-template"
+  },
+  "subject": {
+    "canonical_plate_id": "robbie-george#robbie-george-biography-plate",
+    "canonical_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+    "canonical_authority": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "name": "Robbie George Biography Plate™",
+    "entity_type": "ProfilePage",
+    "main_entity": {
+      "name": "Robbie George",
+      "entity_type": "Person",
+      "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+    }
+  },
+  "representation": {
+    "name": "Enriched Biography Relationship and Provenance Reconstruction",
+    "description": "A bounded semantic representation connecting the Robbie George Biography Plate™ to its canonical identity, professional evidence, Naturepedia reference implementation, Robbie's Razor authorship, GC-MRD-v2.0 authority, and public machine-discovery infrastructure.",
+    "relationship_count": 9,
+    "relationships": [
+      {
+        "relationship_id": "R01",
+        "ordinal": 1,
+        "relationship": "canonical biography",
+        "target": {
+          "name": "Robbie George Biography Plate™",
+          "entity_type": "ProfilePage",
+          "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+          "main_entity_name": "Robbie George"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship_id": "R02",
+        "ordinal": 2,
+        "relationship": "professional evidence",
+        "target": {
+          "name": "Publications, Exhibitions & Professional Recognition",
+          "entity_type": "WebPage",
+          "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+          "scope": "Curated representative professional evidence authority"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship_id": "R03",
+        "ordinal": 3,
+        "relationship": "Naturepedia reference implementation",
+        "target": {
+          "name": "Naturepedia™",
+          "entity_type": "CreativeWork",
+          "url": "https://www.robbiegeorgephotography.com/naturepedia",
+          "classification": "primary-reference-implementation",
+          "independent_confirmation": false,
+          "universal_validation": false
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S004"
+        ]
+      },
+      {
+        "relationship_id": "R04",
+        "ordinal": 4,
+        "relationship": "Robbie's Razor framework authorship",
+        "target": {
+          "name": "Robbie's Razor™",
+          "entity_type": "CreativeWork",
+          "url": "https://www.robbiegeorgephotography.com/robbies-razor",
+          "author": "Robbie George",
+          "authorship_claim_type": "first-party-public-authority"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship_id": "R05",
+        "ordinal": 5,
+        "relationship": "GC-MRD-v2.0 governing authority",
+        "target": {
+          "identifier": "GC-MRD-v2.0",
+          "name": "The Grand Compression Cosmology — Master Reference Document",
+          "entity_type": "CreativeWork",
+          "version": "2.0",
+          "url": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+          "author": "Robbie George",
+          "originator": "Robbie George",
+          "governing_status": "current-canonical-authority"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S004"
+        ]
+      },
+      {
+        "relationship_id": "R06",
+        "ordinal": 6,
+        "relationship": "Naturepedia Discovery Index",
+        "target": {
+          "name": "Naturepedia™ Discovery Index",
+          "entity_type": "WebPage",
+          "url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+          "role": "public-discovery-index"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S006"
+        ]
+      },
+      {
+        "relationship_id": "R07",
+        "ordinal": 7,
+        "relationship": "Naturepedia AI Catalog",
+        "target": {
+          "name": "Naturepedia™ AI Catalog",
+          "entity_type": "DataCatalog",
+          "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+          "version": "0.9-draft",
+          "role": "public-machine-discovery-catalog"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship_id": "R08",
+        "ordinal": 8,
+        "relationship": "x402 Pricing Manifest",
+        "target": {
+          "name": "Naturepedia™ x402 Retrieval Pricing Manifest",
+          "entity_type": "OfferCatalog",
+          "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+          "version": "3.0.0",
+          "status": "active",
+          "network": "eip155:8453",
+          "asset": "USDC",
+          "enriched_price_usdc": "0.025",
+          "enriched_atomic_units": "25000"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S005",
+          "CD004-AUTH-S006"
+        ]
+      },
+      {
+        "relationship_id": "R09",
+        "ordinal": 9,
+        "relationship": "Naturepedia MCP Server Card",
+        "target": {
+          "name": "com.robbiegeorgephotography/naturepedia",
+          "title": "Naturepedia Canonical Discovery MCP Server",
+          "entity_type": "SoftwareApplication",
+          "url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+          "version": "0.1.2",
+          "remote_type": "streamable-http",
+          "remote_url": "https://mcp.robbiegeorgephotography.com/mcp"
+        },
+        "provenance_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S006"
+        ]
+      }
+    ]
+  },
+  "retrieval_rights_boundary": {
+    "primary_empirical_Krights": 1,
+    "conveyed": "One endpoint-level retrieval of the identified Enriched Query result.",
+    "excluded": [
+      "training",
+      "embedding",
+      "bulk ingestion",
+      "redistribution",
+      "resale",
+      "synchronization",
+      "private dataset construction",
+      "derivative dataset creation",
+      "commercial implementation",
+      "framework implementation"
+    ],
+    "multi_task_amortization_allowed": false
+  },
+  "semantic_evaluation_boundary": {
+    "mandatory_units": [
+      "subject identity",
+      "all nine named relationships",
+      "correct target for each relationship",
+      "traceable provenance for each relationship",
+      "one-retrieval rights boundary"
+    ],
+    "transport_variance_allowed": [
+      "field ordering",
+      "array ordering when relationship identity is preserved",
+      "JSON-LD compaction or expansion",
+      "equivalent absolute or canonical URL placement",
+      "provider envelope fields outside the semantic target"
+    ],
+    "not_credited": [
+      "route availability without relationship content",
+      "price correctness without the nine relationships",
+      "unsupported relationship assertions",
+      "extra payload volume that does not improve target coverage",
+      "claims of third-party validation not present in the authority package"
+    ],
+    "quality_thresholds_frozen_here": false,
+    "quality_contract_required_before_measurement": true
+  },
+  "measurement_state": {
+    "authority_package_frozen": true,
+    "target_representation_frozen": true,
+    "quality_contract_frozen": false,
+    "neutral_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "p1_measurement_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false
+  },
+  "next_artifact": {
+    "type": "QUALITY_CONTRACT_NEUTRAL_TASK_PROVIDER_AND_EVALUATOR_FREEZE",
+    "required_before_measurement": true
+  }
+}
