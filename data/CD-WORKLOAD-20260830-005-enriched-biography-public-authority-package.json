@@ -1,0 +1,314 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-005",
+  "module_id": "CD005-SCHEMA-CONSTRAINED-ENRICHED-BIOGRAPHY-001",
+  "package_id": "CD005-ENRICHED-BIOGRAPHY-PUBLIC-AUTHORITY-1.0",
+  "status": "INDEPENDENT_PUBLIC_AUTHORITY_EVIDENCE_FROZEN_WITH_EXACT_STUDY004_BYTES",
+  "created_timestamp_utc": "2026-08-30T13:44:50Z",
+  "purpose": "Freeze the public authority evidence for Study 005 without changing the evidence bytes seen in Study 004, so the later P1 intervention is limited to value-free schema and graph-placement guidance.",
+  "frozen_design": {
+    "manifest_path": "data/CD-WORKLOAD-20260830-005-design-manifest.json",
+    "manifest_sha256": "b0d0612d6fdc0e44a38eec5bb9c1ccb83c6bc9d0fdf32d45909eed08026f1c33",
+    "neutral_schema_path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+    "neutral_schema_sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786"
+  },
+  "evidence_reuse_rule": {
+    "rule": "Reuse the exact public-authority bytes that were frozen before Study 004 measurement. Do not refresh, rewrite, enrich, or replace their content for Study 005.",
+    "experimental_reason": "Holding public authority evidence constant isolates the added value-free schema and graph-placement guidance as the intended Study 005 intervention.",
+    "study004_model_visible_authority_bytes_preserved": true,
+    "new_target_values_added_to_model_visible_authority": false
+  },
+  "construction_boundary": {
+    "study004_p1_output_read": false,
+    "study004_quality_evaluation_read_for_target_construction": false,
+    "study004_structural_adjudication_read_for_target_construction": false,
+    "protected_p3_payload_read": false,
+    "protected_p3_payload_used": false,
+    "x402_payment_performed": false,
+    "model_api_call_performed": false,
+    "live_public_source_refresh_performed": false,
+    "production_mutation_performed": false,
+    "pricing_mutation_performed": false
+  },
+  "model_visible_authority_evidence": [
+    {
+      "role": "study004_public_authority_package_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5",
+      "study004_model_visible": true,
+      "study005_future_model_visible": true,
+      "byte_content_changed_for_study005": false
+    },
+    {
+      "role": "inherited_public_authority_evidence_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+      "study004_model_visible": true,
+      "study005_future_model_visible": true,
+      "byte_content_changed_for_study005": false
+    }
+  ],
+  "evaluator_only_lineage": [
+    {
+      "role": "public_jsonld_identity_surface",
+      "path": "data/CD-WORKLOAD-20260829-003-public-state-surface.json",
+      "sha256": "a059d82930c5a18ff74709e8f7c8e84b7be2b47dd808a8343896b2e7f6a0ec55",
+      "future_model_visible": false
+    },
+    {
+      "role": "predecessor_independent_semantic_target",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json",
+      "sha256": "3b73ee99789450a6be888e3052f31cec5f1195a4d1bae52489873af350554bb7",
+      "future_model_visible": false
+    }
+  ],
+  "public_source_ids": [
+    "CD004-AUTH-S001",
+    "CD004-AUTH-S002",
+    "CD004-AUTH-S003",
+    "CD004-AUTH-S004",
+    "CD004-AUTH-S005",
+    "CD004-AUTH-S006"
+  ],
+  "target_support_coverage": {
+    "subject": [
+      {
+        "field": "canonical_plate_id",
+        "supporting_source_ids": [
+          "CD004-AUTH-S002",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "field": "canonical_url",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002"
+        ]
+      },
+      {
+        "field": "canonical_authority",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "field": "name",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002"
+        ]
+      },
+      {
+        "field": "entity_type",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002"
+        ]
+      },
+      {
+        "field": "main_entity.name",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002"
+        ]
+      },
+      {
+        "field": "main_entity.entity_type",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002"
+        ]
+      },
+      {
+        "field": "main_entity.url",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002"
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "relationship": "canonical biography",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "main_entity_name"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S002",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship": "professional evidence",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "scope"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship": "Naturepedia reference implementation",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "classification",
+          "independent_confirmation",
+          "universal_validation"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S004"
+        ]
+      },
+      {
+        "relationship": "Robbie's Razor framework authorship",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "author",
+          "authorship_claim_type"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship": "GC-MRD-v2.0 governing authority",
+        "target_fields": [
+          "identifier",
+          "name",
+          "entity_type",
+          "version",
+          "url",
+          "author",
+          "originator",
+          "governing_status"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S004"
+        ]
+      },
+      {
+        "relationship": "Naturepedia Discovery Index",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "role"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S006"
+        ]
+      },
+      {
+        "relationship": "Naturepedia AI Catalog",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "version",
+          "role"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S003"
+        ]
+      },
+      {
+        "relationship": "x402 Pricing Manifest",
+        "target_fields": [
+          "name",
+          "entity_type",
+          "url",
+          "version",
+          "status",
+          "network",
+          "asset",
+          "enriched_price_usdc",
+          "enriched_atomic_units"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S005",
+          "CD004-AUTH-S006"
+        ]
+      },
+      {
+        "relationship": "Naturepedia MCP Server Card",
+        "target_fields": [
+          "name",
+          "title",
+          "entity_type",
+          "url",
+          "version",
+          "remote_type",
+          "remote_url"
+        ],
+        "supporting_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S006"
+        ]
+      }
+    ],
+    "retrieval_rights_boundary": [
+      {
+        "field": "one_endpoint_retrieval",
+        "supporting_source_ids": [
+          "CD004-AUTH-S003",
+          "CD004-AUTH-S005"
+        ]
+      },
+      {
+        "field": "excluded_rights",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S005"
+        ]
+      },
+      {
+        "field": "multi_task_reuse_authorized",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S005"
+        ]
+      },
+      {
+        "field": "amortization_authorized",
+        "supporting_source_ids": [
+          "CD004-AUTH-S001",
+          "CD004-AUTH-S005"
+        ]
+      }
+    ]
+  },
+  "independence_assertions": [
+    "The Study 005 public evidence is independent of all Study 004 and Study 005 model outputs.",
+    "The protected P3 payload was not read or used.",
+    "No live source was refreshed after the Study 005 design freeze.",
+    "The six retained source identifiers resolve inside the exact Study 004 public-authority package.",
+    "The completed Study 005 target and its field-support map remain evaluator-only.",
+    "No target fact is credited solely because a future model or paid provider asserts it."
+  ],
+  "target_representation_path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+  "next_artifact": {
+    "type": "QUALITY_CONTRACT_NEUTRAL_TASK_PROVIDER_AND_EVALUATOR_FREEZE",
+    "measurement_allowed_now": false,
+    "p2_probe_allowed_now": false,
+    "p3_payment_allowed_now": false
+  }
+}
