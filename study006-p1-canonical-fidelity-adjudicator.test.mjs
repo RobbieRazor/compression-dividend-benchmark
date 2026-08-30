@@ -23,6 +23,12 @@ const metadata = readJson(
 const evaluation = readJson(
   './data/raw/CD-006-P1-0001-quality-evaluation.json'
 );
+const adjudication = readJson(
+  './data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json'
+);
+const record = readJson(
+  './data/CD-WORKLOAD-20260830-006-p1-canonical-fidelity-adjudication-record.json'
+);
 
 
 test('Study 006 post-hoc adjudicator pins its implementation and frozen evidence', () => {
@@ -41,12 +47,54 @@ test('Study 006 post-hoc adjudicator pins its implementation and frozen evidence
 });
 
 
-test('adjudicator preflight reproduces exact cross-study gains without writing', () => {
+test('completed adjudication is pinned to its frozen evidence commit', () => {
+  assert.equal(
+    record.status,
+    'POST_HOC_CANONICAL_FIDELITY_ADJUDICATION_RECORDED'
+  );
+  assert.equal(record.adjudication_artifact.commit, '3bd1487');
+  assert.equal(
+    record.adjudication_artifact.sha256,
+    sha256('./data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json')
+  );
+  assert.equal(
+    record.frozen_adjudicator_metadata.sha256,
+    sha256(
+      './data/CD-WORKLOAD-20260830-006-p1-canonical-fidelity-adjudicator-metadata.json'
+    )
+  );
+  assert.equal(
+    record.primary_diagnostic_label,
+    adjudication.primary_diagnostic_label
+  );
+});
+
+
+test('record freezes exact gains and unchanged relationship fidelity', () => {
+  assert.deepEqual(record.cross_study_comparison, {
+    study005_total_exact_fact_pass_count: 47,
+    study006_total_exact_fact_pass_count: 59,
+    total_exact_fact_gain: 12,
+    subject_exact_fact_gain: 1,
+    relationship_exact_fact_gain: 0,
+    rights_exact_fact_gain: 11,
+    quality_equivalence_established: false
+  });
+  assert.equal(record.exact_value_fidelity.relationship_target_fact_pass_count, 38);
+  assert.equal(record.exact_value_fidelity.relationship_target_fact_count, 52);
+  assert.equal(record.exact_value_fidelity.total_exact_mismatch_count, 14);
+});
+
+
+test('adjudicator preflight remains read-only after completion', () => {
   const resultPath = new URL(
     './data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json',
     import.meta.url
   );
-  assert.equal(existsSync(resultPath), false);
+  assert.equal(existsSync(resultPath), true);
+  const hashBefore = sha256(
+    './data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json'
+  );
   const result = spawnSync(
     'python3',
     ['scripts/adjudicate-study006-p1.py', '--preflight'],
@@ -64,7 +112,11 @@ test('adjudicator preflight reproduces exact cross-study gains without writing',
   assert.match(result.stdout, /API_CALL_PERFORMED: False/);
   assert.match(result.stdout, /X402_PAYMENT_PERFORMED: False/);
   assert.match(result.stdout, /PREFLIGHT_PASS: True/);
-  assert.equal(existsSync(resultPath), false);
+  assert.equal(existsSync(resultPath), true);
+  assert.equal(
+    sha256('./data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json'),
+    hashBefore
+  );
 });
 
 

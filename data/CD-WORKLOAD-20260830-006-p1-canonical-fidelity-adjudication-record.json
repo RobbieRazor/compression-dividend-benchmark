@@ -1,0 +1,69 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-006-P1-0001",
+  "adjudicator_id": "CD006-P1-CANONICAL-FIDELITY-ADJ-1.0",
+  "status": "POST_HOC_CANONICAL_FIDELITY_ADJUDICATION_RECORDED",
+  "recorded_timestamp_utc": "2026-08-30T17:08:00Z",
+  "adjudication_artifact": {
+    "path": "data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json",
+    "sha256": "1419179016dddbda81bb34f772ee9272503213c8e1287c602637892bab772398",
+    "commit": "3bd1487"
+  },
+  "frozen_adjudicator_metadata": {
+    "path": "data/CD-WORKLOAD-20260830-006-p1-canonical-fidelity-adjudicator-metadata.json",
+    "sha256": "1d08b7fdfcbdf6a07aca12d2f340354c833ff59f3d88190b256320af9e58b6a1"
+  },
+  "frozen_quality_evaluation": {
+    "path": "data/raw/CD-006-P1-0001-quality-evaluation.json",
+    "sha256": "2c02ddabfce69434ab42c4186f8307e5be90fb53c9fa93aa739e48c6e37b5f5d",
+    "primary_quality_gate_pass": false,
+    "quality_result_modified": false
+  },
+  "exact_value_fidelity": {
+    "subject_fact_pass_count": 8,
+    "subject_fact_count": 8,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "rights_fact_pass_count": 13,
+    "rights_fact_count": 13,
+    "total_exact_fact_pass_count": 59,
+    "total_exact_fact_count": 73,
+    "total_exact_mismatch_count": 14
+  },
+  "target_mismatch_categories": {
+    "mismatch_count": 14,
+    "ONTOLOGY_TYPE_SUBSTITUTION": 6,
+    "CANONICAL_DESCRIPTOR_PARAPHRASE": 4,
+    "TRADEMARK_MARK_OMISSION": 4
+  },
+  "cross_study_comparison": {
+    "study005_total_exact_fact_pass_count": 47,
+    "study006_total_exact_fact_pass_count": 59,
+    "total_exact_fact_gain": 12,
+    "subject_exact_fact_gain": 1,
+    "relationship_exact_fact_gain": 0,
+    "rights_exact_fact_gain": 11,
+    "quality_equivalence_established": false
+  },
+  "primary_diagnostic_label": "SUBJECT_AND_RIGHTS_FIDELITY_GAIN_WITH_UNCHANGED_RELATIONSHIP_EXACTNESS",
+  "secondary_diagnostic_label": "CANONICAL_RELATIONSHIP_VALUE_FIDELITY_REMAINS_INSUFFICIENT",
+  "study_treatment": {
+    "quality_censored": true,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false,
+    "retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "pricing_change_authorized": false,
+    "website_change_authorized": false
+  },
+  "actions_performed_by_record": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "api_call": false,
+    "x402_payment": false,
+    "production_mutation": false
+  }
+}
