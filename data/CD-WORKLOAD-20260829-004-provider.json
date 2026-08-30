@@ -1,0 +1,84 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "status": "PROVIDER_CONFIGURATION_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T12:11:07Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "v1/responses",
+  "reasoning_effort": "none",
+  "text_verbosity": "low",
+  "max_output_tokens": 8192,
+  "store": false,
+  "pricing_usd_per_million_tokens": {
+    "input": 0.2,
+    "cached_input": 0.02,
+    "cache_write": 0.25,
+    "output": 1.2
+  },
+  "pricing_provenance": {
+    "measurement_class": "INHERITED_FROZEN_PROVIDER_PRICE",
+    "source": "Study 003 frozen provider configuration",
+    "source_file": "data/CD-WORKLOAD-20260829-003-provider.json",
+    "source_sha256": "1303d3cb56d8fc1cadade5dc456a9ffa91f1f7d708fff50513c5442d5f196a0c",
+    "cross_study_comparability": true,
+    "live_price_reverification_required_before_measurement": false,
+    "rule": "Use the inherited frozen price schedule for internal cross-study comparability. If the provider bills a different schedule, preserve both the observed billed amount and this benchmark accounting schedule without silently replacing either."
+  },
+  "model_visible_input_order": [
+    "neutral_task",
+    "study004_public_authority_package",
+    "inherited_public_authority_evidence"
+  ],
+  "request_input_delimiters": {
+    "study004_authority_begin": "STUDY 004 PUBLIC AUTHORITY PACKAGE BEGIN",
+    "study004_authority_end": "STUDY 004 PUBLIC AUTHORITY PACKAGE END",
+    "inherited_authority_begin": "INHERITED PUBLIC AUTHORITY EVIDENCE BEGIN",
+    "inherited_authority_end": "INHERITED PUBLIC AUTHORITY EVIDENCE END"
+  },
+  "p1_configuration": {
+    "path": "P1",
+    "class": "PURE_RECOMPUTATION",
+    "prompt_cache_mode": "explicit",
+    "explicit_breakpoints": 0,
+    "prompt_cache_key": null,
+    "purpose": "Preserve fresh-reconstruction semantics and Study 003 comparability."
+  },
+  "p2_eligibility_configuration": {
+    "path": "P2",
+    "class": "PROVIDER_PROMPT_CACHE",
+    "status": "NOT_YET_PROBED_FOR_EXACT_STUDY004_INPUT",
+    "mode": "implicit",
+    "ttl": "30m",
+    "prompt_cache_key": "cd004-enriched-biography-v1",
+    "minimum_probe_requests": 2,
+    "activation_rule": "P2 becomes measurable only if the exact frozen Study 004 input produces an observed cache write and a later observed cache read. No Study 003 cache result may be inherited as Study 004 availability.",
+    "synthetic_cache_hit_allowed": false
+  },
+  "p3_configuration": {
+    "path": "P3",
+    "provider": "Naturepedia x402 production gateway",
+    "url": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+    "access_class": "enriched",
+    "network": "eip155:8453",
+    "asset": "USDC",
+    "price_usdc": "0.025",
+    "price_atomic_units": "25000",
+    "rights_count_Krights": 1,
+    "status": "LIVE_HTTP_402_PREVIOUSLY_VERIFIED_PAYMENT_BLOCKED",
+    "payment_allowed_now": false
+  },
+  "visibility_boundary": {
+    "target_representation_visible_to_p1_p2": false,
+    "quality_contract_visible_to_p1_p2": false,
+    "evaluator_visible_to_p1_p2": false,
+    "protected_p3_payload_visible_to_p1_p2": false,
+    "external_knowledge_allowed": false
+  },
+  "measurement_state": {
+    "p1_request_performed": false,
+    "p2_eligibility_probe_performed": false,
+    "p2_measurement_performed": false,
+    "p3_payment_performed": false
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "task_id": "CD004-ENRICHED-BIOGRAPHY-TASK-1.0",
+  "status": "TASK_AND_EVALUATOR_BOUNDARIES_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T12:11:07Z",
+  "git_head_before_preregistration_freeze": "55a4a7a42c257b7987e9ffc2683e3bb422433210",
+  "paths": [
+    "P1",
+    "P2"
+  ],
+  "task_scope": {
+    "subject": "Robbie George Biography Plate™",
+    "relationship_count": 9,
+    "requires_target_attributes": true,
+    "requires_relationship_provenance": true,
+    "requires_retrieval_rights_boundary": true,
+    "external_knowledge_allowed": false
+  },
+  "model_visible_inputs": [
+    {
+      "ordinal": 1,
+      "role": "neutral_task",
+      "path": "prompts/CD-WORKLOAD-20260829-004-neutral-task.txt",
+      "sha256": "95eb0730debb443c905d260bd0d83129893ae25a3e0fdfea7f71fab9955fe6e0"
+    },
+    {
+      "ordinal": 2,
+      "role": "study004_public_authority_package",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+    },
+    {
+      "ordinal": 3,
+      "role": "inherited_public_authority_evidence",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"
+    }
+  ],
+  "model_visible_input_composition": {
+    "encoding": "UTF-8",
+    "trim_each_input": true,
+    "join_rule": "Neutral task, Study 004 authority package between its frozen delimiters, then inherited public authority evidence between its frozen delimiters.",
+    "byte_count": 153595,
+    "sha256": "77ff244445473ee8fa3b288f5481b8074c4866d7acffae956dd21ad58fa22967",
+    "p1_p2_exact_input_match_required": true
+  },
+  "evaluator_only_not_model_visible": [
+    {
+      "role": "independent_target_representation",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json",
+      "sha256": "3b73ee99789450a6be888e3052f31cec5f1195a4d1bae52489873af350554bb7"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260829-004-quality-contract.json",
+      "sha256": "643303e17be69365af567a2dc74e6da646e5c50d48d7e708968e8ca706653128"
+    },
+    {
+      "role": "deterministic_evaluator",
+      "path": "scripts/evaluate-study004.py",
+      "sha256": "59a1a2099cbd3e8c065c9bd1a97d3471ddaddcc585913fbc0ba2ae9470f46af5"
+    }
+  ],
+  "execution_configuration_not_model_visible": [
+    {
+      "role": "provider_configuration",
+      "path": "data/CD-WORKLOAD-20260829-004-provider.json",
+      "sha256": "2c12a7798afe4760d957bb5fe3b7130688447b219893699ba375f5a5558a825a"
+    }
+  ],
+  "visibility_assertions": {
+    "target_representation_visible_to_p1_p2": false,
+    "quality_contract_visible_to_p1_p2": false,
+    "evaluator_visible_to_p1_p2": false,
+    "protected_p3_payload_visible_to_p1_p2": false,
+    "provider_configuration_visible_as_model_input": false,
+    "public_authority_package_visible_to_p1_p2": true,
+    "inherited_public_authority_evidence_visible_to_p1_p2": true
+  },
+  "p2_boundary": {
+    "study003_cache_eligibility_inherited": false,
+    "study004_exact_input_probe_required": true,
+    "synthetic_cache_hit_allowed": false,
+    "measurement_allowed_before_cache_read_observed": false
+  },
+  "p3_boundary": {
+    "payment_allowed_before_valid_baseline": false,
+    "protected_payload_used_to_construct_target": false,
+    "protected_payload_used_to_construct_quality_contract": false,
+    "same_evaluator_required": true
+  },
+  "measurement_state": {
+    "p1_measurement_started": false,
+    "p2_eligibility_probe_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "contract_id": "CD004-QC-1.0",
+  "status": "QUALITY_CONTRACT_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T12:11:07Z",
+  "purpose": "Determine whether P1 fresh reconstruction, an actually available P2 provider-cache reconstruction, and paid P3 Enriched retrieval satisfy the same independently frozen Biography Plate relationship-and-provenance task before economic comparison.",
+  "target_representation": {
+    "target_id": "CD004-ENRICHED-BIOGRAPHY-TARGET-1.0",
+    "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json",
+    "sha256": "3b73ee99789450a6be888e3052f31cec5f1195a4d1bae52489873af350554bb7",
+    "relationship_count": 9
+  },
+  "authority_package": {
+    "package_id": "CD004-ENRICHED-BIOGRAPHY-PUBLIC-AUTHORITY-1.0",
+    "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+    "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+  },
+  "comparison_model": {
+    "type": "DETERMINISTIC_SEMANTIC_GRAPH_SUBSET",
+    "rule": "The evaluator locates the contract-required frozen target facts within a candidate JSON graph using predeclared field aliases. Object and array ordering are ignored. Every required fact was selected because it is present or directly recoverable from the model-visible authority evidence. Extra fields cannot compensate for missing required facts.",
+    "whole_payload_byte_equality_required": false,
+    "whole_payload_shape_equality_required": false,
+    "semantic_substitution_outside_frozen_aliases_allowed": false,
+    "partial_credit_changes_primary_pass": false
+  },
+  "candidate_graph_locations": {
+    "subject_container_aliases": [
+      "subject",
+      "about",
+      "mainSubject",
+      "canonicalSubject"
+    ],
+    "relationship_collection_aliases": [
+      "relationships",
+      "systemNodes",
+      "nodes",
+      "connections",
+      "relatedResources"
+    ],
+    "relationship_label_aliases": [
+      "relationship",
+      "relationshipType",
+      "relation",
+      "relationType",
+      "role"
+    ],
+    "target_container_aliases": [
+      "target",
+      "node",
+      "resource",
+      "object",
+      "authority"
+    ],
+    "provenance_container_aliases": [
+      "provenance",
+      "provenanceSourceIds",
+      "provenanceReferences",
+      "sources",
+      "source",
+      "citations",
+      "citation",
+      "evidence",
+      "authorityReferences"
+    ],
+    "rights_container_aliases": [
+      "retrievalRightsBoundary",
+      "rightsBoundary",
+      "protectedRetrievalUse",
+      "retrievalRights",
+      "rights"
+    ]
+  },
+  "target_field_aliases": {
+    "canonical_plate_id": [
+      "canonicalPlateId",
+      "canonical_plate_id",
+      "identifier"
+    ],
+    "canonical_url": [
+      "canonicalUrl",
+      "canonical_url",
+      "url",
+      "@id"
+    ],
+    "canonical_authority": [
+      "canonicalAuthority",
+      "canonical_authority",
+      "authorityUrl"
+    ],
+    "name": [
+      "name"
+    ],
+    "entity_type": [
+      "entityType",
+      "entity_type",
+      "@type",
+      "type"
+    ],
+    "main_entity": [
+      "mainEntity",
+      "main_entity"
+    ],
+    "main_entity_name": [
+      "mainEntityName",
+      "main_entity_name"
+    ],
+    "url": [
+      "url",
+      "@id",
+      "canonicalUrl",
+      "websiteUrl",
+      "resourceUrl"
+    ],
+    "scope": [
+      "scope",
+      "description"
+    ],
+    "classification": [
+      "classification"
+    ],
+    "independent_confirmation": [
+      "independentConfirmation",
+      "independent_confirmation"
+    ],
+    "universal_validation": [
+      "universalValidation",
+      "universal_validation"
+    ],
+    "author": [
+      "author",
+      "creator"
+    ],
+    "authorship_claim_type": [
+      "authorshipClaimType",
+      "authorship_claim_type"
+    ],
+    "identifier": [
+      "identifier",
+      "id"
+    ],
+    "version": [
+      "version",
+      "schemaVersion"
+    ],
+    "originator": [
+      "originator"
+    ],
+    "governing_status": [
+      "governingStatus",
+      "governing_status",
+      "status"
+    ],
+    "role": [
+      "role"
+    ],
+    "status": [
+      "status",
+      "routeStatus"
+    ],
+    "network": [
+      "network"
+    ],
+    "asset": [
+      "asset",
+      "currency"
+    ],
+    "enriched_price_usdc": [
+      "enrichedPriceUsdc",
+      "enriched_price_usdc",
+      "priceUSDC",
+      "price"
+    ],
+    "enriched_atomic_units": [
+      "enrichedAtomicUnits",
+      "enriched_atomic_units",
+      "atomicUnits",
+      "priceAtomicUnits",
+      "amount"
+    ],
+    "title": [
+      "title",
+      "name"
+    ],
+    "remote_type": [
+      "remoteType",
+      "remote_type",
+      "transportType"
+    ],
+    "remote_url": [
+      "remoteUrl",
+      "remote_url",
+      "endpoint"
+    ]
+  },
+  "subject_gate": {
+    "rule": "Every scalar leaf in the frozen target subject must be present under an accepted field alias inside the candidate subject container or, if no such container exists, elsewhere in the candidate graph.",
+    "all_frozen_subject_facts_required": true
+  },
+  "relationship_gate": {
+    "required_relationship_count": 9,
+    "required_relationship_ids": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R06",
+      "R07",
+      "R08",
+      "R09"
+    ],
+    "relationship_label_rule": "Each relationship object must explicitly identify its frozen relationship class through an accepted relationship-label field.",
+    "target_fact_rule": "For each relationship, every field named in required_target_fields_by_relationship must match the corresponding frozen target value under an accepted field alias within that relationship object. Target fields not listed here remain diagnostic and cannot create or erase primary credit.",
+    "required_target_fields_by_relationship": {
+      "R01": [
+        "name",
+        "entity_type",
+        "url",
+        "main_entity_name"
+      ],
+      "R02": [
+        "name",
+        "url"
+      ],
+      "R03": [
+        "name",
+        "url",
+        "classification",
+        "independent_confirmation",
+        "universal_validation"
+      ],
+      "R04": [
+        "name",
+        "url",
+        "author"
+      ],
+      "R05": [
+        "identifier",
+        "name",
+        "version",
+        "url",
+        "author",
+        "originator",
+        "governing_status"
+      ],
+      "R06": [
+        "name",
+        "url"
+      ],
+      "R07": [
+        "name",
+        "url",
+        "version"
+      ],
+      "R08": [
+        "name",
+        "url",
+        "version",
+        "status",
+        "network",
+        "asset",
+        "enriched_price_usdc",
+        "enriched_atomic_units"
+      ],
+      "R09": [
+        "name",
+        "title",
+        "url",
+        "version",
+        "remote_type",
+        "remote_url"
+      ]
+    },
+    "duplicate_relationship_rule": "Duplicate candidates do not replace a missing relationship class and do not create extra credit.",
+    "all_relationships_required": true,
+    "all_contract_required_target_facts_required_per_relationship": true,
+    "unlisted_target_fields_are_diagnostic_only": true
+  },
+  "provenance_gate": {
+    "rule": "Each matched relationship object must contain a provenance field whose value includes at least one source ID or public authority URL mapped to that relationship in the frozen authority package.",
+    "target_url_outside_provenance_field_is_not_provenance": true,
+    "all_relationships_require_traceable_provenance": true
+  },
+  "retrieval_rights_gate": {
+    "primary_empirical_Krights": 1,
+    "required_conveyed_meaning": "One endpoint-level retrieval of the identified Enriched Query result.",
+    "accepted_one_retrieval_phrases": [
+      "one endpoint-level retrieval",
+      "one endpoint retrieval"
+    ],
+    "required_excluded_rights": [
+      "training",
+      "embedding",
+      "bulk ingestion",
+      "redistribution",
+      "resale",
+      "synchronization",
+      "private dataset construction",
+      "derivative dataset creation",
+      "commercial implementation",
+      "framework implementation"
+    ],
+    "excluded_right_aliases": {
+      "training": [
+        "training"
+      ],
+      "embedding": [
+        "embedding"
+      ],
+      "bulk ingestion": [
+        "bulk ingestion"
+      ],
+      "redistribution": [
+        "redistribution"
+      ],
+      "resale": [
+        "resale"
+      ],
+      "synchronization": [
+        "synchronization"
+      ],
+      "private dataset construction": [
+        "private dataset construction",
+        "private dataset"
+      ],
+      "derivative dataset creation": [
+        "derivative dataset creation",
+        "derivative dataset"
+      ],
+      "commercial implementation": [
+        "commercial implementation"
+      ],
+      "framework implementation": [
+        "framework implementation"
+      ]
+    },
+    "multi_task_amortization_allowed": false,
+    "rule": "PASS requires an explicit one-endpoint-retrieval meaning plus all ten excluded-rights meanings inside an accepted rights container. Hyphens, spaces, apostrophes, case, and inflectional rights suffixes are normalized only as predeclared by the evaluator."
+  },
+  "extra_field_policy": {
+    "extra_fields_allowed": true,
+    "reason": "Governed retrieval may add JSON-LD context, wrapper, version, payment, routing, or governance metadata. Extra fields are reported but cannot compensate for missing subject, relationship, target, provenance, or rights facts."
+  },
+  "primary_pass_rule": "PASS requires the complete subject gate, all nine relationship labels, every contract-required frozen target fact for all nine relationships, provenance for all nine relationships, and the complete one-retrieval rights gate.",
+  "failure_rule": "If a path fails CD004-QC-1.0, it is not quality-equivalent for the frozen task and is excluded from economic baseline or P3 substitution comparisons. No partial score may be converted into a Compression Dividend.",
+  "p1_p2_boundary": {
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "protected_p3_payload_visible": false,
+    "external_knowledge_allowed": false,
+    "p2_must_use_exact_p1_model_visible_input": true,
+    "p2_availability_must_be_empirically_probed": true,
+    "synthetic_cache_hit_forbidden": true
+  },
+  "p3_boundary": {
+    "http_200_sufficient": false,
+    "successful_x402_payment_sufficient": false,
+    "valid_json_sufficient": false,
+    "route_registration_sufficient": false,
+    "same_quality_gate_required": true,
+    "payment_forbidden_until_valid_quality_equivalent_baseline_exists": true
+  },
+  "post_measurement_changes_allowed": false,
+  "measurement_state": {
+    "neutral_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "p1_measurement_started": false,
+    "p2_eligibility_probe_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "construction_boundary": {
+    "protected_p3_payload_read": false,
+    "protected_p3_payload_used": false,
+    "model_api_call_performed": false,
+    "x402_payment_performed": false,
+    "production_mutation_performed": false
+  }
+}

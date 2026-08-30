@@ -1,0 +1,86 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD004-ENRICHED-BIOGRAPHY-PREREGISTRATION-1.0",
+  "status": "QUALITY_TASK_PROVIDER_AND_EVALUATOR_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T12:11:07Z",
+  "artifacts": [
+    {
+      "role": "public_authority_package",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+    },
+    {
+      "role": "independent_target_representation",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json",
+      "sha256": "3b73ee99789450a6be888e3052f31cec5f1195a4d1bae52489873af350554bb7"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260829-004-quality-contract.json",
+      "sha256": "643303e17be69365af567a2dc74e6da646e5c50d48d7e708968e8ca706653128"
+    },
+    {
+      "role": "neutral_task",
+      "path": "prompts/CD-WORKLOAD-20260829-004-neutral-task.txt",
+      "sha256": "95eb0730debb443c905d260bd0d83129893ae25a3e0fdfea7f71fab9955fe6e0"
+    },
+    {
+      "role": "task_metadata",
+      "path": "data/CD-WORKLOAD-20260829-004-task-metadata.json",
+      "sha256": "4e91ccabc4e41078a3104276e9324a42aa50d207e0e7ad7de59f5ad7eb6d6bf7"
+    },
+    {
+      "role": "provider_configuration",
+      "path": "data/CD-WORKLOAD-20260829-004-provider.json",
+      "sha256": "2c12a7798afe4760d957bb5fe3b7130688447b219893699ba375f5a5558a825a"
+    },
+    {
+      "role": "deterministic_evaluator",
+      "path": "scripts/evaluate-study004.py",
+      "sha256": "59a1a2099cbd3e8c065c9bd1a97d3471ddaddcc585913fbc0ba2ae9470f46af5"
+    }
+  ],
+  "frozen_state": {
+    "public_authority_package_frozen": true,
+    "target_representation_frozen": true,
+    "quality_contract_frozen": true,
+    "neutral_task_frozen": true,
+    "task_visibility_boundary_frozen": true,
+    "provider_configuration_frozen": true,
+    "evaluator_frozen": true,
+    "p1_measurement_started": false,
+    "p2_eligibility_probe_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "quality_gate_summary": {
+    "subject_required": true,
+    "relationship_count_required": 9,
+    "all_contract_required_frozen_target_facts_required": true,
+    "provenance_required_for_every_relationship": true,
+    "one_retrieval_rights_boundary_required": true,
+    "partial_credit_changes_primary_pass": false,
+    "same_gate_applies_to_P1_P2_P3": true
+  },
+  "payment_gate": {
+    "p3_payment_allowed_now": false,
+    "remaining_requirements": [
+      "measure at least one valid quality-equivalent baseline",
+      "reconfirm the live 0.025 USDC Enriched challenge immediately before any payment"
+    ]
+  },
+  "next_artifact": {
+    "type": "P1_FRESH_RECONSTRUCTION_RUNNER_AND_FIRST_MEASUREMENT",
+    "required_before_p2_probe": true,
+    "p3_payment_allowed": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "provider_cache_probe": false,
+    "x402_payment": false,
+    "production_pricing_change": false,
+    "website_change": false
+  }
+}
