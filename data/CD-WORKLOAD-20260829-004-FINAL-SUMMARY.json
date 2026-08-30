@@ -1,0 +1,193 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-30T13:14:10Z",
+  "benchmark_outcome": "QUALITY_CENSORED_STRUCTURAL_FIDELITY_FAILURE",
+  "primary_conclusion": "Study 004 did not establish a quality-equivalent baseline for the expanded Enriched Biography relationship-graph task. The valid P1 measurement failed the independently frozen CD004-QC-1.0 Quality Gate, so it is not eligible for economic substitution or transition-surface calibration.",
+  "methodological_conclusion": "The frozen post-hoc structural adjudication found that all nine rejected exact expectations were explicitly supported by the model-visible authority package. Eight of the nine rejected values appeared somewhere in the P1 JSON, but five were under nonaccepted aliases or local locations, three were relocated elsewhere in the graph, and one canonical Plate identifier was shortened. The failure is therefore classified as structural reconstruction loss rather than missing authority evidence, while the original Quality Gate failure remains unchanged.",
+  "economic_conclusion": "No Compression Dividend, best-baseline cost, substitution fraction, transition threshold, or P1-versus-P3 economic comparison is permitted for Study 004 because no quality-equivalent baseline was measured. The observed P1 requester cost is retained as rejected-task evidence only and cannot be used as C1 or Cre for an accepted-task comparison.",
+  "p1_observation": {
+    "observation_id": "CD-004-P1-0001",
+    "model": "gpt-5.6-luna",
+    "http_status": 200,
+    "api_status": "completed",
+    "input_tokens": 33388,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 1145,
+    "requester_model_cost_usd": "0.008051600000",
+    "latency_total_ms": 7903.548,
+    "cache_state": "P1_EXPLICIT_NO_CACHE",
+    "measurement_valid_for_p1": true,
+    "output_json_valid": true,
+    "accepted_quality_equivalent_task": false
+  },
+  "quality_result": {
+    "contract_id": "CD004-QC-1.0",
+    "evaluator_id": "CD004-EVAL-1.0",
+    "subject_pass": false,
+    "subject_pass_count": 3,
+    "subject_fact_count": 8,
+    "relationships_pass": false,
+    "relationships_pass_count": 7,
+    "relationships_required": 9,
+    "retrieval_rights_pass": true,
+    "primary_quality_gate_pass": false,
+    "economic_comparison_permitted": false,
+    "raw_measurement_modified": false
+  },
+  "structural_adjudication": {
+    "adjudicator_id": "CD004-P1-STRUCTURAL-ADJ-1.0",
+    "design_timing": "POST_HOC_FROZEN_BEFORE_ADJUDICATION_EXECUTION",
+    "primary_diagnostic_label": "STRUCTURAL_FIDELITY_FAILURE_WITH_SINGLE_EXACT_IDENTIFIER_LOSS",
+    "failed_contract_criterion_count": 9,
+    "model_visible_authority_supported_count": 9,
+    "exact_value_present_anywhere_in_output_count": 8,
+    "local_alias_or_location_failure_count": 5,
+    "relocated_exact_value_count": 3,
+    "exact_value_absent_from_output_count": 1,
+    "absent_exact_criterion": "SUBJECT.canonical_plate_id",
+    "frozen_quality_result_modified": false
+  },
+  "path_treatment": {
+    "p1": {
+      "measurement_performed": true,
+      "quality_equivalent": false,
+      "eligible_baseline": false,
+      "cost_treatment": "REJECTED_TASK_EVIDENCE_ONLY"
+    },
+    "p2": {
+      "eligibility_probe_performed": false,
+      "measurement_performed": false,
+      "reason_not_run": "The preregistered runner boundary prohibits P2 before a quality-passing P1 baseline. P1 failed CD004-QC-1.0."
+    },
+    "p3": {
+      "challenge_reconfirmation_performed": false,
+      "payment_performed": false,
+      "semantic_quality_measured": false,
+      "reason_not_run": "Study 004 did not establish a quality-equivalent baseline, so a paid P3 retrieval could not support a valid economic substitution comparison."
+    }
+  },
+  "best_quality_equivalent_baseline": {
+    "status": "NONE_MEASURED_FOR_STUDY004",
+    "path": null,
+    "cost_usd": null
+  },
+  "transition_surface_treatment": {
+    "new_empirical_point_created": false,
+    "new_transition_threshold_established": false,
+    "study003_anchors_modified": false,
+    "initial_study003_surface_remains_conditional": true,
+    "classification": "QUALITY_CENSORED"
+  },
+  "pricing_and_public_claims": {
+    "pricing_change_supported": false,
+    "website_pricing_change_recommended": false,
+    "positive_compression_dividend_claim_supported": false,
+    "negative_compression_dividend_claim_supported_for_study004": false,
+    "architectural_motivation_supported": "Fresh inference preserved broad semantic content but did not reliably preserve the exact machine-addressable graph contract. This motivates governed structured-state testing but does not prove its semantic or economic advantage."
+  },
+  "scientific_interpretation": {
+    "study_001": "Successful payment and delivery do not establish governed-state equivalence.",
+    "study_002": "An independently frozen comparison can remain invalid when the public source exposes multiple plausible representations and the task does not select one.",
+    "study_003": "Explicit selection of one compact public representation enabled quality-equivalent P1 and P2 measurements and a defensible negative economic conclusion at the live Structured Plate price.",
+    "study_004": "Expanding from one compact state surface to a nine-relationship Enriched graph exposed structural fidelity loss even when the exact expected evidence was model-visible and most rejected values were reproduced somewhere in the output.",
+    "combined_learning": "Compression Dividend claims require more than broad semantic recovery. Exact machine-readable identity, vocabulary, graph placement, provenance, rights, availability, and accepted-task economics must all survive the same preregistered boundary."
+  },
+  "recommended_next_study": {
+    "design_goal": "Schema-Constrained Public Graph Reconstruction",
+    "required_correction": "In a separately preregistered study, expose a neutral output vocabulary and graph-placement schema to P1 and P2 before measurement while continuing to withhold the frozen target values, evaluator, and protected P3 payload. This separates schema-following reliability from factual reconstruction.",
+    "measurement_sequence": [
+      "Freeze the neutral machine schema, target, authority package, Quality Gate, provider configuration, and evaluator before any new measurement.",
+      "Collect repeated fresh P1 samples and admit only samples that pass the unchanged study-specific Quality Gate.",
+      "Probe P2 only after at least one quality-equivalent P1 baseline exists and verify actual cache behavior for the exact frozen input.",
+      "Reconfirm the live P3 challenge and consider payment only after a valid quality-equivalent baseline exists."
+    ],
+    "do_not_do": [
+      "Do not modify or reinterpret the Study 004 Quality Gate failure.",
+      "Do not count relocated or nonaccepted aliases as Study 004 passes.",
+      "Do not reuse the rejected P1 cost as an accepted-task economic baseline.",
+      "Do not run Study 004 P2 or pay P3 after closure.",
+      "Do not change public pricing based on this quality-censored result.",
+      "Do not tune a future study to force governed retrieval to win."
+    ]
+  },
+  "artifact_provenance": {
+    "design": {
+      "path": "WORKLOAD-CD-20260829-004.md",
+      "sha256": "cabe9e07fac52c6304a031289b8f7110cacef474055d32261091bdfbaad02afd",
+      "latest_commit": "90d3a0f2b3927a19bdb2432d312ca20049e887fa"
+    },
+    "model_registry": {
+      "path": "data/CD-WORKLOAD-20260829-004-model-registry.json",
+      "sha256": "2c19dba4ee2ea7b5daf1fe05117ddcf65944bf38042cd1a5fbb0659b6ad27187",
+      "latest_commit": "1a3d94bd6c8816e0513dc35f731950161e38a750"
+    },
+    "workload_selection": {
+      "path": "data/CD-WORKLOAD-20260829-004-workload-class-calibration-registry.json",
+      "sha256": "5b0d56731a8645a5349fbbe44418246607507cc954d9602e4f146fcdc90a4fa8",
+      "latest_commit": "df413d12b5a1856a5f75da93188ce0736952afd1"
+    },
+    "public_authority": {
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5",
+      "latest_commit": "55a4a7a42c257b7987e9ffc2683e3bb422433210"
+    },
+    "target_representation": {
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json",
+      "sha256": "3b73ee99789450a6be888e3052f31cec5f1195a4d1bae52489873af350554bb7",
+      "latest_commit": "55a4a7a42c257b7987e9ffc2683e3bb422433210"
+    },
+    "quality_contract": {
+      "path": "data/CD-WORKLOAD-20260829-004-quality-contract.json",
+      "sha256": "643303e17be69365af567a2dc74e6da646e5c50d48d7e708968e8ca706653128",
+      "latest_commit": "5c7b5f77c56f4f4591d03bc314d20e20b7c26e1f"
+    },
+    "preregistration": {
+      "path": "data/CD-WORKLOAD-20260829-004-preregistration-manifest.json",
+      "sha256": "c21ce4b8f9404ecdd0d950477317cc19e8b0a538e8752bfa4300683954d8ffa2",
+      "latest_commit": "5c7b5f77c56f4f4591d03bc314d20e20b7c26e1f"
+    },
+    "p1_runner_metadata": {
+      "path": "data/CD-WORKLOAD-20260829-004-p1-runner-metadata.json",
+      "sha256": "74eda2aed09b1bb4e2a046d4f2c60f3995eca2ad9100bf232f42cef7ca8bebb0",
+      "latest_commit": "60bf651c5df3df7d40d006f367f7d1008886a92d"
+    },
+    "p1_measurement": {
+      "path": "data/raw/CD-004-P1-0001-measurement.json",
+      "sha256": "d34a70ccbea8d1d8c9f7580074cd750dd6ea79b3913e98c6be3dc7dbf6cb79a4",
+      "latest_commit": "f70dec500e2ffa8d2b65d6e70f4f0f9496983b54"
+    },
+    "p1_quality_evaluation": {
+      "path": "data/raw/CD-004-P1-0001-quality-evaluation.json",
+      "sha256": "18cd164e8388ce8bc15f86d4e383f27bed6ac1a0e1c5116dd6a87b7c709d0109",
+      "latest_commit": "179abe9293563c3c0fdb819663eff02e43c5d713"
+    },
+    "structural_adjudicator": {
+      "path": "data/CD-WORKLOAD-20260829-004-p1-structural-adjudicator.json",
+      "sha256": "2840afc905cc519407a5e7ff852a75b8753cdcd7161cd93e2a8623392e004b09",
+      "latest_commit": "ad1529de73ae933ec4901d3d4ca4565eff8b1e09"
+    },
+    "structural_adjudication": {
+      "path": "data/raw/CD-004-P1-0001-structural-adjudication.json",
+      "sha256": "72439587e1144fb2fc8c2b14281f9ebb6dda7c51ea96ad0b87f621609f5b63cd",
+      "latest_commit": "cb49d2c99ac9c5401914cfa65f694b4b4cc5bdaf"
+    },
+    "structural_adjudication_record": {
+      "path": "data/CD-WORKLOAD-20260829-004-p1-structural-adjudication-record.json",
+      "sha256": "b23109b52d0e4d16f784dd044814679137ebda56543119525527f50a1eb3a4c4",
+      "latest_commit": "f89ea12594d2dba980ce99bcff2bbf90950c3dbf"
+    }
+  },
+  "actions_performed_by_closure": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "structural_adjudication_modified": false,
+    "api_call": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
