@@ -1,0 +1,86 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-004-P1-0001",
+  "adjudicator_id": "CD004-P1-STRUCTURAL-ADJ-1.0",
+  "status": "POST_HOC_STRUCTURAL_ADJUDICATOR_FROZEN_PRE_EXECUTION",
+  "created_timestamp_utc": "2026-08-30T12:55:25Z",
+  "design_timing": {
+    "post_hoc": true,
+    "designed_after_observation_and_frozen_evaluation": true,
+    "frozen_before_adjudication_artifact_creation": true
+  },
+  "adjudicator": {
+    "path": "scripts/adjudicate-study004-p1.py",
+    "sha256": "b70d109b433a50cf2d25f9d49770bbc11d2cee83a87817803ce007e4be313f70"
+  },
+  "frozen_inputs": [
+    {
+      "role": "target_representation",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-target-representation.json",
+      "sha256": "3b73ee99789450a6be888e3052f31cec5f1195a4d1bae52489873af350554bb7"
+    },
+    {
+      "role": "study004_model_visible_authority",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+    },
+    {
+      "role": "inherited_model_visible_authority",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260829-004-quality-contract.json",
+      "sha256": "643303e17be69365af567a2dc74e6da646e5c50d48d7e708968e8ca706653128"
+    },
+    {
+      "role": "neutral_task",
+      "path": "prompts/CD-WORKLOAD-20260829-004-neutral-task.txt",
+      "sha256": "95eb0730debb443c905d260bd0d83129893ae25a3e0fdfea7f71fab9955fe6e0"
+    },
+    {
+      "role": "p1_measurement",
+      "path": "data/raw/CD-004-P1-0001-measurement.json",
+      "sha256": "d34a70ccbea8d1d8c9f7580074cd750dd6ea79b3913e98c6be3dc7dbf6cb79a4"
+    },
+    {
+      "role": "p1_output",
+      "path": "data/raw/CD-004-P1-0001-output.json",
+      "sha256": "a40c83dde1bec7e0e9c06cc3e4f84d8118a2f6cfb4bab389bd7b30d8d72a0671"
+    },
+    {
+      "role": "p1_quality_evaluation",
+      "path": "data/raw/CD-004-P1-0001-quality-evaluation.json",
+      "sha256": "18cd164e8388ce8bc15f86d4e383f27bed6ac1a0e1c5116dd6a87b7c709d0109"
+    }
+  ],
+  "frozen_post_hoc_expectations": {
+    "failed_contract_criterion_count": 9,
+    "exact_value_present_anywhere_in_output_count": 8,
+    "exact_value_local_but_contract_location_or_alias_failed_count": 5,
+    "exact_value_relocated_elsewhere_in_output_count": 3,
+    "exact_value_absent_from_output_count": 1,
+    "exact_expected_value_present_in_model_visible_authority_count": 9
+  },
+  "interpretation_boundary": {
+    "quality_result_may_be_modified": false,
+    "economic_comparison_may_be_performed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "new_api_measurement_allowed": false,
+    "purpose": "Characterize whether each rejected exact target value was available in model-visible authority and whether it appeared elsewhere in the P1 output. This post-hoc adjudication cannot reverse or relax CD004-QC-1.0."
+  },
+  "execution_state": {
+    "adjudication_artifact_created": false,
+    "api_call_performed": false,
+    "x402_payment_performed": false
+  },
+  "next_action": {
+    "type": "RUN_PREFLIGHT_THEN_CREATE_CD_004_P1_0001_STRUCTURAL_ADJUDICATION",
+    "command": "python3 scripts/adjudicate-study004-p1.py --preflight",
+    "p2_allowed_before_quality_equivalent_baseline": false,
+    "p3_payment_allowed": false
+  }
+}

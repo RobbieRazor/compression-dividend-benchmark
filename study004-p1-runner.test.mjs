@@ -97,25 +97,42 @@ test('runner model input excludes evaluator-only artifacts', () => {
 });
 
 
-test('observation 0001 remains unstarted while credential is absent', () => {
-  const names = [
+test('observation 0001 is captured while runner metadata preserves its historical freeze', () => {
+  const capturedNames = [
     'response.json',
     'output.json',
-    'output.txt',
     'measurement.json',
     'quality-evaluation.json'
   ];
 
-  for (const suffix of names) {
+  for (const suffix of capturedNames) {
     assert.equal(
       existsSync(
         new URL(`./data/raw/CD-004-P1-0001-${suffix}`, import.meta.url)
       ),
-      false,
+      true,
       suffix
     );
   }
 
+  assert.equal(
+    existsSync(
+      new URL('./data/raw/CD-004-P1-0001-output.txt', import.meta.url)
+    ),
+    false
+  );
+
+  const measurement = readJson(
+    './data/raw/CD-004-P1-0001-measurement.json'
+  );
+  const evaluation = readJson(
+    './data/raw/CD-004-P1-0001-quality-evaluation.json'
+  );
+
+  assert.equal(measurement.measurement_valid_for_p1, true);
+  assert.equal(measurement.api_call_performed, true);
+  assert.equal(evaluation.primary_quality_gate_pass, false);
+  assert.equal(evaluation.raw_measurement_modified, false);
   assert.equal(runnerMetadata.preflight.api_credential_present, false);
   assert.equal(runnerMetadata.measurement_state.measurement_started, false);
   assert.equal(runnerMetadata.measurement_state.measurement_artifacts_created, false);
