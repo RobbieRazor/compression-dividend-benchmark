@@ -1,0 +1,336 @@
+{
+  "registry_id": "CD004-WORKLOAD-CLASS-CALIBRATION-REGISTRY-1.0",
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "status": "FIRST_LARGER_WORKLOAD_SELECTED_PRE_SOURCE_FREEZE",
+  "created_timestamp_utc": "2026-08-30T11:47:52Z",
+  "economic_perspective": "REQUESTING_AI_OR_AGENT",
+  "model_registry_id": "CD004-MODEL-REGISTRY-1.0",
+  "live_production_evidence": {
+    "pricing_manifest": {
+      "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "version": "3.0.0",
+      "status": "active",
+      "effective_date": "2026-08-17",
+      "network": "eip155:8453",
+      "asset": "USDC",
+      "sha256_observed_2026_08_30": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02"
+    },
+    "ai_catalog": {
+      "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "version": "0.9-draft",
+      "sha256_observed_2026_08_30": "a793e9a760800fc0d3cbd4cfd4592e7e76ddf742f83d0b54854bcb6845b95539"
+    },
+    "rights_boundary": {
+      "x402_conveys": "One endpoint-level retrieval of the identified resource.",
+      "excluded_rights": [
+        "training",
+        "embedding",
+        "bulk ingestion",
+        "redistribution",
+        "resale",
+        "synchronization",
+        "private dataset construction",
+        "derivative dataset creation",
+        "commercial implementation",
+        "framework implementation"
+      ],
+      "study004_primary_empirical_Krights": 1,
+      "rule": "No primary empirical workload may amortize one x402 payment across multiple accepted tasks unless a separate written or machine-verifiable right explicitly authorizes that fan-out."
+    }
+  },
+  "selection_method": {
+    "method": "REQUIRED_GATE_FILTER_THEN_LOWEST_LIVE_PILOT_PRICE",
+    "purpose": "Select the first expanded-scope workload without optimizing inputs to make Path 3 win.",
+    "required_gates": [
+      {
+        "gate_id": "G1",
+        "name": "LIVE_OR_REGISTERED_ACTIVE_ROUTE",
+        "requirement": "A production route is live or explicitly registered as active."
+      },
+      {
+        "gate_id": "G2",
+        "name": "UNPAID_OUTPUT_CONTRACT_VISIBLE",
+        "requirement": "An unpaid challenge, manifest, or catalog exposes enough schema information to design the task before payment."
+      },
+      {
+        "gate_id": "G3",
+        "name": "INDEPENDENT_PUBLIC_AUTHORITY_PACKAGE_FEASIBLE",
+        "requirement": "The comparison task can be grounded in sources independent of the paid P3 payload."
+      },
+      {
+        "gate_id": "G4",
+        "name": "REPRESENTATION_SELECTION_FEASIBLE_PRE_PAYMENT",
+        "requirement": "One target representation can be explicitly selected and frozen before empirical measurement."
+      },
+      {
+        "gate_id": "G5",
+        "name": "SINGLE_RETRIEVAL_RIGHTS_COMPATIBLE",
+        "requirement": "The primary empirical comparison is valid at Krights equal to one."
+      },
+      {
+        "gate_id": "G6",
+        "name": "BOUNDED_FIRST_PILOT_PRICE",
+        "requirement": "A later single paid pilot, if scientifically authorized, costs no more than 0.25 USDC."
+      },
+      {
+        "gate_id": "G7",
+        "name": "EXPANDS_BEYOND_STUDY003_TASK_SCOPE",
+        "requirement": "The workload adds relationship, provenance, registry, map, mesh, multi-state, or persistent-state scope beyond exact reconstruction of one public Biography Plate representation."
+      }
+    ],
+    "eligibility_rule": "Every required gate must equal PASS.",
+    "ranking_rule": [
+      "Among eligible candidates, choose the lowest verified or registered live x402 price.",
+      "If prices tie, prefer the candidate with the larger explicitly declared public relationship set.",
+      "If still tied, choose the lexicographically smallest candidate_id."
+    ],
+    "non_selection_rule": "A candidate may remain scientifically valuable even when it is not selected first."
+  },
+  "candidates": [
+    {
+      "candidate_id": "CD004-CANDIDATE-ENRICHED-BIOGRAPHY",
+      "workload_class": "MULTI_SOURCE_RELATIONSHIP_AND_PROVENANCE_SYNTHESIS",
+      "name": "Robbie George Biography Plate Enriched Relationship Query",
+      "route": "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+      "access_class": "enriched",
+      "price_usdc": "0.025",
+      "price_atomic_units": "25000",
+      "route_status": "LIVE_HTTP_402_VERIFIED",
+      "gateway_tier": "enriched",
+      "challenge_body_sha256_observed_2026_08_30": "7e98226f37b1c0de8e35654415fc5977c9052767ee724174021be141591f635b",
+      "unpaid_output_contract": {
+        "mime_type": "application/ld+json",
+        "required_fields": [
+          "@context",
+          "@type",
+          "name",
+          "description"
+        ],
+        "declared_optional_structures": [
+          "systemNodes",
+          "protectedRetrievalUse"
+        ],
+        "schema_version": "naturepedia.enriched-query.v1"
+      },
+      "declared_relationships": [
+        "canonical biography",
+        "professional evidence",
+        "Naturepedia reference implementation",
+        "Robbie's Razor framework authorship",
+        "GC-MRD-v2.0 governing authority",
+        "Naturepedia Discovery Index",
+        "Naturepedia AI Catalog",
+        "x402 Pricing Manifest",
+        "Naturepedia MCP Server Card"
+      ],
+      "scope_note": "Expanded semantic and workflow scope means multi-source relationships and provenance; it does not assert that the paid payload has more bytes or fields than the Study 003 public Plate.",
+      "gates": {
+        "G1": "PASS",
+        "G2": "PASS",
+        "G3": "PASS",
+        "G4": "PASS",
+        "G5": "PASS",
+        "G6": "PASS",
+        "G7": "PASS"
+      },
+      "eligible": true,
+      "selection_status": "SELECTED_FIRST"
+    },
+    {
+      "candidate_id": "CD004-CANDIDATE-COMMERCIAL-DATA-LICENSE-PLATE",
+      "workload_class": "GOVERNED_LICENSE_AND_PROVENANCE_STATE",
+      "name": "Commercial Data License Structured Plate",
+      "route": "https://www.robbiegeorgephotography.com/v1/plates/item/commercial-data-license-plate",
+      "access_class": "single-plate",
+      "price_usdc": "0.25",
+      "price_atomic_units": "250000",
+      "route_status": "LIVE_HTTP_402_VERIFIED",
+      "gateway_tier": "single-plate",
+      "challenge_body_sha256_observed_2026_08_30": "800b7723e180edd7133b5c2c65fe0281757cef0e6a74c7196ac4e166d81adffe",
+      "gates": {
+        "G1": "PASS",
+        "G2": "PASS",
+        "G3": "PASS",
+        "G4": "PASS",
+        "G5": "PASS",
+        "G6": "PASS",
+        "G7": "PASS"
+      },
+      "eligible": true,
+      "selection_status": "ELIGIBLE_RESERVE_HIGHER_PILOT_PRICE"
+    },
+    {
+      "candidate_id": "CD004-CANDIDATE-MULTIPLE-COORDINATED-PLATES",
+      "workload_class": "MULTI_PLATE_COORDINATION",
+      "name": "Multiple Coordinated Structured Plates",
+      "route": null,
+      "access_class": "multi-plate",
+      "price_usdc": null,
+      "route_status": "NO_SINGLE_BUNDLED_ROUTE_SELECTED",
+      "gates": {
+        "G1": "FAIL",
+        "G2": "UNRESOLVED",
+        "G3": "PASS",
+        "G4": "UNRESOLVED",
+        "G5": "FAIL",
+        "G6": "UNRESOLVED",
+        "G7": "PASS"
+      },
+      "eligible": false,
+      "selection_status": "DEFERRED_REQUIRES_BUNDLED_TASK_AND_RIGHTS_DESIGN"
+    },
+    {
+      "candidate_id": "CD004-CANDIDATE-WATER-SYSTEMS-REGISTRY",
+      "workload_class": "BOUNDED_REGISTRY",
+      "name": "Naturepedia Water Systems Registry",
+      "route": "https://www.robbiegeorgephotography.com/v1/registries/water-systems",
+      "access_class": "subtree",
+      "price_usdc": "5.00",
+      "price_atomic_units": "5000000",
+      "route_status": "LIVE_HTTP_402_VERIFIED",
+      "gateway_tier": "subtree",
+      "challenge_body_sha256_observed_2026_08_30": "b062937ffbf9233365ebd9fdc1b49d2048bcd5f2614122f3cf4ef466500acc1f",
+      "gates": {
+        "G1": "PASS",
+        "G2": "PASS",
+        "G3": "PASS",
+        "G4": "UNRESOLVED",
+        "G5": "PASS",
+        "G6": "FAIL",
+        "G7": "PASS"
+      },
+      "eligible": false,
+      "selection_status": "DEFERRED_HIGH_PRICE_AND_REPRESENTATION_NOT_FROZEN"
+    },
+    {
+      "candidate_id": "CD004-CANDIDATE-WATER-SYSTEM-MAP",
+      "workload_class": "SYSTEM_MAP",
+      "name": "Naturepedia Water System Map",
+      "route": "https://www.robbiegeorgephotography.com/v1/plates/water-system-map",
+      "access_class": "subtree",
+      "price_usdc": "5.00",
+      "price_atomic_units": "5000000",
+      "route_status": "REGISTERED_ACTIVE_NOT_CHALLENGE_HASHED_THIS_SELECTION_ROUND",
+      "gateway_tier": "subtree",
+      "gates": {
+        "G1": "PASS",
+        "G2": "UNRESOLVED",
+        "G3": "PASS",
+        "G4": "UNRESOLVED",
+        "G5": "PASS",
+        "G6": "FAIL",
+        "G7": "PASS"
+      },
+      "eligible": false,
+      "selection_status": "DEFERRED_HIGH_PRICE_AND_OUTPUT_CONTRACT_NOT_FROZEN"
+    },
+    {
+      "candidate_id": "CD004-CANDIDATE-WATER-SYSTEMS-KNOWLEDGE-MESH",
+      "workload_class": "KNOWLEDGE_MESH",
+      "name": "Naturepedia Water Systems Knowledge Mesh",
+      "route": "https://www.robbiegeorgephotography.com/v1/knowledge-mesh/water-systems",
+      "access_class": "snapshot",
+      "price_usdc": "25.00",
+      "price_atomic_units": "25000000",
+      "route_status": "LIVE_HTTP_402_VERIFIED",
+      "gateway_tier": "snapshot",
+      "challenge_body_sha256_observed_2026_08_30": "8ab01b9ca7834be9d48d9a42848a35aa10bae0c71d057a9fa8127ad181a7c05a",
+      "gates": {
+        "G1": "PASS",
+        "G2": "PASS",
+        "G3": "PASS",
+        "G4": "UNRESOLVED",
+        "G5": "PASS",
+        "G6": "FAIL",
+        "G7": "PASS"
+      },
+      "eligible": false,
+      "selection_status": "DEFERRED_HIGH_PRICE_AND_REPRESENTATION_NOT_FROZEN"
+    },
+    {
+      "candidate_id": "CD004-CANDIDATE-REPEATED-AGENT-STATE",
+      "workload_class": "PERSISTENT_OR_REPEATED_AGENT_STATE",
+      "name": "Repeated Agent State",
+      "route": null,
+      "access_class": null,
+      "price_usdc": null,
+      "route_status": "NO_SPECIFIC_STATE_ROUTE_OR_RIGHTS_CONTRACT_SELECTED",
+      "gates": {
+        "G1": "FAIL",
+        "G2": "UNRESOLVED",
+        "G3": "UNRESOLVED",
+        "G4": "UNRESOLVED",
+        "G5": "FAIL",
+        "G6": "UNRESOLVED",
+        "G7": "PASS"
+      },
+      "eligible": false,
+      "selection_status": "DEFERRED_REQUIRES_STATE_AND_RIGHTS_PREREGISTRATION"
+    }
+  ],
+  "selection": {
+    "selected_candidate_id": "CD004-CANDIDATE-ENRICHED-BIOGRAPHY",
+    "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+    "working_title": "Enriched Biography Relationship and Provenance Reconstruction",
+    "selection_result": "SELECTED_BY_REQUIRED_GATES_AND_LOWEST_LIVE_PILOT_PRICE",
+    "primary_empirical_fanout": 1,
+    "primary_empirical_acquisition_count": 1,
+    "candidate_p3_price_usdc": "0.025",
+    "primary_research_question": "Can one governed Enriched Biography response satisfy the same preregistered multi-source relationship and provenance task as fresh reconstruction and provider caching, and cost no more than the cheapest quality-equivalent available baseline for one accepted task?",
+    "task_scope": [
+      "canonical identity authority",
+      "professional evidence relationships",
+      "Naturepedia reference implementation relationship",
+      "Robbie's Razor authorship relationship",
+      "GC-MRD-v2.0 governing-authority relationship",
+      "machine-discovery infrastructure relationships",
+      "retrieval-rights boundary"
+    ],
+    "baseline_rule": "P1 and P2 availability and quality must be measured for the exact frozen task; the cheapest quality-equivalent lifecycle baseline is selected after measurement.",
+    "representation_rule": "One independent public target representation must be frozen before P1, P2, or paid P3 measurement. The paid P3 payload may not construct its own answer key.",
+    "rights_rule": "The primary empirical comparison uses Krights equal to one. Multi-use amortization is excluded unless separate rights evidence is later frozen.",
+    "payment_gate": [
+      "independent public authority package frozen",
+      "target representation frozen",
+      "Quality Contract frozen",
+      "neutral P1 and P2 task frozen",
+      "provider configuration frozen",
+      "evaluator frozen",
+      "at least one valid quality-equivalent baseline measured",
+      "live 0.025 USDC challenge reconfirmed"
+    ],
+    "current_state": {
+      "candidate_selected": true,
+      "public_authority_package_frozen": false,
+      "target_representation_frozen": false,
+      "quality_contract_frozen": false,
+      "task_frozen": false,
+      "provider_configuration_frozen": false,
+      "evaluator_frozen": false,
+      "P1_measurement_started": false,
+      "P2_measurement_started": false,
+      "P3_payment_performed": false,
+      "economic_result_computed": false
+    }
+  },
+  "scientific_boundaries": [
+    "Selection does not assert that the Enriched payload is semantically quality-equivalent; P3 remains unpaid and unmeasured.",
+    "Selection does not assert that Path 3 will win economically.",
+    "Selection does not treat the Study 003 P1 or P2 costs as the baselines for the new workload.",
+    "Selection does not assume that one endpoint retrieval can be reused across multiple accepted tasks.",
+    "Selection does not change production pricing.",
+    "The $5 and $25 candidates remain later workload classes rather than failed architectures."
+  ],
+  "next_artifact": {
+    "type": "INDEPENDENT_PUBLIC_AUTHORITY_PACKAGE_AND_TARGET_REPRESENTATION",
+    "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+    "required_before_measurement": true
+  },
+  "actions_performed": {
+    "read_only_live_recon": true,
+    "model_api_call": false,
+    "x402_payment": false,
+    "production_pricing_change": false,
+    "website_change": false
+  }
+}
