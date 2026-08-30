@@ -1,0 +1,136 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD006-CANONICAL-LEXICAL-P1-PREREGISTRATION-1.0",
+  "status": "QUALITY_TASK_VISIBILITY_PROVIDER_AND_EVALUATOR_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T16:28:44Z",
+  "artifacts": [
+    {
+      "role": "study006_design_manifest",
+      "path": "data/CD-WORKLOAD-20260830-006-design-manifest.json",
+      "sha256": "9417eb4ba6a014305fd1a523af08dcc71b2100724ddab1860c4d186f0b3a9d22"
+    },
+    {
+      "role": "value_free_canonical_preservation_rules",
+      "path": "data/CD-WORKLOAD-20260830-006-neutral-canonical-preservation-rules.json",
+      "sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4"
+    },
+    {
+      "role": "authority_target_freeze",
+      "path": "data/CD-WORKLOAD-20260830-006-authority-target-freeze.json",
+      "sha256": "4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b"
+    },
+    {
+      "role": "value_free_neutral_schema_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+      "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786"
+    },
+    {
+      "role": "public_authority_package_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"
+    },
+    {
+      "role": "inherited_public_authority_evidence_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"
+    },
+    {
+      "role": "independent_target_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260830-006-quality-contract.json",
+      "sha256": "46d5f3c1e7b6de53dd70ca95a31fab5445fad3d03dd944bef714b9c3923ae004"
+    },
+    {
+      "role": "neutral_task",
+      "path": "prompts/CD-WORKLOAD-20260830-006-neutral-task.txt",
+      "sha256": "4b0228a02a14fba72b2dbbb98272352c48d1373ecb4cf7b1c56663e99ad54819"
+    },
+    {
+      "role": "task_metadata",
+      "path": "data/CD-WORKLOAD-20260830-006-task-metadata.json",
+      "sha256": "f2de82e79e7884b9b05667c0751ffb711a511574a8ae2a4851f32b56acbc17ac"
+    },
+    {
+      "role": "provider_configuration",
+      "path": "data/CD-WORKLOAD-20260830-006-provider.json",
+      "sha256": "8567277647542a2ca84ef83a180efd7f08e9c966672378bfbee4b9c5766534cb"
+    },
+    {
+      "role": "deterministic_evaluator",
+      "path": "scripts/evaluate-study006.py",
+      "sha256": "233c2ef6ea6723ebf2cc992604ffc1fa35f23ecbbf455acd3ba73f561803f582"
+    }
+  ],
+  "frozen_state": {
+    "design_frozen": true,
+    "neutral_preservation_rules_frozen": true,
+    "authority_evidence_frozen": true,
+    "target_representation_frozen": true,
+    "quality_contract_frozen": true,
+    "neutral_task_frozen": true,
+    "task_visibility_boundary_frozen": true,
+    "provider_configuration_frozen": true,
+    "evaluator_frozen": true,
+    "runner_frozen": false,
+    "p1_measurement_started": false,
+    "automatic_retry_performed": false,
+    "p2_probe_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "experimental_control": {
+    "study005_schema_bytes_preserved": true,
+    "study005_authority_bytes_preserved": true,
+    "study005_target_bytes_preserved": true,
+    "study005_gate_relaxed": false,
+    "value_free_preservation_rules_added": true,
+    "protected_target_values_added_to_model_input": false,
+    "target_mapping_added_to_model_input": false,
+    "study005_output_or_failure_locations_added_to_model_input": false
+  },
+  "quality_gate_summary": {
+    "exact_schema_gate_required": true,
+    "all_subject_values_required": true,
+    "relationship_count_required": 9,
+    "relationship_target_field_count_required": 52,
+    "all_relationship_target_values_required": true,
+    "provenance_required_for_every_relationship": true,
+    "complete_exact_rights_boundary_required": true,
+    "semantic_similarity_changes_exact_pass": false,
+    "partial_credit_changes_primary_pass": false
+  },
+  "feasibility_plan": {
+    "planned_p1_observation_count": 1,
+    "automatic_retry_allowed": false,
+    "passing_observation_establishes_initial_feasibility": true,
+    "passing_observation_establishes_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_before_cost_calibration": true,
+    "rejected_observation_cost_eligible_as_baseline": false
+  },
+  "payment_gate": {
+    "p2_probe_allowed_now": false,
+    "p3_payment_allowed_now": false,
+    "economic_comparison_allowed_now": false
+  },
+  "next_artifact": {
+    "type": "P1_RUNNER_AND_SINGLE_INITIAL_FEASIBILITY_MEASUREMENT",
+    "runner_must_pin_this_manifest": true,
+    "automatic_retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "automatic_retry": false,
+    "provider_cache_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_pricing_change": false,
+    "website_change": false
+  }
+}

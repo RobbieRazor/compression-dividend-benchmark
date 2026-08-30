@@ -1,0 +1,99 @@
+{
+  "study_id": "CD-WORKLOAD-20260830-006",
+  "module_id": "CD006-CANONICAL-LEXICAL-ENRICHED-BIOGRAPHY-001",
+  "contract_id": "CD006-QC-1.0",
+  "status": "EXACT_STUDY005_GATE_REUSED_WITH_CANONICAL_PRESERVATION_INTERVENTION_FROZEN",
+  "created_timestamp_utc": "2026-08-30T16:28:44Z",
+  "purpose": "Determine whether value-free canonical-preservation rules enable a fresh P1 reconstruction to satisfy the unchanged exact Study 005 target and gate.",
+  "target_representation": {
+    "target_id": "CD005-ENRICHED-BIOGRAPHY-SCHEMA-TARGET-1.0",
+    "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+    "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07",
+    "model_visible_to_p1_p2": false,
+    "changed_relative_to_study005": false
+  },
+  "authority_freeze": {
+    "freeze_id": "CD006-AUTHORITY-TARGET-FREEZE-1.0",
+    "path": "data/CD-WORKLOAD-20260830-006-authority-target-freeze.json",
+    "sha256": "4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b",
+    "model_visible_to_p1_p2": false
+  },
+  "neutral_schema": {
+    "schema_id": "CD005-NEUTRAL-SCHEMA-1.0",
+    "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+    "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+    "model_visible_to_p1_p2": true,
+    "changed_relative_to_study005": false,
+    "contains_protected_target_values": false
+  },
+  "neutral_canonical_preservation_rules": {
+    "rules_id": "CD006-NEUTRAL-CANONICAL-PRESERVATION-1.0",
+    "path": "data/CD-WORKLOAD-20260830-006-neutral-canonical-preservation-rules.json",
+    "sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4",
+    "model_visible_to_p1_p2": true,
+    "contains_protected_target_values": false,
+    "contains_target_mapping": false
+  },
+  "predecessor_quality_contract": {
+    "path": "data/CD-WORKLOAD-20260830-005-quality-contract.json",
+    "sha256": "e9cc4b3f499284c74143943b409daee0bcffc65ce0b158f6d6ad22be22e4d881",
+    "gate_relaxed": false,
+    "target_changed": false
+  },
+  "comparison_model": {
+    "type": "DETERMINISTIC_EXACT_SCHEMA_AND_FROZEN_SEMANTIC_TARGET",
+    "rule": "The candidate must use the exact schema-governed containers and field names, reproduce every frozen subject and relationship target value, provide traceable provenance for every relationship, and reproduce the complete rights boundary. Relationship array order is ignored. Protected target values remain evaluator-only.",
+    "whole_payload_byte_equality_required": false,
+    "relationship_array_order_required": false,
+    "field_aliases_allowed": false,
+    "relocated_values_credited": false,
+    "semantic_equivalence_credited_for_exact_value": false,
+    "omitted_meaningful_marks_credited": false,
+    "shortened_identifiers_credited": false,
+    "ontology_substitutions_credited": false,
+    "paraphrased_descriptors_credited": false,
+    "semantically_equivalent_rights_credited": false,
+    "extra_schema_governed_fields_allowed": false,
+    "partial_credit_changes_primary_pass": false
+  },
+  "gate_summary": {
+    "exact_schema_required": true,
+    "all_subject_facts_required": true,
+    "relationship_count_required": 9,
+    "relationship_target_field_count_required": 52,
+    "all_relationship_target_values_required": true,
+    "provenance_required_for_every_relationship": true,
+    "complete_exact_rights_boundary_required": true,
+    "same_target_and_gate_as_study005": true,
+    "same_gate_required_for_future_p1_p2_p3": true
+  },
+  "feasibility_phase": {
+    "planned_p1_observations": 1,
+    "automatic_retry_allowed": false,
+    "one_pass_establishes_initial_feasibility_only": true,
+    "one_pass_establishes_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_before_cost_calibration": true,
+    "failed_observation_requires_frozen_diagnostic_or_new_study_version_before_retest": true
+  },
+  "path_boundary": {
+    "target_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "prior_outputs_or_failure_locations_visible": false,
+    "protected_p3_payload_visible": false,
+    "external_knowledge_allowed": false,
+    "p2_allowed_before_accepted_p1": false,
+    "p3_payment_allowed_before_quality_equivalent_baseline": false
+  },
+  "measurement_state": {
+    "neutral_task_frozen": false,
+    "provider_configuration_frozen": false,
+    "evaluator_frozen": false,
+    "runner_frozen": false,
+    "p1_measurement_started": false,
+    "automatic_retry_performed": false,
+    "p2_probe_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  }
+}
