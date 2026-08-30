@@ -1,0 +1,747 @@
+{
+  "study_id": "CD-WORKLOAD-20260829-004",
+  "module_id": "CD004-CAL-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-004-P1-0001",
+  "adjudicator_id": "CD004-P1-STRUCTURAL-ADJ-1.0",
+  "status": "POST_HOC_STRUCTURAL_ADJUDICATION_COMPLETE",
+  "created_timestamp_utc": "2026-08-30T13:06:58.762271+00:00",
+  "design_timing": {
+    "post_hoc": true,
+    "designed_after_observation_and_frozen_evaluation": true,
+    "adjudicator_frozen_before_execution": true
+  },
+  "frozen_quality_result": {
+    "primary_quality_gate_pass": false,
+    "quality_evaluation_file": "data/raw/CD-004-P1-0001-quality-evaluation.json",
+    "quality_evaluation_sha256": "18cd164e8388ce8bc15f86d4e383f27bed6ac1a0e1c5116dd6a87b7c709d0109",
+    "quality_result_modified": false,
+    "economic_comparison_permitted": false
+  },
+  "diagnostic_question": "Were the nine failed contract criteria unsupported by the model-visible authority, absent from the reconstruction, or preserved under nonaccepted aliases or locations?",
+  "task_specificity": {
+    "requires_identifier_preservation": true,
+    "requires_machine_readable_facts": true,
+    "requires_nine_separate_relationships": true
+  },
+  "summary_counts": {
+    "failed_contract_criterion_count": 9,
+    "exact_value_present_anywhere_in_output_count": 8,
+    "exact_value_local_but_contract_location_or_alias_failed_count": 5,
+    "exact_value_relocated_elsewhere_in_output_count": 3,
+    "exact_value_absent_from_output_count": 1,
+    "exact_expected_value_present_in_model_visible_authority_count": 9
+  },
+  "failed_criterion_results": [
+    {
+      "criterion_id": "SUBJECT.canonical_plate_id",
+      "scope": "subject",
+      "field": "canonical_plate_id",
+      "expected": "robbie-george#robbie-george-biography-plate",
+      "evaluator_observed": [
+        "robbie-george-biography-plate"
+      ],
+      "evaluator_pass": false,
+      "exact_output_locations": [],
+      "exact_local_scope_locations": [],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S003",
+          "path": "sources[2].selected_route.canonical_plate_id"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": false,
+      "exact_value_present_in_local_scope": false,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_ABSENT_SUFFIX_ONLY_IDENTIFIER_OBSERVED"
+    },
+    {
+      "criterion_id": "SUBJECT.entity_type",
+      "scope": "subject",
+      "field": "entity_type",
+      "expected": "ProfilePage",
+      "evaluator_observed": [
+        "Person"
+      ],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.public_entity_type",
+        "relationships[0].target.type"
+      ],
+      "exact_local_scope_locations": [
+        "subject.public_entity_type"
+      ],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S002",
+          "path": "sources[1].selected_identity.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[0].@type"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": true,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_LOCAL_BUT_CONTRACT_LOCATION_OR_ALIAS_FAILED"
+    },
+    {
+      "criterion_id": "SUBJECT.main_entity.name",
+      "scope": "subject.main_entity",
+      "field": "name",
+      "expected": "Robbie George",
+      "evaluator_observed": [],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.main_person_entity.name",
+        "relationships[3].target.author",
+        "relationships[4].target.author",
+        "relationships[4].target.originator"
+      ],
+      "exact_local_scope_locations": [
+        "subject.main_person_entity.name"
+      ],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S002",
+          "path": "sources[1].selected_identity.main_entity_name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S004",
+          "path": "sources[3].selected_projection.author"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S004",
+          "path": "sources[3].selected_projection.originator"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].mainEntity.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].copyrightHolder.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[1].@graph[2].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[1].@graph[2].image.caption"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[0].@graph[2].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[0].@graph[2].image.caption"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[2].about.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].author.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].copyrightHolder.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[1].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[2].@graph[2].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[2].@graph[2].image.caption"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].author.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].keywords[17]"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].copyrightHolder.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].author.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].keywords[17]"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].copyrightHolder.name"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": true,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_LOCAL_BUT_CONTRACT_LOCATION_OR_ALIAS_FAILED"
+    },
+    {
+      "criterion_id": "SUBJECT.main_entity.entity_type",
+      "scope": "subject.main_entity",
+      "field": "entity_type",
+      "expected": "Person",
+      "evaluator_observed": [],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.main_person_entity.type"
+      ],
+      "exact_local_scope_locations": [
+        "subject.main_person_entity.type"
+      ],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].mainEntity.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].creator.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].copyrightHolder.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[1].@graph[2].@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[0].@graph[2].@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[2].about.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].creator.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].author.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].copyrightHolder.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[1].creator.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[2].@graph[2].@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].creator.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].author.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].copyrightHolder.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].creator.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].author.@type"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].copyrightHolder.@type"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": true,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_LOCAL_BUT_CONTRACT_LOCATION_OR_ALIAS_FAILED"
+    },
+    {
+      "criterion_id": "SUBJECT.main_entity.url",
+      "scope": "subject.main_entity",
+      "field": "url",
+      "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "evaluator_observed": [],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.canonical_public_url",
+        "subject.canonical_authority",
+        "subject.main_person_entity.url",
+        "relationships[0].target.url"
+      ],
+      "exact_local_scope_locations": [
+        "subject.canonical_public_url",
+        "subject.canonical_authority",
+        "subject.main_person_entity.url"
+      ],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S001",
+          "path": "sources[0].selected_public_urls[0]"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S003",
+          "path": "sources[2].selected_route.canonical_authority"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].mainEntity.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].creator.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[1].@graph[2].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[0].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[5].itemListElement[1].item"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[0].@graph[2].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[1].@graph[0].relatedLink[2]"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[2].about.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].creator.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].author.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[1].creator.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[2].@graph[2].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[3].@graph[0].mentions[9].url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].creator.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].creator.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].author.url"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].relatedLink[3]"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": true,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_LOCAL_BUT_CONTRACT_LOCATION_OR_ALIAS_FAILED"
+    },
+    {
+      "criterion_id": "R01.target.name",
+      "scope": "canonical biography",
+      "field": "name",
+      "expected": "Robbie George Biography Plate™",
+      "evaluator_observed": [
+        "Robbie George canonical biography"
+      ],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.name"
+      ],
+      "exact_local_scope_locations": [],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S002",
+          "path": "sources[1].selected_identity.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[4].name"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": false,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_RELOCATED_ELSEWHERE_IN_OUTPUT"
+    },
+    {
+      "criterion_id": "R01.target.url",
+      "scope": "canonical biography",
+      "field": "url",
+      "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+      "evaluator_observed": [
+        "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+      ],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.url"
+      ],
+      "exact_local_scope_locations": [],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S002",
+          "path": "sources[1].selected_identity.@id"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].@id"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[0].hasPart[0].@id"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[4].@id"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[2].@graph[4].url"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": false,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_RELOCATED_ELSEWHERE_IN_OUTPUT"
+    },
+    {
+      "criterion_id": "R01.target.main_entity_name",
+      "scope": "canonical biography",
+      "field": "main_entity_name",
+      "expected": "Robbie George",
+      "evaluator_observed": [],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "subject.main_person_entity.name",
+        "relationships[3].target.author",
+        "relationships[4].target.author",
+        "relationships[4].target.originator"
+      ],
+      "exact_local_scope_locations": [],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S002",
+          "path": "sources[1].selected_identity.main_entity_name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S004",
+          "path": "sources[3].selected_projection.author"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S004",
+          "path": "sources[3].selected_projection.originator"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].mainEntity.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[0].copyrightHolder.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[1].@graph[2].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "canonical-biography",
+          "path": "sources[0].jsonld[1].@graph[2].image.caption"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[0].@graph[2].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[0].@graph[2].image.caption"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "professional-evidence",
+          "path": "sources[1].jsonld[2].about.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].author.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[0].copyrightHolder.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[1].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[2].@graph[2].name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[2].@graph[2].image.caption"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].author.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].keywords[17]"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[4].copyrightHolder.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].creator.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].author.name"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].keywords[17]"
+        },
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+          "source_id": "rights-and-license",
+          "path": "sources[2].jsonld[5].copyrightHolder.name"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": false,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_RELOCATED_ELSEWHERE_IN_OUTPUT"
+    },
+    {
+      "criterion_id": "R07.target.version",
+      "scope": "Naturepedia AI Catalog",
+      "field": "version",
+      "expected": "0.9-draft",
+      "evaluator_observed": [],
+      "evaluator_pass": false,
+      "exact_output_locations": [
+        "relationships[6].target.catalog_version"
+      ],
+      "exact_local_scope_locations": [
+        "relationships[6].target.catalog_version"
+      ],
+      "exact_model_visible_authority_locations": [
+        {
+          "artifact": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+          "source_id": "CD004-AUTH-S003",
+          "path": "sources[2].catalog_version"
+        }
+      ],
+      "exact_value_present_anywhere_in_output": true,
+      "exact_value_present_in_local_scope": true,
+      "exact_expected_value_present_in_model_visible_authority": true,
+      "classification": "EXACT_VALUE_LOCAL_BUT_CONTRACT_LOCATION_OR_ALIAS_FAILED"
+    }
+  ],
+  "primary_diagnostic_label": "STRUCTURAL_FIDELITY_FAILURE_WITH_SINGLE_EXACT_IDENTIFIER_LOSS",
+  "interpretation": {
+    "all_failed_expectations_supported_by_model_visible_authority": true,
+    "most_failed_values_preserved_somewhere_in_output": true,
+    "exact_identifier_loss_count": 1,
+    "conclusion": "P1 had the required authority evidence and reproduced eight of nine rejected exact values somewhere in its JSON, but it did not preserve the frozen machine locations and aliases. The remaining exact failure shortened the canonical Plate identifier. This is structural reconstruction loss, not a reversal of the frozen Quality Gate failure."
+  },
+  "study_boundary": {
+    "quality_censored": true,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "economic_comparison_allowed": false,
+    "new_api_measurement_authorized": false
+  },
+  "api_call_performed": false,
+  "x402_payment_performed": false
+}
