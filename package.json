@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest run engine.test.ts"
+    "test": "vitest run engine.test.ts",
+    "test:study004": "node --test study004-calculator.test.mjs"
   },
   "keywords": [],
   "author": "",
