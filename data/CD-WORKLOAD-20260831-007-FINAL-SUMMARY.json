@@ -1,0 +1,159 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-31T13:39:56Z",
+  "benchmark_outcome": "QUALITY_CENSORED_ZERO_INSTRUCTION_GAIN_AND_ARM_B_AUTHORITY_UNAVAILABLE",
+  "primary_conclusion": "Value-free source-grounding instructions produced no improvement in exact relationship-target reconstruction: Arm A remained at 38/52 exact relationship facts, identical to Study 006. Refreshed Arm B authority increased exact-value availability to 46/52 but still omitted six required facts, so Arm B was censored before measurement.",
+  "methodological_conclusion": "Study 007 separated instruction effects from authority availability. The instruction-only arm produced zero exact-fact gain under an unchanged historical authority boundary. The refreshed-authority arm exposed eight additional exact values relative to the observed Arm A output, but its 46/52 evidence ceiling made a quality-equivalent reconstruction impossible without invention. Production sources were not tuned after inspection of the hidden target.",
+  "economic_conclusion": "No quality-equivalent P1 baseline was established. No P2 probe, P3 retrieval, x402 payment, Compression Dividend calculation, best-baseline comparison, pricing change, or positive or negative economic claim is permitted.",
+  "arm_a_observation": {
+    "observation_id": "CD-007-P1A-0001",
+    "phase": "INITIAL_FEASIBILITY",
+    "model": "gpt-5.6-luna",
+    "http_status": 200,
+    "api_status": "completed",
+    "input_tokens": 38954,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "output_tokens": 1023,
+    "requester_model_cost_usd": "0.009018400000",
+    "latency_total_ms": 9726.492,
+    "cache_state": "P1_EXPLICIT_NO_CACHE",
+    "measurement_valid_for_p1": true,
+    "output_json_valid": true,
+    "automatic_retry_allowed": false,
+    "accepted_quality_equivalent_task": false
+  },
+  "arm_a_quality_result": {
+    "contract_id": "CD007-QC-1.0",
+    "evaluator_id": "CD007-STRICT-CANONICAL-EVAL-1.0",
+    "schema_pass": true,
+    "subject_pass": true,
+    "relationships_pass": false,
+    "relationships_pass_count": 1,
+    "relationships_required": 9,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "retrieval_rights_pass": true,
+    "primary_quality_gate_pass": false,
+    "initial_feasibility_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false,
+    "raw_measurement_modified": false
+  },
+  "arm_a_instruction_effect": {
+    "study006_relationship_target_fact_pass_count": 38,
+    "study007_arm_a_relationship_target_fact_pass_count": 38,
+    "relationship_exact_fact_gain": 0,
+    "fully_passing_relationship_gain": 0,
+    "instruction_intervention_improved_relationship_exactness": false
+  },
+  "arm_b_authority_result": {
+    "state": "AVAILABILITY_CENSORED_BEFORE_MEASUREMENT",
+    "relationship_target_fact_count": 52,
+    "exact_fact_available_count": 46,
+    "exact_fact_unavailable_count": 6,
+    "availability_gain_over_historical_arm_a_output": 8,
+    "quality_equivalent_without_invention": false,
+    "measurement_performed": false,
+    "model_cost_usd": null
+  },
+  "comparative_adjudication": {
+    "adjudicator_id": "CD007-COMPARATIVE-ADJ-1.0",
+    "primary_diagnostic_label": "ZERO_INSTRUCTION_GAIN_WITH_REFRESHED_AUTHORITY_STILL_BELOW_EXACT_GATE",
+    "source_grounding_instruction_gain": 0,
+    "refreshed_authority_availability_gain": 8,
+    "remaining_arm_b_authority_gap": 6,
+    "quality_equivalent_p1_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false,
+    "frozen_quality_result_modified": false
+  },
+  "path_treatment": {
+    "p1a": {
+      "measurement_performed": true,
+      "quality_equivalent": false,
+      "eligible_baseline": false,
+      "cost_treatment": "REJECTED_TASK_EVIDENCE_ONLY"
+    },
+    "p1b": {
+      "measurement_performed": false,
+      "quality_equivalent": false,
+      "censoring": "AUTHORITY_AVAILABILITY",
+      "reason_not_run": "The refreshed public authority contained only 46 of 52 exact relationship-target values required by the unchanged quality contract."
+    },
+    "p2": {
+      "eligibility_probe_performed": false,
+      "measurement_performed": false,
+      "reason_not_run": "No quality-equivalent P1 observation existed."
+    },
+    "p3": {
+      "payment_performed": false,
+      "semantic_quality_measured": false,
+      "reason_not_run": "No quality-equivalent baseline existed for a valid substitution or economic comparison."
+    }
+  },
+  "best_quality_equivalent_baseline": {
+    "status": "NONE_MEASURED_FOR_STUDY007",
+    "path": null,
+    "cost_usd": null
+  },
+  "transition_surface_treatment": {
+    "new_empirical_economic_point_created": false,
+    "new_transition_threshold_established": false,
+    "study003_anchors_modified": false,
+    "study004_result_modified": false,
+    "study005_result_modified": false,
+    "study006_result_modified": false,
+    "classification": "QUALITY_CENSORED"
+  },
+  "pricing_and_public_claims": {
+    "pricing_change_supported": false,
+    "website_pricing_change_recommended": false,
+    "positive_compression_dividend_claim_supported": false,
+    "negative_compression_dividend_claim_supported_for_study007": false,
+    "architectural_result_supported": "Exact canonical relationship fidelity requires explicit governed state whose complete target vocabulary is available at the authority boundary; schema and value-free instructions alone are insufficient."
+  },
+  "recommended_next_work": {
+    "design_goal": "Contemporaneous Governed-State Baseline With Independently Frozen Authority and Target",
+    "required_correction": "Design a new study prospectively from a contemporaneous canonical authority surface whose machine-readable governed fields are independently frozen before target construction, then test whether exact reconstruction is quality-equivalent without post-hoc production tuning.",
+    "do_not_do": [
+      "Do not retry Study 007 Arm A observation 0001.",
+      "Do not measure Study 007 Arm B after its availability censoring decision.",
+      "Do not insert the six hidden target values into production sources for Study 007.",
+      "Do not relax the exact quality contract.",
+      "Do not run P2 or pay P3 after closure.",
+      "Do not use rejected-task cost as an accepted baseline.",
+      "Do not change public pricing or make economic claims from this result."
+    ]
+  },
+  "artifact_provenance": {
+    "design": {"path": "WORKLOAD-CD-20260831-007.md", "sha256": "5f8ebb85e2cd12a4bd358522a62ef8c055bb2ac43d1a1395b2ff4ced2aa88a15", "latest_commit": "6c50170a7f503864cc7b0824d93cccc3d7cc69a5"},
+    "design_manifest": {"path": "data/CD-WORKLOAD-20260831-007-design-manifest.json", "sha256": "e175c43f81301cd73123c8fb1a3fbc2f339c033ad86830000122198c06635483", "latest_commit": "6c50170a7f503864cc7b0824d93cccc3d7cc69a5"},
+    "source_grounding_rules": {"path": "data/CD-WORKLOAD-20260831-007-neutral-source-grounding-rules.json", "sha256": "1b5c71fc3bec5c59676784255371f63afa32a55a3e9a21459efe846865f76436", "latest_commit": "6c50170a7f503864cc7b0824d93cccc3d7cc69a5"},
+    "arm_b_availability_audit": {"path": "data/CD-WORKLOAD-20260831-007-arm-b-authority-availability-audit.json", "sha256": "c1bbd9a405350d4dfd2ccf89932a6060bcf62103bd6964c523e556fa539814ff", "latest_commit": "c2696bb781417d9e472a2b6d758588dec071c585"},
+    "arm_a_preregistration": {"path": "data/CD-WORKLOAD-20260831-007-arm-a-preregistration-manifest.json", "sha256": "e75ef4b2a7d9cc7b58556dbf0c1b52bfd539ad4b58107c9fdfe524a60d2d789c", "latest_commit": "b6c798cd162a95f61247fcf854dfce844b06a87c"},
+    "arm_a_quality_contract": {"path": "data/CD-WORKLOAD-20260831-007-arm-a-quality-contract.json", "sha256": "d3507c1375f4d700a0e9c643d668eba4c739646479db154d096de6b9c9392904", "latest_commit": "b6c798cd162a95f61247fcf854dfce844b06a87c"},
+    "arm_a_runner_metadata": {"path": "data/CD-WORKLOAD-20260831-007-arm-a-runner-metadata.json", "sha256": "a708c8fbd5e0fea81228b0f0c5af8830ddfadd268a7126ce3d3cca91af674b65", "latest_commit": "65fd7bde39339877da26a5b7abb80146663f8afd"},
+    "arm_a_measurement": {"path": "data/raw/CD-007-P1A-0001-measurement.json", "sha256": "def26d3820a686d95f7ae734932cbd10932c0efd1d63f868af0621792ab4a820", "latest_commit": "acafd4e48cd2cd94666718a726285483a9db2727"},
+    "runtime_correction": {"path": "data/CD-WORKLOAD-20260831-007-arm-a-evaluator-runtime-correction.json", "sha256": "33b0ef8ffa7d09a5d1f8e04fa7b783653227e62c592d2a4a0c822575d46c1e53", "latest_commit": "8ee5874ce677c473ffc982f1413dce0190beea7b"},
+    "arm_a_quality_evaluation": {"path": "data/raw/CD-007-P1A-0001-quality-evaluation.json", "sha256": "960be5ba419bb69177ba467abf692a11df535e91a9c7b89e5434935277928a3c", "latest_commit": "5d658996bbe808315416c135857c140629d8b29c"},
+    "comparative_adjudicator_metadata": {"path": "data/CD-WORKLOAD-20260831-007-comparative-adjudicator-metadata.json", "sha256": "da60f1d9a71f21e07f9c807867e511364f5ea037f004d2ce1ff6abf92579d6b1", "latest_commit": "40b6643"},
+    "comparative_adjudication": {"path": "data/raw/CD-007-comparative-adjudication.json", "sha256": "33fa586d4253b34dbb170ca25bec480284942bc17b142d5e77179e3f96121e96", "latest_commit": "40b6643"}
+  },
+  "actions_performed_by_closure": {
+    "raw_measurement_modified": false,
+    "quality_evaluation_modified": false,
+    "comparative_adjudication_modified": false,
+    "api_call": false,
+    "retry": false,
+    "arm_b_measurement": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
