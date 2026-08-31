@@ -1,0 +1,70 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-007-P1A-0001",
+  "path": "P1A",
+  "phase": "INITIAL_FEASIBILITY",
+  "status": "P1_MEASUREMENT_CAPTURED_QUALITY_NOT_YET_EVALUATED",
+  "timestamp_utc": "2026-08-31T13:08:01.788Z",
+  "provider": "OpenAI",
+  "model": "gpt-5.6-luna",
+  "api_endpoint": "https://api.openai.com/v1/responses",
+  "request": {
+    "task_sha256": "ecd2f61c6e935681cd1623726b2707baa131020c85a1584c8a206183d160b9be",
+    "neutral_schema_sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+    "canonical_preservation_rules_sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4",
+    "source_grounding_rules_sha256": "1b5c71fc3bec5c59676784255371f63afa32a55a3e9a21459efe846865f76436",
+    "study004_public_authority_package_sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5",
+    "inherited_public_authority_evidence_sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+    "model_input_sha256": "9c37a780af35edd89a55c491a2d1cf82e16fc56cf3e787fe80fe24c633b10d26",
+    "model_input_bytes": 179953,
+    "neutral_schema_visible": true,
+    "source_grounding_rules_visible": true,
+    "arm_b_measurement_allowed": false,
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "study005_failure_diagnostics_visible": false,
+    "protected_p3_payload_visible": false
+  },
+  "response": {
+    "http_status": 200,
+    "api_status": "completed",
+    "output_json_valid": true,
+    "raw_response_file": "data/raw/CD-007-P1A-0001-response.json",
+    "raw_response_sha256": "2a6683eb1ff4474715fd4e1aab62603b358c92d63defa5ec043e0959bffb828e",
+    "output_file": "data/raw/CD-007-P1A-0001-output.json",
+    "output_sha256": "970af7672c809b13f0e9be3f0ad276fc66ad0c25e25a6dddf0f9d3c46f44de51"
+  },
+  "usage": {
+    "input_tokens": 38954,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0,
+    "uncached_input_tokens": 38954,
+    "output_tokens": 1023,
+    "reasoning_tokens": 0
+  },
+  "cost_usd": {
+    "accounting_schedule": "INHERITED_FROZEN_PROVIDER_PRICE",
+    "input": "0.007790800000",
+    "cached_input": "0.000000000000",
+    "cache_write": "0.000000000000",
+    "output": "0.001227600000",
+    "total_requester_model_cost": "0.009018400000"
+  },
+  "cache_state": "P1_EXPLICIT_NO_CACHE",
+  "measurement_valid_for_p1": true,
+  "latency_total_ms": 9726.492,
+  "quality": {
+    "contract_id": "CD007-QC-1.0",
+    "status": "NOT_YET_EVALUATED",
+    "pass": null,
+    "initial_feasibility_established": null,
+    "stable_cost_calibration_established": false
+  },
+  "automatic_retry_allowed": false,
+  "api_call_performed": true,
+  "p2_probe_performed": false,
+  "x402_payment_performed": false,
+  "economic_comparison_performed": false
+}
