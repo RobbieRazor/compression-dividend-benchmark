@@ -1,0 +1,1117 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "observation_id": "CD-007-P1A-0001",
+  "path": "P1A",
+  "evaluator_id": "CD007-STRICT-CANONICAL-EVAL-1.0",
+  "contract_id": "CD007-QC-1.0",
+  "target_id": "CD005-ENRICHED-BIOGRAPHY-SCHEMA-TARGET-1.0",
+  "status": "QUALITY_EVALUATION_COMPLETE",
+  "target_sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07",
+  "neutral_schema_sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+  "evaluation_policy": {
+    "type": "DETERMINISTIC_EXACT_SCHEMA_AND_FROZEN_SEMANTIC_TARGET",
+    "rule": "The candidate must use the exact schema-governed containers and field names, reproduce every frozen subject and relationship target value, provide traceable provenance for every relationship, and reproduce the complete rights boundary. Relationship array order is ignored. Protected target values remain evaluator-only.",
+    "whole_payload_byte_equality_required": false,
+    "relationship_array_order_required": false,
+    "field_aliases_allowed": false,
+    "relocated_values_credited": false,
+    "semantic_equivalence_credited_for_exact_value": false,
+    "omitted_meaningful_marks_credited": false,
+    "shortened_identifiers_credited": false,
+    "ontology_substitutions_credited": false,
+    "paraphrased_descriptors_credited": false,
+    "semantically_equivalent_rights_credited": false,
+    "extra_schema_governed_fields_allowed": false,
+    "partial_credit_changes_primary_pass": false
+  },
+  "result": {
+    "primary_quality_gate_pass": false,
+    "schema": {
+      "pass": true,
+      "root": {
+        "pass": true,
+        "expected": [
+          "relationships",
+          "retrieval_rights_boundary",
+          "subject"
+        ],
+        "observed": [
+          "relationships",
+          "retrieval_rights_boundary",
+          "subject"
+        ],
+        "missing": [],
+        "extra": []
+      },
+      "subject": {
+        "pass": true,
+        "expected": [
+          "canonical_authority",
+          "canonical_plate_id",
+          "canonical_url",
+          "entity_type",
+          "main_entity",
+          "name"
+        ],
+        "observed": [
+          "canonical_authority",
+          "canonical_plate_id",
+          "canonical_url",
+          "entity_type",
+          "main_entity",
+          "name"
+        ],
+        "missing": [],
+        "extra": []
+      },
+      "main_entity": {
+        "pass": true,
+        "expected": [
+          "entity_type",
+          "name",
+          "url"
+        ],
+        "observed": [
+          "entity_type",
+          "name",
+          "url"
+        ],
+        "missing": [],
+        "extra": []
+      },
+      "relationship_collection_pass": true,
+      "relationship_objects": [
+        {
+          "index": 0,
+          "relationship": "canonical biography",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "entity_type",
+              "main_entity_name",
+              "name",
+              "url"
+            ],
+            "observed": [
+              "entity_type",
+              "main_entity_name",
+              "name",
+              "url"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 1,
+          "relationship": "professional evidence",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "entity_type",
+              "name",
+              "scope",
+              "url"
+            ],
+            "observed": [
+              "entity_type",
+              "name",
+              "scope",
+              "url"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 2,
+          "relationship": "Naturepedia reference implementation",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "classification",
+              "entity_type",
+              "independent_confirmation",
+              "name",
+              "universal_validation",
+              "url"
+            ],
+            "observed": [
+              "classification",
+              "entity_type",
+              "independent_confirmation",
+              "name",
+              "universal_validation",
+              "url"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 3,
+          "relationship": "Robbie's Razor framework authorship",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "author",
+              "authorship_claim_type",
+              "entity_type",
+              "name",
+              "url"
+            ],
+            "observed": [
+              "author",
+              "authorship_claim_type",
+              "entity_type",
+              "name",
+              "url"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 4,
+          "relationship": "GC-MRD-v2.0 governing authority",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "author",
+              "entity_type",
+              "governing_status",
+              "identifier",
+              "name",
+              "originator",
+              "url",
+              "version"
+            ],
+            "observed": [
+              "author",
+              "entity_type",
+              "governing_status",
+              "identifier",
+              "name",
+              "originator",
+              "url",
+              "version"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 5,
+          "relationship": "Naturepedia Discovery Index",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "entity_type",
+              "name",
+              "role",
+              "url"
+            ],
+            "observed": [
+              "entity_type",
+              "name",
+              "role",
+              "url"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 6,
+          "relationship": "Naturepedia AI Catalog",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "entity_type",
+              "name",
+              "role",
+              "url",
+              "version"
+            ],
+            "observed": [
+              "entity_type",
+              "name",
+              "role",
+              "url",
+              "version"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 7,
+          "relationship": "x402 Pricing Manifest",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "asset",
+              "enriched_atomic_units",
+              "enriched_price_usdc",
+              "entity_type",
+              "name",
+              "network",
+              "status",
+              "url",
+              "version"
+            ],
+            "observed": [
+              "asset",
+              "enriched_atomic_units",
+              "enriched_price_usdc",
+              "entity_type",
+              "name",
+              "network",
+              "status",
+              "url",
+              "version"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        },
+        {
+          "index": 8,
+          "relationship": "Naturepedia MCP Server Card",
+          "recognized_relationship": true,
+          "shell": {
+            "pass": true,
+            "expected": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "observed": [
+              "provenance",
+              "relationship",
+              "target"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "target_shape": {
+            "pass": true,
+            "expected": [
+              "entity_type",
+              "name",
+              "remote_type",
+              "remote_url",
+              "title",
+              "url",
+              "version"
+            ],
+            "observed": [
+              "entity_type",
+              "name",
+              "remote_type",
+              "remote_url",
+              "title",
+              "url",
+              "version"
+            ],
+            "missing": [],
+            "extra": []
+          },
+          "provenance_shape_pass": true,
+          "scalar_types_pass": true,
+          "pass": true
+        }
+      ],
+      "rights": {
+        "pass": true,
+        "expected": [
+          "amortization_authorized",
+          "excluded_rights",
+          "multi_task_reuse_authorized",
+          "one_endpoint_retrieval"
+        ],
+        "observed": [
+          "amortization_authorized",
+          "excluded_rights",
+          "multi_task_reuse_authorized",
+          "one_endpoint_retrieval"
+        ],
+        "missing": [],
+        "extra": []
+      },
+      "rights_types_pass": true
+    },
+    "subject": {
+      "pass": true,
+      "fact_pass_count": 8,
+      "fact_count": 8,
+      "facts": [
+        {
+          "field": "subject.canonical_plate_id",
+          "expected": "robbie-george#robbie-george-biography-plate",
+          "observed": "robbie-george#robbie-george-biography-plate",
+          "pass": true
+        },
+        {
+          "field": "subject.canonical_url",
+          "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+          "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+          "pass": true
+        },
+        {
+          "field": "subject.canonical_authority",
+          "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "pass": true
+        },
+        {
+          "field": "subject.name",
+          "expected": "Robbie George Biography Plate™",
+          "observed": "Robbie George Biography Plate™",
+          "pass": true
+        },
+        {
+          "field": "subject.entity_type",
+          "expected": "ProfilePage",
+          "observed": "ProfilePage",
+          "pass": true
+        },
+        {
+          "field": "subject.main_entity.name",
+          "expected": "Robbie George",
+          "observed": "Robbie George",
+          "pass": true
+        },
+        {
+          "field": "subject.main_entity.entity_type",
+          "expected": "Person",
+          "observed": "Person",
+          "pass": true
+        },
+        {
+          "field": "subject.main_entity.url",
+          "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+          "pass": true
+        }
+      ]
+    },
+    "relationships": {
+      "pass": false,
+      "pass_count": 1,
+      "relationship_count": 9,
+      "candidate_relationship_count": 9,
+      "results": [
+        {
+          "relationship": "canonical biography",
+          "pass": true,
+          "match_count": 1,
+          "target_pass": true,
+          "target_fact_pass_count": 4,
+          "target_fact_count": 4,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Robbie George Biography Plate™",
+              "observed": "Robbie George Biography Plate™",
+              "pass": true
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "ProfilePage",
+              "observed": "ProfilePage",
+              "pass": true
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+              "observed": "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate",
+              "pass": true
+            },
+            {
+              "field": "target.main_entity_name",
+              "expected": "Robbie George",
+              "observed": "Robbie George",
+              "pass": true
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S002",
+            "CD004-AUTH-S003",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/commercial-data-license",
+            "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george#robbie-george-biography-plate"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S002",
+            "CD004-AUTH-S003"
+          ]
+        },
+        {
+          "relationship": "professional evidence",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 2,
+          "target_fact_count": 4,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Publications, Exhibitions & Professional Recognition",
+              "observed": "Publications, Exhibitions & Professional Recognition",
+              "pass": true
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "WebPage",
+              "observed": "CollectionPage",
+              "pass": false
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+              "observed": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+              "pass": true
+            },
+            {
+              "field": "target.scope",
+              "expected": "Curated representative professional evidence authority",
+              "observed": "Publications, exhibitions, licensing, recognition, and professional archive",
+              "pass": false
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S003",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/commercial-data-license",
+            "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S003"
+          ]
+        },
+        {
+          "relationship": "Naturepedia reference implementation",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 5,
+          "target_fact_count": 6,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Naturepedia™",
+              "observed": "Naturepedia",
+              "pass": false
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "CreativeWork",
+              "observed": "CreativeWork",
+              "pass": true
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/naturepedia",
+              "observed": "https://www.robbiegeorgephotography.com/naturepedia",
+              "pass": true
+            },
+            {
+              "field": "target.classification",
+              "expected": "primary-reference-implementation",
+              "observed": "primary-reference-implementation",
+              "pass": true
+            },
+            {
+              "field": "target.independent_confirmation",
+              "expected": false,
+              "observed": false,
+              "pass": true
+            },
+            {
+              "field": "target.universal_validation",
+              "expected": false,
+              "observed": false,
+              "pass": true
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S004",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+            "https://www.robbiegeorgephotography.com/commercial-data-license",
+            "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+            "https://www.robbiegeorgephotography.com/naturepedia",
+            "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S004"
+          ]
+        },
+        {
+          "relationship": "Robbie's Razor framework authorship",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 3,
+          "target_fact_count": 5,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Robbie's Razor™",
+              "observed": "Robbie's Razor",
+              "pass": false
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "CreativeWork",
+              "observed": "CreativeWork",
+              "pass": true
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/robbies-razor",
+              "observed": "https://www.robbiegeorgephotography.com/robbies-razor",
+              "pass": true
+            },
+            {
+              "field": "target.author",
+              "expected": "Robbie George",
+              "observed": "Robbie George",
+              "pass": true
+            },
+            {
+              "field": "target.authorship_claim_type",
+              "expected": "first-party-public-authority",
+              "observed": "originator",
+              "pass": false
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S003",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/commercial-data-license",
+            "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S001",
+            "CD004-AUTH-S003"
+          ]
+        },
+        {
+          "relationship": "GC-MRD-v2.0 governing authority",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 7,
+          "target_fact_count": 8,
+          "target_facts": [
+            {
+              "field": "target.identifier",
+              "expected": "GC-MRD-v2.0",
+              "observed": "GC-MRD-v2.0",
+              "pass": true
+            },
+            {
+              "field": "target.name",
+              "expected": "The Grand Compression Cosmology — Master Reference Document",
+              "observed": "The Grand Compression Cosmology — Master Reference Document",
+              "pass": true
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "CreativeWork",
+              "observed": "TechArticle",
+              "pass": false
+            },
+            {
+              "field": "target.version",
+              "expected": "2.0",
+              "observed": "2.0",
+              "pass": true
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+              "observed": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+              "pass": true
+            },
+            {
+              "field": "target.author",
+              "expected": "Robbie George",
+              "observed": "Robbie George",
+              "pass": true
+            },
+            {
+              "field": "target.originator",
+              "expected": "Robbie George",
+              "observed": "Robbie George",
+              "pass": true
+            },
+            {
+              "field": "target.governing_status",
+              "expected": "current-canonical-authority",
+              "observed": "current-canonical-authority",
+              "pass": true
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S004",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+            "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+            "https://www.robbiegeorgephotography.com/naturepedia",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S004"
+          ]
+        },
+        {
+          "relationship": "Naturepedia Discovery Index",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 2,
+          "target_fact_count": 4,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Naturepedia™ Discovery Index",
+              "observed": "Naturepedia Discovery Index",
+              "pass": false
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "WebPage",
+              "observed": "WebPage",
+              "pass": true
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+              "observed": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+              "pass": true
+            },
+            {
+              "field": "target.role",
+              "expected": "public-discovery-index",
+              "observed": "machine-discovery index",
+              "pass": false
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S006",
+            "https://mcp.robbiegeorgephotography.com/mcp",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+            "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S006"
+          ]
+        },
+        {
+          "relationship": "Naturepedia AI Catalog",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 2,
+          "target_fact_count": 5,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Naturepedia™ AI Catalog",
+              "observed": "Naturepedia AI Catalog",
+              "pass": false
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "DataCatalog",
+              "observed": "DigitalDocument",
+              "pass": false
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+              "observed": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+              "pass": true
+            },
+            {
+              "field": "target.version",
+              "expected": "0.9-draft",
+              "observed": "0.9-draft",
+              "pass": true
+            },
+            {
+              "field": "target.role",
+              "expected": "public-machine-discovery-catalog",
+              "observed": "selected-route-public-declaration",
+              "pass": false
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S003",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S003"
+          ]
+        },
+        {
+          "relationship": "x402 Pricing Manifest",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 7,
+          "target_fact_count": 9,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "Naturepedia™ x402 Retrieval Pricing Manifest",
+              "observed": "Naturepedia x402 Retrieval Pricing Manifest",
+              "pass": false
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "OfferCatalog",
+              "observed": "DigitalDocument",
+              "pass": false
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+              "observed": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+              "pass": true
+            },
+            {
+              "field": "target.version",
+              "expected": "3.0.0",
+              "observed": "3.0.0",
+              "pass": true
+            },
+            {
+              "field": "target.status",
+              "expected": "active",
+              "observed": "active",
+              "pass": true
+            },
+            {
+              "field": "target.network",
+              "expected": "eip155:8453",
+              "observed": "eip155:8453",
+              "pass": true
+            },
+            {
+              "field": "target.asset",
+              "expected": "USDC",
+              "observed": "USDC",
+              "pass": true
+            },
+            {
+              "field": "target.enriched_price_usdc",
+              "expected": "0.025",
+              "observed": "0.025",
+              "pass": true
+            },
+            {
+              "field": "target.enriched_atomic_units",
+              "expected": "25000",
+              "observed": "25000",
+              "pass": true
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S005",
+            "CD004-AUTH-S006",
+            "https://mcp.robbiegeorgephotography.com/mcp",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+            "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S005",
+            "CD004-AUTH-S006"
+          ]
+        },
+        {
+          "relationship": "Naturepedia MCP Server Card",
+          "pass": false,
+          "match_count": 1,
+          "target_pass": false,
+          "target_fact_pass_count": 6,
+          "target_fact_count": 7,
+          "target_facts": [
+            {
+              "field": "target.name",
+              "expected": "com.robbiegeorgephotography/naturepedia",
+              "observed": "com.robbiegeorgephotography/naturepedia",
+              "pass": true
+            },
+            {
+              "field": "target.title",
+              "expected": "Naturepedia Canonical Discovery MCP Server",
+              "observed": "Naturepedia Canonical Discovery MCP Server",
+              "pass": true
+            },
+            {
+              "field": "target.entity_type",
+              "expected": "SoftwareApplication",
+              "observed": "DigitalDocument",
+              "pass": false
+            },
+            {
+              "field": "target.url",
+              "expected": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+              "observed": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+              "pass": true
+            },
+            {
+              "field": "target.version",
+              "expected": "0.1.2",
+              "observed": "0.1.2",
+              "pass": true
+            },
+            {
+              "field": "target.remote_type",
+              "expected": "streamable-http",
+              "observed": "streamable-http",
+              "pass": true
+            },
+            {
+              "field": "target.remote_url",
+              "expected": "https://mcp.robbiegeorgephotography.com/mcp",
+              "observed": "https://mcp.robbiegeorgephotography.com/mcp",
+              "pass": true
+            }
+          ],
+          "provenance_pass": true,
+          "accepted_provenance_anchors": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S006",
+            "https://mcp.robbiegeorgephotography.com/mcp",
+            "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+            "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+            "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+            "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+            "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate",
+            "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+          ],
+          "observed_provenance": [
+            "CD004-AUTH-S003",
+            "CD004-AUTH-S006"
+          ]
+        }
+      ]
+    },
+    "retrieval_rights": {
+      "pass": true,
+      "container_present": true,
+      "one_endpoint_retrieval_pass": true,
+      "excluded_rights_pass": true,
+      "multi_task_reuse_pass": true,
+      "amortization_pass": true
+    }
+  },
+  "primary_quality_gate_pass": false,
+  "initial_feasibility_established": false,
+  "stable_cost_calibration_established": false,
+  "economic_comparison_permitted_for_this_observation": false,
+  "raw_measurement_modified": false,
+  "api_call_performed_by_evaluator": false,
+  "x402_payment_performed_by_evaluator": false
+}
