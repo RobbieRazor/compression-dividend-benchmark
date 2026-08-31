@@ -1,0 +1,104 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "audit_id": "CD007-ARM-B-AUTHORITY-AVAILABILITY-1.0",
+  "status": "PREMEASUREMENT_AVAILABILITY_AUDIT_COMPLETE",
+  "purpose": "Determine whether the unchanged common target is exactly recoverable from the captured Arm B public authority before authorizing model spending.",
+  "frozen_inputs": {
+    "capture_manifest": {
+      "path": "data/raw/CD-007-arm-b-authority-capture/capture-manifest.json",
+      "sha256": "f5a7de0011b5909f1cd02530d4dd068afce4ac86e895093e21927642fcb7cf48",
+      "commit": "2697b40"
+    },
+    "common_hidden_target": {
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07"
+    },
+    "study007_design": {
+      "path": "data/CD-WORKLOAD-20260831-007-design-manifest.json",
+      "sha256": "e175c43f81301cd73123c8fb1a3fbc2f339c033ad86830000122198c06635483"
+    },
+    "capture_plan": {
+      "path": "data/CD-WORKLOAD-20260831-007-authority-capture-plan.json",
+      "sha256": "29b1b1af4055b3b63f9564f72e7ddd9b458c77f2707550addaa097da1057a2dd"
+    }
+  },
+  "method": {
+    "scope": "All exact leaf values in the nine relationship target objects.",
+    "evidence_corpus": "Exact response bytes from all 11 captured Arm B public sources.",
+    "match_rule": "A fact is available only when its exact case-sensitive lexical representation occurs in at least one captured response.",
+    "cross_source_match_allowed": true,
+    "semantic_equivalence_counts_as_available": false,
+    "missing_value_invention_allowed": false,
+    "primary_quality_gate_modified": false
+  },
+  "result": {
+    "relationship_target_fact_count": 52,
+    "exact_fact_available_count": 46,
+    "exact_fact_unavailable_count": 6,
+    "exact_authority_availability_pass": false,
+    "maximum_evidence-grounded_relationship_target_score": "46/52",
+    "quality_equivalent_arm_b_possible_without_invention": false
+  },
+  "unavailable_exact_facts": [
+    {
+      "relationship": "professional evidence",
+      "field": "scope",
+      "required_value": "Curated representative professional evidence authority"
+    },
+    {
+      "relationship": "Robbie's Razor framework authorship",
+      "field": "authorship_claim_type",
+      "required_value": "first-party-public-authority"
+    },
+    {
+      "relationship": "Naturepedia Discovery Index",
+      "field": "role",
+      "required_value": "public-discovery-index"
+    },
+    {
+      "relationship": "Naturepedia AI Catalog",
+      "field": "entity_type",
+      "required_value": "DataCatalog"
+    },
+    {
+      "relationship": "Naturepedia AI Catalog",
+      "field": "role",
+      "required_value": "public-machine-discovery-catalog"
+    },
+    {
+      "relationship": "Naturepedia MCP Server Card",
+      "field": "entity_type",
+      "required_value": "SoftwareApplication"
+    }
+  ],
+  "adjudication": {
+    "arm_b_state": "AVAILABILITY_CENSORED_BEFORE_MEASUREMENT",
+    "arm_b_measurement_authorized": false,
+    "arm_b_model_call_would_be_informative_for_quality_equivalence": false,
+    "arm_a_state": "UNCHANGED_PENDING_SEPARATE_PREREGISTRATION_DECISION",
+    "arm_a_measurement_authorized": false,
+    "common_target_relaxed": false,
+    "production_update_authorized": false,
+    "recapture_authorized": false,
+    "automatic_retry_authorized": false,
+    "p2_probe_authorized": false,
+    "p3_payment_authorized": false,
+    "economic_comparison_authorized": false
+  },
+  "interpretation": {
+    "finding": "The post-RRIP 2.1.0 architecture improves public canonical availability but does not expose every exact lexical value required by the unchanged Study 006 quality target.",
+    "causal_limit": "No model observation was performed, so this audit does not estimate model behavior or the instruction effect.",
+    "scientific_consequence": "Arm B must not be treated as a fair quality-equivalence trial unless a future independently designed study establishes a contemporaneous target supported by its authority boundary.",
+    "anti_tuning_boundary": "Do not edit production sources to insert these six values for Study 007, because doing so after inspecting the hidden target would tune the authority surface to the evaluator."
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "target_mutation": false
+  },
+  "next_artifact": "Freeze the availability-censoring decision and decide whether Arm A alone remains scientifically useful as an instruction-isolation feasibility test."
+}
