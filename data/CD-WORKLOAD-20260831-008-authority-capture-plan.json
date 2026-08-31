@@ -1,0 +1,293 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "capture_plan_id": "CD008-PUBLIC-AUTHORITY-CAPTURE-1.0",
+  "status": "CAPTURE_PROTOCOL_FROZEN_BEFORE_NETWORK_ACTIVITY",
+  "purpose": "Capture one contemporaneous, exact, public, nonpaying authority boundary for an internal completeness audit before target construction or model measurement.",
+  "design_freeze": {
+    "path": "data/CD-WORKLOAD-20260831-008-design-manifest.json",
+    "sha256": "3cffc374b38a6f49b3ed01e8fa2fe8f874e4a2481d34ccd9475e53010f181020",
+    "commit": "7f4ac20de340bc35b930bbd7a70e94610325cec2"
+  },
+  "source_selection_boundary": {
+    "source_count": 14,
+    "single_approved_host": "www.robbiegeorgephotography.com",
+    "selection_basis": "Public first-party authority surfaces capable of supporting a contemporaneous governed graph, provenance, discovery, protocol, pricing, and rights audit.",
+    "selected_to_reproduce_historical_hidden_target": false,
+    "historical_target_used_for_source_selection": false,
+    "paid_canonical_plate_route_included": false,
+    "source_addition_after_capture_allowed": false,
+    "source_removal_after_capture_allowed": false,
+    "role_change_after_capture_allowed": false
+  },
+  "output": {
+    "final_directory": "data/raw/CD-008-authority-capture",
+    "temporary_directory_prefix": "data/raw/.CD-008-authority-capture.tmp-",
+    "manifest_filename": "capture-manifest.json",
+    "overwrite_existing_final_directory_allowed": false,
+    "partial_final_directory_allowed": false,
+    "atomic_publish_required": true
+  },
+  "sources": [
+    {
+      "source_id": "CD008-AUTH-S001",
+      "role": "canonical biography and subject identity",
+      "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "media_class": "text/html",
+      "accepted_content_type_prefixes": [
+        "text/html"
+      ],
+      "file_extension": "html"
+    },
+    {
+      "source_id": "CD008-AUTH-S002",
+      "role": "professional evidence and recognition",
+      "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "media_class": "text/html",
+      "accepted_content_type_prefixes": [
+        "text/html"
+      ],
+      "file_extension": "html"
+    },
+    {
+      "source_id": "CD008-AUTH-S003",
+      "role": "Naturepedia reference implementation",
+      "url": "https://www.robbiegeorgephotography.com/naturepedia",
+      "media_class": "text/html",
+      "accepted_content_type_prefixes": [
+        "text/html"
+      ],
+      "file_extension": "html"
+    },
+    {
+      "source_id": "CD008-AUTH-S004",
+      "role": "Robbie's Razor framework authority",
+      "url": "https://www.robbiegeorgephotography.com/robbies-razor",
+      "media_class": "text/html",
+      "accepted_content_type_prefixes": [
+        "text/html"
+      ],
+      "file_extension": "html"
+    },
+    {
+      "source_id": "CD008-AUTH-S005",
+      "role": "GC-MRD-v2.0 governing authority",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S006",
+      "role": "Naturepedia public discovery index",
+      "url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+      "media_class": "text/html",
+      "accepted_content_type_prefixes": [
+        "text/html"
+      ],
+      "file_extension": "html"
+    },
+    {
+      "source_id": "CD008-AUTH-S007",
+      "role": "Naturepedia AI Catalog",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S008",
+      "role": "x402 public pricing and rights manifest",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "media_class": "application/ld+json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S009",
+      "role": "Naturepedia MCP Server Card",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S010",
+      "role": "RRIP public protocol descriptor",
+      "url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S011",
+      "role": "RRIP biography identity resolution",
+      "url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve?id=robbie-george%23robbie-george-biography-plate",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S012",
+      "role": "public AI authority root",
+      "url": "https://www.robbiegeorgephotography.com/.well-known/ai-root.json",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S013",
+      "role": "GC-MRD-v2.0 publication manifest",
+      "url": "https://www.robbiegeorgephotography.com/mrd-v2.0-manifest.json",
+      "media_class": "application/json",
+      "accepted_content_type_prefixes": [
+        "application/json",
+        "application/ld+json"
+      ],
+      "file_extension": "json"
+    },
+    {
+      "source_id": "CD008-AUTH-S014",
+      "role": "public commercial data rights declaration",
+      "url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+      "media_class": "text/html",
+      "accepted_content_type_prefixes": [
+        "text/html"
+      ],
+      "file_extension": "html"
+    }
+  ],
+  "request_policy": {
+    "method": "GET",
+    "request_header_allowlist": [
+      "user-agent",
+      "accept"
+    ],
+    "user_agent": "Compression-Dividend-Benchmark-Study008/1.0",
+    "accept_header_by_media_class": {
+      "text/html": "text/html",
+      "application/json": "application/json, application/ld+json",
+      "application/ld+json": "application/ld+json, application/json"
+    },
+    "authorization_header_allowed": false,
+    "cookie_header_allowed": false,
+    "payment_header_allowed": false,
+    "proxy_authorization_header_allowed": false,
+    "api_key_header_allowed": false,
+    "environment_credential_read_allowed": false,
+    "paid_route_allowed": false,
+    "automatic_retry_allowed": false,
+    "timeout_ms_per_request": 30000,
+    "maximum_redirects": 2,
+    "redirects_must_remain_https": true,
+    "redirects_must_remain_on_approved_host": true,
+    "redirect_to_paid_route_allowed": false
+  },
+  "response_policy": {
+    "accepted_http_statuses": [
+      200
+    ],
+    "content_type_parameter_ignored_for_matching": true,
+    "content_type_match_case_insensitive": true,
+    "minimum_response_bytes": 2,
+    "maximum_response_bytes_per_source": 2000000,
+    "maximum_total_response_bytes": 12000000,
+    "json_parse_required_for_json_media": true,
+    "html_document_marker_required_for_html_media": true,
+    "response_body_stored_exactly": true,
+    "response_sha256_required": true,
+    "partial_capture_accepted": false,
+    "unexpected_content_type_accepted": false,
+    "non_200_response_accepted": false
+  },
+  "manifest_policy": {
+    "capture_timestamp_utc_required": true,
+    "protocol_git_head_required": true,
+    "plan_path_and_sha256_required": true,
+    "runner_path_and_sha256_required": true,
+    "requested_url_required": true,
+    "final_url_required": true,
+    "redirect_chain_required": true,
+    "http_status_required": true,
+    "observed_content_type_required": true,
+    "byte_count_required": true,
+    "response_sha256_required": true,
+    "response_headers_recorded": [
+      "content-type",
+      "content-length",
+      "etag",
+      "last-modified",
+      "cache-control",
+      "cf-cache-status",
+      "x-grand-compression-authority",
+      "x-robbie-rrip-version",
+      "x-robbie-rrip-resolution"
+    ],
+    "authorization_header_sent_must_be_false": true,
+    "payment_header_sent_must_be_false": true,
+    "x402_payment_performed_must_be_false": true,
+    "model_api_call_performed_must_be_false": true
+  },
+  "execution_modes": {
+    "preflight": {
+      "network_allowed": false,
+      "filesystem_write_allowed": false,
+      "model_api_call_allowed": false,
+      "x402_payment_allowed": false
+    },
+    "capture": {
+      "network_allowed": true,
+      "filesystem_write_scope": "temporary capture directory followed by atomic publication to the frozen final directory",
+      "model_api_call_allowed": false,
+      "x402_payment_allowed": false,
+      "automatic_retry_allowed": false
+    }
+  },
+  "post_capture_boundary": {
+    "capture_is_target": false,
+    "capture_is_quality_contract": false,
+    "capture_is_model_visible_automatically": false,
+    "independent_byte_review_required": true,
+    "hash_verification_required": true,
+    "secret_scan_required": true,
+    "capture_commit_required_before_completeness_audit": true,
+    "historical_target_comparison_allowed": false,
+    "target_construction_allowed_before_completeness_pass": false,
+    "model_measurement_allowed_before_completeness_pass": false
+  },
+  "actions_performed_by_protocol_freeze": {
+    "network_capture": false,
+    "target_construction": false,
+    "authority_completeness_audit": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_action": "Create and test the deterministic capture runner, run preflight without network activity, secret-scan, commit, and push the complete protocol before live capture."
+}
