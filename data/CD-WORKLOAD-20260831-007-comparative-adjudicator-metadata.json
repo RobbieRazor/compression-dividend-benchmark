@@ -1,0 +1,31 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "adjudicator_id": "CD007-COMPARATIVE-ADJ-1.0",
+  "status": "COMPARATIVE_ADJUDICATOR_AND_RESULT_FROZEN",
+  "script": {
+    "path": "scripts/adjudicate-study007.py",
+    "sha256": "05d869526b10f53e99d75f79e9b1368994fdd8b17e01f132bae13933d65cb66a"
+  },
+  "result": {
+    "path": "data/raw/CD-007-comparative-adjudication.json",
+    "sha256": "33fa586d4253b34dbb170ca25bec480284942bc17b142d5e77179e3f96121e96"
+  },
+  "result_state": {
+    "arm_a_relationship_target_facts": "38/52",
+    "arm_a_gain_vs_study006": 0,
+    "arm_b_authority_ceiling": "46/52",
+    "arm_b_measurement_performed": false,
+    "quality_equivalent_p1_established": false,
+    "economic_comparison_permitted": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "automatic_retry": false,
+    "arm_b_measurement": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false
+  },
+  "next_artifact": "Record the comparative adjudication against its evidence commit, then close Study 007 as quality-censored."
+}

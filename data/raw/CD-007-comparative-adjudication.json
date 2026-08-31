@@ -1,0 +1,90 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "adjudicator_id": "CD007-COMPARATIVE-ADJ-1.0",
+  "status": "COMPARATIVE_ADJUDICATION_COMPLETE",
+  "frozen_inputs": {
+    "arm_a_measurement": {
+      "path": "data/raw/CD-007-P1A-0001-measurement.json",
+      "sha256": "def26d3820a686d95f7ae734932cbd10932c0efd1d63f868af0621792ab4a820"
+    },
+    "arm_a_output": {
+      "path": "data/raw/CD-007-P1A-0001-output.json",
+      "sha256": "970af7672c809b13f0e9be3f0ad276fc66ad0c25e25a6dddf0f9d3c46f44de51"
+    },
+    "arm_a_quality": {
+      "path": "data/raw/CD-007-P1A-0001-quality-evaluation.json",
+      "sha256": "960be5ba419bb69177ba467abf692a11df535e91a9c7b89e5434935277928a3c"
+    },
+    "arm_b_availability": {
+      "path": "data/CD-WORKLOAD-20260831-007-arm-b-authority-availability-audit.json",
+      "sha256": "c1bbd9a405350d4dfd2ccf89932a6060bcf62103bd6964c523e556fa539814ff"
+    },
+    "runtime_correction": {
+      "path": "data/CD-WORKLOAD-20260831-007-arm-a-evaluator-runtime-correction.json",
+      "sha256": "33b0ef8ffa7d09a5d1f8e04fa7b783653227e62c592d2a4a0c822575d46c1e53"
+    },
+    "quality_contract": {
+      "path": "data/CD-WORKLOAD-20260831-007-arm-a-quality-contract.json",
+      "sha256": "d3507c1375f4d700a0e9c643d668eba4c739646479db154d096de6b9c9392904"
+    },
+    "study006_adjudication": {
+      "path": "data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json",
+      "sha256": "1419179016dddbda81bb34f772ee9272503213c8e1287c602637892bab772398"
+    }
+  },
+  "arm_a_observed_result": {
+    "observation_id": "CD-007-P1A-0001",
+    "measurement_valid": true,
+    "model_cost_usd": "0.009018400000",
+    "schema_pass": true,
+    "subject_pass": true,
+    "relationship_pass_count": 1,
+    "relationship_count": 9,
+    "relationship_target_fact_pass_count": 38,
+    "relationship_target_fact_count": 52,
+    "rights_pass": true,
+    "primary_quality_gate_pass": false
+  },
+  "arm_a_vs_study006": {
+    "study006_relationship_target_fact_pass_count": 38,
+    "study007_arm_a_relationship_target_fact_pass_count": 38,
+    "relationship_exact_fact_gain": 0,
+    "fully_passing_relationship_gain": 0,
+    "instruction_intervention_improved_relationship_exactness": false
+  },
+  "arm_b_premeasurement_result": {
+    "state": "AVAILABILITY_CENSORED_BEFORE_MEASUREMENT",
+    "exact_fact_available_count": 46,
+    "exact_fact_count": 52,
+    "availability_gain_over_historical_arm_a_output": 8,
+    "quality_equivalent_without_invention": false,
+    "measurement_performed": false
+  },
+  "comparative_finding": {
+    "primary_label": "ZERO_INSTRUCTION_GAIN_WITH_REFRESHED_AUTHORITY_STILL_BELOW_EXACT_GATE",
+    "source_grounding_instruction_gain": 0,
+    "refreshed_authority_availability_gain": 8,
+    "remaining_arm_b_authority_gap": 6,
+    "quality_equivalent_p1_established": false,
+    "stable_cost_calibration_established": false,
+    "economic_comparison_permitted": false
+  },
+  "interpretation_boundary": {
+    "schema_placement_problem": false,
+    "subject_fidelity_problem": false,
+    "provenance_coverage_problem": false,
+    "rights_semantics_problem": false,
+    "remaining_problem": "Exact canonical relationship values are not reliably recoverable from semantic authority evidence, and the refreshed public authority still omits six required exact values.",
+    "production_tuning_to_hidden_target_allowed": false,
+    "quality_result_modified": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "automatic_retry": false,
+    "arm_b_measurement": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false
+  }
+}
