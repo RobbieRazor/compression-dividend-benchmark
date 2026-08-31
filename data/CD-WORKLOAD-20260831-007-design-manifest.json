@@ -1,0 +1,150 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD007-DESIGN-FREEZE-1.0",
+  "status": "DESIGN_AND_VALUE_FREE_SOURCE_GROUNDING_RULES_FROZEN_BEFORE_ARM_AUTHORITY_TARGET_TASK_PROVIDER_OR_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-31T00:00:00Z",
+  "purpose": "Isolate the effect of value-free source-grounding instructions from the effect of a refreshed post-RRIP 2.1.0 authority snapshot.",
+  "predecessor_evidence": {
+    "study006_closure": {
+      "path": "data/CD-WORKLOAD-20260830-006-FINAL-SUMMARY.json",
+      "sha256": "e4c6ef7b9548f1fdfa3ef3cdbf60b89d2d99e7f303b5e35eea0b882086bc1cb7",
+      "commit": "5885fe1612cddd744bdbeb579db5e42000642257"
+    },
+    "study006_adjudication": {
+      "path": "data/raw/CD-006-P1-0001-canonical-fidelity-adjudication.json",
+      "sha256": "1419179016dddbda81bb34f772ee9272503213c8e1287c602637892bab772398",
+      "commit": "3bd148737919227388fbeeee84e8d026451398cf"
+    },
+    "study006_adjudication_record": {
+      "path": "data/CD-WORKLOAD-20260830-006-p1-canonical-fidelity-adjudication-record.json",
+      "sha256": "f9b211a8d97e7cd1566a74f75a255bf488461c1f3ab77e3f76550f69a4cb7192",
+      "commit": "a41b5dfc99bccfaaa5d6d0fbb95351a77133ba49"
+    },
+    "study006_outcome": "QUALITY_CENSORED_SUBJECT_AND_RIGHTS_FIDELITY_GAIN_WITH_UNCHANGED_RELATIONSHIP_EXACTNESS",
+    "study006_exact_facts_pass": 59,
+    "study006_exact_facts_total": 73,
+    "study006_relationship_target_facts_pass": 38,
+    "study006_relationship_target_facts_total": 52,
+    "study006_remaining_relationship_mismatches": 14,
+    "study006_cost_inherited_as_accepted_baseline": false
+  },
+  "frozen_design_artifacts": {
+    "design": {
+      "path": "WORKLOAD-CD-20260831-007.md",
+      "sha256": "5f8ebb85e2cd12a4bd358522a62ef8c055bb2ac43d1a1395b2ff4ced2aa88a15"
+    },
+    "neutral_source_grounding_rules": {
+      "path": "data/CD-WORKLOAD-20260831-007-neutral-source-grounding-rules.json",
+      "sha256": "1b5c71fc3bec5c59676784255371f63afa32a55a3e9a21459efe846865f76436"
+    }
+  },
+  "two_arm_design": {
+    "arm_a": {
+      "arm_id": "CD007-P1A-HISTORICAL-AUTHORITY",
+      "causal_role": "INSTRUCTION_EFFECT",
+      "authority_boundary": "EXACT_STUDY006_MODEL_VISIBLE_AUTHORITY_REUSE",
+      "new_model_visible_component": "Study 007 value-free source-grounding rules",
+      "authority_refresh_allowed": false
+    },
+    "arm_b": {
+      "arm_id": "CD007-P1B-REFRESHED-AUTHORITY",
+      "causal_role": "INCREMENTAL_AUTHORITY_ARCHITECTURE_EFFECT",
+      "authority_boundary": "INDEPENDENT_POST_RRIP_2_1_0_PUBLIC_AUTHORITY_SNAPSHOT",
+      "new_model_visible_component_relative_to_arm_a": "refreshed authority evidence only",
+      "authority_snapshot_frozen_now": false
+    },
+    "common_between_arms": [
+      "model and provider settings",
+      "neutral task",
+      "neutral schema",
+      "neutral source-grounding rules",
+      "hidden target",
+      "Quality Contract",
+      "evaluator",
+      "one-shot no-retry policy"
+    ],
+    "arm_order_frozen_now": false,
+    "cross_arm_tuning_allowed": false
+  },
+  "historical_artifact_intent": {
+    "authority_package": {
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-public-authority-package.json",
+      "sha256": "6a5dc766a33f71a3dc674f2da0ce244ada311029feb1c78469fdc2e69651dc4b",
+      "reuse_for_arm_a_subject_to_next_freeze": true
+    },
+    "hidden_target": {
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07",
+      "common_target_intent": true
+    },
+    "study006_authority_target_freeze": {
+      "path": "data/CD-WORKLOAD-20260830-006-authority-target-freeze.json",
+      "sha256": "4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b"
+    }
+  },
+  "future_visibility_boundary": {
+    "visible_to_both_arms_after_later_freeze": [
+      "common neutral task",
+      "value-free neutral schema",
+      "value-free source-grounding rules",
+      "arm-specific frozen public authority evidence"
+    ],
+    "always_hidden": [
+      "completed target representation",
+      "target field-to-value mapping",
+      "Quality Contract",
+      "evaluator implementation and output",
+      "Study 005 and Study 006 model outputs",
+      "Study 005 and Study 006 failure locations and adjudications",
+      "protected or paid P3 payload"
+    ]
+  },
+  "quality_and_sampling_boundary": {
+    "complete_quality_gate_required": true,
+    "relationship_gate_required": "9/9",
+    "semantic_similarity_changes_primary_pass": false,
+    "partial_credit_changes_primary_pass": false,
+    "maximum_initial_feasibility_observations_per_arm": 1,
+    "automatic_retry_allowed": false,
+    "one_passing_observation_establishes_stable_cost": false,
+    "p2_allowed_before_quality_equivalent_p1": false,
+    "p3_payment_allowed_before_quality_equivalent_p1": false,
+    "economic_comparison_allowed_now": false
+  },
+  "current_freeze_state": {
+    "design_frozen": true,
+    "neutral_source_grounding_rules_frozen": true,
+    "arm_a_authority_frozen": false,
+    "arm_b_authority_frozen": false,
+    "common_target_frozen": false,
+    "quality_contract_frozen": false,
+    "arm_order_frozen": false,
+    "runners_frozen": false,
+    "measurement_authorized": false
+  },
+  "actions_performed": {
+    "live_authority_refresh": false,
+    "api_call": false,
+    "retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_artifact": {
+    "type": "TWO_ARM_AUTHORITY_AND_COMMON_TARGET_FREEZE",
+    "requirements": [
+      "pin exact Study 006 authority reuse for Arm A",
+      "independently capture and pin the post-RRIP 2.1.0 public-authority snapshot for Arm B",
+      "freeze one common hidden target without relaxing Study 006 quality",
+      "document source availability differences before measurement",
+      "keep target, evaluator, prior failures, and protected P3 payload hidden"
+    ],
+    "api_call_allowed": false,
+    "retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "rules_id": "CD007-NEUTRAL-SOURCE-GROUNDING-1.0",
+  "status": "VALUE_FREE_NEUTRAL_RULES_FROZEN",
+  "purpose": "Select and preserve explicit authority-supported relationship values without disclosing protected target values or mappings.",
+  "global_rule": {
+    "instruction": "For every governed field, select the explicit source value whose stated role matches that field, then copy it exactly.",
+    "semantic_equivalence_satisfies_exact_contract": false,
+    "paraphrase_allowed_for_governed_fields": false,
+    "invent_missing_value": false
+  },
+  "selection_rules": [
+    {
+      "rule_id": "FIELD_ROLE_BEFORE_SURFACE_SIMILARITY",
+      "instruction": "Choose a candidate because the authority explicitly assigns it the governed field role, not because nearby prose sounds similar.",
+      "protected_values_disclosed": false
+    },
+    {
+      "rule_id": "VALUE_NOT_CONTAINER_METADATA",
+      "instruction": "Do not substitute page type, document type, implementation label, server-card label, link label, or container metadata for the governed value.",
+      "protected_values_disclosed": false
+    },
+    {
+      "rule_id": "EXACT_LEXICAL_COPY",
+      "instruction": "Copy the selected lexeme exactly, preserving Unicode marks, casing, whitespace-significant punctuation, delimiters, and identifier fragments.",
+      "protected_values_disclosed": false
+    },
+    {
+      "rule_id": "CONTROLLED_TOKEN_PRESERVATION",
+      "instruction": "When authority evidence explicitly supplies a controlled ontology, role, classification, status, or claim token, preserve that token rather than replace it with explanatory prose or a neighboring type.",
+      "protected_values_disclosed": false
+    },
+    {
+      "rule_id": "CONFLICT_RESOLUTION",
+      "instruction": "When multiple candidates exist, prefer the candidate explicitly bound to the governed field and record unresolved ambiguity when no unique binding is supported.",
+      "protected_values_disclosed": false
+    },
+    {
+      "rule_id": "NO_CROSS_ARTIFACT_INVENTION",
+      "instruction": "Do not infer a hidden target value from schema shape, prior studies, evaluator expectations, pricing context, or general domain knowledge.",
+      "protected_values_disclosed": false
+    }
+  ],
+  "coverage_families": {
+    "ontology_type_substitution": true,
+    "canonical_descriptor_paraphrase": true,
+    "trademark_mark_omission": true,
+    "identifier_shortening": true
+  },
+  "disclosure_boundary": {
+    "contains_target_payload_values": false,
+    "contains_target_field_value_mapping": false,
+    "contains_prior_output": false,
+    "contains_prior_failure_locations": false,
+    "contains_evaluator_logic": false,
+    "contains_protected_p3_payload": false,
+    "generic_examples_allowed": false
+  },
+  "actions_performed": {
+    "api_call": false,
+    "retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
