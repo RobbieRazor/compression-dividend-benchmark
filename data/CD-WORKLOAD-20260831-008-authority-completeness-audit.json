@@ -1,0 +1,798 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "audit_id": "CD008-AUTHORITY-COMPLETENESS-AUDIT-1.0",
+  "status": "AUTHORITY_COMPLETENESS_AUDIT_COMPLETE",
+  "audit_timestamp_utc": "2026-08-31T23:30:56.219Z",
+  "protocol_git_head": "42c9f6cbd338d566f187cb76ef62bf51f3e90cae",
+  "frozen_inputs": {
+    "audit_plan": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-completeness-audit-plan.json",
+      "sha256": "d6c9c3a6a5490b291988b3c1d42881c40b418d9aa54a668cfe2b39f9739f3f96"
+    },
+    "prospective_graph_schema": {
+      "path": "data/CD-WORKLOAD-20260831-008-prospective-graph-schema.json",
+      "sha256": "96c3210bda3420cb392d279bc9045eba2ea1a83d6df4ee26d6df4a4a4abaa150"
+    },
+    "capture_freeze": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-capture-freeze.json",
+      "sha256": "205bc9d3c3b81710976638538726c923af5087691b5e5222b0e267f354eda403",
+      "commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+    },
+    "capture_manifest": {
+      "path": "data/raw/CD-008-authority-capture/capture-manifest.json",
+      "sha256": "eec1518546b93923014f28b089da1a9e60490721813bd5954455ca8771cad650",
+      "commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+    },
+    "audit_runner": {
+      "path": "scripts/audit-study008-authority-completeness.mjs",
+      "sha256": "e22e4b428164b35de6938b29707cb632a15fb5d1cfd0947dd7137801c5787439"
+    }
+  },
+  "result": {
+    "primary_decision": "AUTHORITY_BINDING_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "authority_complete_and_unambiguous": false,
+    "selector_pass_count": 11,
+    "selector_required_count": 11,
+    "governed_leaf_pass_count": 63,
+    "governed_leaf_count": 63,
+    "relationship_pass_count": 9,
+    "relationship_count": 10,
+    "rights_leaf_pass_count": 8,
+    "rights_leaf_count": 8,
+    "cross_source_check_pass_count": 16,
+    "cross_source_check_count": 17,
+    "provenance_support_count": 63,
+    "unresolved_availability_issue_count": 0,
+    "unresolved_ambiguity_issue_count": 0,
+    "unresolved_binding_issue_count": 1,
+    "raw_target_values_emitted": false,
+    "completed_target_constructed": false
+  },
+  "relationship_results": [
+    {
+      "relationship_id": "has_professional_archive",
+      "selector_pass": true,
+      "required_field_pass_count": 4,
+      "required_field_count": 4,
+      "binding_check_pass_count": 1,
+      "binding_check_count": 1,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "has_reference_implementation",
+      "selector_pass": true,
+      "required_field_pass_count": 4,
+      "required_field_count": 4,
+      "binding_check_pass_count": 1,
+      "binding_check_count": 2,
+      "relationship_complete": false
+    },
+    {
+      "relationship_id": "authored_framework",
+      "selector_pass": true,
+      "required_field_pass_count": 4,
+      "required_field_count": 4,
+      "binding_check_pass_count": 0,
+      "binding_check_count": 0,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "governed_by_mrd",
+      "selector_pass": true,
+      "required_field_pass_count": 5,
+      "required_field_count": 5,
+      "binding_check_pass_count": 3,
+      "binding_check_count": 3,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "has_discovery_index",
+      "selector_pass": true,
+      "required_field_pass_count": 4,
+      "required_field_count": 4,
+      "binding_check_pass_count": 1,
+      "binding_check_count": 1,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "publishes_ai_catalog",
+      "selector_pass": true,
+      "required_field_pass_count": 6,
+      "required_field_count": 6,
+      "binding_check_pass_count": 1,
+      "binding_check_count": 1,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "publishes_x402_pricing",
+      "selector_pass": true,
+      "required_field_pass_count": 5,
+      "required_field_count": 5,
+      "binding_check_pass_count": 1,
+      "binding_check_count": 1,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "operates_mcp_server",
+      "selector_pass": true,
+      "required_field_pass_count": 5,
+      "required_field_count": 5,
+      "binding_check_pass_count": 3,
+      "binding_check_count": 3,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "resolved_by_rrip",
+      "selector_pass": true,
+      "required_field_pass_count": 5,
+      "required_field_count": 5,
+      "binding_check_pass_count": 2,
+      "binding_check_count": 2,
+      "relationship_complete": true
+    },
+    {
+      "relationship_id": "publishes_commercial_data_rights",
+      "selector_pass": true,
+      "required_field_pass_count": 5,
+      "required_field_count": 5,
+      "binding_check_pass_count": 1,
+      "binding_check_count": 1,
+      "relationship_complete": true
+    }
+  ],
+  "provenance_support": [
+    {
+      "leaf_id": "subject.canonical_id",
+      "source_id": "CD008-AUTH-S001",
+      "source_sha256": "f0033c420c5d5bf14df794afb71a3ee1f54f39f804587db754baa7bfa29c9091",
+      "locator": "html_jsonld:block=2/node=3/@id",
+      "value_type": "string",
+      "value_sha256": "c7ae7d9ab673e976d57720762aa3e539a16706ed9059967435f79437de74b4b7"
+    },
+    {
+      "leaf_id": "subject.entity_type",
+      "source_id": "CD008-AUTH-S001",
+      "source_sha256": "f0033c420c5d5bf14df794afb71a3ee1f54f39f804587db754baa7bfa29c9091",
+      "locator": "html_jsonld:block=2/node=3/@type",
+      "value_type": "string",
+      "value_sha256": "2f988527ec2fcdb950f432d9635be8d0713a57b8a07672932d8cd59306c95bb2"
+    },
+    {
+      "leaf_id": "subject.name",
+      "source_id": "CD008-AUTH-S001",
+      "source_sha256": "f0033c420c5d5bf14df794afb71a3ee1f54f39f804587db754baa7bfa29c9091",
+      "locator": "html_jsonld:block=2/node=3/name",
+      "value_type": "string",
+      "value_sha256": "c59d123d270533ed5fba49edbe3d68a72126dcc58479e5dc90d3ea803aeefa42"
+    },
+    {
+      "leaf_id": "subject.url",
+      "source_id": "CD008-AUTH-S001",
+      "source_sha256": "f0033c420c5d5bf14df794afb71a3ee1f54f39f804587db754baa7bfa29c9091",
+      "locator": "html_jsonld:block=2/node=3/url",
+      "value_type": "string",
+      "value_sha256": "f64f4ac0149e10291b4700db1dad64fb8e1a08df323efcd395e4d499c6f2bddc"
+    },
+    {
+      "leaf_id": "subject.plate_id",
+      "source_id": "CD008-AUTH-S011",
+      "source_sha256": "55d29f65549b6a5ca26b5ce9f030cfe92e4585f2101151b3faf1bfcc8eff9a15",
+      "locator": "/plate/id",
+      "value_type": "string",
+      "value_sha256": "c6e63fbc306c0f5c0ad547440a8a8ba1a63af3aa94e626401414caf4ab4c1d6f"
+    },
+    {
+      "leaf_id": "subject.plate_name",
+      "source_id": "CD008-AUTH-S011",
+      "source_sha256": "55d29f65549b6a5ca26b5ce9f030cfe92e4585f2101151b3faf1bfcc8eff9a15",
+      "locator": "/plate/name",
+      "value_type": "string",
+      "value_sha256": "596700eac623eb52a3b913ffaea482461e718d2c6e9bfa7e381d61658598ffd1"
+    },
+    {
+      "leaf_id": "subject.plate_type",
+      "source_id": "CD008-AUTH-S011",
+      "source_sha256": "55d29f65549b6a5ca26b5ce9f030cfe92e4585f2101151b3faf1bfcc8eff9a15",
+      "locator": "/plate/type",
+      "value_type": "string",
+      "value_sha256": "e169c399e858c15a8bdd808fb7d303a0982293d7881bfbfd603f8d48e49d2b96"
+    },
+    {
+      "leaf_id": "subject.plate_canonical_url",
+      "source_id": "CD008-AUTH-S011",
+      "source_sha256": "55d29f65549b6a5ca26b5ce9f030cfe92e4585f2101151b3faf1bfcc8eff9a15",
+      "locator": "/plate/canonical_url",
+      "value_type": "string",
+      "value_sha256": "f64f4ac0149e10291b4700db1dad64fb8e1a08df323efcd395e4d499c6f2bddc"
+    },
+    {
+      "leaf_id": "relationship.has_professional_archive.canonical_id",
+      "source_id": "CD008-AUTH-S002",
+      "source_sha256": "8a142fd401d6be46e2578c54c25e61c29881309a4d41f02a964b90c7713017da",
+      "locator": "html_jsonld:block=2/node=1/@id",
+      "value_type": "string",
+      "value_sha256": "e1a0cbc65f73d50ab5dbef4eae1930591d89524221780f72b64f01ee1380f3f3"
+    },
+    {
+      "leaf_id": "relationship.has_professional_archive.entity_type",
+      "source_id": "CD008-AUTH-S002",
+      "source_sha256": "8a142fd401d6be46e2578c54c25e61c29881309a4d41f02a964b90c7713017da",
+      "locator": "html_jsonld:block=2/node=1/@type",
+      "value_type": "string",
+      "value_sha256": "7b15c86a1f241f6b212deb3c234db3ca6b265b0ea0e7840a937b0c9d6e1d57da"
+    },
+    {
+      "leaf_id": "relationship.has_professional_archive.name",
+      "source_id": "CD008-AUTH-S002",
+      "source_sha256": "8a142fd401d6be46e2578c54c25e61c29881309a4d41f02a964b90c7713017da",
+      "locator": "html_jsonld:block=2/node=1/name",
+      "value_type": "string",
+      "value_sha256": "aee37f4eeeb88023b60a0f280012ee2d0da32b7178c0a50a2708dfefc2dc950b"
+    },
+    {
+      "leaf_id": "relationship.has_professional_archive.url",
+      "source_id": "CD008-AUTH-S002",
+      "source_sha256": "8a142fd401d6be46e2578c54c25e61c29881309a4d41f02a964b90c7713017da",
+      "locator": "html_jsonld:block=2/node=1/url",
+      "value_type": "string",
+      "value_sha256": "e5de59c186063fa165d38498bf36883c89af8661a48c742c7f4d665523eb2f08"
+    },
+    {
+      "leaf_id": "relationship.has_reference_implementation.canonical_id",
+      "source_id": "CD008-AUTH-S003",
+      "source_sha256": "6f328b444f61f8d24d9ed18077b13292b64e0b09e73ac2dd00198b2c969aef7f",
+      "locator": "html_jsonld:block=2/node=6/@id",
+      "value_type": "string",
+      "value_sha256": "4abf79a49f6588cb4e820d7c17ac88de8bba0548658b9c9c2761bd7394c4c4c8"
+    },
+    {
+      "leaf_id": "relationship.has_reference_implementation.entity_type",
+      "source_id": "CD008-AUTH-S003",
+      "source_sha256": "6f328b444f61f8d24d9ed18077b13292b64e0b09e73ac2dd00198b2c969aef7f",
+      "locator": "html_jsonld:block=2/node=6/@type",
+      "value_type": "string",
+      "value_sha256": "5419e10053149ad0ff1b10ff0db4e27cfa9b0d30236c6812618a29504437b60e"
+    },
+    {
+      "leaf_id": "relationship.has_reference_implementation.name",
+      "source_id": "CD008-AUTH-S003",
+      "source_sha256": "6f328b444f61f8d24d9ed18077b13292b64e0b09e73ac2dd00198b2c969aef7f",
+      "locator": "html_jsonld:block=2/node=6/name",
+      "value_type": "string",
+      "value_sha256": "5d166c74163e951cbd34beacf849419d25390c6158971370670f628510a24429"
+    },
+    {
+      "leaf_id": "relationship.has_reference_implementation.url",
+      "source_id": "CD008-AUTH-S003",
+      "source_sha256": "6f328b444f61f8d24d9ed18077b13292b64e0b09e73ac2dd00198b2c969aef7f",
+      "locator": "html_jsonld:block=2/node=6/url",
+      "value_type": "string",
+      "value_sha256": "e09b8b24600aa98a4f9f0cba273f37f03d322e6aeadf9fe2d2805e0d495ebad3"
+    },
+    {
+      "leaf_id": "relationship.authored_framework.canonical_id",
+      "source_id": "CD008-AUTH-S004",
+      "source_sha256": "12327a92d30ae93ac6865513c881e11642d80548cd70c7336c47a6e3a78d693d",
+      "locator": "html_jsonld:block=3/node=7/@id",
+      "value_type": "string",
+      "value_sha256": "4079a71effc7085681896219da074ac03dea7d92686c82a7aaf85e8590ad3d9f"
+    },
+    {
+      "leaf_id": "relationship.authored_framework.entity_type",
+      "source_id": "CD008-AUTH-S004",
+      "source_sha256": "12327a92d30ae93ac6865513c881e11642d80548cd70c7336c47a6e3a78d693d",
+      "locator": "html_jsonld:block=3/node=7/@type",
+      "value_type": "string",
+      "value_sha256": "4a155b9cf96eb56bca50d454f113d1e00f6e2f49f9bfb8a10566b251444aa951"
+    },
+    {
+      "leaf_id": "relationship.authored_framework.name",
+      "source_id": "CD008-AUTH-S004",
+      "source_sha256": "12327a92d30ae93ac6865513c881e11642d80548cd70c7336c47a6e3a78d693d",
+      "locator": "html_jsonld:block=3/node=7/name",
+      "value_type": "string",
+      "value_sha256": "5bd3d6185ce76087d6727312d3bc9905b055a9dd9cb10543823e14b61ccf1c28"
+    },
+    {
+      "leaf_id": "relationship.authored_framework.url",
+      "source_id": "CD008-AUTH-S004",
+      "source_sha256": "12327a92d30ae93ac6865513c881e11642d80548cd70c7336c47a6e3a78d693d",
+      "locator": "html_jsonld:block=3/node=7/url",
+      "value_type": "string",
+      "value_sha256": "01bf45c12246b99259c07534a500bc2b66db9c083925b208ad57a98def9ce98c"
+    },
+    {
+      "leaf_id": "relationship.governed_by_mrd.canonical_id",
+      "source_id": "CD008-AUTH-S005",
+      "source_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "locator": "/identifier",
+      "value_type": "string",
+      "value_sha256": "cbd443baa6f1f42a783f665fe9dbc49201c2051d468cc9a33d2b08d45a363242"
+    },
+    {
+      "leaf_id": "relationship.governed_by_mrd.entity_type",
+      "source_id": "CD008-AUTH-S005",
+      "source_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "locator": "/documentType",
+      "value_type": "string",
+      "value_sha256": "f7fc3bb9506f0d163a2d735df794e1eeef46ab2885c5585359a6d070a7faf052"
+    },
+    {
+      "leaf_id": "relationship.governed_by_mrd.name",
+      "source_id": "CD008-AUTH-S005",
+      "source_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "locator": "/name",
+      "value_type": "string",
+      "value_sha256": "865a7a716a8df2f6713645ad6d440f52c09dc1d1e15d40ca3de1602dce0d5c57"
+    },
+    {
+      "leaf_id": "relationship.governed_by_mrd.url",
+      "source_id": "CD008-AUTH-S005",
+      "source_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "locator": "/canonicalUrl",
+      "value_type": "string",
+      "value_sha256": "787a9319134cc9760cbdef4495a5ae1f5221e84a80699dc2cf5b7fe437626258"
+    },
+    {
+      "leaf_id": "relationship.governed_by_mrd.version",
+      "source_id": "CD008-AUTH-S005",
+      "source_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "locator": "/version",
+      "value_type": "string",
+      "value_sha256": "86169bcf42397928e1828b0a8e09ab69037ac05474b33486513c2fea65908565"
+    },
+    {
+      "leaf_id": "relationship.has_discovery_index.canonical_id",
+      "source_id": "CD008-AUTH-S006",
+      "source_sha256": "f50359c99715569adce6bb4499f6de3c8f0425d679e34b30ef5acdd0aba0a128",
+      "locator": "html_jsonld:block=2/node=1/@id",
+      "value_type": "string",
+      "value_sha256": "a39c88394ed1321979976a8a161510186bf6350c1fb2d11219bbb8848b9c651e"
+    },
+    {
+      "leaf_id": "relationship.has_discovery_index.entity_type",
+      "source_id": "CD008-AUTH-S006",
+      "source_sha256": "f50359c99715569adce6bb4499f6de3c8f0425d679e34b30ef5acdd0aba0a128",
+      "locator": "html_jsonld:block=2/node=1/@type",
+      "value_type": "string",
+      "value_sha256": "862cd2e7ec3c07d3bdaa5e56dd1585b36a00f7331f889cef080b694d9376c14b"
+    },
+    {
+      "leaf_id": "relationship.has_discovery_index.name",
+      "source_id": "CD008-AUTH-S006",
+      "source_sha256": "f50359c99715569adce6bb4499f6de3c8f0425d679e34b30ef5acdd0aba0a128",
+      "locator": "html_jsonld:block=2/node=1/name",
+      "value_type": "string",
+      "value_sha256": "0152d60fcbd788402fe634c5a7425a0f6ec02c839ab942ad1df0c652c5a79950"
+    },
+    {
+      "leaf_id": "relationship.has_discovery_index.url",
+      "source_id": "CD008-AUTH-S006",
+      "source_sha256": "f50359c99715569adce6bb4499f6de3c8f0425d679e34b30ef5acdd0aba0a128",
+      "locator": "html_jsonld:block=2/node=1/url",
+      "value_type": "string",
+      "value_sha256": "2640a19c047aba61cf05f03ce6d5dcb2ba81b3fcbb076e99e987649f9564ef7a"
+    },
+    {
+      "leaf_id": "relationship.publishes_ai_catalog.canonical_id",
+      "source_id": "CD008-AUTH-S007",
+      "source_sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "locator": "/catalog/id",
+      "value_type": "string",
+      "value_sha256": "e34bf65ab276f8df8a21741c8133b0a477cd62912c3805f8c4f4acbd11027db6"
+    },
+    {
+      "leaf_id": "relationship.publishes_ai_catalog.entity_type",
+      "source_id": "CD008-AUTH-S007",
+      "source_sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "locator": "/$schema",
+      "value_type": "string",
+      "value_sha256": "1baf5e6e96f56f0c45a972a3a64393fab5fe8770dd108f223b87a549bd4b5dff"
+    },
+    {
+      "leaf_id": "relationship.publishes_ai_catalog.name",
+      "source_id": "CD008-AUTH-S007",
+      "source_sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "locator": "/catalog/name",
+      "value_type": "string",
+      "value_sha256": "ee0c0cb69765881f116218736e69d1b1d11f2cf97876813af35f714520619858"
+    },
+    {
+      "leaf_id": "relationship.publishes_ai_catalog.url",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "locator": "/discovery/aiCatalog",
+      "value_type": "string",
+      "value_sha256": "c7df105416c4ee3293e7437aaf529782ccbc7672afa9e295b0a22cf258533af8"
+    },
+    {
+      "leaf_id": "relationship.publishes_ai_catalog.version",
+      "source_id": "CD008-AUTH-S007",
+      "source_sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "locator": "/version",
+      "value_type": "string",
+      "value_sha256": "b72a58182d7c52a69418fa4e25697236992219b24dafa46106e41c1c9cafcb6f"
+    },
+    {
+      "leaf_id": "relationship.publishes_ai_catalog.status",
+      "source_id": "CD008-AUTH-S007",
+      "source_sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "locator": "/catalog/status",
+      "value_type": "string",
+      "value_sha256": "2969eef765588a7600996e72005fe8088ed3419794e8d0d0f20e99e5d90b5184"
+    },
+    {
+      "leaf_id": "relationship.publishes_x402_pricing.canonical_id",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/@id",
+      "value_type": "string",
+      "value_sha256": "a416852ba00553939df7213632bcc76dfbe9f4d91cb2479d727a5d4793d527ed"
+    },
+    {
+      "leaf_id": "relationship.publishes_x402_pricing.entity_type",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/@type",
+      "value_type": "string",
+      "value_sha256": "78b76d12e57977922c06bf708a99c766096a80f33e2b56725c306198ea8a8caa"
+    },
+    {
+      "leaf_id": "relationship.publishes_x402_pricing.name",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/name",
+      "value_type": "string",
+      "value_sha256": "78e08ef0a32ccc1a9e160b09d785f58e45cb2d6bbb9ec4731efc97809a71c7e8"
+    },
+    {
+      "leaf_id": "relationship.publishes_x402_pricing.url",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/@id",
+      "value_type": "string",
+      "value_sha256": "a416852ba00553939df7213632bcc76dfbe9f4d91cb2479d727a5d4793d527ed"
+    },
+    {
+      "leaf_id": "relationship.publishes_x402_pricing.version",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/version",
+      "value_type": "string",
+      "value_sha256": "9976f8dfb5b1b01a70346fd75b7644f4cdc8f71299e2cde16f8839cf82a984ea"
+    },
+    {
+      "leaf_id": "relationship.operates_mcp_server.canonical_id",
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "locator": "/name",
+      "value_type": "string",
+      "value_sha256": "4ef3cfa8d20e6203569c6fe97e91caf1b5a3fe7f0d4a6e77cd91cd3530db9703"
+    },
+    {
+      "leaf_id": "relationship.operates_mcp_server.entity_type",
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "locator": "/$schema",
+      "value_type": "string",
+      "value_sha256": "ca86013d76d97a8db3840cae614f7fba75fec823669b884133e9f7e05fa7a945"
+    },
+    {
+      "leaf_id": "relationship.operates_mcp_server.name",
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "locator": "/title",
+      "value_type": "string",
+      "value_sha256": "76264104354e91b6abba2bce1ef2111b990b2733265a60823f74f0ccafc4e3a8"
+    },
+    {
+      "leaf_id": "relationship.operates_mcp_server.url",
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "locator": "/remotes/0/url",
+      "value_type": "string",
+      "value_sha256": "638c95280f885cb0add49d157c0aba4c96bf84c8737014c50bbfafc0e5b7bbe8"
+    },
+    {
+      "leaf_id": "relationship.operates_mcp_server.version",
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "locator": "/version",
+      "value_type": "string",
+      "value_sha256": "d05b37e57bc92debe8b4e38039876ab538a95a66caa835796dd5fbd439f0ba33"
+    },
+    {
+      "leaf_id": "relationship.resolved_by_rrip.canonical_id",
+      "source_id": "CD008-AUTH-S010",
+      "source_sha256": "fc4abd115b4f8fdb79d9eedaaffc3f92fbddad7ca294c5b1056448233ca55675",
+      "locator": "/endpoint",
+      "value_type": "string",
+      "value_sha256": "0a74fb3ba42223690b05efa8d9b16cfadc61dc0401434569046caec4707ad752"
+    },
+    {
+      "leaf_id": "relationship.resolved_by_rrip.entity_type",
+      "source_id": "CD008-AUTH-S010",
+      "source_sha256": "fc4abd115b4f8fdb79d9eedaaffc3f92fbddad7ca294c5b1056448233ca55675",
+      "locator": "/mode",
+      "value_type": "string",
+      "value_sha256": "0080437ba92d759250ba1e7a1db83a5fbf6f748ad79f20f42d4d859403629945"
+    },
+    {
+      "leaf_id": "relationship.resolved_by_rrip.name",
+      "source_id": "CD008-AUTH-S010",
+      "source_sha256": "fc4abd115b4f8fdb79d9eedaaffc3f92fbddad7ca294c5b1056448233ca55675",
+      "locator": "/principle",
+      "value_type": "string",
+      "value_sha256": "189dbddc7826b975e2c8d19ae696564b9a9ff74d42cf61217fc7f53bb414ebc9"
+    },
+    {
+      "leaf_id": "relationship.resolved_by_rrip.url",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "locator": "/machineInfrastructure/rrip",
+      "value_type": "string",
+      "value_sha256": "c93f8f51ea716bfc1b1a177cc0ce849a09cc5b0b55c49a2c139da63281ecf80e"
+    },
+    {
+      "leaf_id": "relationship.resolved_by_rrip.version",
+      "source_id": "CD008-AUTH-S010",
+      "source_sha256": "fc4abd115b4f8fdb79d9eedaaffc3f92fbddad7ca294c5b1056448233ca55675",
+      "locator": "/version",
+      "value_type": "string",
+      "value_sha256": "05fbb092c597f11bc4d1980b6cce73bd0f0d2c5ba109bb9d9de01d4581dc79a1"
+    },
+    {
+      "leaf_id": "relationship.publishes_commercial_data_rights.canonical_id",
+      "source_id": "CD008-AUTH-S014",
+      "source_sha256": "7bdd944df15cb36a663de7221cd96f265a7b7709e875ab61564dcf126eeef219",
+      "locator": "html_jsonld:block=1/node=1/@id",
+      "value_type": "string",
+      "value_sha256": "9fcd90405e20f982b244c88088333f1923755955d276d3bfce02c0835e0939f7"
+    },
+    {
+      "leaf_id": "relationship.publishes_commercial_data_rights.entity_type",
+      "source_id": "CD008-AUTH-S014",
+      "source_sha256": "7bdd944df15cb36a663de7221cd96f265a7b7709e875ab61564dcf126eeef219",
+      "locator": "html_jsonld:block=1/node=1/@type",
+      "value_type": "string",
+      "value_sha256": "50acc7c5b2464a36225518e2208d5ab0751377778c0ca9f87f67a9ce7485c8f8"
+    },
+    {
+      "leaf_id": "relationship.publishes_commercial_data_rights.name",
+      "source_id": "CD008-AUTH-S014",
+      "source_sha256": "7bdd944df15cb36a663de7221cd96f265a7b7709e875ab61564dcf126eeef219",
+      "locator": "html_jsonld:block=1/node=1/name",
+      "value_type": "string",
+      "value_sha256": "aff1241d3a295a402ad13c7c8dd4b5fb56497e3aa5c21c783f17dd5440e2d3c4"
+    },
+    {
+      "leaf_id": "relationship.publishes_commercial_data_rights.url",
+      "source_id": "CD008-AUTH-S014",
+      "source_sha256": "7bdd944df15cb36a663de7221cd96f265a7b7709e875ab61564dcf126eeef219",
+      "locator": "html_jsonld:block=1/node=1/url",
+      "value_type": "string",
+      "value_sha256": "0895e3011d792e470afaaa6cd2dd58325f8ed58b3c7ce3755cafc6c16e21715d"
+    },
+    {
+      "leaf_id": "relationship.publishes_commercial_data_rights.version",
+      "source_id": "CD008-AUTH-S014",
+      "source_sha256": "7bdd944df15cb36a663de7221cd96f265a7b7709e875ab61564dcf126eeef219",
+      "locator": "html_jsonld:block=1/node=1/version",
+      "value_type": "string",
+      "value_sha256": "9976f8dfb5b1b01a70346fd75b7644f4cdc8f71299e2cde16f8839cf82a984ea"
+    },
+    {
+      "leaf_id": "rights.x402_conveys",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/x402Conveys",
+      "value_type": "string",
+      "value_sha256": "82d0e020be0efb4c706a97efe0e53d6ba8e3dfb0cf1b81135682d38241bcca71"
+    },
+    {
+      "leaf_id": "rights.x402_does_not_convey",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/x402DoesNotConvey",
+      "value_type": "array",
+      "value_sha256": "2a2014d1a0dfb0785acc243dc4418853e942c206dc0471b5e25c1d24ef5dd144"
+    },
+    {
+      "leaf_id": "rights.commercial_pricing",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/commercialDataRights/pricing",
+      "value_type": "string",
+      "value_sha256": "5557584653ae3041fe6fb78de8c32d7ac29d9755922cb8a0cdbe920b7e76326b"
+    },
+    {
+      "leaf_id": "rights.commercial_requires_written_agreement",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/commercialDataRights/requiresWrittenAgreement",
+      "value_type": "boolean",
+      "value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "leaf_id": "rights.commercial_url",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/commercialDataRights/url",
+      "value_type": "string",
+      "value_sha256": "0895e3011d792e470afaaa6cd2dd58325f8ed58b3c7ce3755cafc6c16e21715d"
+    },
+    {
+      "leaf_id": "rights.framework_pricing",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/frameworkImplementationRights/pricing",
+      "value_type": "string",
+      "value_sha256": "dd98c0e235e75e6eb8783a5e92e7423ef13a3f195112662ae8d8264e199fbfce"
+    },
+    {
+      "leaf_id": "rights.framework_separate_from_retrieval",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/frameworkImplementationRights/separateFromRetrieval",
+      "value_type": "boolean",
+      "value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+    },
+    {
+      "leaf_id": "rights.framework_url",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "locator": "/rightsBoundary/frameworkImplementationRights/url",
+      "value_type": "string",
+      "value_sha256": "4bb303c6c00854df66b3653cfc14495c55f1429ffe9cc0b015c88aeee08c7554"
+    }
+  ],
+  "binding_support": [
+    {
+      "relationship_id": "has_professional_archive",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/humanAuthority/professionalArchive",
+      "value_type": "object",
+      "value_sha256": "c766966fa29d8596dc9c18c30f1debb864df37a4eb6ec06b6c44e4c25151459c"
+    },
+    {
+      "relationship_id": "has_reference_implementation",
+      "source_id": "CD008-AUTH-S005",
+      "source_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "json_pointer": "/referenceImplementation",
+      "value_type": "object",
+      "value_sha256": "4b25b1993ac1d570f5528479620be6645eac31c5b9fece07e27ab56638cf7cbb"
+    },
+    {
+      "relationship_id": "authored_framework",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/governance/framework",
+      "value_type": "string",
+      "value_sha256": "642e196a2b2deeda5d96aab6326c7c9efb4d740ec3b560f4662a6513e547a2d8"
+    },
+    {
+      "relationship_id": "governed_by_mrd",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/mrdAuthority",
+      "value_type": "object",
+      "value_sha256": "109303f8d269f89342db7ddc54643858d929f95e01133dd8f5161bd4df6b1c5d"
+    },
+    {
+      "relationship_id": "has_discovery_index",
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "json_pointer": "/websiteUrl",
+      "value_type": "string",
+      "value_sha256": "2640a19c047aba61cf05f03ce6d5dcb2ba81b3fcbb076e99e987649f9564ef7a"
+    },
+    {
+      "relationship_id": "publishes_ai_catalog",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/discovery/aiCatalog",
+      "value_type": "string",
+      "value_sha256": "c7df105416c4ee3293e7437aaf529782ccbc7672afa9e295b0a22cf258533af8"
+    },
+    {
+      "relationship_id": "publishes_x402_pricing",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/discovery/x402Pricing",
+      "value_type": "string",
+      "value_sha256": "a416852ba00553939df7213632bcc76dfbe9f4d91cb2479d727a5d4793d527ed"
+    },
+    {
+      "relationship_id": "operates_mcp_server",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/mcpServer",
+      "value_type": "object",
+      "value_sha256": "e64b1fb21f7ac386d22605f696327c1250f51f3dde6408c0f2f3b0900be21835"
+    },
+    {
+      "relationship_id": "resolved_by_rrip",
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/machineInfrastructure/rrip",
+      "value_type": "string",
+      "value_sha256": "c93f8f51ea716bfc1b1a177cc0ce849a09cc5b0b55c49a2c139da63281ecf80e"
+    },
+    {
+      "relationship_id": "publishes_commercial_data_rights",
+      "source_id": "CD008-AUTH-S008",
+      "source_sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "json_pointer": "/rightsBoundary/commercialDataRights/url",
+      "value_type": "string",
+      "value_sha256": "0895e3011d792e470afaaa6cd2dd58325f8ed58b3c7ce3755cafc6c16e21715d"
+    }
+  ],
+  "corroboration_support": [
+    {
+      "source_id": "CD008-AUTH-S009",
+      "source_sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "json_pointer": "/_meta/com.robbiegeorgephotography~1x402/rightsBoundary",
+      "value_type": "string",
+      "value_sha256": "1503ff3840b9b4fc323e0ebe1367ba374133b6b952a512c9305e95dc93e20634"
+    },
+    {
+      "source_id": "CD008-AUTH-S012",
+      "source_sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "json_pointer": "/x402/rightsBoundary",
+      "value_type": "string",
+      "value_sha256": "1503ff3840b9b4fc323e0ebe1367ba374133b6b952a512c9305e95dc93e20634"
+    }
+  ],
+  "content_equivalence": {
+    "unique_response_body_count": 13,
+    "duplicate_groups": [
+      {
+        "sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+        "source_ids": [
+          "CD008-AUTH-S005",
+          "CD008-AUTH-S013"
+        ]
+      }
+    ],
+    "duplicate_group_counted_as_independent_support": false
+  },
+  "issues": {
+    "availability": [],
+    "ambiguity": [],
+    "binding": [
+      {
+        "code": "CROSS_SOURCE_BINDING_FAILED",
+        "location": "relationship.has_reference_implementation.binding_check.2"
+      }
+    ]
+  },
+  "next_step_boundary": {
+    "independent_target_construction_protocol_permitted": false,
+    "target_constructed_by_audit": false,
+    "target_construction_performed": false,
+    "model_visible_input_construction_performed": false,
+    "model_measurement_authorized": false,
+    "p2_probe_authorized": false,
+    "p3_retrieval_authorized": false,
+    "x402_payment_authorized": false,
+    "economic_comparison_authorized": false,
+    "production_repair_authorized": false,
+    "recapture_authorized": false
+  },
+  "actions_performed": {
+    "local_authority_audit": true,
+    "network_call": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "target_construction": false,
+    "model_visible_input_construction": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
