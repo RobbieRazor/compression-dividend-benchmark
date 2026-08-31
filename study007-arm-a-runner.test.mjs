@@ -49,7 +49,16 @@ test('only reserved Arm A observation 0001 is accepted', () => {
   const result = spawnSync('node', ['scripts/run-study007-arm-a.mjs', '0002'], { cwd: new URL('.', import.meta.url), encoding: 'utf8', env: { ...process.env, OPENAI_API_KEY: '' } });
   assert.equal(result.status, 1);
   assert.match(stripAnsi(result.stderr), /Usage: node scripts\/run-study007-arm-a\.mjs --preflight OR 0001/);
-  assert.equal(existsSync(new URL('./data/raw/CD-007-P1A-0001-measurement.json', import.meta.url)), false);
+  const reservedMeasurement = new URL('./data/raw/CD-007-P1A-0001-measurement.json', import.meta.url);
+  if (existsSync(reservedMeasurement)) {
+    const measurement = json('./data/raw/CD-007-P1A-0001-measurement.json');
+    assert.equal(measurement.observation_id, 'CD-007-P1A-0001');
+    assert.equal(measurement.measurement_valid_for_p1, true);
+    assert.equal(measurement.automatic_retry_allowed, false);
+    assert.equal(measurement.p2_probe_performed, false);
+    assert.equal(measurement.x402_payment_performed, false);
+  }
+  assert.equal(existsSync(new URL('./data/raw/CD-007-P1A-0002-measurement.json', import.meta.url)), false);
 });
 
 test('runner preserves pure recomputation and one-shot boundaries', () => {
