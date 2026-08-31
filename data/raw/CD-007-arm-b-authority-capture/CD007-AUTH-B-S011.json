@@ -1,0 +1,71 @@
+{
+  "version": "2.1.0",
+  "endpoint": "/api/v2/rrip/resolve",
+  "principle": "Recursive Registry Inheritance Principle",
+  "abbreviation": "RRIP",
+  "architect_of_record": "Robbie George",
+  "framework": "Robbie's Razor",
+  "mode": "canonical-object-resolution",
+  "requested_id": "robbie-george#robbie-george-biography-plate",
+  "normalized_id": "robbie-george#robbie-george-biography-plate",
+  "resolved": true,
+  "match_count": 1,
+  "resolution_source": "Naturepedia Canonical Plate Registry",
+  "registry_state": {
+    "registry_version": "2026.08.30",
+    "canonical_keep_count": 758,
+    "duplicate_removed_count": 33
+  },
+  "plate": {
+    "name": "Robbie George Biography Plate™",
+    "id": "robbie-george#robbie-george-biography-plate",
+    "type": "Naturepedia Biography Plate™",
+    "category": "Biography & Identity Plates",
+    "canonical_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+  },
+  "parent": {
+    "name": "Robbie George Biography Plates",
+    "slug": "robbie-george",
+    "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+    "canonical_preview": "https://www.robbiegeorgephotography.com/v1/plates/robbie-george",
+    "declared_registry_endpoint": "https://www.robbiegeorgephotography.com/v1/plates/robbie-george",
+    "declared_system_map": null,
+    "declared_knowledge_mesh": null
+  },
+  "inheritance": {
+    "plate_id": "robbie-george#robbie-george-biography-plate",
+    "plate_fragment": "robbie-george-biography-plate",
+    "parent_family_slug": "robbie-george",
+    "pathway": [
+      "Plate",
+      "Parent Registry Context",
+      "Declared Higher-Order Resources When Explicitly Registered"
+    ],
+    "boundary": "RRIP resolution does not imply that a Meta-Registry, Graph Registry, Knowledge Mesh, structured payload, or paid retrieval resource exists unless that resource is explicitly implemented and registered."
+  },
+  "resource_availability": {
+    "family_preview": "https://www.robbiegeorgephotography.com/v1/plates/robbie-george",
+    "individual_plate_route": "https://www.robbiegeorgephotography.com/v1/plates/item/robbie-george-biography-plate",
+    "structured_payload_source_declared": true,
+    "structured_payload_status": "source-declared-validation-required",
+    "individual_plate_route_status": "availability-requires-validation",
+    "payment_eligibility": "not-determined-by-rrip",
+    "unavailable_response_when_no_payload": null,
+    "payment_challenge_issued": false
+  },
+  "access_boundary": {
+    "resolver_requires_payment": false,
+    "complete_structured_payload_included": false,
+    "protected_payload_retrieved": false,
+    "settlement_performed": false,
+    "note": "RRIP is a free control-plane resolver. It exposes canonical identity, inheritance context, declared resource paths, and availability signals only. Protected payload retrieval remains a separate resource-specific operation."
+  },
+  "governance": {
+    "principle": "Gr <= Es",
+    "canonical_authority": "GC-MRD-v2.0",
+    "registry_inclusion_is_empirical_validation": false,
+    "payment_is_empirical_validation": false,
+    "resolution_grants_commercial_reuse_rights": false
+  },
+  "status": "resolved"
+}

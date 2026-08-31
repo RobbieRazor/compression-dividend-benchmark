@@ -1,0 +1,160 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "capture_plan_id": "CD007-ARM-B-PUBLIC-AUTHORITY-CAPTURE-1.0",
+  "capture_timestamp_utc": "2026-08-31T11:47:19.554Z",
+  "status": "COMPLETE_PUBLIC_AUTHORITY_CAPTURE_PENDING_INDEPENDENT_REVIEW_AND_FREEZE",
+  "source_count": 11,
+  "all_http_status_200": true,
+  "authorization_header_sent": false,
+  "payment_header_sent": false,
+  "x402_payment_performed": false,
+  "model_api_call_performed": false,
+  "records": [
+    {
+      "source_id": "CD007-AUTH-B-S001",
+      "role": "canonical biography",
+      "requested_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "final_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S001.html",
+      "byte_count": 500877,
+      "sha256": "047b46c1a70e0df8e56584f6930230b148d4e490129964241cda8657a5b3d27d",
+      "response_headers": {
+        "content-type": "text/html; charset=UTF-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S002",
+      "role": "professional evidence",
+      "requested_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "final_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S002.html",
+      "byte_count": 574859,
+      "sha256": "b0d8db9f716b45ac00fe85fdc6853e4991a23c7d7d1d9050b79044ffc2d31de8",
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S003",
+      "role": "Naturepedia reference implementation",
+      "requested_url": "https://www.robbiegeorgephotography.com/naturepedia",
+      "final_url": "https://www.robbiegeorgephotography.com/naturepedia",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S003.html",
+      "byte_count": 458998,
+      "sha256": "294104010af986a22f8884ecb0b9d452b58b1e861486aafcff783100a23cbca7",
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S004",
+      "role": "Robbie's Razor framework authorship",
+      "requested_url": "https://www.robbiegeorgephotography.com/robbies-razor",
+      "final_url": "https://www.robbiegeorgephotography.com/robbies-razor",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S004.html",
+      "byte_count": 474551,
+      "sha256": "89a46c871d19206797623e460efa2c540af5ebdce1d137ff2dc5fe298dcec8cb",
+      "response_headers": {
+        "content-type": "text/html; charset=UTF-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S005",
+      "role": "GC-MRD-v2.0 governing authority",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S005.json",
+      "byte_count": 7063,
+      "sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S006",
+      "role": "Naturepedia Discovery Index",
+      "requested_url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+      "final_url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S006.html",
+      "byte_count": 431201,
+      "sha256": "6008791a1d7e3790c155c7688d619f69f535d8b29f7df523f04952e496ea9ace",
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S007",
+      "role": "Naturepedia AI Catalog",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S007.json",
+      "byte_count": 45680,
+      "sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S008",
+      "role": "x402 Pricing Manifest",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S008.json",
+      "byte_count": 4980,
+      "sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "response_headers": {
+        "content-type": "application/ld+json; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S009",
+      "role": "Naturepedia MCP Server Card",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S009.json",
+      "byte_count": 3375,
+      "sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S010",
+      "role": "RRIP 2.1.0 descriptor",
+      "requested_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve",
+      "final_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S010.json",
+      "byte_count": 1132,
+      "sha256": "fc4abd115b4f8fdb79d9eedaaffc3f92fbddad7ca294c5b1056448233ca55675",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "x-robbie-rrip-version": "2.1.0"
+      }
+    },
+    {
+      "source_id": "CD007-AUTH-B-S011",
+      "role": "RRIP biography identity resolution",
+      "requested_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve?id=robbie-george%23robbie-george-biography-plate",
+      "final_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve?id=robbie-george%23robbie-george-biography-plate",
+      "http_status": 200,
+      "filename": "CD007-AUTH-B-S011.json",
+      "byte_count": 3188,
+      "sha256": "55d29f65549b6a5ca26b5ce9f030cfe92e4585f2101151b3faf1bfcc8eff9a15",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "x-robbie-rrip-version": "2.1.0",
+        "x-robbie-rrip-resolution": "resolved"
+      }
+    }
+  ]
+}
