@@ -1,0 +1,138 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "policy_id": "CD008-AUTHORITY-COMPLETENESS-1.0",
+  "status": "DESIGN_POLICY_FROZEN_BEFORE_CAPTURE_TARGET_CONSTRUCTION_OR_MEASUREMENT",
+  "purpose": "Determine whether a prospectively captured contemporaneous public authority boundary is internally complete and unambiguous enough to define its own exact governed-state target before target construction or model spending.",
+  "prospective_boundary": {
+    "historical_target_governs_audit": false,
+    "study005_through_007_target_comparison_allowed": false,
+    "new_target_may_exist_before_completeness_pass": false,
+    "model_call_allowed_before_completeness_pass": false,
+    "production_repair_allowed_after_audit": false,
+    "recapture_allowed_after_audit": false
+  },
+  "audit_unit": {
+    "primary_unit": "GOVERNED_TARGET_LEAF_AND_RELATIONSHIP_BINDING",
+    "all_required_units_must_pass": true,
+    "semantic_equivalence_counts_as_exact_support": false,
+    "partial_credit_changes_primary_decision": false,
+    "cross_source_support_allowed_only_when_binding_is_explicit": true,
+    "missing_value_invention_allowed": false
+  },
+  "required_graph_components": [
+    "subject identity",
+    "canonical identifiers",
+    "relationship labels",
+    "exact relationship target values",
+    "exact target-field placement",
+    "entity types",
+    "roles",
+    "versions",
+    "canonical URLs",
+    "provenance bindings",
+    "retrieval and usage rights"
+  ],
+  "required_leaf_support_record": {
+    "source_artifact_id": true,
+    "source_sha256": true,
+    "source_location_or_deterministic_extraction_rule": true,
+    "canonical_selection_rule": true,
+    "governing_source_explanation": true,
+    "exact_case_sensitive_value": true,
+    "relationship_binding": true,
+    "field_binding": true
+  },
+  "governing_source_rules": {
+    "public_https_capture_required": true,
+    "captured_bytes_must_be_immutable": true,
+    "source_hash_must_verify": true,
+    "source_must_be_inside_frozen_capture_manifest": true,
+    "value_must_be_explicit": true,
+    "field_role_must_be_explicit_or_deterministically_bound": true,
+    "container_metadata_cannot_substitute_for_target_value": true,
+    "descriptive_prose_cannot_override_governed_field": true,
+    "alternate_ontology_label_allowed": false,
+    "paraphrase_allowed": false,
+    "shortened_identifier_allowed": false,
+    "relocated_value_allowed": false,
+    "omitted_meaningful_mark_allowed": false
+  },
+  "ambiguity_rules": {
+    "multiple_candidates_require_frozen_premeasurement_selection_rule": true,
+    "unresolved_conflict_causes_completeness_failure": true,
+    "silent_source_preference_allowed": false,
+    "post_target_selection_rule_allowed": false,
+    "post_output_selection_rule_allowed": false,
+    "ambiguity_may_be_hidden_by_semantic_similarity": false
+  },
+  "capture_eligibility_requirements": {
+    "capture_protocol_frozen_before_network_activity": true,
+    "approved_source_list_frozen_before_capture": true,
+    "public_https_only": true,
+    "authorization_header_allowed": false,
+    "api_key_allowed": false,
+    "payment_header_allowed": false,
+    "paid_route_allowed": false,
+    "non_200_response_allowed": false,
+    "unexpected_content_type_allowed": false,
+    "overwrite_existing_capture_allowed": false,
+    "capture_hash_verification_required": true,
+    "secret_scan_required_before_commit": true
+  },
+  "primary_decision_rule": {
+    "pass_label": "AUTHORITY_COMPLETE_AND_UNAMBIGUOUS_FOR_INDEPENDENT_TARGET_CONSTRUCTION",
+    "fail_availability_label": "AUTHORITY_AVAILABILITY_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "fail_ambiguity_label": "AUTHORITY_AMBIGUITY_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "pass_requires_every_required_graph_component": true,
+    "pass_requires_every_target_leaf_supported": true,
+    "pass_requires_every_relationship_and_field_binding_supported": true,
+    "pass_requires_zero_unresolved_conflicts": true,
+    "pass_requires_all_capture_hashes_verified": true
+  },
+  "failure_stopping_rule": {
+    "construct_target": false,
+    "construct_model_visible_input": false,
+    "perform_model_api_call": false,
+    "automatic_retry": false,
+    "repair_production_within_study": false,
+    "recapture_within_study": false,
+    "perform_p2_probe": false,
+    "perform_p3_retrieval": false,
+    "perform_x402_payment": false,
+    "perform_economic_comparison": false
+  },
+  "pass_next_step_boundary": {
+    "next_allowed_artifact": "INDEPENDENT_TARGET_CONSTRUCTION_PROTOCOL_AND_LEAF_PROVENANCE_MAP",
+    "target_values_must_derive_only_from_frozen_capture": true,
+    "historical_target_import_allowed": false,
+    "model_measurement_immediately_authorized": false,
+    "quality_contract_still_required": true,
+    "evaluator_still_required": true,
+    "model_visible_input_freeze_still_required": true,
+    "p1_preregistration_still_required": true
+  },
+  "diagnostic_reporting": {
+    "component_counts_allowed": true,
+    "leaf_support_counts_allowed": true,
+    "ambiguity_counts_allowed": true,
+    "partial_counts_change_primary_decision": false,
+    "authority_architecture_result_may_be_reported": true,
+    "model_behavior_claim_allowed_without_measurement": false,
+    "compression_dividend_claim_allowed": false
+  },
+  "actions_performed": {
+    "capture_protocol_created": false,
+    "network_capture": false,
+    "authority_audit": false,
+    "target_construction": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}

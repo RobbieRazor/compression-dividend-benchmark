@@ -1,0 +1,199 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "module_id": "CD008-PROSPECTIVE-GOVERNED-STATE-001",
+  "manifest_id": "CD008-DESIGN-FREEZE-1.0",
+  "status": "DESIGN_ONLY_FROZEN_BEFORE_CAPTURE_TARGET_CONSTRUCTION_OR_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-31T00:00:00Z",
+  "purpose": "Prospectively test exact reconstruction only after a contemporaneous public machine-readable authority boundary is frozen, proven internally complete, and used to construct an independent hidden target.",
+  "predecessor_evidence": {
+    "study007_closure": {
+      "path": "data/CD-WORKLOAD-20260831-007-FINAL-SUMMARY.json",
+      "sha256": "2fa8af4ed32435354af9d90b9e11a9a13e3c7d3d1d69652e829733ef2a6a1b62",
+      "commit": "25cfcc36fbeebc58b961e42c328986ccdda67560"
+    },
+    "study007_comparative_adjudication": {
+      "path": "data/raw/CD-007-comparative-adjudication.json",
+      "sha256": "33fa586d4253b34dbb170ca25bec480284942bc17b142d5e77179e3f96121e96",
+      "commit": "40b6643c2bbf8dba00a51c4434ff808dba70cc3e"
+    },
+    "study007_arm_b_availability_audit": {
+      "path": "data/CD-WORKLOAD-20260831-007-arm-b-authority-availability-audit.json",
+      "sha256": "c1bbd9a405350d4dfd2ccf89932a6060bcf62103bd6964c523e556fa539814ff",
+      "commit": "c2696bb781417d9e472a2b6d758588dec071c585"
+    },
+    "study006_closure": {
+      "path": "data/CD-WORKLOAD-20260830-006-FINAL-SUMMARY.json",
+      "sha256": "e4c6ef7b9548f1fdfa3ef3cdbf60b89d2d99e7f303b5e35eea0b882086bc1cb7",
+      "commit": "5885fe1612cddd744bdbeb579db5e42000642257"
+    },
+    "study003_closure": {
+      "path": "data/CD-WORKLOAD-20260829-003-FINAL-SUMMARY.json",
+      "sha256": "5bde7bea1032b8b26c55a1cf9b458d7e11bc17d3952c1fc7ca321ead25300499",
+      "commit": "78ff97b6b03761911ed2b4027438c78a125d2ae1"
+    },
+    "study007_outcome": "QUALITY_CENSORED_ZERO_INSTRUCTION_GAIN_AND_ARM_B_AUTHORITY_UNAVAILABLE",
+    "study007_arm_a_relationship_target_facts_pass": 38,
+    "study007_arm_a_relationship_target_facts_total": 52,
+    "study007_arm_b_authority_values_available": 46,
+    "study007_arm_b_authority_values_total": 52,
+    "study007_arm_b_missing_values": 6,
+    "study007_cost_inherited_as_accepted_baseline": false,
+    "study006_cost_inherited_as_accepted_baseline": false,
+    "study003_last_quality_equivalent_anchor_path": "P2",
+    "study003_last_quality_equivalent_anchor_cost_usd": "0.00111572"
+  },
+  "frozen_design_artifacts": {
+    "workload_design": {
+      "path": "WORKLOAD-CD-20260831-008.md",
+      "sha256": "abdca0cdfa04ac7c24c19e358bfccdc86417340e37d968e83482cbea37e438f1"
+    },
+    "authority_completeness_policy": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-completeness-policy.json",
+      "sha256": "6e6fbf1098dc5d962c20c086371442dcea3f388034d97692f820af26182a87b0"
+    }
+  },
+  "prospective_design": {
+    "causal_question": "Can fresh recomputation exactly reconstruct governed canonical graph state when every required value and relationship binding is explicitly available in a complete contemporaneous authority boundary?",
+    "authority_must_be_frozen_before_target_construction": true,
+    "authority_completeness_must_pass_before_target_construction": true,
+    "target_must_be_constructed_only_from_frozen_authority": true,
+    "historical_target_governs_new_target": false,
+    "study005_through_007_target_reuse_allowed": false,
+    "production_tuning_after_target_inspection_allowed": false,
+    "capture_repair_after_completeness_failure_allowed": false,
+    "target_relaxation_after_model_output_allowed": false
+  },
+  "required_phase_order": [
+    "DESIGN_FREEZE",
+    "CAPTURE_PROTOCOL_FREEZE",
+    "CONTEMPORANEOUS_AUTHORITY_CAPTURE",
+    "CAPTURE_VERIFICATION_AND_IMMUTABILITY_FREEZE",
+    "AUTHORITY_COMPLETENESS_AUDIT",
+    "INDEPENDENT_TARGET_CONSTRUCTION",
+    "QUALITY_CONTRACT_AND_EVALUATOR_FREEZE",
+    "MODEL_VISIBLE_INPUT_AND_RUNNER_FREEZE",
+    "P1_READ_ONLY_PREFLIGHT",
+    "ONE_P1_INITIAL_FEASIBILITY_OBSERVATION",
+    "STRICT_LOCAL_EVALUATION",
+    "PREREGISTERED_STOPPING_DECISION"
+  ],
+  "authority_boundary": {
+    "policy_id": "CD008-AUTHORITY-COMPLETENESS-1.0",
+    "public_https_only": true,
+    "nonpaying_capture_required": true,
+    "authorization_header_allowed": false,
+    "api_key_allowed": false,
+    "payment_header_allowed": false,
+    "paid_route_allowed": false,
+    "capture_protocol_must_precede_network_activity": true,
+    "capture_must_precede_completeness_audit": true,
+    "completeness_audit_must_precede_target": true,
+    "historical_target_comparison_allowed": false,
+    "failure_censors_before_model_spending": true
+  },
+  "target_construction_boundary": {
+    "construction_authorized_now": false,
+    "new_target_required": true,
+    "source_artifact_id_required_per_leaf": true,
+    "source_sha256_required_per_leaf": true,
+    "source_location_or_extraction_rule_required_per_leaf": true,
+    "canonical_selection_rule_required_per_leaf": true,
+    "governing_source_explanation_required_per_leaf": true,
+    "relationship_and_field_binding_required_per_leaf": true,
+    "value_import_from_historical_target_allowed": false
+  },
+  "future_visibility_boundary": {
+    "model_may_see_after_later_freeze": [
+      "neutral task",
+      "neutral schema",
+      "neutral canonical-preservation rules",
+      "neutral source-grounding rules",
+      "frozen contemporaneous authority evidence"
+    ],
+    "always_hidden": [
+      "completed hidden target",
+      "target-construction mapping",
+      "Quality Contract",
+      "evaluator implementation and output",
+      "Study 004 through 007 failed-field diagnostics",
+      "prior rejected model outputs",
+      "protected P3 payload",
+      "expected output",
+      "exact failure locations"
+    ]
+  },
+  "quality_and_sampling_boundary": {
+    "complete_quality_gate_required": true,
+    "exact_schema_required": true,
+    "exact_subject_required": true,
+    "exact_relationship_count_and_labels_required": true,
+    "exact_target_field_placement_required": true,
+    "exact_target_values_required": true,
+    "exact_provenance_required": true,
+    "exact_rights_required": true,
+    "semantic_similarity_changes_primary_pass": false,
+    "partial_credit_changes_primary_pass": false,
+    "maximum_initial_feasibility_observations": 1,
+    "automatic_retry_allowed": false,
+    "one_passing_observation_establishes_stable_cost": false,
+    "p2_allowed_before_quality_equivalent_p1": false,
+    "p3_allowed_before_quality_equivalent_p1": false,
+    "economic_comparison_allowed_now": false
+  },
+  "failure_stopping_rules": {
+    "authority_incomplete": "STOP_BEFORE_TARGET_CONSTRUCTION_OR_MODEL_MEASUREMENT",
+    "authority_ambiguous": "STOP_BEFORE_TARGET_CONSTRUCTION_OR_MODEL_MEASUREMENT",
+    "p1_complete_gate_failure": "PRESERVE_RESULT_STOP_WITHOUT_RETRY_P2_P3_OR_ECONOMICS",
+    "p1_complete_gate_pass": "INITIAL_FEASIBILITY_ONLY_DESIGN_SEPARATE_COST_CALIBRATION",
+    "production_repair_within_study_allowed": false,
+    "quality_contract_relaxation_allowed": false
+  },
+  "current_freeze_state": {
+    "workload_design_frozen": true,
+    "authority_completeness_policy_frozen": true,
+    "capture_source_list_frozen": false,
+    "capture_protocol_frozen": false,
+    "live_authority_captured": false,
+    "capture_immutable": false,
+    "authority_completeness_audited": false,
+    "authority_completeness_passed": false,
+    "hidden_target_constructed": false,
+    "quality_contract_frozen": false,
+    "evaluator_frozen": false,
+    "model_visible_input_frozen": false,
+    "provider_frozen": false,
+    "runner_frozen": false,
+    "measurement_authorized": false
+  },
+  "actions_performed": {
+    "network_capture": false,
+    "api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_artifact": {
+    "type": "PUBLIC_NONPAYING_AUTHORITY_CAPTURE_PROTOCOL_FREEZE",
+    "requirements": [
+      "select and freeze the exact approved public HTTPS source list",
+      "record expected content types and redirect boundaries",
+      "refuse overwrite",
+      "record timestamps URLs statuses content types byte counts and SHA-256 hashes",
+      "fail closed on non-200 or unexpected content",
+      "send no API key authorization header payment header or x402 payment",
+      "perform no model request",
+      "test secret-scan commit and push before live capture"
+    ],
+    "network_capture_allowed_by_current_freeze": false,
+    "model_api_call_allowed": false,
+    "automatic_retry_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_retrieval_allowed": false,
+    "x402_payment_allowed": false
+  }
+}
