@@ -1,0 +1,508 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "graph_schema_id": "CD008-PROSPECTIVE-GOVERNED-GRAPH-SCHEMA-1.0",
+  "status": "SCHEMA_AND_SELECTORS_FROZEN_BEFORE_COMPLETENESS_AUDIT_OR_TARGET_CONSTRUCTION",
+  "purpose": "Define one prospectively governed subject graph from the contemporaneous capture without importing the Study 005 through 007 hidden target.",
+  "capture_freeze": {
+    "path": "data/CD-WORKLOAD-20260831-008-authority-capture-freeze.json",
+    "sha256": "205bc9d3c3b81710976638538726c923af5087691b5e5222b0e267f354eda403",
+    "commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+  },
+  "graph_shape": {
+    "subject_count": 1,
+    "relationship_count": 10,
+    "rights_boundary_count": 1,
+    "all_relationships_required": true,
+    "extra_relationships_allowed": false,
+    "partial_graph_pass_allowed": false
+  },
+  "source_native_type_policy": {
+    "json_ld_entity": "Use the exact @type value.",
+    "json_schema_governed_entity": "Use the exact $schema URI as source-native type evidence.",
+    "direct_machine_document": "Use the exact explicit documentType or mode field.",
+    "ontology_inference_allowed": false,
+    "alternate_type_label_allowed": false
+  },
+  "subject": {
+    "subject_key": "robbie_george",
+    "canonical_authority_binding": {
+      "source_id": "CD008-AUTH-S012",
+      "pointer": "/humanAuthority/biography",
+      "required_role": "Canonical biographical and entity-identity authority"
+    },
+    "identity_selector": {
+      "source_id": "CD008-AUTH-S001",
+      "kind": "html_jsonld_node",
+      "predicates": {
+        "@type": "Person",
+        "@id": "https://www.robbiegeorgephotography.com/#person-robbie-george"
+      },
+      "required_match_count": 1
+    },
+    "required_fields": {
+      "canonical_id": {
+        "source_id": "CD008-AUTH-S001",
+        "selector_field": "@id",
+        "expected_type": "string"
+      },
+      "entity_type": {
+        "source_id": "CD008-AUTH-S001",
+        "selector_field": "@type",
+        "expected_type": "string"
+      },
+      "name": {
+        "source_id": "CD008-AUTH-S001",
+        "selector_field": "name",
+        "expected_type": "string"
+      },
+      "url": {
+        "source_id": "CD008-AUTH-S001",
+        "selector_field": "url",
+        "expected_type": "string"
+      },
+      "plate_id": {
+        "source_id": "CD008-AUTH-S011",
+        "json_pointer": "/plate/id",
+        "expected_type": "string"
+      },
+      "plate_name": {
+        "source_id": "CD008-AUTH-S011",
+        "json_pointer": "/plate/name",
+        "expected_type": "string"
+      },
+      "plate_type": {
+        "source_id": "CD008-AUTH-S011",
+        "json_pointer": "/plate/type",
+        "expected_type": "string"
+      },
+      "plate_canonical_url": {
+        "source_id": "CD008-AUTH-S011",
+        "json_pointer": "/plate/canonical_url",
+        "expected_type": "string"
+      }
+    },
+    "cross_source_checks": [
+      {
+        "check_id": "SUBJECT_URL_EQUALS_PLATE_CANONICAL_URL",
+        "left": {
+          "source_id": "CD008-AUTH-S001",
+          "selector_field": "url"
+        },
+        "right": {
+          "source_id": "CD008-AUTH-S011",
+          "json_pointer": "/plate/canonical_url"
+        },
+        "comparison": "exact"
+      },
+      {
+        "check_id": "SUBJECT_NAME_EQUALS_AI_ROOT_CREATOR_NAME",
+        "left": {
+          "source_id": "CD008-AUTH-S001",
+          "selector_field": "name"
+        },
+        "right": {
+          "source_id": "CD008-AUTH-S012",
+          "json_pointer": "/creator/name"
+        },
+        "comparison": "exact"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "relationship_id": "has_professional_archive",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/humanAuthority/professionalArchive"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S002",
+        "kind": "html_jsonld_node",
+        "predicates": {
+          "@type": "CollectionPage",
+          "@id": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition#webpage"
+        },
+        "required_match_count": 1
+      },
+      "required_fields": {
+        "canonical_id": "@id",
+        "entity_type": "@type",
+        "name": "name",
+        "url": "url"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/humanAuthority/professionalArchive/url",
+          "target_field": "url",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": false
+    },
+    {
+      "relationship_id": "has_reference_implementation",
+      "binding": {
+        "source_id": "CD008-AUTH-S005",
+        "json_pointer": "/referenceImplementation"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S003",
+        "kind": "html_jsonld_node",
+        "predicates": {
+          "@type": "CreativeWorkSeries",
+          "@id": "https://www.robbiegeorgephotography.com/naturepedia#series"
+        },
+        "required_match_count": 1
+      },
+      "required_fields": {
+        "canonical_id": "@id",
+        "entity_type": "@type",
+        "name": "name",
+        "url": "url"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/referenceImplementation/url",
+          "target_field": "url",
+          "comparison": "exact"
+        },
+        {
+          "binding_pointer": "/referenceImplementation/name",
+          "target_field": "name",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": false
+    },
+    {
+      "relationship_id": "authored_framework",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/governance/framework"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S004",
+        "kind": "html_jsonld_node",
+        "predicates": {
+          "@type": "DefinedTerm",
+          "@id": "https://www.robbiegeorgephotography.com/robbies-razor#defined-term"
+        },
+        "required_match_count": 1
+      },
+      "required_fields": {
+        "canonical_id": "@id",
+        "entity_type": "@type",
+        "name": "name",
+        "url": "url"
+      },
+      "required_binding_checks": [],
+      "version_required": false
+    },
+    {
+      "relationship_id": "governed_by_mrd",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/mrdAuthority"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S005",
+        "kind": "json_root"
+      },
+      "required_fields": {
+        "canonical_id": "/identifier",
+        "entity_type": "/documentType",
+        "name": "/name",
+        "url": "/canonicalUrl",
+        "version": "/version"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/mrdAuthority/identifier",
+          "target_pointer": "/identifier",
+          "comparison": "exact"
+        },
+        {
+          "binding_pointer": "/mrdAuthority/version",
+          "target_pointer": "/version",
+          "comparison": "exact"
+        },
+        {
+          "binding_pointer": "/mrdAuthority/canonicalUrl",
+          "target_pointer": "/canonicalUrl",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": true
+    },
+    {
+      "relationship_id": "has_discovery_index",
+      "binding": {
+        "source_id": "CD008-AUTH-S009",
+        "json_pointer": "/websiteUrl"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S006",
+        "kind": "html_jsonld_node",
+        "predicates": {
+          "@type": "WebPage",
+          "@id": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index#webpage"
+        },
+        "required_match_count": 1
+      },
+      "required_fields": {
+        "canonical_id": "@id",
+        "entity_type": "@type",
+        "name": "name",
+        "url": "url"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/websiteUrl",
+          "target_field": "url",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": false
+    },
+    {
+      "relationship_id": "publishes_ai_catalog",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/discovery/aiCatalog"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S007",
+        "kind": "json_root"
+      },
+      "required_fields": {
+        "canonical_id": "/catalog/id",
+        "entity_type": "/$schema",
+        "name": "/catalog/name",
+        "url": {
+          "source_id": "CD008-AUTH-S012",
+          "json_pointer": "/discovery/aiCatalog"
+        },
+        "version": "/version",
+        "status": "/catalog/status"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/discovery/aiCatalog",
+          "target_field": "url",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": true
+    },
+    {
+      "relationship_id": "publishes_x402_pricing",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/discovery/x402Pricing"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S008",
+        "kind": "json_root"
+      },
+      "required_fields": {
+        "canonical_id": "/@id",
+        "entity_type": "/@type",
+        "name": "/name",
+        "url": "/@id",
+        "version": "/version"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/discovery/x402Pricing",
+          "target_pointer": "/@id",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": true
+    },
+    {
+      "relationship_id": "operates_mcp_server",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/mcpServer"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S009",
+        "kind": "json_root"
+      },
+      "required_fields": {
+        "canonical_id": "/name",
+        "entity_type": "/$schema",
+        "name": "/title",
+        "url": "/remotes/0/url",
+        "version": "/version"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/mcpServer/name",
+          "target_pointer": "/name",
+          "comparison": "exact"
+        },
+        {
+          "binding_pointer": "/mcpServer/version",
+          "target_pointer": "/version",
+          "comparison": "exact"
+        },
+        {
+          "binding_pointer": "/mcpServer/endpoint",
+          "target_pointer": "/remotes/0/url",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": true
+    },
+    {
+      "relationship_id": "resolved_by_rrip",
+      "binding": {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/machineInfrastructure/rrip"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S010",
+        "kind": "json_root"
+      },
+      "required_fields": {
+        "canonical_id": "/endpoint",
+        "entity_type": "/mode",
+        "name": "/principle",
+        "url": {
+          "source_id": "CD008-AUTH-S012",
+          "json_pointer": "/machineInfrastructure/rrip"
+        },
+        "version": "/version"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/machineInfrastructure/rrip",
+          "target_field": "url",
+          "comparison": "exact"
+        },
+        {
+          "binding_pointer": "/machineInfrastructure/rrip",
+          "target_pointer": "/endpoint",
+          "comparison": "url_path_equals"
+        }
+      ],
+      "version_required": true
+    },
+    {
+      "relationship_id": "publishes_commercial_data_rights",
+      "binding": {
+        "source_id": "CD008-AUTH-S008",
+        "json_pointer": "/rightsBoundary/commercialDataRights/url"
+      },
+      "target_selector": {
+        "source_id": "CD008-AUTH-S014",
+        "kind": "html_jsonld_node",
+        "predicates": {
+          "@type": "CreativeWork",
+          "@id": "https://www.robbiegeorgephotography.com/commercial-data-license#commercial-data-license-plate",
+          "url": "https://www.robbiegeorgephotography.com/commercial-data-license"
+        },
+        "required_match_count": 1
+      },
+      "required_fields": {
+        "canonical_id": "@id",
+        "entity_type": "@type",
+        "name": "name",
+        "url": "url",
+        "version": "version"
+      },
+      "required_binding_checks": [
+        {
+          "binding_pointer": "/rightsBoundary/commercialDataRights/url",
+          "target_field": "url",
+          "comparison": "exact"
+        }
+      ],
+      "version_required": true
+    }
+  ],
+  "rights_boundary": {
+    "governing_source_id": "CD008-AUTH-S008",
+    "required_fields": {
+      "x402_conveys": {
+        "json_pointer": "/rightsBoundary/x402Conveys",
+        "expected_type": "string"
+      },
+      "x402_does_not_convey": {
+        "json_pointer": "/rightsBoundary/x402DoesNotConvey",
+        "expected_type": "array_of_strings",
+        "minimum_items": 1
+      },
+      "commercial_pricing": {
+        "json_pointer": "/rightsBoundary/commercialDataRights/pricing",
+        "expected_type": "string"
+      },
+      "commercial_requires_written_agreement": {
+        "json_pointer": "/rightsBoundary/commercialDataRights/requiresWrittenAgreement",
+        "expected_type": "boolean"
+      },
+      "commercial_url": {
+        "json_pointer": "/rightsBoundary/commercialDataRights/url",
+        "expected_type": "string"
+      },
+      "framework_pricing": {
+        "json_pointer": "/rightsBoundary/frameworkImplementationRights/pricing",
+        "expected_type": "string"
+      },
+      "framework_separate_from_retrieval": {
+        "json_pointer": "/rightsBoundary/frameworkImplementationRights/separateFromRetrieval",
+        "expected_type": "boolean"
+      },
+      "framework_url": {
+        "json_pointer": "/rightsBoundary/frameworkImplementationRights/url",
+        "expected_type": "string"
+      }
+    },
+    "corroborating_sources": [
+      {
+        "source_id": "CD008-AUTH-S009",
+        "json_pointer": "/_meta/com.robbiegeorgephotography~1x402/rightsBoundary"
+      },
+      {
+        "source_id": "CD008-AUTH-S012",
+        "json_pointer": "/x402/rightsBoundary"
+      }
+    ]
+  },
+  "provenance_requirement": {
+    "every_subject_leaf_requires_source_id_sha256_and_selector_or_pointer": true,
+    "every_relationship_leaf_requires_source_id_sha256_and_selector_or_pointer": true,
+    "every_rights_leaf_requires_source_id_sha256_and_pointer": true,
+    "value_digest_required_during_audit": true,
+    "raw_value_emission_during_audit_allowed": false
+  },
+  "ambiguity_policy": {
+    "every_html_selector_must_match_exactly_one_node": true,
+    "every_json_pointer_must_resolve_exactly": true,
+    "empty_string_allowed": false,
+    "null_allowed": false,
+    "global_boilerplate_may_override_page_specific_authority": false,
+    "duplicate_mrd_alias_counts_as_independent_support": false,
+    "unresolved_conflict_causes_failure": true,
+    "post_audit_selector_change_allowed": false
+  },
+  "historical_boundary": {
+    "study005_through_007_target_loaded": false,
+    "study005_through_007_target_comparison_allowed": false,
+    "historical_failed_values_used": false,
+    "historical_relationship_labels_govern_schema": false
+  },
+  "actions_performed": {
+    "authority_completeness_audit": false,
+    "target_construction": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "audit_plan_id": "CD008-AUTHORITY-COMPLETENESS-AUDIT-1.0",
+  "status": "AUDIT_PROTOCOL_FROZEN_BEFORE_COMPLETENESS_EXECUTION_OR_TARGET_CONSTRUCTION",
+  "purpose": "Determine whether the immutable contemporaneous authority capture completely and unambiguously supports every leaf and relationship binding in the independently frozen prospective graph schema.",
+  "frozen_inputs": {
+    "capture_freeze": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-capture-freeze.json",
+      "sha256": "205bc9d3c3b81710976638538726c923af5087691b5e5222b0e267f354eda403",
+      "commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+    },
+    "capture_manifest": {
+      "path": "data/raw/CD-008-authority-capture/capture-manifest.json",
+      "sha256": "eec1518546b93923014f28b089da1a9e60490721813bd5954455ca8771cad650",
+      "commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+    },
+    "prospective_graph_schema": {
+      "path": "data/CD-WORKLOAD-20260831-008-prospective-graph-schema.json",
+      "sha256": "96c3210bda3420cb392d279bc9045eba2ea1a83d6df4ee26d6df4a4a4abaa150"
+    }
+  },
+  "allowed_evidence": {
+    "capture_manifest": true,
+    "fourteen_exact_captured_response_files": true,
+    "prospective_graph_schema": true,
+    "study005_through_007_hidden_target": false,
+    "study005_through_007_model_outputs": false,
+    "study005_through_007_failed_field_diagnostics": false,
+    "protected_p3_payload": false,
+    "live_recapture": false,
+    "production_lookup": false,
+    "model_inference": false
+  },
+  "audit_scope": {
+    "subject_count": 1,
+    "subject_leaf_count": 8,
+    "relationship_count": 10,
+    "relationship_leaf_count": 47,
+    "rights_boundary_count": 1,
+    "rights_leaf_count": 8,
+    "total_governed_leaf_count": 63,
+    "html_jsonld_selector_count": 6,
+    "json_root_selector_count": 5,
+    "subject_cross_source_check_count": 2,
+    "relationship_binding_check_count": 15,
+    "total_cross_source_check_count": 17,
+    "all_scoped_units_required": true,
+    "partial_credit_changes_primary_decision": false
+  },
+  "deterministic_extraction": {
+    "json_pointer_standard": "RFC6901",
+    "json_pointer_array_indices_allowed": true,
+    "json_pointer_missing_value_fails": true,
+    "html_jsonld_script_type": "application/ld+json",
+    "html_jsonld_block_order": "document order",
+    "html_jsonld_graph_expansion": "A top-level @graph array contributes each object node; a non-graph object contributes one node.",
+    "html_jsonld_parse_failure_fails": true,
+    "html_selector_predicates_are_exact": true,
+    "html_selector_required_match_count": 1,
+    "empty_string_fails": true,
+    "null_fails": true,
+    "unsupported_value_type_fails": true,
+    "normalization_allowed": false,
+    "case_folding_allowed": false,
+    "unicode_substitution_allowed": false,
+    "trademark_omission_allowed": false,
+    "paraphrase_allowed": false,
+    "ontology_inference_allowed": false
+  },
+  "value_digest_policy": {
+    "algorithm": "sha256",
+    "serialization": "UTF-8 bytes of JSON.stringify on the exact extracted value",
+    "raw_values_emitted_by_audit": false,
+    "value_digests_emitted_by_audit": true,
+    "source_id_emitted": true,
+    "source_sha256_emitted": true,
+    "selector_or_pointer_emitted": true,
+    "target_object_constructed_by_audit": false
+  },
+  "binding_check_policy": {
+    "exact": "The two extracted values must be identical under strict JavaScript equality.",
+    "url_path_equals": "The URL pathname of the binding value must exactly equal the extracted relative endpoint string.",
+    "failed_binding_causes_primary_failure": true,
+    "binding_value_normalization_allowed": false,
+    "silent_source_preference_allowed": false
+  },
+  "source_native_type_policy": {
+    "json_ld": "Exact @type",
+    "json_schema": "Exact $schema URI",
+    "direct_document": "Exact documentType or mode",
+    "uniform_schema_org_type_required": false,
+    "type_evidence_required_for_every_relationship": true,
+    "inferred_type_allowed": false
+  },
+  "content_equivalence_policy": {
+    "byte_identical_source_ids": [
+      "CD008-AUTH-S005",
+      "CD008-AUTH-S013"
+    ],
+    "expected_sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+    "count_as_one_unique_content_body": true,
+    "count_as_two_independent_factual_supports": false,
+    "unexpected_additional_duplicate_group_fails": true
+  },
+  "provenance_policy": {
+    "every_leaf_requires_source_id": true,
+    "every_leaf_requires_source_sha256": true,
+    "every_leaf_requires_selector_or_json_pointer": true,
+    "every_leaf_requires_value_digest": true,
+    "every_binding_requires_source_id_and_pointer": true,
+    "source_must_exist_in_capture_manifest": true,
+    "local_bytes_must_match_capture_manifest": true
+  },
+  "primary_decision_rule": {
+    "pass_label": "AUTHORITY_COMPLETE_AND_UNAMBIGUOUS_FOR_INDEPENDENT_TARGET_CONSTRUCTION",
+    "availability_fail_label": "AUTHORITY_AVAILABILITY_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "ambiguity_fail_label": "AUTHORITY_AMBIGUITY_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "binding_fail_label": "AUTHORITY_BINDING_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "pass_requires_63_of_63_governed_leaves": true,
+    "pass_requires_11_of_11_selectors": true,
+    "pass_requires_17_of_17_cross_source_checks": true,
+    "pass_requires_zero_unresolved_ambiguities": true,
+    "pass_requires_all_local_hashes_verified": true,
+    "semantic_equivalence_can_change_failure": false
+  },
+  "audit_output": {
+    "path": "data/CD-WORKLOAD-20260831-008-authority-completeness-audit.json",
+    "overwrite_allowed": false,
+    "write_only_in_audit_mode": true,
+    "preflight_write_allowed": false,
+    "contains_raw_target_values": false,
+    "contains_completed_target": false
+  },
+  "failure_stopping_rule": {
+    "target_construction": false,
+    "model_visible_input_construction": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "recapture": false,
+    "production_repair": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false
+  },
+  "pass_next_step_boundary": {
+    "next_allowed_artifact": "INDEPENDENT_TARGET_CONSTRUCTION_PROTOCOL",
+    "target_construction_immediately_performed_by_audit": false,
+    "audit_must_be_reviewed_tested_secret_scanned_committed_and_pushed": true,
+    "model_measurement_authorized": false,
+    "p2_probe_authorized": false,
+    "p3_retrieval_authorized": false,
+    "x402_payment_authorized": false,
+    "economic_comparison_authorized": false
+  },
+  "execution_modes": {
+    "preflight": {
+      "filesystem_write_allowed": false,
+      "network_allowed": false,
+      "model_api_call_allowed": false,
+      "x402_payment_allowed": false
+    },
+    "audit": {
+      "filesystem_write_scope": "one frozen audit output file only",
+      "network_allowed": false,
+      "model_api_call_allowed": false,
+      "automatic_retry_allowed": false,
+      "x402_payment_allowed": false
+    }
+  },
+  "actions_performed_by_plan_freeze": {
+    "authority_completeness_audit": false,
+    "audit_output_written": false,
+    "target_construction": false,
+    "model_visible_input_construction": false,
+    "network_call": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_action": "Create and test the deterministic local audit runner, run offline preflight, secret-scan, commit, and push the audit protocol before executing the completeness audit."
+}
