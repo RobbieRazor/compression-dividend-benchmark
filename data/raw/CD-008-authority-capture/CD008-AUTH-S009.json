@@ -1,0 +1,61 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "com.robbiegeorgephotography/naturepedia",
+  "title": "Naturepedia Canonical Discovery MCP Server",
+  "description": "Public read-only discovery and canonical resolution for Naturepedia and governed related resources.",
+  "version": "0.1.2",
+  "websiteUrl": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+  "repository": {
+    "source": "github",
+    "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks",
+    "subfolder": "mcp-server"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.robbiegeorgephotography.com/mcp"
+    }
+  ],
+  "_meta": {
+    "com.robbiegeorgephotography/governance": {
+      "governingAuthority": "GC-MRD-v2.0",
+      "benchmarkVersion": "0.2.0",
+      "benchmarkReleaseTag": "benchmarks-v0.2.0",
+      "canonicalBenchmark": "https://www.robbiegeorgephotography.com/robbies-razor-benchmarks",
+      "benchmarkRelease": "https://github.com/RobbieRazor/robbies-razor-benchmarks/releases/tag/benchmarks-v0.2.0",
+      "taggedCitation": "https://github.com/RobbieRazor/robbies-razor-benchmarks/blob/benchmarks-v0.2.0/CITATION.cff",
+      "canonicalPublicationManifest": "https://www.robbiegeorgephotography.com/canonical-publication-manifest.json",
+      "evidenceBoundary": "MCP availability and benchmark metadata do not establish independent empirical validation, universal validity, or model certification."
+    },
+    "com.robbiegeorgephotography/x402": {
+      "pricingManifest": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "network": "eip155:8453",
+      "asset": "USDC",
+      "atomicQuery": {
+        "accessClass": "atomic",
+        "priceUSDC": "0.005",
+        "atomicUnits": "5000",
+        "routeStatus": "active",
+        "routeTemplate": "https://www.robbiegeorgephotography.com/v1/query/atomic/{resource}",
+        "activeRoutes": [
+          "https://www.robbiegeorgephotography.com/v1/query/atomic/robbie-george-biography-plate"
+        ]
+      },
+      "enrichedQuery": {
+        "accessClass": "enriched",
+        "priceUSDC": "0.025",
+        "atomicUnits": "25000",
+        "routeStatus": "active",
+        "routeTemplate": "https://www.robbiegeorgephotography.com/v1/query/enriched/{resource}",
+        "activeRoutes": [
+          "https://www.robbiegeorgephotography.com/v1/query/enriched/robbie-george-biography-plate"
+        ],
+        "resourceClass": "enriched-query",
+        "schemaVersion": "naturepedia.enriched-query.v1",
+        "availabilityPolicy": "Payment challenges are issued only for explicitly registered Enriched Query resources with complete governed deterministic payloads. Known but incomplete resources return 409 without payment. Unknown resources return 404 without payment.",
+        "validationStatus": "Production HTTP 402 challenge verified at 25000 atomic units with gateway tier enriched. No new Enriched USDC settlement or post-settlement Enriched HTTP 200 payload delivery has been performed."
+      },
+      "rightsBoundary": "x402 payment grants one endpoint-level retrieval only and does not grant training, embedding, bulk-ingestion, redistribution, resale, synchronization, private-dataset, derivative-dataset, commercial-implementation, or framework-implementation rights."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "version": "2.1.0",
+  "endpoint": "/api/v2/rrip/resolve",
+  "principle": "Recursive Registry Inheritance Principle",
+  "abbreviation": "RRIP",
+  "architect_of_record": "Robbie George",
+  "framework": "Robbie's Razor",
+  "mode": "descriptor",
+  "usage": {
+    "query_parameter": "id",
+    "example": "/api/v2/rrip/resolve?id=fibonacci%23pisano-periods-constraint-bifurcation-plate",
+    "note": "When a canonical Plate ID contains #, encode the character as %23 in the query string."
+  },
+  "primitive": [
+    "compression",
+    "expression",
+    "memory",
+    "recursion"
+  ],
+  "canonical_pathway": [
+    "Plate",
+    "Registry",
+    "Meta-Registry",
+    "Graph Registry",
+    "Knowledge Mesh"
+  ],
+  "pathway_boundary": "The canonical pathway describes possible RRIP resource layers. It does not imply that every registered Plate has an instantiated Meta-Registry, Graph Registry, Knowledge Mesh, structured payload, or paid resource.",
+  "retrieval_sequence": [
+    "Discovery",
+    "Registry",
+    "Resolution",
+    "Validation",
+    "Conditional Settlement"
+  ],
+  "governance_principle": "Gr <= Es",
+  "status": "active"
+}

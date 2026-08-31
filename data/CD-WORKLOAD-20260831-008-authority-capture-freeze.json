@@ -1,0 +1,101 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "freeze_id": "CD008-CONTEMPORANEOUS-AUTHORITY-CAPTURE-FREEZE-1.0",
+  "status": "CAPTURE_BYTES_REVIEWED_AND_VERIFIED_PENDING_IMMUTABLE_COMMIT",
+  "purpose": "Freeze the exact contemporaneous public authority bytes before any authority-completeness audit, target construction, model-visible input construction, or model measurement.",
+  "protocol_freeze": {
+    "git_head": "cf46ac84839856a5a0db883acae5c5a4a92d3d19",
+    "capture_plan": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-capture-plan.json",
+      "sha256": "dd19b94da30329ba5d3fc89f2e66e7eaee06b48566651e1db95990d880c89130"
+    },
+    "capture_runner": {
+      "path": "scripts/capture-study008-authority.mjs",
+      "sha256": "0782489fc513f21b8a957de38a3220815336f99862efc61adb023cdb6b8f526c"
+    }
+  },
+  "capture_manifest": {
+    "path": "data/raw/CD-008-authority-capture/capture-manifest.json",
+    "sha256": "eec1518546b93923014f28b089da1a9e60490721813bd5954455ca8771cad650"
+  },
+  "capture_result": {
+    "capture_started_utc": "2026-08-31T22:46:49.333Z",
+    "capture_completed_utc": "2026-08-31T22:47:05.246Z",
+    "source_count": 14,
+    "html_response_count": 6,
+    "json_response_count": 8,
+    "total_byte_count": 3129699,
+    "unique_response_sha256_count": 13,
+    "redirect_count": 0,
+    "all_requested_urls_equal_final_urls": true,
+    "all_http_status_200": true,
+    "all_content_types_expected": true,
+    "all_response_hashes_recorded": true,
+    "all_local_response_hashes_verified": true,
+    "all_json_responses_parse": true,
+    "all_html_responses_contain_document_marker": true,
+    "partial_capture_accepted": false,
+    "atomic_publication_completed": true,
+    "secret_scan_completed": true,
+    "secret_scan_pass": true
+  },
+  "content_equivalence_groups": [
+    {
+      "sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "source_ids": [
+        "CD008-AUTH-S005",
+        "CD008-AUTH-S013"
+      ],
+      "interpretation": "The well-known MRD authority URL and publication-manifest alias returned byte-identical canonical content. They are two captured public routes but one unique content body and must not be double-counted as independent factual support."
+    }
+  ],
+  "review_boundary": {
+    "capture_is_target": false,
+    "capture_is_quality_contract": false,
+    "capture_is_evaluator": false,
+    "capture_is_model_visible_automatically": false,
+    "historical_target_comparison_performed": false,
+    "historical_target_governs_review": false,
+    "authority_completeness_claimed": false,
+    "target_construction_authorized_now": false,
+    "model_measurement_authorized_now": false,
+    "economic_comparison_authorized_now": false
+  },
+  "immutability_boundary": {
+    "overwrite_capture_allowed": false,
+    "recapture_within_study_allowed": false,
+    "source_addition_allowed": false,
+    "source_removal_allowed": false,
+    "response_normalization_allowed": false,
+    "response_reformatting_allowed": false,
+    "response_repair_allowed": false,
+    "manifest_mutation_allowed": false
+  },
+  "actions_performed": {
+    "network_capture": true,
+    "capture_attempt_count": 1,
+    "automatic_retry": false,
+    "authorization_header_sent": false,
+    "cookie_header_sent": false,
+    "payment_header_sent": false,
+    "environment_credential_read": false,
+    "model_api_call": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "authority_completeness_audit": false,
+    "target_construction": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  },
+  "next_artifact": {
+    "type": "AUTHORITY_COMPLETENESS_AUDIT_PROTOCOL_AND_DETERMINISTIC_EXTRACTION_RULES",
+    "capture_must_be_committed_before_next_artifact": true,
+    "historical_target_comparison_allowed": false,
+    "target_construction_allowed": false,
+    "model_api_call_allowed": false,
+    "x402_payment_allowed": false
+  }
+}

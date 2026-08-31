@@ -1,0 +1,283 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "capture_plan_id": "CD008-PUBLIC-AUTHORITY-CAPTURE-1.0",
+  "status": "COMPLETE_CONTEMPORANEOUS_AUTHORITY_CAPTURE_PENDING_REVIEW_AND_IMMUTABLE_FREEZE",
+  "capture_started_utc": "2026-08-31T22:46:49.333Z",
+  "capture_completed_utc": "2026-08-31T22:47:05.246Z",
+  "protocol_git_head": "cf46ac84839856a5a0db883acae5c5a4a92d3d19",
+  "capture_plan": {
+    "path": "data/CD-WORKLOAD-20260831-008-authority-capture-plan.json",
+    "sha256": "dd19b94da30329ba5d3fc89f2e66e7eaee06b48566651e1db95990d880c89130"
+  },
+  "capture_runner": {
+    "path": "scripts/capture-study008-authority.mjs",
+    "sha256": "0782489fc513f21b8a957de38a3220815336f99862efc61adb023cdb6b8f526c"
+  },
+  "source_count": 14,
+  "total_byte_count": 3129699,
+  "all_http_status_200": true,
+  "all_content_types_expected": true,
+  "all_response_hashes_recorded": true,
+  "partial_capture_accepted": false,
+  "authorization_header_sent": false,
+  "cookie_header_sent": false,
+  "payment_header_sent": false,
+  "environment_credential_read": false,
+  "automatic_retry_performed": false,
+  "x402_payment_performed": false,
+  "model_api_call_performed": false,
+  "records": [
+    {
+      "source_id": "CD008-AUTH-S001",
+      "role": "canonical biography and subject identity",
+      "requested_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "final_url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "text/html",
+      "filename": "CD008-AUTH-S001.html",
+      "byte_count": 503501,
+      "sha256": "f0033c420c5d5bf14df794afb71a3ee1f54f39f804587db754baa7bfa29c9091",
+      "captured_at_utc": "2026-08-31T22:46:51.931Z",
+      "response_headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S002",
+      "role": "professional evidence and recognition",
+      "requested_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "final_url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "text/html",
+      "filename": "CD008-AUTH-S002.html",
+      "byte_count": 577483,
+      "sha256": "8a142fd401d6be46e2578c54c25e61c29881309a4d41f02a964b90c7713017da",
+      "captured_at_utc": "2026-08-31T22:46:53.879Z",
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S003",
+      "role": "Naturepedia reference implementation",
+      "requested_url": "https://www.robbiegeorgephotography.com/naturepedia",
+      "final_url": "https://www.robbiegeorgephotography.com/naturepedia",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "text/html",
+      "filename": "CD008-AUTH-S003.html",
+      "byte_count": 461622,
+      "sha256": "6f328b444f61f8d24d9ed18077b13292b64e0b09e73ac2dd00198b2c969aef7f",
+      "captured_at_utc": "2026-08-31T22:46:56.420Z",
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S004",
+      "role": "Robbie's Razor framework authority",
+      "requested_url": "https://www.robbiegeorgephotography.com/robbies-razor",
+      "final_url": "https://www.robbiegeorgephotography.com/robbies-razor",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "text/html",
+      "filename": "CD008-AUTH-S004.html",
+      "byte_count": 477175,
+      "sha256": "12327a92d30ae93ac6865513c881e11642d80548cd70c7336c47a6e3a78d693d",
+      "captured_at_utc": "2026-08-31T22:46:58.459Z",
+      "response_headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S005",
+      "role": "GC-MRD-v2.0 governing authority",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S005.json",
+      "byte_count": 7063,
+      "sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "captured_at_utc": "2026-08-31T22:46:58.602Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=300",
+        "x-grand-compression-authority": "GC-MRD-v2.0"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S006",
+      "role": "Naturepedia public discovery index",
+      "requested_url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+      "final_url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "text/html",
+      "filename": "CD008-AUTH-S006.html",
+      "byte_count": 433825,
+      "sha256": "f50359c99715569adce6bb4499f6de3c8f0425d679e34b30ef5acdd0aba0a128",
+      "captured_at_utc": "2026-08-31T22:47:00.634Z",
+      "response_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "cf-cache-status": "DYNAMIC"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S007",
+      "role": "Naturepedia AI Catalog",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S007.json",
+      "byte_count": 45680,
+      "sha256": "f00185412d83b227fb42f62f6ddbac266d2c568f45759048c3f879c8466ae9cd",
+      "captured_at_utc": "2026-08-31T22:47:00.656Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=3600",
+        "x-grand-compression-authority": "GC-MRD-v2.0"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S008",
+      "role": "x402 public pricing and rights manifest",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/ld+json",
+      "filename": "CD008-AUTH-S008.json",
+      "byte_count": 4980,
+      "sha256": "0c84a749f5f0eb1df1e9c5f16987ba30f7646da3fdcd52ae8aa2bdc261cc7d02",
+      "captured_at_utc": "2026-08-31T22:47:00.683Z",
+      "response_headers": {
+        "content-type": "application/ld+json; charset=utf-8",
+        "cache-control": "public, max-age=300"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S009",
+      "role": "Naturepedia MCP Server Card",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S009.json",
+      "byte_count": 3375,
+      "sha256": "b103ffcd22772af631d922752a34031715a66237070bf7c316ec1c24dac659bf",
+      "captured_at_utc": "2026-08-31T22:47:00.707Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=3600",
+        "x-grand-compression-authority": "GC-MRD-v2.0"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S010",
+      "role": "RRIP public protocol descriptor",
+      "requested_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve",
+      "final_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S010.json",
+      "byte_count": 1132,
+      "sha256": "fc4abd115b4f8fdb79d9eedaaffc3f92fbddad7ca294c5b1056448233ca55675",
+      "captured_at_utc": "2026-08-31T22:47:00.730Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=300",
+        "x-robbie-rrip-version": "2.1.0"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S011",
+      "role": "RRIP biography identity resolution",
+      "requested_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve?id=robbie-george%23robbie-george-biography-plate",
+      "final_url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve?id=robbie-george%23robbie-george-biography-plate",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S011.json",
+      "byte_count": 3188,
+      "sha256": "55d29f65549b6a5ca26b5ce9f030cfe92e4585f2101151b3faf1bfcc8eff9a15",
+      "captured_at_utc": "2026-08-31T22:47:00.860Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=300",
+        "x-robbie-rrip-version": "2.1.0",
+        "x-robbie-rrip-resolution": "resolved"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S012",
+      "role": "public AI authority root",
+      "requested_url": "https://www.robbiegeorgephotography.com/.well-known/ai-root.json",
+      "final_url": "https://www.robbiegeorgephotography.com/.well-known/ai-root.json",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S012.json",
+      "byte_count": 38144,
+      "sha256": "19b16cc61ef574c7e155e861920dcbcdb7d7eeca982513312a22355366922171",
+      "captured_at_utc": "2026-08-31T22:47:01.014Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=300",
+        "x-grand-compression-authority": "GC-MRD-v2.0"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S013",
+      "role": "GC-MRD-v2.0 publication manifest",
+      "requested_url": "https://www.robbiegeorgephotography.com/mrd-v2.0-manifest.json",
+      "final_url": "https://www.robbiegeorgephotography.com/mrd-v2.0-manifest.json",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "application/json",
+      "filename": "CD008-AUTH-S013.json",
+      "byte_count": 7063,
+      "sha256": "79bf98dbd31b8e9beffa1b8fab0289fcbfaa7c9999c0154d3da23ef13ccb98b5",
+      "captured_at_utc": "2026-08-31T22:47:01.047Z",
+      "response_headers": {
+        "content-type": "application/json; charset=utf-8",
+        "cache-control": "public, max-age=300",
+        "x-grand-compression-authority": "GC-MRD-v2.0"
+      }
+    },
+    {
+      "source_id": "CD008-AUTH-S014",
+      "role": "public commercial data rights declaration",
+      "requested_url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+      "final_url": "https://www.robbiegeorgephotography.com/commercial-data-license",
+      "redirect_chain": [],
+      "http_status": 200,
+      "observed_content_type": "text/html",
+      "filename": "CD008-AUTH-S014.html",
+      "byte_count": 565468,
+      "sha256": "7bdd944df15cb36a663de7221cd96f265a7b7709e875ab61564dcf126eeef219",
+      "captured_at_utc": "2026-08-31T22:47:05.243Z",
+      "response_headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "cache-control": "max-age=0, private, must-revalidate",
+        "cf-cache-status": "DYNAMIC"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "@id": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+  "name": "Naturepedia™ x402 Retrieval Pricing Manifest",
+  "description": "Deterministic USDC pricing for Naturepedia machine retrieval. x402 payments grant endpoint-level retrieval only and do not grant commercial reuse or framework implementation rights.",
+  "version": "3.0.0",
+  "effectiveDate": "2026-08-17",
+  "status": "active",
+  "paymentProtocol": "x402",
+  "network": "eip155:8453",
+  "asset": "USDC",
+  "assetContract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "decimals": 6,
+  "fixedPriceResponses": true,
+  "priceRangesAllowedIn402Responses": false,
+  "retrievalTiers": [
+    {
+      "accessClass": "discovery",
+      "name": "Free discovery and previews",
+      "priceUSDC": "0.00",
+      "atomicUnits": "0",
+      "routeStatus": "active",
+      "purpose": "Metadata, endpoint descriptions, previews, health, licensing signals, and validation information."
+    },
+    {
+      "accessClass": "atomic",
+      "name": "Atomic canonical query",
+      "priceUSDC": "0.005",
+      "atomicUnits": "5000",
+      "routeStatus": "active",
+      "routeTemplate": "/v1/query/atomic/{resource}",
+      "activeRoutes": [
+        "/v1/query/atomic/robbie-george-biography-plate"
+      ],
+      "availabilityPolicy": "Payment challenges are issued only for explicitly registered Atomic Query resources with complete deterministic payloads. Known but incomplete resources return 409 without payment; unknown resources return 404 without payment.",
+      "purpose": "One narrowly bounded canonical fact, identifier resolution, routing result, or compact canonical answer."
+    },
+    {
+      "accessClass": "enriched",
+      "name": "Enriched relationship query",
+      "priceUSDC": "0.025",
+      "atomicUnits": "25000",
+      "routeStatus": "active",
+      "routeTemplate": "/v1/query/enriched/{resource}",
+      "activeRoutes": [
+        "/v1/query/enriched/robbie-george-biography-plate"
+      ],
+      "availabilityPolicy": "Payment challenges are issued only for explicitly registered Enriched Query resources with complete governed deterministic payloads. Known but incomplete Enriched resources return 409 without payment. Unknown Enriched resources return 404 without payment.",
+      "purpose": "One modest relationship-aware response containing explicitly bounded canonical relationships, provenance, authority references, or related enrichment."
+    },
+    {
+      "accessClass": "single-plate",
+      "name": "Structured Plate™",
+      "priceUSDC": "0.25",
+      "atomicUnits": "250000",
+      "routeStatus": "active",
+      "routeTemplate": "/v1/plates/item/{plate-id}",
+      "activeRoutes": [
+        "/v1/plates/item/commercial-data-license-plate",
+        "/v1/plates/item/commercial-intelligence-pricing-plate",
+        "/v1/plates/item/robbie-george-biography-plate"
+      ],
+      "availabilityPolicy": "Active only for Plates with registered and successfully validated structured payload sources.",
+      "purpose": "One complete structured Plate payload with its registered relationships, citations, provenance, and governance fields."
+    },
+    {
+      "accessClass": "subtree",
+      "name": "Bounded subtree, registry, or System Map",
+      "priceUSDC": "5.00",
+      "atomicUnits": "5000000",
+      "routeStatus": "active",
+      "purpose": "One bounded multi-record registry, taxonomy subtree, identity graph, or System Map retrieval."
+    },
+    {
+      "accessClass": "snapshot",
+      "name": "Full registry or Knowledge Mesh snapshot",
+      "priceUSDC": "25.00",
+      "atomicUnits": "25000000",
+      "routeStatus": "active",
+      "purpose": "One complete registry snapshot, expanded registry, Knowledge Mesh, RRIP payload, or sovereign state resource."
+    }
+  ],
+  "rightsBoundary": {
+    "x402Conveys": "One endpoint-level retrieval of the identified resource.",
+    "x402DoesNotConvey": [
+      "training rights",
+      "embedding rights",
+      "bulk-ingestion rights",
+      "redistribution rights",
+      "synchronization rights",
+      "derivative-dataset rights",
+      "framework implementation rights"
+    ],
+    "commercialDataRights": {
+      "pricing": "1000+ USDC custom",
+      "requiresWrittenAgreement": true,
+      "url": "https://www.robbiegeorgephotography.com/commercial-data-license"
+    },
+    "frameworkImplementationRights": {
+      "pricing": "Custom enterprise agreement",
+      "separateFromRetrieval": true,
+      "url": "https://www.robbiegeorgephotography.com/robbies-razor-framework-licensing"
+    }
+  },
+  "operationalPolicy": {
+    "challengePricesAreDeterministic": true,
+    "paymentRequiredBeforeProtectedDelivery": true,
+    "unavailablePayloadsAreNotCharged": true,
+    "priceReviewWindowDays": 30
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Robbie George",
+    "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george"
+  }
+}

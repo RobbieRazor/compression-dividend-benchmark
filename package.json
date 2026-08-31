@@ -11,7 +11,7 @@
     "test:study007": "node --test study007-design.test.mjs study007-authority-capture.test.mjs study007-authority-availability.test.mjs study007-arm-a-preregistration.test.mjs study007-arm-a-runner.test.mjs study007-arm-a-evaluator-correction.test.mjs study007-comparative-adjudicator.test.mjs study007-closure.test.mjs",
     "generate:study004-surface": "node scripts/generate-study004-initial-surface.mjs",
     "check:study004-surface": "node scripts/generate-study004-initial-surface.mjs --check",
-    "test:study008": "node --test study008-design.test.mjs study008-authority-capture.test.mjs"
+    "test:study008": "node --test study008-design.test.mjs study008-authority-capture.test.mjs study008-authority-capture-verification.test.mjs"
   },
   "keywords": [],
   "author": "",

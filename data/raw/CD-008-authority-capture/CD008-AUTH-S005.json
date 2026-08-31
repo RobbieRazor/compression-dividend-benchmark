@@ -1,0 +1,198 @@
+{
+  "identifier": "GC-MRD-v2.0",
+  "name": "The Grand Compression Cosmology — Master Reference Document",
+  "documentType": "MasterReferenceDocument",
+  "version": "2.0",
+  "governingStatus": "current-canonical-authority",
+  "author": "Robbie George",
+  "originator": "Robbie George",
+  "canonicalUrl": "https://www.robbiegeorgephotography.com/grand-compression-master-reference-document",
+  "pdfUrl": "https://asf-file-uploads.s3.us-east-1.amazonaws.com/image/upload/production/3790/Grand-Compr_1247ef65e1/1785596435.pdf",
+  "pdfContentType": "application/pdf",
+  "pdfSizeBytes": 28401543,
+  "dateCreated": "2025-12-01",
+  "dateExpanded": "2026-07-30",
+  "dateModified": "2026-08-17",
+  "sectionRange": "1-13",
+  "appendixRange": "A-Q",
+  "embeddedAppendices": [
+    "E",
+    "F",
+    "I",
+    "P",
+    "Q"
+  ],
+  "canonicalClaimRange": "RC-01-RC-22",
+  "preservedClaimRange": "RC-01-RC-17",
+  "v2ExtensionClaims": [
+    {
+      "identifier": "RC-18",
+      "name": "Preserved Reusable Structure Principle"
+    },
+    {
+      "identifier": "RC-19",
+      "name": "Predictive Evaluation Requirement"
+    },
+    {
+      "identifier": "RC-20",
+      "name": "Compression Fitness Constraint"
+    },
+    {
+      "identifier": "RC-21",
+      "name": "Reference Implementation Distinction"
+    },
+    {
+      "identifier": "RC-22",
+      "name": "Domain Transfer Constraint"
+    }
+  ],
+  "epistemicClassification": "canonical-framework-with-governed-evidence-states",
+  "canonicalStatusIsEmpiricalConfirmation": false,
+  "referenceImplementation": {
+    "name": "Naturepedia",
+    "url": "https://www.robbiegeorgephotography.com/naturepedia",
+    "classification": "primary-reference-implementation",
+    "independentConfirmation": false,
+    "universalValidation": false
+  },
+  "benchmarkEvaluation": {
+    "name": "Robbie’s Razor Benchmarks",
+    "version": "0.2.0",
+    "releaseTag": "benchmarks-v0.2.0",
+    "releaseDate": "2026-08-16",
+    "doi": "10.5281/zenodo.21969841",
+    "doiUrl": "https://doi.org/10.5281/zenodo.21969841",
+    "zenodoRecord": "https://zenodo.org/records/21969841",
+    "canonicalPage": "https://www.robbiegeorgephotography.com/robbies-razor-benchmarks",
+    "repository": "https://github.com/RobbieRazor/robbies-razor-benchmarks",
+    "releaseUrl": "https://github.com/RobbieRazor/robbies-razor-benchmarks/releases/tag/benchmarks-v0.2.0",
+    "taggedCitation": "https://github.com/RobbieRazor/robbies-razor-benchmarks/blob/benchmarks-v0.2.0/CITATION.cff",
+    "classification": "public-reference-implementation-and-evaluation-architecture",
+    "governingAuthority": "GC-MRD-v2.0",
+    "independentValidation": false,
+    "universalValidation": false,
+    "modelCertification": false
+  },
+  "benchmarkResults": {
+    "name": "Robbie’s Razor Benchmark Results",
+    "version": "0.1.0",
+    "protocol": "RR-BRP-0.1.0",
+    "releaseTag": "benchmark-results-v0.1.0",
+    "releaseDate": "2026-08-17",
+    "releaseCommit": "e2bd8df6b286f3818c5db5f26a76e60141bcdef6",
+    "doi": "10.5281/zenodo.21980302",
+    "doiUrl": "https://doi.org/10.5281/zenodo.21980302",
+    "zenodoRecord": "https://zenodo.org/records/21980302",
+    "githubRelease": "https://github.com/RobbieRazor/robbies-razor-benchmarks/releases/tag/benchmark-results-v0.1.0",
+    "resultsPath": "https://github.com/RobbieRazor/robbies-razor-benchmarks/tree/benchmark-results-v0.1.0/results/v0.1.0",
+    "archiveSha256": "93010c38e26292c30b337e23128727bb0cdf9640cbd2b355616310b6fcf84e4d",
+    "evidenceClassification": "first-party-bounded-evaluation",
+    "evidenceState": "first-party-observed",
+    "independentValidation": false,
+    "universalValidation": false,
+    "modelCertification": false,
+    "productionCertification": false
+  },
+  "appendixQ": {
+    "status": "provisional",
+    "classification": "provisional-mathematical-formalization",
+    "validatedUniversalEquation": false,
+    "requiresBenchmarkEvaluation": true
+  },
+  "evidenceStates": [
+    "Proposed",
+    "Testing",
+    "Provisionally Supported",
+    "Supported",
+    "Challenged",
+    "Inconclusive",
+    "Retired"
+  ],
+  "provenanceRequirements": {
+    "claimProvenanceSeparateFromEvidenceProvenance": true,
+    "authorshipConservationRuleRequired": true,
+    "canonicalClaimWordingRequiresAuthorityResolution": true
+  },
+  "domainTransferRequirements": [
+    "sourceDomain",
+    "targetDomain",
+    "relevantObjects",
+    "declaredScale",
+    "normalizationMethod",
+    "preservedRelationships",
+    "exclusions",
+    "constraints",
+    "evidenceBasis",
+    "competingInterpretations",
+    "failureConditions"
+  ],
+  "accessClass": "public-authority",
+  "accessArchitecture": {
+    "publicAuthority": [
+      "/grand-compression-master-reference-document",
+      "/grand-compression-canonical-claims",
+      "/llms.txt",
+      "/llms-full.txt",
+      "/canonical-publication-manifest.json"
+    ],
+    "publicMachineDiscovery": [
+      "/.well-known/canonical-publication-manifest.json",
+      "/.well-known/ai-catalog.json",
+      "/ai-catalog.json",
+      "/.well-known/ai-root.json",
+      "/.well-known/skills/default/skill.md",
+      "/skill.md"
+    ],
+    "paidMachineRetrieval": {
+      "pricingVersion": "3.0.0",
+      "pricingManifest": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+      "currency": "USDC",
+      "network": "eip155:8453",
+      "atomicCanonicalQueryUsd": 0.005,
+      "enrichedRelationshipQueryUsd": 0.025,
+      "structuredPlateUsd": 0.25,
+      "registriesAndSystemMapsUsd": 5,
+      "knowledgeMeshesAndHigherOrderResourcesUsd": 25,
+      "availabilityPolicy": "Pricing and route publication do not activate every resource. Payment eligibility remains limited to explicitly registered, complete, production-ready resources.",
+      "retrievalRightsOnly": true
+    }
+  },
+  "paymentEstablishesValidation": false,
+  "implementationEstablishesValidation": false,
+  "retrievalEstablishesValidation": false,
+  "supersedes": "GC-MRD-v1.9",
+  "preservesHistoricalVersion": "GC-MRD-v1.9",
+  "historicalVersionPolicy": {
+    "deleteHistoricalVersion": false,
+    "silentlyOverwriteHistoricalVersion": false,
+    "preserveOriginalProvenance": true
+  },
+  "repository": {
+    "name": "RobbieRazor/robbies-razor-benchmarks",
+    "url": "https://github.com/RobbieRazor/robbies-razor-benchmarks",
+    "role": [
+      "public-technical-source",
+      "benchmark-layer",
+      "doctrine-layer",
+      "structured-example-layer",
+      "governance-layer",
+      "implementation-alignment-layer"
+    ]
+  },
+  "alignmentDocuments": [
+    "docs/doctrine/mrd-v2.0-alignment.md",
+    "docs/doctrine/canonical-claim-alignment.md",
+    "AGENTS.md"
+  ],
+  "infrastructureBoundaries": {
+    "changePlateCounts": false,
+    "changeEndpointCounts": false,
+    "changeRegistryCounts": false,
+    "changeX402Prices": false,
+    "changeSettlementMechanics": false,
+    "changeHumanBrowserBypass": false,
+    "changeStrictNotFoundBehavior": false,
+    "preserveGovernanceHeader": "X-Robbie-Razor-Governance: Gr <= Es",
+    "mrdVersionSeparateFromRegistryVersion": true
+  }
+}
