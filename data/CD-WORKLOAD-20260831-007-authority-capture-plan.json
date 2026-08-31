@@ -1,0 +1,123 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "capture_plan_id": "CD007-ARM-B-PUBLIC-AUTHORITY-CAPTURE-1.0",
+  "status": "CAPTURE_PROCEDURE_FROZEN_BEFORE_NETWORK_ACTIVITY",
+  "purpose": "Capture exact public, free post-RRIP 2.1.0 authority bytes for Arm B while preserving Study 006 authority bytes for Arm A.",
+  "arm_a": {
+    "authority_mode": "EXACT_STUDY006_REUSE",
+    "authority_freeze_path": "data/CD-WORKLOAD-20260830-006-authority-target-freeze.json",
+    "authority_freeze_sha256": "4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b",
+    "live_refresh_allowed": false
+  },
+  "arm_b": {
+    "authority_mode": "FRESH_PUBLIC_CAPTURE",
+    "output_directory": "data/raw/CD-007-arm-b-authority-capture",
+    "sources": [
+      {
+        "source_id": "CD007-AUTH-B-S001",
+        "role": "canonical biography",
+        "url": "https://www.robbiegeorgephotography.com/who-is-robbie-george",
+        "media_class": "text/html"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S002",
+        "role": "professional evidence",
+        "url": "https://www.robbiegeorgephotography.com/publications-exhibitions-recognition",
+        "media_class": "text/html"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S003",
+        "role": "Naturepedia reference implementation",
+        "url": "https://www.robbiegeorgephotography.com/naturepedia",
+        "media_class": "text/html"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S004",
+        "role": "Robbie's Razor framework authorship",
+        "url": "https://www.robbiegeorgephotography.com/robbies-razor",
+        "media_class": "text/html"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S005",
+        "role": "GC-MRD-v2.0 governing authority",
+        "url": "https://www.robbiegeorgephotography.com/.well-known/mrd-v2.0.json",
+        "media_class": "application/json"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S006",
+        "role": "Naturepedia Discovery Index",
+        "url": "https://www.robbiegeorgephotography.com/naturepedia-discovery-index",
+        "media_class": "text/html"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S007",
+        "role": "Naturepedia AI Catalog",
+        "url": "https://www.robbiegeorgephotography.com/.well-known/ai-catalog.json",
+        "media_class": "application/json"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S008",
+        "role": "x402 Pricing Manifest",
+        "url": "https://www.robbiegeorgephotography.com/.well-known/x402-pricing.json",
+        "media_class": "application/json"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S009",
+        "role": "Naturepedia MCP Server Card",
+        "url": "https://www.robbiegeorgephotography.com/.well-known/mcp/server-card.json",
+        "media_class": "application/json"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S010",
+        "role": "RRIP 2.1.0 descriptor",
+        "url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve",
+        "media_class": "application/json"
+      },
+      {
+        "source_id": "CD007-AUTH-B-S011",
+        "role": "RRIP biography identity resolution",
+        "url": "https://www.robbiegeorgephotography.com/api/v2/rrip/resolve?id=robbie-george%23robbie-george-biography-plate",
+        "media_class": "application/json"
+      }
+    ]
+  },
+  "capture_policy": {
+    "method": "GET",
+    "redirect": "follow",
+    "accepted_http_statuses": [200],
+    "authorization_header_allowed": false,
+    "cookie_header_allowed": false,
+    "payment_header_allowed": false,
+    "paid_route_allowed": false,
+    "response_body_stored_exactly": true,
+    "response_sha256_required": true,
+    "response_headers_recorded": [
+      "content-type",
+      "etag",
+      "last-modified",
+      "x-robbie-rrip-version",
+      "x-robbie-rrip-resolution"
+    ],
+    "partial_capture_accepted": false,
+    "overwrite_existing_capture_allowed": false
+  },
+  "visibility_boundary": {
+    "raw_capture_model_visible_now": false,
+    "capture_manifest_model_visible_now": false,
+    "future_arm_b_visibility_requires_separate_freeze": true,
+    "target_visible": false,
+    "quality_contract_visible": false,
+    "prior_failure_diagnostics_visible": false,
+    "protected_p3_payload_visible": false
+  },
+  "actions_performed_by_plan_freeze": {
+    "network_capture": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false
+  },
+  "next_action_after_capture": "Review exact response bytes, reject incomplete or paid responses, then freeze Arm A, Arm B, and the common hidden target in a separate immutable artifact."
+}
