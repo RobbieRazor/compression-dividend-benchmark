@@ -8,7 +8,7 @@
     "test:study004": "node --test study004-calculator.test.mjs study004-initial-surface.test.mjs study004-workload-selection.test.mjs study004-authority-target.test.mjs study004-preregistration.test.mjs study004-p1-runner.test.mjs study004-p1-adjudicator.test.mjs study004-closure.test.mjs",
     "test:study005": "node --test study005-design.test.mjs study005-authority-target.test.mjs study005-preregistration.test.mjs study005-p1-runner.test.mjs study005-p1-semantic-adjudicator.test.mjs study005-closure.test.mjs",
     "test:study006": "node --test study006-design.test.mjs study006-authority-target.test.mjs study006-preregistration.test.mjs study006-p1-runner.test.mjs study006-p1-canonical-fidelity-adjudicator.test.mjs study006-closure.test.mjs",
-    "test:study007": "node --test study007-design.test.mjs study007-authority-capture.test.mjs study007-authority-availability.test.mjs study007-arm-a-preregistration.test.mjs study007-arm-a-runner.test.mjs",
+    "test:study007": "node --test study007-design.test.mjs study007-authority-capture.test.mjs study007-authority-availability.test.mjs study007-arm-a-preregistration.test.mjs study007-arm-a-runner.test.mjs study007-arm-a-evaluator-correction.test.mjs",
     "generate:study004-surface": "node scripts/generate-study004-initial-surface.mjs",
     "check:study004-surface": "node scripts/generate-study004-initial-surface.mjs --check"
   },

@@ -1,0 +1,63 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "correction_id": "CD007-P1A-EVALUATOR-RUNTIME-CORRECTION-1.0",
+  "status": "POST_MEASUREMENT_PRE_EVALUATION_INVOCATION_CORRECTION_FROZEN",
+  "defect": "The preregistered evaluator retained the predecessor argument pattern P1/P2/P3 and constructed a CD-006 observation identifier, preventing evaluation of the reserved CD-007-P1A-0001 artifact.",
+  "discovery_boundary": {
+    "measurement_completed": true,
+    "quality_evaluation_started": false,
+    "quality_result_observed": false,
+    "raw_measurement_modified": false,
+    "model_retry_performed": false
+  },
+  "frozen_original": {
+    "path": "scripts/evaluate-study007-arm-a.py",
+    "sha256": "9e3c0ed5330d34c92407d201b8cbfb732df5af255b08a652d8f0e6801ac76444",
+    "modified": false
+  },
+  "corrected_runtime": {
+    "path": "scripts/evaluate-study007-arm-a-runtime-correction.py",
+    "sha256": "c116a14b8e7e2cd01478f56106927699372ccaf2494cb4a30a4d573bd067ac2c",
+    "allowed_argument": "P1A-0001",
+    "resolved_observation_id": "CD-007-P1A-0001"
+  },
+  "allowed_changes": [
+    "replace the predecessor error-label prefix",
+    "accept only P1A-0001 instead of the predecessor P1/P2/P3 pattern",
+    "construct the CD-007 observation prefix instead of CD-006",
+    "update usage text to name the correction script"
+  ],
+  "prohibited_changes": {
+    "quality_contract": true,
+    "hidden_target": true,
+    "comparison_logic": true,
+    "schema_logic": true,
+    "subject_logic": true,
+    "relationship_logic": true,
+    "provenance_logic": true,
+    "rights_logic": true,
+    "primary_gate_logic": true
+  },
+  "pinned_controls": {
+    "task_metadata_path": "data/CD-WORKLOAD-20260831-007-arm-a-task-metadata.json",
+    "task_metadata_sha256": "699b94529d6089b910329daa4ef1ac40e1289477ae0f7b599cc3eee590a9ecce",
+    "quality_contract_path": "data/CD-WORKLOAD-20260831-007-arm-a-quality-contract.json",
+    "quality_contract_sha256": "d3507c1375f4d700a0e9c643d668eba4c739646479db154d096de6b9c9392904"
+  },
+  "authorization": {
+    "corrected_evaluation_allowed": true,
+    "model_retry_allowed": false,
+    "arm_b_measurement_allowed": false,
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "economic_comparison_allowed": false
+  },
+  "actions_performed": {
+    "quality_evaluation": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false
+  }
+}
