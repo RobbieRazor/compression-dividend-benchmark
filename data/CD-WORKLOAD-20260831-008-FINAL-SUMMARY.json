@@ -1,0 +1,220 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-008",
+  "module_id": "CD008-PROSPECTIVE-GOVERNED-STATE-001",
+  "status": "STUDY_COMPLETE",
+  "closure_timestamp_utc": "2026-08-31T23:50:45.677Z",
+  "benchmark_outcome": "AUTHORITY_BINDING_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+  "primary_conclusion": "Study 008 prospectively captured a contemporaneous public authority boundary and found all 63 governed leaf values with unique selectors and provenance. However, one required cross-source canonical binding failed: the governing MRD names the Naturepedia reference implementation as Naturepedia while the canonical Naturepedia page names it Naturepedia™. Because the frozen policy treats the trademark mark as meaningful and forbids normalization, the authority boundary was not internally exact enough to authorize target construction or model measurement.",
+  "methodological_conclusion": "Exact leaf availability is necessary but not sufficient for a governed-state benchmark. A prospective authority package must also bind the same entities consistently across its governing surfaces. Study 008 therefore isolates an authority-coherence failure before target construction, preventing the failure from being misattributed to model behavior.",
+  "economic_conclusion": "No Study 008 requester cost, quality-equivalent baseline, P2 comparison, P3 retrieval, x402 payment, Compression Dividend, pricing change, or economic claim is permitted. Study 003 remains the last measured quality-equivalent economic anchor and is not modified by this result.",
+  "capture_result": {
+    "status": "COMPLETE_CONTEMPORANEOUS_AUTHORITY_CAPTURE_FROZEN",
+    "source_count": 14,
+    "total_byte_count": 3129699,
+    "all_http_status_200": true,
+    "all_content_types_expected": true,
+    "authorization_header_sent": false,
+    "payment_header_sent": false,
+    "automatic_retry_performed": false,
+    "model_api_call_performed": false,
+    "x402_payment_performed": false
+  },
+  "authority_completeness_result": {
+    "audit_id": "CD008-AUTHORITY-COMPLETENESS-AUDIT-1.0",
+    "audit_status": "AUTHORITY_COMPLETENESS_AUDIT_COMPLETE",
+    "primary_decision": "AUTHORITY_BINDING_CENSORED_BEFORE_TARGET_CONSTRUCTION",
+    "authority_complete_and_unambiguous": false,
+    "selector_pass_count": 11,
+    "selector_required_count": 11,
+    "governed_leaf_pass_count": 63,
+    "governed_leaf_count": 63,
+    "relationship_pass_count": 9,
+    "relationship_count": 10,
+    "rights_leaf_pass_count": 8,
+    "rights_leaf_count": 8,
+    "cross_source_check_pass_count": 16,
+    "cross_source_check_count": 17,
+    "unresolved_availability_issue_count": 0,
+    "unresolved_ambiguity_issue_count": 0,
+    "unresolved_binding_issue_count": 1,
+    "raw_target_values_emitted": false,
+    "completed_target_constructed": false
+  },
+  "binding_diagnostic": {
+    "diagnostic_label": "EXACT_REFERENCE_IMPLEMENTATION_NAME_BINDING_FAILURE_FROM_MEANINGFUL_MARK_DIVERGENCE",
+    "relationship_id": "has_reference_implementation",
+    "issue_code": "CROSS_SOURCE_BINDING_FAILED",
+    "issue_location": "relationship.has_reference_implementation.binding_check.2",
+    "governing_mrd_source": "data/raw/CD-008-authority-capture/CD008-AUTH-S005.json",
+    "governing_mrd_pointer": "/referenceImplementation/name",
+    "governing_mrd_value": "Naturepedia",
+    "canonical_page_source": "data/raw/CD-008-authority-capture/CD008-AUTH-S003.html",
+    "canonical_page_value": "Naturepedia™",
+    "url_binding_passed": true,
+    "exact_name_binding_passed": false,
+    "missing_evidence": false,
+    "ambiguous_selector": false,
+    "normalization_allowed": false
+  },
+  "scientific_boundary": {
+    "model_behavior_observed": false,
+    "instruction_effect_estimated": false,
+    "target_constructed": false,
+    "model_visible_input_constructed": false,
+    "authority_availability_failure": false,
+    "authority_ambiguity_failure": false,
+    "authority_binding_failure": true,
+    "production_defect_asserted_beyond_frozen_sources": false,
+    "historical_studies_modified": false
+  },
+  "path_treatment": {
+    "authority_capture": {
+      "performed": true,
+      "accepted": true,
+      "treatment": "IMMUTABLE_CONTEMPORANEOUS_EVIDENCE"
+    },
+    "authority_completeness_audit": {
+      "performed": true,
+      "passed": false,
+      "treatment": "BINDING_CENSORED"
+    },
+    "target_construction": {
+      "performed": false,
+      "authorized": false
+    },
+    "p1": {
+      "measurement_performed": false,
+      "authorized": false,
+      "accepted_quality_equivalent_task": false
+    },
+    "p2": {
+      "probe_performed": false,
+      "authorized": false
+    },
+    "p3": {
+      "retrieval_performed": false,
+      "payment_performed": false,
+      "authorized": false
+    }
+  },
+  "best_quality_equivalent_baseline": {
+    "status": "NONE_MEASURED_FOR_STUDY008",
+    "path": null,
+    "cost_usd": null,
+    "historical_study003_anchor_modified": false
+  },
+  "transition_surface_treatment": {
+    "new_empirical_cost_point_created": false,
+    "new_transition_threshold_established": false,
+    "study003_anchors_modified": false,
+    "classification": "AUTHORITY_BINDING_CENSORED"
+  },
+  "pricing_and_public_claims": {
+    "pricing_change_supported": false,
+    "website_pricing_change_recommended": false,
+    "positive_compression_dividend_claim_supported": false,
+    "negative_compression_dividend_claim_supported_for_study008": false,
+    "architectural_result_supported": "Governed-state reconstruction requires exact cross-surface canonical binding in addition to complete leaf availability."
+  },
+  "recommended_next_study": {
+    "design_goal": "Prospective Exact Authority Binding After Independent Governance Correction",
+    "prerequisite": "Any production governance correction must occur independently of Study 008 and must not be treated as a repair, retry, or recapture within this closed study.",
+    "required_sequence": [
+      "Close Study 008 without target construction or model measurement.",
+      "If independently justified, align the public reference-implementation name across governing authority surfaces.",
+      "Design a new prospective successor study before recapturing authority.",
+      "Freeze a new contemporaneous capture and repeat the full completeness and binding gate.",
+      "Construct a hidden target only if every prospective gate passes."
+    ],
+    "do_not_do": [
+      "Do not alter the Study 008 capture or audit result.",
+      "Do not construct a Study 008 target.",
+      "Do not run a Study 008 model observation.",
+      "Do not retry or recapture Study 008.",
+      "Do not perform Study 008 P2 or P3 activity.",
+      "Do not use this censored result to change pricing or claim a Compression Dividend."
+    ]
+  },
+  "artifact_provenance": {
+    "design": {
+      "path": "WORKLOAD-CD-20260831-008.md",
+      "sha256": "abdca0cdfa04ac7c24c19e358bfccdc86417340e37d968e83482cbea37e438f1",
+      "latest_commit": "7f4ac20de340bc35b930bbd7a70e94610325cec2"
+    },
+    "design_manifest": {
+      "path": "data/CD-WORKLOAD-20260831-008-design-manifest.json",
+      "sha256": "3cffc374b38a6f49b3ed01e8fa2fe8f874e4a2481d34ccd9475e53010f181020",
+      "latest_commit": "7f4ac20de340bc35b930bbd7a70e94610325cec2"
+    },
+    "authority_completeness_policy": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-completeness-policy.json",
+      "sha256": "6e6fbf1098dc5d962c20c086371442dcea3f388034d97692f820af26182a87b0",
+      "latest_commit": "7f4ac20de340bc35b930bbd7a70e94610325cec2"
+    },
+    "capture_plan": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-capture-plan.json",
+      "sha256": "dd19b94da30329ba5d3fc89f2e66e7eaee06b48566651e1db95990d880c89130",
+      "latest_commit": "cf46ac84839856a5a0db883acae5c5a4a92d3d19"
+    },
+    "capture_runner": {
+      "path": "scripts/capture-study008-authority.mjs",
+      "sha256": "0782489fc513f21b8a957de38a3220815336f99862efc61adb023cdb6b8f526c",
+      "latest_commit": "cf46ac84839856a5a0db883acae5c5a4a92d3d19"
+    },
+    "capture_freeze": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-capture-freeze.json",
+      "sha256": "205bc9d3c3b81710976638538726c923af5087691b5e5222b0e267f354eda403",
+      "latest_commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+    },
+    "capture_manifest": {
+      "path": "data/raw/CD-008-authority-capture/capture-manifest.json",
+      "sha256": "eec1518546b93923014f28b089da1a9e60490721813bd5954455ca8771cad650",
+      "latest_commit": "95069a896aa646ea529cf3b3eb0c6fadc1580960"
+    },
+    "prospective_graph_schema": {
+      "path": "data/CD-WORKLOAD-20260831-008-prospective-graph-schema.json",
+      "sha256": "96c3210bda3420cb392d279bc9045eba2ea1a83d6df4ee26d6df4a4a4abaa150",
+      "latest_commit": "42c9f6cbd338d566f187cb76ef62bf51f3e90cae"
+    },
+    "authority_completeness_audit_plan": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-completeness-audit-plan.json",
+      "sha256": "d6c9c3a6a5490b291988b3c1d42881c40b418d9aa54a668cfe2b39f9739f3f96",
+      "latest_commit": "42c9f6cbd338d566f187cb76ef62bf51f3e90cae"
+    },
+    "authority_completeness_runner": {
+      "path": "scripts/audit-study008-authority-completeness.mjs",
+      "sha256": "e22e4b428164b35de6938b29707cb632a15fb5d1cfd0947dd7137801c5787439",
+      "latest_commit": "42c9f6cbd338d566f187cb76ef62bf51f3e90cae"
+    },
+    "authority_completeness_result": {
+      "path": "data/CD-WORKLOAD-20260831-008-authority-completeness-audit.json",
+      "sha256": "7d191faae7eabc2703d59327c7826510217534b20143dab96b361d3449b62822",
+      "latest_commit": "160c70d3300492e6bf2c201301493e6a2ab06846"
+    },
+    "study007_closure": {
+      "path": "data/CD-WORKLOAD-20260831-007-FINAL-SUMMARY.json",
+      "sha256": "2fa8af4ed32435354af9d90b9e11a9a13e3c7d3d1d69652e829733ef2a6a1b62",
+      "latest_commit": "25cfcc36fbeebc58b961e42c328986ccdda67560"
+    },
+    "study003_closure": {
+      "path": "data/CD-WORKLOAD-20260829-003-FINAL-SUMMARY.json",
+      "sha256": "5bde7bea1032b8b26c55a1cf9b458d7e11bc17d3952c1fc7ca321ead25300499",
+      "latest_commit": "78ff97b6b03761911ed2b4027438c78a125d2ae1"
+    }
+  },
+  "actions_performed_by_closure": {
+    "authority_capture": true,
+    "local_authority_audit": true,
+    "target_construction": false,
+    "model_visible_input_construction": false,
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "p3_retrieval": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false,
+    "website_mutation": false,
+    "pricing_mutation": false
+  }
+}
