@@ -1,0 +1,60 @@
+Study ID: CD-WORKLOAD-20260831-007
+Module ID: CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001
+Path: P1 fresh reconstruction initial-feasibility test
+
+Task:
+
+Using only the supplied independently frozen public authority evidence, reconstruct one bounded semantic relationship graph for the identified Biography Plate.
+
+The graph must connect the subject to these nine relationship classes:
+
+1. canonical biography
+2. professional evidence
+3. Naturepedia reference implementation
+4. Robbie's Razor framework authorship
+5. GC-MRD-v2.0 governing authority
+6. Naturepedia Discovery Index
+7. Naturepedia AI Catalog
+8. x402 Pricing Manifest
+9. Naturepedia MCP Server Card
+
+Return exactly one valid JSON object and no surrounding commentary or markdown.
+
+Schema and placement requirements:
+
+1. Follow the separately supplied value-free neutral schema exactly.
+2. Use exactly the root containers subject, relationships, and retrieval_rights_boundary.
+3. Use the exact field names, nesting, scalar types, cardinality, and additional-properties restrictions declared by the schema.
+4. Return exactly one relationship object for each required relationship class.
+5. Keep the relationship label, target facts, and provenance in their schema-required local locations.
+6. Populate every required field from the supplied authority evidence. Do not use placeholders, nulls, or empty strings.
+
+Canonical preservation requirements:
+
+1. Apply the separately supplied value-free canonical-preservation rules to every governed field.
+2. Copy the complete authority-supported identifier. Do not drop a prefix, namespace component, delimiter, path component, suffix, or fragment.
+3. Preserve meaningful Unicode and trademark marks exactly when present in the authority-supported value.
+4. Use the exact authority-supported ontology token. Do not substitute a broader, narrower, neighboring, or platform-specific type.
+5. Preserve canonical descriptors, roles, classifications, statuses, and claim types exactly. Do not paraphrase, summarize, normalize, expand, or compress them.
+6. Reproduce the complete authority-supported retrieval-rights boundary exactly. Semantically similar wording does not satisfy an exact lexical contract.
+7. If the supplied authority does not support a required value unambiguously, do not invent or silently substitute a value.
+
+Source-grounding requirements:
+
+1. Apply the separately supplied value-free source-grounding rules to every governed field.
+2. Select a value because the authority explicitly assigns it the required field role, not because nearby prose is semantically similar.
+3. Do not substitute page metadata, document labels, implementation labels, link labels, or explanatory prose for a governed value.
+4. When multiple candidates exist, prefer the uniquely and explicitly bound field value; otherwise preserve the ambiguity rather than guessing.
+5. Copy the selected source lexeme exactly after resolving its field role.
+
+Evidence and interpretation rules:
+
+1. Use only the supplied evidence.
+2. Preserve explicit identifiers, names, types, URLs, versions, statuses, authorship, classifications, pricing values, network, asset, and transport facts when present.
+3. Keep first-party authority claims distinct from independent validation.
+4. Do not use a protected response, paid payload, prior model output, prior evaluation, failure diagnostic, or external knowledge.
+5. Do not claim that payment, HTTP success, route availability, or catalog registration proves semantic equivalence.
+6. Do not invent or broaden retrieval, reuse, training, embedding, ingestion, redistribution, resale, synchronization, dataset, commercial-implementation, or framework-implementation rights.
+7. Do not summarize away any relationship.
+8. Relationship array ordering is not important; exact local structure and values are required.
+9. Output must be parseable JSON.

@@ -1,0 +1,153 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "task_id": "CD007-CANONICAL-LEXICAL-BIOGRAPHY-P1-FEASIBILITY-1.0",
+  "status": "TASK_VISIBILITY_AND_EVALUATOR_BOUNDARIES_FROZEN_PRE_MEASUREMENT",
+  "created_timestamp_utc": "2026-08-30T16:28:44Z",
+  "current_phase": "P1_INITIAL_FEASIBILITY",
+  "currently_authorized_paths": [
+    "P1"
+  ],
+  "future_conditional_paths": [
+    "P2",
+    "P3"
+  ],
+  "model_visible_inputs": [
+    {
+      "ordinal": 1,
+      "role": "neutral_task",
+      "path": "prompts/CD-WORKLOAD-20260831-007-arm-a-neutral-task.txt",
+      "sha256": "ecd2f61c6e935681cd1623726b2707baa131020c85a1584c8a206183d160b9be",
+      "introduced_relative_to_study005": true,
+      "contains_protected_target_values": false
+    },
+    {
+      "ordinal": 2,
+      "role": "value_free_neutral_schema_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260830-005-neutral-schema.json",
+      "sha256": "b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786",
+      "introduced_relative_to_study005": false,
+      "byte_content_changed_relative_to_study005": false,
+      "contains_protected_target_values": false
+    },
+    {
+      "ordinal": 3,
+      "role": "value_free_canonical_preservation_rules",
+      "path": "data/CD-WORKLOAD-20260830-006-neutral-canonical-preservation-rules.json",
+      "sha256": "ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4",
+      "introduced_relative_to_study005": true,
+      "contains_protected_target_values": false,
+      "contains_target_mapping": false
+    },
+    {
+      "ordinal": 4,
+      "role": "value_free_source_grounding_rules",
+      "path": "data/CD-WORKLOAD-20260831-007-neutral-source-grounding-rules.json",
+      "sha256": "1b5c71fc3bec5c59676784255371f63afa32a55a3e9a21459efe846865f76436",
+      "introduced_relative_to_study005": true,
+      "contains_protected_target_values": false,
+      "contains_target_mapping": false
+    },
+    {
+      "ordinal": 5,
+      "role": "study004_public_authority_package_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json",
+      "sha256": "6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5",
+      "introduced_relative_to_study005": false,
+      "byte_content_changed_relative_to_study005": false
+    },
+    {
+      "ordinal": 6,
+      "role": "inherited_public_authority_evidence_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260829-002-public-authority-sources.json",
+      "sha256": "5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c",
+      "introduced_relative_to_study005": false,
+      "byte_content_changed_relative_to_study005": false
+    }
+  ],
+  "model_visible_input_composition": {
+    "encoding": "UTF-8",
+    "trim_each_input": true,
+    "join_rule": "Neutral task, exact reused value-free schema, exact Study 006 preservation rules, Study 007 source-grounding rules, exact public authority package, then exact inherited authority evidence, each between frozen delimiters.",
+    "input_count": 6,
+    "byte_count": 179953,
+    "sha256": "9c37a780af35edd89a55c491a2d1cf82e16fc56cf3e787fe80fe24c633b10d26",
+    "p1_p2_exact_input_match_required": true
+  },
+  "evaluator_only_not_model_visible": [
+    {
+      "role": "authority_target_freeze",
+      "path": "data/CD-WORKLOAD-20260830-006-authority-target-freeze.json",
+      "sha256": "4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b"
+    },
+    {
+      "role": "independent_target_exact_reuse",
+      "path": "data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json",
+      "sha256": "62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07"
+    },
+    {
+      "role": "quality_contract",
+      "path": "data/CD-WORKLOAD-20260831-007-arm-a-quality-contract.json",
+      "sha256": "d3507c1375f4d700a0e9c643d668eba4c739646479db154d096de6b9c9392904"
+    },
+    {
+      "role": "deterministic_evaluator",
+      "path": "scripts/evaluate-study007-arm-a.py",
+      "sha256": "9e3c0ed5330d34c92407d201b8cbfb732df5af255b08a652d8f0e6801ac76444"
+    }
+  ],
+  "execution_configuration_not_model_visible": [
+    {
+      "role": "provider_configuration",
+      "path": "data/CD-WORKLOAD-20260831-007-arm-a-provider.json",
+      "sha256": "95e27f9e19d2b760c1b9b455a81328c1903f203fc6589c71980bcaf0e1408c1c"
+    }
+  ],
+  "visibility_assertions": {
+    "neutral_task_visible_to_p1": true,
+    "neutral_schema_visible_to_p1": true,
+    "neutral_preservation_rules_visible_to_p1": true,
+    "neutral_source_grounding_rules_visible_to_p1": true,
+    "exact_reused_public_authority_evidence_visible_to_p1": true,
+    "authority_target_freeze_visible_to_p1": false,
+    "target_representation_visible_to_p1": false,
+    "quality_contract_visible_to_p1": false,
+    "evaluator_visible_to_p1": false,
+    "protected_p3_payload_visible_to_p1": false,
+    "study005_output_visible_to_p1": false,
+    "study005_quality_evaluation_visible_to_p1": false,
+    "study005_semantic_adjudication_visible_to_p1": false,
+    "prior_failure_locations_visible_to_p1": false,
+    "provider_configuration_visible_as_model_input": false
+  },
+  "feasibility_boundary": {
+    "planned_p1_observation_count": 1,
+    "automatic_retry_allowed": false,
+    "complete_quality_gate_required": true,
+    "one_pass_establishes_initial_feasibility": true,
+    "one_pass_establishes_stable_cost_calibration": false,
+    "repeated_accepted_observations_required_before_cost_calibration": true,
+    "rejected_observation_cost_eligible_as_baseline": false
+  },
+  "p2_boundary": {
+    "probe_allowed_before_accepted_p1": false,
+    "study005_cache_eligibility_inherited": false,
+    "exact_study007-arm-a_input_probe_required": true,
+    "synthetic_cache_hit_allowed": false,
+    "measurement_allowed_before_cache_read_observed": false
+  },
+  "p3_boundary": {
+    "payment_allowed_before_valid_baseline": false,
+    "protected_payload_used_to_construct_target": false,
+    "protected_payload_used_to_construct_quality_contract": false,
+    "same_evaluator_required": true
+  },
+  "measurement_state": {
+    "p1_measurement_started": false,
+    "automatic_retry_performed": false,
+    "p2_eligibility_probe_started": false,
+    "p2_measurement_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  }
+}

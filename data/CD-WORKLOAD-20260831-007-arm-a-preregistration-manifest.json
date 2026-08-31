@@ -1,0 +1,65 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "manifest_id": "CD007-ARM-A-P1-PREREGISTRATION-1.0",
+  "status": "ARM_A_QUALITY_TASK_VISIBILITY_PROVIDER_AND_EVALUATOR_FROZEN_PRE_MEASUREMENT",
+  "purpose": "Preregister one Arm A instruction-isolation feasibility observation after Arm B was availability-censored before measurement.",
+  "artifacts": [
+    {"role":"study007_design","path":"data/CD-WORKLOAD-20260831-007-design-manifest.json","sha256":"e175c43f81301cd73123c8fb1a3fbc2f339c033ad86830000122198c06635483"},
+    {"role":"arm_b_availability_audit","path":"data/CD-WORKLOAD-20260831-007-arm-b-authority-availability-audit.json","sha256":"c1bbd9a405350d4dfd2ccf89932a6060bcf62103bd6964c523e556fa539814ff"},
+    {"role":"study006_authority_target_freeze","path":"data/CD-WORKLOAD-20260830-006-authority-target-freeze.json","sha256":"4c4140f4a53271d588c3e87dd3bf78c85445736b73e830e793f092ab38f4b10b"},
+    {"role":"neutral_schema","path":"data/CD-WORKLOAD-20260830-005-neutral-schema.json","sha256":"b24970976a02a6ff57f641e30d4f762875526bfae2b6408baba6565a9ed3b786"},
+    {"role":"canonical_preservation_rules","path":"data/CD-WORKLOAD-20260830-006-neutral-canonical-preservation-rules.json","sha256":"ecedce235d507825d6dd3c1f0f735d662aab03fde0f464125c2c07d05aa032d4"},
+    {"role":"source_grounding_rules","path":"data/CD-WORKLOAD-20260831-007-neutral-source-grounding-rules.json","sha256":"1b5c71fc3bec5c59676784255371f63afa32a55a3e9a21459efe846865f76436"},
+    {"role":"public_authority_package","path":"data/CD-WORKLOAD-20260829-004-enriched-biography-public-authority-package.json","sha256":"6881a8a5b1f473ab3c7ca6dfc193dca0dbf4d4d0f6120ca51ccc6c1266d58ad5"},
+    {"role":"inherited_authority_evidence","path":"data/CD-WORKLOAD-20260829-002-public-authority-sources.json","sha256":"5bd10fcaa41aed229cfd1b01fef056722fffdce7607c5b3364ca3c72b81b6a8c"},
+    {"role":"hidden_target","path":"data/CD-WORKLOAD-20260830-005-enriched-biography-target-representation.json","sha256":"62eca3cddaa7ae9a697b9470dc8ebbaf3714750c98a00fc1c7966667e0c01f07"},
+    {"role":"quality_contract","path":"data/CD-WORKLOAD-20260831-007-arm-a-quality-contract.json","sha256":"d3507c1375f4d700a0e9c643d668eba4c739646479db154d096de6b9c9392904"},
+    {"role":"neutral_task","path":"prompts/CD-WORKLOAD-20260831-007-arm-a-neutral-task.txt","sha256":"ecd2f61c6e935681cd1623726b2707baa131020c85a1584c8a206183d160b9be"},
+    {"role":"task_metadata","path":"data/CD-WORKLOAD-20260831-007-arm-a-task-metadata.json","sha256":"699b94529d6089b910329daa4ef1ac40e1289477ae0f7b599cc3eee590a9ecce"},
+    {"role":"provider","path":"data/CD-WORKLOAD-20260831-007-arm-a-provider.json","sha256":"95e27f9e19d2b760c1b9b455a81328c1903f203fc6589c71980bcaf0e1408c1c"},
+    {"role":"evaluator","path":"scripts/evaluate-study007-arm-a.py","sha256":"9e3c0ed5330d34c92407d201b8cbfb732df5af255b08a652d8f0e6801ac76444"}
+  ],
+  "experimental_isolation": {
+    "comparison_predecessor": "STUDY006_P1_0001",
+    "historical_authority_bytes_preserved": true,
+    "neutral_schema_bytes_preserved": true,
+    "canonical_preservation_rule_bytes_preserved": true,
+    "hidden_target_bytes_preserved": true,
+    "model_and_provider_settings_preserved": true,
+    "only_new_model_visible_component": "Study 007 value-free source-grounding rules",
+    "protected_target_values_added": false,
+    "prior_failure_locations_added": false
+  },
+  "arm_state": {
+    "arm_a_preregistered": true,
+    "arm_a_runner_frozen": false,
+    "arm_a_measurement_started": false,
+    "arm_a_planned_observation_count": 1,
+    "arm_a_automatic_retry_allowed": false,
+    "arm_b_state": "AVAILABILITY_CENSORED_BEFORE_MEASUREMENT",
+    "arm_b_measurement_allowed": false
+  },
+  "quality_boundary": {
+    "relationship_gate": "9/9",
+    "relationship_target_fact_gate": "52/52",
+    "complete_subject_schema_provenance_and_rights_required": true,
+    "semantic_equivalence_changes_primary_pass": false,
+    "partial_credit_changes_primary_pass": false,
+    "one_pass_establishes_stable_cost": false
+  },
+  "downstream_gate": {
+    "p2_probe_allowed": false,
+    "p3_payment_allowed": false,
+    "economic_comparison_allowed": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "automatic_retry": false,
+    "p2_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "production_mutation": false
+  },
+  "next_artifact": "Freeze an Arm A-only runner that pins this manifest and permits only reserved observation CD-007-P1A-0001."
+}
