@@ -1,0 +1,92 @@
+{
+  "study_id": "CD-WORKLOAD-20260831-007",
+  "module_id": "CD007-SOURCE-GROUNDED-ENRICHED-BIOGRAPHY-001",
+  "runner_id": "CD007-P1A-SOURCE-GROUNDED-FEASIBILITY-RUNNER-1.0",
+  "status": "ARM_A_RUNNER_FROZEN_PREFLIGHT_PASS_MEASUREMENT_CREDENTIAL_BLOCKED",
+  "created_timestamp_utc": "2026-08-31T00:00:00Z",
+  "runner": {
+    "path": "scripts/run-study007-arm-a.mjs",
+    "sha256": "636e6ed4d71adb9a821ff5a9b03e923d5faf8066a8b9160715ac9824f23b5548"
+  },
+  "preregistration_manifest": {
+    "path": "data/CD-WORKLOAD-20260831-007-arm-a-preregistration-manifest.json",
+    "sha256": "e75ef4b2a7d9cc7b58556dbf0c1b52bfd539ad4b58107c9fdfe524a60d2d789c"
+  },
+  "frozen_request": {
+    "provider": "OpenAI",
+    "model": "gpt-5.6-luna",
+    "api_endpoint": "https://api.openai.com/v1/responses",
+    "reasoning_effort": "none",
+    "text_verbosity": "low",
+    "max_output_tokens": 8192,
+    "store": false,
+    "prompt_cache_mode": "explicit",
+    "explicit_cache_breakpoints": 0,
+    "model_visible_input_count": 6,
+    "model_input_bytes": 179953,
+    "model_input_sha256": "9c37a780af35edd89a55c491a2d1cf82e16fc56cf3e787fe80fe24c633b10d26"
+  },
+  "preflight": {
+    "pass": true,
+    "api_credential_present": false,
+    "api_call_performed": false,
+    "p2_probe_performed": false,
+    "x402_payment_performed": false
+  },
+  "visibility_boundary": {
+    "neutral_schema_visible": true,
+    "neutral_preservation_rules_visible": true,
+    "neutral_source_grounding_rules_visible": true,
+    "exact_reused_public_authority_evidence_visible": true,
+    "authority_target_freeze_visible": false,
+    "target_representation_visible": false,
+    "quality_contract_visible": false,
+    "evaluator_visible": false,
+    "study005_model_output_visible": false,
+    "study005_quality_evaluation_visible": false,
+    "study005_semantic_adjudication_visible": false,
+    "prior_failure_locations_visible": false,
+    "protected_p3_payload_visible": false
+  },
+  "arm_boundary": {
+    "arm_a_measurement_allowed_after_credential_restore": true,
+    "arm_b_state": "AVAILABILITY_CENSORED_BEFORE_MEASUREMENT",
+    "arm_b_measurement_allowed": false
+  },
+  "feasibility_boundary": {
+    "observation_id_reserved": "CD-007-P1A-0001",
+    "planned_observation_count": 1,
+    "automatic_retry_allowed": false,
+    "passing_observation_establishes_initial_feasibility_only": true,
+    "passing_observation_establishes_stable_cost_calibration": false,
+    "rejected_observation_cost_eligible_as_baseline": false
+  },
+  "measurement_state": {
+    "measurement_started": false,
+    "measurement_artifacts_created": false,
+    "quality_evaluation_started": false,
+    "p2_probe_started": false,
+    "p3_payment_performed": false,
+    "economic_comparison_performed": false
+  },
+  "blocker": {
+    "type": "MISSING_TASK_RELEVANT_API_CREDENTIAL",
+    "environment_variable": "OPENAI_API_KEY",
+    "secret_value_read": false,
+    "resolution": "Restore OPENAI_API_KEY in the Terminal environment, rerun preflight, then execute the single reserved observation 0001 exactly once."
+  },
+  "next_action": {
+    "type": "RUN_CD_007_P1A_0001_THEN_EVALUATE_WITH_FROZEN_STRICT_CANONICAL_GATE",
+    "p2_allowed_before_p1_quality_pass": false,
+    "p3_payment_allowed": false,
+    "automatic_retry_allowed": false
+  },
+  "actions_performed": {
+    "model_api_call": false,
+    "provider_cache_probe": false,
+    "x402_payment": false,
+    "economic_comparison": false,
+    "website_change": false,
+    "pricing_change": false
+  }
+}
